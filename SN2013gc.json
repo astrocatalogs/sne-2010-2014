@@ -13,14 +13,14 @@
                 "secondary": true
             },
             {
-                "name": "Latest Supernovae",
-                "url": "http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-                "alias": "2",
-                "secondary": true
+                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/003600/CBET003699.txt'>CBET 3699</a>",
+                "alias": "2"
             },
             {
-                "name": "<a href='http://www.cbat.eps.harvard.edu/iau/cbet/003600/CBET003699.txt'>CBET 3699</a>",
-                "alias": "3"
+                "name": "Latest Supernovae",
+                "url": "http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+                "alias": "3",
+                "secondary": true
             },
             {
                 "name": "Joseph Brimacombe",
@@ -29,8 +29,8 @@
         ],
         "claimedtype": [
             {
-                "type": "IIn",
-                "source": "1,2"
+                "value": "IIn",
+                "source": "1,2,3"
             }
         ],
         "discoverday": "6",
@@ -39,15 +39,34 @@
         "discoveryear": "2013",
         "galdec": "-280308",
         "galra": "080708",
-        "host": "ESO 430-G20",
-        "hvel": "1023",
-        "lumdist": "15.1665",
-        "maxabsmag": "-14.2044",
+        "host": [
+            {
+                "value": "E430-G20",
+                "source": "1"
+            },
+            {
+                "value": "ESO 430-G20",
+                "source": "2,3"
+            }
+        ],
+        "hvel": [
+            {
+                "value": "1023",
+                "source": "1"
+            }
+        ],
+        "lumdist": "15.1",
+        "maxabsmag": "-14.19",
         "maxappmag": "16.7",
         "maxday": "6",
         "maxmonth": "11",
         "maxyear": "2013",
-        "redshift": "0.003418",
+        "redshift": [
+            {
+                "value": "0.003402",
+                "source": "2,3"
+            }
+        ],
         "sndec": "-28:03:26.3",
         "snra": "08:07:11.88",
         "photometry": [
@@ -56,14 +75,14 @@
                 "time": "56602.5",
                 "band": "",
                 "abmag": "16.7",
-                "source": "3,2"
+                "source": "2,3"
             },
             {
                 "timeunit": "MJD",
                 "time": "56623.522",
                 "band": "C",
                 "abmag": "19.1",
-                "source": "4,2"
+                "source": "4,3"
             }
         ]
     }
