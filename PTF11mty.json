@@ -6,44 +6,65 @@
 		],
 		"sources":[
 			{
-				"name":"ATEL 3668",
-				"url":"http://www.astronomerstelegram.org/?read=3668",
+				"name":"2014MNRAS.444.3258M",
+				"url":"http://adsabs.harvard.edu/abs/2014MNRAS.444.3258M",
+				"bibcode":"2014MNRAS.444.3258M",
 				"alias":"1"
-			},
-			{
-				"name":"Latest Supernovae",
-				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2",
-				"secondary":true
-			},
-			{
-				"name":"NED-D",
-				"url":"http://ned.ipac.caltech.edu/Library/Distances/",
-				"alias":"3",
-				"secondary":true
 			},
 			{
 				"name":"2014MNRAS.438.1391P",
 				"url":"http://adsabs.harvard.edu/abs/2014MNRAS.438.1391P",
 				"bibcode":"2014MNRAS.438.1391P",
-				"alias":"4"
+				"alias":"2"
+			},
+			{
+				"name":"ATEL 3668",
+				"url":"http://www.astronomerstelegram.org/?read=3668",
+				"alias":"3"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"4",
+				"secondary":true
+			},
+			{
+				"name":"NED-D",
+				"url":"http://ned.ipac.caltech.edu/Library/Distances/",
+				"alias":"5",
+				"secondary":true
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1,2"
+				"source":"3,4"
 			}
 		],
-		"discoverday":"23",
+		"discoverday":[
+			{
+				"value":"23",
+				"source":"3,4"
+			}
+		],
 		"discoverer":[
 			{
 				"value":"PTF",
-				"source":"1,2"
+				"source":"3,4"
 			}
 		],
-		"discovermonth":"9",
-		"discoveryear":"2011",
+		"discovermonth":[
+			{
+				"value":"9",
+				"source":"3,4"
+			}
+		],
+		"discoveryear":[
+			{
+				"value":"2011",
+				"source":"3,4"
+			}
+		],
 		"hvel":[
 			{
 				"value":"22000",
@@ -54,30 +75,65 @@
 			{
 				"value":"312",
 				"error":"6",
-				"source":"4,3"
+				"source":"2,5"
 			}
 		],
-		"maxabsmag":"-17.7",
-		"maxappmag":"19.8",
-		"maxday":"22",
-		"maxmonth":"9",
-		"maxyear":"2011",
+		"maxabsmag":[
+			{
+				"value":"-17.7",
+				"source":"D"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"19.8",
+				"source":"D"
+			}
+		],
+		"maxday":[
+			{
+				"value":"22",
+				"source":"D"
+			}
+		],
+		"maxmonth":[
+			{
+				"value":"9",
+				"source":"D"
+			}
+		],
+		"maxyear":[
+			{
+				"value":"2011",
+				"source":"D"
+			}
+		],
 		"redshift":[
 			{
 				"value":"0.077",
-				"source":"1,2"
+				"error":"0.001",
+				"source":"1,2,3,4",
+				"kind":"heliocentric"
 			}
 		],
 		"sndec":[
 			{
 				"value":"+10:25:24.6",
-				"source":"1,2"
+				"source":"1,2,3,4"
 			}
 		],
 		"snra":[
 			{
+				"value":"21:34:5.28",
+				"source":"1"
+			},
+			{
+				"value":"21:34:05.21",
+				"source":"2"
+			},
+			{
 				"value":"21:34:05.20",
-				"source":"1,2"
+				"source":"3,4"
 			}
 		],
 		"photometry":[
@@ -85,7 +141,7 @@
 				"timeunit":"MJD",
 				"time":"55826.5",
 				"magnitude":"19.8",
-				"source":"1,2"
+				"source":"3,4"
 			}
 		]
 	}
