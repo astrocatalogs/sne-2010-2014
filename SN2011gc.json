@@ -3,7 +3,8 @@
 		"name":"SN2011gc",
 		"aliases":[
 			"SN2011gc",
-			"PSN J18121900+2131150"
+			"PSN J18121900+2131150",
+			"Psn J18121900+2131150"
 		],
 		"sources":[
 			{
@@ -22,12 +23,17 @@
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
 				"alias":"3",
 				"secondary":true
+			},
+			{
+				"name":"CBET2835",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/002800/CBET002835.txt",
+				"alias":"4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"II P",
-				"source":"1"
+				"source":"1,4"
 			},
 			{
 				"value":"II",
@@ -49,20 +55,14 @@
 			},
 			{
 				"value":"+21:31:15.0",
-				"source":"2,3",
+				"source":"2,3,4,1",
 				"unit":"degrees"
-			}
-		],
-		"discover":[
-			{
-				"value":"2011/6/27",
-				"source":"1"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2011/06/27",
-				"source":"2,3"
+				"source":"1,2,3"
 			}
 		],
 		"discoverer":[
@@ -73,20 +73,10 @@
 			{
 				"value":"Italian Supernovae Search Project",
 				"source":"2,3"
-			}
-		],
-		"galdec":[
+			},
 			{
-				"value":"+21:31:15",
-				"source":"1",
-				"unit":"nospace"
-			}
-		],
-		"galra":[
-			{
-				"value":"18:12:19",
-				"source":"1",
-				"unit":"nospace"
+				"value":"ISSP",
+				"source":"4,1"
 			}
 		],
 		"host":[
@@ -96,7 +86,21 @@
 			},
 			{
 				"value":"PGC 1651633",
-				"source":"2,3"
+				"source":"2,3,4,1"
+			}
+		],
+		"hostdec":[
+			{
+				"value":"+21:31:15",
+				"source":"1",
+				"unit":"nospace"
+			}
+		],
+		"hostra":[
+			{
+				"value":"18:12:19",
+				"source":"1",
+				"unit":"nospace"
 			}
 		],
 		"lumdist":[
@@ -132,14 +136,14 @@
 			},
 			{
 				"value":"18:12:19.00",
-				"source":"2,3",
+				"source":"2,3,4,1",
 				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.016",
-				"source":"2,3"
+				"source":"2,3,4,1"
 			}
 		],
 		"velocity":[
