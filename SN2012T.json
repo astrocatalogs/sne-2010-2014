@@ -4,7 +4,8 @@
 		"aliases":[
 			"SN2012T",
 			"PSN J14014169+3349339",
-			"PSN J13101968+3228257"
+			"PSN J13101968+3228257",
+			"SN2013T"
 		],
 		"sources":[
 			{
@@ -28,6 +29,16 @@
 				"name":"CBET3407",
 				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/003400/CBET003407.txt",
 				"alias":"4"
+			},
+			{
+				"name":"CBET 3407",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/003400/CBET003407.txt",
+				"alias":"5"
+			},
+			{
+				"name":"Supernova Hunt",
+				"url":"http://nesssi.cacr.caltech.edu/catalina/current.html",
+				"alias":"6"
 			}
 		],
 		"claimedtype":[
@@ -37,7 +48,7 @@
 			},
 			{
 				"value":"Ia",
-				"source":"2,3,4,1"
+				"source":"2,3,4,1,5"
 			}
 		],
 		"comovingdist":[
@@ -55,7 +66,12 @@
 			},
 			{
 				"value":"+32:28:25.7",
-				"source":"4,1",
+				"source":"4,1,5,3",
+				"unit":"degrees"
+			},
+			{
+				"value":"+32:28:25.68",
+				"source":"6",
 				"unit":"degrees"
 			}
 		],
@@ -76,7 +92,15 @@
 			},
 			{
 				"value":"CRTS",
-				"source":"4,1"
+				"source":"4,1,5,3"
+			},
+			{
+				"value":"Howerton et al.",
+				"source":"1"
+			},
+			{
+				"value":"Howerton",
+				"source":"6"
 			}
 		],
 		"host":[
@@ -86,7 +110,7 @@
 			},
 			{
 				"value":"UGC 8250",
-				"source":"4,1"
+				"source":"4,1,5,3,6"
 			}
 		],
 		"hostdec":[
@@ -94,11 +118,21 @@
 				"value":"+33:49:37",
 				"source":"1",
 				"unit":"degrees"
+			},
+			{
+				"value":"+32:28:59",
+				"source":"1",
+				"unit":"degrees"
 			}
 		],
 		"hostra":[
 			{
 				"value":"14:01:41",
+				"source":"1",
+				"unit":"hours"
+			},
+			{
+				"value":"13:10:20",
 				"source":"1",
 				"unit":"hours"
 			}
@@ -112,20 +146,20 @@
 		],
 		"maxabsmag":[
 			{
-				"value":"-17.092",
+				"value":"-19.692",
 				"source":"D"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"17.4",
-				"source":"D,2,3"
+				"value":"14.8",
+				"source":"D,5,3"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2012/01/25",
-				"source":"D,2,3"
+				"value":"2012/12/13",
+				"source":"D,5,3"
 			}
 		],
 		"ra":[
@@ -136,19 +170,30 @@
 			},
 			{
 				"value":"13:10:19.68",
-				"source":"4,1",
+				"source":"4,1,5,3",
+				"unit":"hours"
+			},
+			{
+				"value":"13:10:19.7",
+				"source":"6",
 				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.017646",
-				"source":"4,1"
+				"source":"4,1,5,3"
 			}
 		],
 		"velocity":[
 			{
 				"value":"7889",
+				"source":"1",
+				"kind":"host",
+				"unit":"km/s"
+			},
+			{
+				"value":"5294",
 				"source":"1",
 				"kind":"host",
 				"unit":"km/s"
@@ -160,6 +205,12 @@
 				"time":"55951.5",
 				"magnitude":"17.4",
 				"source":"2,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"56274.5",
+				"magnitude":"14.8",
+				"source":"5,3"
 			}
 		]
 	}

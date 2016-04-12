@@ -35,22 +35,27 @@
 				"alias":"5"
 			},
 			{
+				"name":"Supernova Hunt",
+				"url":"http://nesssi.cacr.caltech.edu/catalina/current.html",
+				"alias":"6"
+			},
+			{
 				"name":"WISeREP",
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"6",
+				"alias":"7",
 				"secondary":true
 			},
 			{
 				"name":"Childress et al. (2015)",
 				"url":"http://adsabs.harvard.edu/abs/2015arXiv150702501C",
 				"bibcode":"2015arXiv150702501C",
-				"alias":"7"
+				"alias":"8"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1,2,3,6"
+				"source":"1,2,3,7"
 			}
 		],
 		"comovingdist":[
@@ -70,12 +75,17 @@
 				"value":"-17:57:55.44",
 				"source":"4,5",
 				"unit":"degrees"
+			},
+			{
+				"value":"-17:57:55.8",
+				"source":"6",
+				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2013/05/14",
-				"source":"1"
+				"source":"1,6"
 			}
 		],
 		"discoverer":[
@@ -86,12 +96,20 @@
 			{
 				"value":"CRTS",
 				"source":"2,3"
+			},
+			{
+				"value":"Howerton",
+				"source":"6"
 			}
 		],
 		"host":[
 			{
 				"value":"ESO 576-G17",
 				"source":"1,2,3"
+			},
+			{
+				"value":"ESO576-17",
+				"source":"6"
 			}
 		],
 		"hostdec":[
@@ -141,14 +159,14 @@
 			},
 			{
 				"value":"13:15:14.88",
-				"source":"4,5",
+				"source":"4,5,6",
 				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.00924",
-				"source":"2,3,6"
+				"source":"2,3,7"
 			}
 		],
 		"velocity":[
@@ -160,6 +178,15 @@
 			}
 		],
 		"photometry":[
+			{
+				"timeunit":"MJD",
+				"band":"C",
+				"magnitude":"14.7",
+				"telescope":"Catalina Schmidt",
+				"e_magnitude":"1.0",
+				"source":"4,5",
+				"host":true
+			},
 			{
 				"timeunit":"MJD",
 				"time":"53478.439987",
@@ -464,7 +491,8 @@
 				"magnitude":"19.404699",
 				"telescope":"Catalina Schmidt",
 				"e_magnitude":"0.126662",
-				"source":"4,5"
+				"source":"4,5",
+				"includeshost":true
 			},
 			{
 				"timeunit":"MJD",
@@ -698,7 +726,8 @@
 				"magnitude":"19.191",
 				"telescope":"Catalina Schmidt",
 				"e_magnitude":"0.097846",
-				"source":"4,5"
+				"source":"4,5",
+				"includeshost":true
 			},
 			{
 				"timeunit":"MJD",
@@ -887,7 +916,8 @@
 				"magnitude":"19.9018",
 				"telescope":"Catalina Schmidt",
 				"e_magnitude":"0.161849",
-				"source":"4,5"
+				"source":"4,5",
+				"includeshost":true
 			},
 			{
 				"timeunit":"MJD",
@@ -968,7 +998,8 @@
 				"magnitude":"19.8081",
 				"telescope":"Catalina Schmidt",
 				"e_magnitude":"0.160413",
-				"source":"4,5"
+				"source":"4,5",
+				"includeshost":true
 			},
 			{
 				"timeunit":"MJD",
@@ -1154,7 +1185,8 @@
 				"magnitude":"14.512",
 				"telescope":"Catalina Schmidt",
 				"e_magnitude":"0.01502",
-				"source":"4,5"
+				"source":"4,5",
+				"includeshost":true
 			},
 			{
 				"timeunit":"MJD",
@@ -1163,7 +1195,8 @@
 				"magnitude":"14.5209",
 				"telescope":"Catalina Schmidt",
 				"e_magnitude":"0.015152",
-				"source":"4,5"
+				"source":"4,5",
+				"includeshost":true
 			},
 			{
 				"timeunit":"MJD",
@@ -1172,7 +1205,8 @@
 				"magnitude":"14.5008",
 				"telescope":"Catalina Schmidt",
 				"e_magnitude":"0.015035",
-				"source":"4,5"
+				"source":"4,5",
+				"includeshost":true
 			},
 			{
 				"timeunit":"MJD",
@@ -1181,7 +1215,8 @@
 				"magnitude":"14.4919",
 				"telescope":"Catalina Schmidt",
 				"e_magnitude":"0.015052",
-				"source":"4,5"
+				"source":"4,5",
+				"includeshost":true
 			},
 			{
 				"timeunit":"MJD",
@@ -1370,7 +1405,8 @@
 				"magnitude":"19.4827",
 				"telescope":"Catalina Schmidt",
 				"e_magnitude":"0.144163",
-				"source":"4,5"
+				"source":"4,5",
+				"includeshost":true
 			},
 			{
 				"timeunit":"MJD",
@@ -1640,7 +1676,8 @@
 				"magnitude":"19.3311",
 				"telescope":"Catalina Schmidt",
 				"e_magnitude":"0.128305",
-				"source":"4,5"
+				"source":"4,5",
+				"includeshost":true
 			},
 			{
 				"timeunit":"MJD",
@@ -1712,7 +1749,8 @@
 				"magnitude":"19.2075",
 				"telescope":"Catalina Schmidt",
 				"e_magnitude":"0.113012",
-				"source":"4,5"
+				"source":"4,5",
+				"includeshost":true
 			},
 			{
 				"timeunit":"MJD",
@@ -13609,7 +13647,7 @@
 						"-1.198145e-18"
 					]
 				],
-				"source":"7,6"
+				"source":"8,7"
 			}
 		]
 	}
