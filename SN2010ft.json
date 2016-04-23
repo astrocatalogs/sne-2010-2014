@@ -3,37 +3,44 @@
 		"name":"SN2010ft",
 		"aliases":[
 			"SN2010ft",
+			"PS1-10kg",
 			"PS1-1000293"
 		],
 		"sources":[
 			{
+				"name":"Rest et al. (2014)",
+				"url":"http://adsabs.harvard.edu/abs/2014ApJ...795...44R",
+				"bibcode":"2014ApJ...795...44R",
+				"alias":"1"
+			},
+			{
 				"name":"Asiago Supernova Catalogue",
 				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-				"alias":"1",
+				"alias":"2",
 				"secondary":true
 			},
 			{
 				"name":"Lennarz, Altmann, & Wiebusch (2012)",
 				"url":"http://adsabs.harvard.edu/abs/2012A&A...538A.120L",
 				"bibcode":"2012A&A...538A.120L",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"CBET 2350",
 				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/002300/CBET002350.txt",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"Latest Supernovae",
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4",
+				"alias":"5",
 				"secondary":true
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1,2,3,4"
+				"source":"1,2,3,4,5"
 			}
 		],
 		"comovingdist":[
@@ -45,59 +52,64 @@
 		],
 		"dec":[
 			{
+				"value":"+54:17:53.54",
+				"source":"1",
+				"unit":"degrees"
+			},
+			{
 				"value":"+54:17:53.5",
-				"source":"1,2",
+				"source":"2,3",
 				"unit":"degrees"
 			},
 			{
 				"value":"+54:17:53.52",
-				"source":"3,4",
+				"source":"4,5",
 				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2010/06/15",
-				"source":"1,2,3,4"
+				"source":"1,2,3,4,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Challis et al.",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"value":"PS1",
-				"source":"3,4"
+				"source":"4,5"
 			}
 		],
 		"host":[
 			{
 				"value":"A160115+5417",
-				"source":"1"
+				"source":"2"
 			}
 		],
 		"hostdec":[
 			{
 				"value":"+54:17:53",
-				"source":"1",
+				"source":"2",
 				"unit":"degrees"
 			},
 			{
 				"value":"+54:17:53.0",
-				"source":"2",
+				"source":"3",
 				"unit":"degrees"
 			}
 		],
 		"hostra":[
 			{
 				"value":"16:01:15",
-				"source":"1",
+				"source":"2",
 				"unit":"hours"
 			},
 			{
 				"value":"16:01:15.00",
-				"source":"2",
+				"source":"3",
 				"unit":"hours"
 			}
 		],
@@ -105,7 +117,7 @@
 			{
 				"value":"2400",
 				"source":"D",
-				"kind":"host",
+				"kind":"heliocentric",
 				"unit":"Mpc"
 			}
 		],
@@ -118,45 +130,51 @@
 		"maxappmag":[
 			{
 				"value":"21.8",
-				"source":"D,2"
+				"source":"D,3"
 			}
 		],
 		"maxband":[
 			{
 				"value":"r",
-				"source":"D,2"
+				"source":"D,3"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2010/06/15",
-				"source":"D,2"
+				"source":"D,3"
 			}
 		],
 		"ra":[
 			{
+				"value":"16:01:15.410",
+				"source":"1",
+				"unit":"hours"
+			},
+			{
 				"value":"16:01:15.41",
-				"source":"1,2",
+				"source":"2,3",
 				"unit":"hours"
 			},
 			{
 				"value":"16:01:15.408",
-				"source":"3,4",
+				"source":"4,5",
 				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.42",
-				"source":"1,2,3,4",
-				"kind":"host"
+				"error":"0.01",
+				"source":"1,4,5",
+				"kind":"heliocentric"
 			}
 		],
 		"velocity":[
 			{
 				"value":"100000",
 				"source":"D",
-				"kind":"host",
+				"kind":"heliocentric",
 				"unit":"km/s"
 			}
 		],
@@ -165,14 +183,14 @@
 				"time":"55361.5",
 				"u_time":"MJD",
 				"magnitude":"21.8",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"55362.0",
 				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"21.8",
-				"source":"2"
+				"source":"3"
 			}
 		]
 	}

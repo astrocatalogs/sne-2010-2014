@@ -2,7 +2,8 @@
 	"PS1-10p":{
 		"name":"PS1-10p",
 		"aliases":[
-			"PS1-10p"
+			"PS1-10p",
+			"PS1-1000016"
 		],
 		"sources":[
 			{
@@ -10,12 +11,23 @@
 				"url":"http://adsabs.harvard.edu/abs/2014ApJ...795...44R",
 				"bibcode":"2014ApJ...795...44R",
 				"alias":"1"
+			},
+			{
+				"name":"ATEL 2397",
+				"url":"http://www.astronomerstelegram.org/?read=2397",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3",
+				"secondary":true
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1"
+				"source":"1,2,3"
 			}
 		],
 		"comovingdist":[
@@ -30,12 +42,23 @@
 				"value":"+01:36:48.55",
 				"source":"1",
 				"unit":"degrees"
+			},
+			{
+				"value":"+01:36:48.54",
+				"source":"2,3",
+				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2010/01/20",
-				"source":"1"
+				"source":"1,2,3"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"PS1",
+				"source":"2,3"
 			}
 		],
 		"lumdist":[
@@ -75,13 +98,18 @@
 				"value":"09:59:16.802",
 				"source":"1",
 				"unit":"hours"
+			},
+			{
+				"value":"09:59:16.799",
+				"source":"2,3",
+				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.31",
 				"error":"0.001",
-				"source":"1",
+				"source":"1,2,3",
 				"kind":"heliocentric"
 			}
 		],
@@ -192,6 +220,12 @@
 				"magnitude":"22.324",
 				"e_magnitude":"0.12",
 				"source":"1"
+			},
+			{
+				"time":"55215.5",
+				"u_time":"MJD",
+				"magnitude":"22.0",
+				"source":"2,3"
 			},
 			{
 				"time":"55215.559776",
