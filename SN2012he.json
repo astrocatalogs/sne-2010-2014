@@ -1,119 +1,137 @@
 {
 	"SN2012he":{
 		"name":"SN2012he",
-		"aliases":[
-			"SN2012he",
-			"LSQ12fvl",
-			"PSN J05005007-3839114"
-		],
 		"sources":[
+			{
+				"name":"Guillochon, Parrent, & Margutti (2016)",
+				"url":"https://sne.space",
+				"bibcode":"2016arXiv160501054G",
+				"alias":"1",
+				"secondary":true
+			},
 			{
 				"name":"Walker et al. (2015)",
 				"bibcode":"2015ApJS..219...13W",
-				"alias":"1"
+				"alias":"2"
 			},
 			{
-				"name":"Asiago Supernova Catalogue",
+				"name":"Barbon, Cappellaro, & Turatto (1989)",
 				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-				"alias":"2",
+				"bibcode":"1989A&AS...81..421B",
+				"alias":"3",
 				"secondary":true
 			},
 			{
 				"name":"Hamuy et al. (2012)",
 				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/003300/CBET003325.txt",
 				"bibcode":"2012CBET.3325....1H",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"Latest Supernovae",
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4",
+				"alias":"5",
 				"secondary":true
 			},
 			{
-				"name":"WISeREP",
+				"name":"Yaron & Gal-Yam (2012)",
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"5",
+				"bibcode":"2012PASP..124..668Y",
+				"alias":"6",
 				"secondary":true
 			},
 			{
 				"name":"Schlafly & Finkbeiner (2011)",
 				"bibcode":"2011ApJ...737..103S",
-				"alias":"6"
+				"alias":"7"
+			}
+		],
+		"alias":[
+			{
+				"value":"SN2012he",
+				"source":"1,2,3,5,4,6"
+			},
+			{
+				"value":"LSQ12fvl",
+				"source":"1"
+			},
+			{
+				"value":"PSN J05005007-3839114",
+				"source":"4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1,2,3,4,5"
+				"source":"2,3,5,4,6"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"240",
-				"source":"D",
+				"source":"1",
 				"unit":"Mpc"
 			}
 		],
 		"dec":[
 			{
 				"value":"-38:39:11.51",
-				"source":"1",
+				"source":"2",
 				"unit":"degrees"
 			},
 			{
 				"value":"-38:39:11.4",
-				"source":"2,3,4",
+				"source":"3,5,4",
 				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2012/11/22",
-				"source":"2"
+				"source":"3"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Hamuy et al.",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"value":"La Silla-QUEST",
-				"source":"3,4"
+				"source":"5,4"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.0179",
 				"error":"0.001",
-				"source":"6"
+				"source":"7"
 			}
 		],
 		"host":[
 			{
 				"value":"MCG -06-12-02",
-				"source":"2,3,4"
+				"source":"3,5,4"
 			}
 		],
 		"hostdec":[
 			{
 				"value":"-38:39:17",
-				"source":"2",
+				"source":"3",
 				"unit":"degrees"
 			}
 		],
 		"hostra":[
 			{
 				"value":"05:00:51",
-				"source":"2",
+				"source":"3",
 				"unit":"hours"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"260",
-				"source":"D",
+				"source":"1",
 				"kind":"heliocentric",
 				"unit":"Mpc"
 			}
@@ -121,36 +139,36 @@
 		"maxabsmag":[
 			{
 				"value":"-18",
-				"source":"D"
+				"source":"1"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"18.84",
-				"source":"D,1"
+				"source":"1,2"
 			}
 		],
 		"maxband":[
 			{
 				"value":"B",
-				"source":"D,1"
+				"source":"1,2"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2012/11/07",
-				"source":"D,1"
+				"source":"1,2"
 			}
 		],
 		"ra":[
 			{
 				"value":"05:00:50.04",
-				"source":"1",
+				"source":"2",
 				"unit":"hours"
 			},
 			{
 				"value":"05:00:50.07",
-				"source":"2,3,4",
+				"source":"3,5,4",
 				"unit":"hours"
 			}
 		],
@@ -158,14 +176,14 @@
 			{
 				"value":"0.056",
 				"error":"0.001",
-				"source":"1,5",
+				"source":"2,6",
 				"kind":"heliocentric"
 			}
 		],
 		"velocity":[
 			{
 				"value":"16779",
-				"source":"2",
+				"source":"3",
 				"kind":"host",
 				"unit":"km/s"
 			}
@@ -181,7 +199,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56234.22218",
@@ -193,7 +211,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56234.22701",
@@ -205,7 +223,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56235.25884",
@@ -217,7 +235,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56235.26409",
@@ -229,7 +247,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56235.26847",
@@ -241,7 +259,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56238.31116",
@@ -253,7 +271,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56238.31567",
@@ -265,7 +283,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56238.32021",
@@ -277,7 +295,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56239.26631",
@@ -289,7 +307,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56239.28773",
@@ -301,7 +319,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56239.29235",
@@ -313,7 +331,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56241.28618",
@@ -325,7 +343,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56241.29198",
@@ -337,7 +355,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56241.30215",
@@ -349,7 +367,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56242.31553",
@@ -361,7 +379,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56242.32682",
@@ -373,7 +391,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56243.23198",
@@ -385,7 +403,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56243.23666",
@@ -397,7 +415,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56243.24447",
@@ -409,7 +427,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56243.25054",
@@ -421,7 +439,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56244.22026",
@@ -433,7 +451,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56244.22694",
@@ -445,7 +463,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56244.23549",
@@ -457,7 +475,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56245.23256",
@@ -469,7 +487,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56245.24547",
@@ -481,7 +499,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56245.25081",
@@ -493,7 +511,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56246.22252",
@@ -505,7 +523,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56246.2356",
@@ -517,7 +535,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56246.24072",
@@ -529,7 +547,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56247.21767",
@@ -541,7 +559,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56247.22933",
@@ -553,7 +571,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56247.23416",
@@ -565,7 +583,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56248.26286",
@@ -577,7 +595,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56248.26803",
@@ -589,7 +607,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56248.2739",
@@ -601,7 +619,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56249.27632",
@@ -613,7 +631,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56249.28245",
@@ -625,7 +643,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56249.28936",
@@ -637,7 +655,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56250.24589",
@@ -649,7 +667,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56250.25135",
@@ -661,7 +679,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56250.25778",
@@ -673,7 +691,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56251.15612",
@@ -685,7 +703,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56251.1619",
@@ -697,7 +715,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56251.16873",
@@ -709,7 +727,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56252.23124",
@@ -721,7 +739,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56252.23685",
@@ -733,7 +751,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56252.24265",
@@ -745,7 +763,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56252.24961",
@@ -757,13 +775,13 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56252.5",
 				"u_time":"MJD",
 				"magnitude":"18.2",
-				"source":"3,4"
+				"source":"5,4"
 			},
 			{
 				"time":"56253.24539",
@@ -775,7 +793,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56253.25166",
@@ -787,7 +805,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56253.2591",
@@ -799,7 +817,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56254.18411",
@@ -811,7 +829,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56254.19082",
@@ -823,7 +841,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56254.19752",
@@ -835,7 +853,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56255.20639",
@@ -847,7 +865,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56255.21515",
@@ -859,7 +877,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56255.22707",
@@ -871,7 +889,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56258.16552",
@@ -883,7 +901,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56258.18271",
@@ -895,7 +913,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"56258.19155",
@@ -907,7 +925,7 @@
 				"observatory":"La Silla",
 				"telescope":"ESO Schmidt",
 				"instrument":"QUEST",
-				"source":"1"
+				"source":"2"
 			}
 		],
 		"spectra":[
@@ -4982,7 +5000,7 @@
 						"0."
 					]
 				],
-				"source":"5"
+				"source":"6"
 			},
 			{
 				"instrument":"ESO-NTT - EFOSC2-NTT",
@@ -9095,7 +9113,7 @@
 						"4.26224e-17"
 					]
 				],
-				"source":"5"
+				"source":"6"
 			},
 			{
 				"instrument":"ESO-NTT - EFOSC2-NTT",
@@ -13168,7 +13186,7 @@
 						"0."
 					]
 				],
-				"source":"5"
+				"source":"6"
 			},
 			{
 				"instrument":"ESO-NTT - EFOSC2-NTT",
@@ -17281,7 +17299,7 @@
 						"7.88138e-17"
 					]
 				],
-				"source":"5"
+				"source":"6"
 			}
 		]
 	}

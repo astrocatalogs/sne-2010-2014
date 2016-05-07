@@ -1,156 +1,171 @@
 {
 	"SN2011hv":{
 		"name":"SN2011hv",
-		"aliases":[
-			"SN2011hv",
-			"PSN J23181655+0015431"
-		],
 		"sources":[
 			{
-				"name":"Asiago Supernova Catalogue",
-				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"name":"Guillochon, Parrent, & Margutti (2016)",
+				"url":"https://sne.space",
+				"bibcode":"2016arXiv160501054G",
 				"alias":"1",
+				"secondary":true
+			},
+			{
+				"name":"Barbon, Cappellaro, & Turatto (1989)",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"bibcode":"1989A&AS...81..421B",
+				"alias":"2",
 				"secondary":true
 			},
 			{
 				"name":"Valenti et al. (2011)",
 				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/002900/CBET002905.txt",
 				"bibcode":"2011CBET.2905....2V",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"Latest Supernovae",
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3",
+				"alias":"4",
 				"secondary":true
 			},
 			{
 				"name":"Schlafly & Finkbeiner (2011)",
 				"bibcode":"2011ApJ...737..103S",
-				"alias":"4"
+				"alias":"5"
+			}
+		],
+		"alias":[
+			{
+				"value":"SN2011hv",
+				"source":"2,4,3"
+			},
+			{
+				"value":"PSN J23181655+0015431",
+				"source":"3,2"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1,2,3"
+				"source":"2,3,4"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"131",
-				"source":"D",
+				"source":"1",
 				"unit":"Mpc"
 			}
 		],
 		"dec":[
 			{
 				"value":"-00:15:43.0",
-				"source":"2,3",
+				"source":"3,4",
 				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2011/11/17",
-				"source":"1,2,3"
+				"source":"2,3,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Ciabattari et al.",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"value":"Italian Supernovae Search Project",
-				"source":"2,3"
+				"source":"3,4"
 			},
 			{
 				"value":"F.Ciabattari",
-				"source":"2,1"
+				"source":"3,2"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.0377",
 				"error":"0.0013",
-				"source":"4"
+				"source":"5"
 			}
 		],
-		"errors":[
+		"error":[
 			{
-				"sourcekind":"name",
-				"id":"Asiago Supernova Catalogue",
-				"quantity":"dec"
+				"value":"dec",
+				"source":"1",
+				"kind":"name",
+				"extra":"Asiago Supernova Catalogue"
 			}
 		],
 		"host":[
 			{
 				"value":"NGC 7589",
-				"source":"1,2,3"
+				"source":"2,3,4"
 			}
 		],
 		"hostdec":[
 			{
 				"value":"+00:15:39",
-				"source":"1",
+				"source":"2",
 				"unit":"degrees"
 			}
 		],
 		"hostra":[
 			{
 				"value":"23:18:16",
-				"source":"1",
+				"source":"2",
 				"unit":"hours"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"135",
-				"source":"D",
+				"source":"1",
 				"unit":"Mpc"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-19.3",
-				"source":"D"
+				"source":"1"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.3",
-				"source":"D,2,3"
+				"source":"1,3,4"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2011/11/22",
-				"source":"D,2,3"
+				"source":"1,3,4"
 			}
 		],
 		"ra":[
 			{
 				"value":"23:18:16.55",
-				"source":"1",
+				"source":"2",
 				"unit":"hours"
 			},
 			{
 				"value":"23:18:16.54",
-				"source":"2,3,1",
+				"source":"3,4,2",
 				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.0298",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"velocity":[
 			{
 				"value":"8940",
-				"source":"1",
+				"source":"2",
 				"kind":"host",
 				"unit":"km/s"
 			}
@@ -160,7 +175,7 @@
 				"time":"55887.5",
 				"u_time":"MJD",
 				"magnitude":"16.3",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		]
 	}
