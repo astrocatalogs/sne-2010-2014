@@ -3,17 +3,19 @@
 		"name":"SN2010mb",
 		"sources":[
 			{
-				"name":"Barbon, Cappellaro, & Turatto (1989)",
+				"name":"Asiago Supernova Catalogue",
 				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
 				"bibcode":"1989A&AS...81..421B",
 				"alias":"1",
-				"secondary":true
+				"secondary":true,
+				"reference":"Barbon, Cappellaro, & Turatto (1989)"
 			},
 			{
-				"name":"Ben-Ami, Gal-Yam, & Quimby (2012)",
+				"name":"CBET 3309",
 				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/003300/CBET003309.txt",
 				"bibcode":"2012CBET.3309....1B",
-				"alias":"2"
+				"alias":"2",
+				"reference":"Ben-Ami, Gal-Yam, & Quimby (2012)"
 			},
 			{
 				"name":"Latest Supernovae",
@@ -22,16 +24,23 @@
 				"secondary":true
 			},
 			{
-				"name":"Guillochon, Parrent, & Margutti (2016)",
-				"url":"https://sne.space",
-				"bibcode":"2016arXiv160501054G",
-				"alias":"4",
-				"secondary":true
+				"name":"Swift Supernovae",
+				"url":"http://people.physics.tamu.edu/pbrown/SwiftSN/swift_sn.html",
+				"alias":"4"
 			},
 			{
-				"name":"Schlafly & Finkbeiner (2011)",
+				"name":"The Open Supernova Catalog",
+				"url":"https://sne.space",
+				"bibcode":"2016arXiv160501054G",
+				"alias":"5",
+				"secondary":true,
+				"reference":"Guillochon, Parrent, & Margutti (2016)"
+			},
+			{
+				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
-				"alias":"5"
+				"alias":"6",
+				"reference":"Schlafly & Finkbeiner (2011)"
 			}
 		],
 		"alias":[
@@ -41,33 +50,33 @@
 			},
 			{
 				"value":"PTF10iue",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ic",
-				"source":"1,3,2"
+				"source":"1,2,3"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"568",
-				"source":"4",
+				"source":"5",
 				"unit":"Mpc"
 			}
 		],
 		"dec":[
 			{
 				"value":"+37:44:57.0",
-				"source":"1,3,2",
+				"source":"1,2,3",
 				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2010/04/10",
-				"source":"1,3,2"
+				"source":"1,2,3"
 			}
 		],
 		"discoverer":[
@@ -77,14 +86,14 @@
 			},
 			{
 				"value":"PTF",
-				"source":"3,2"
+				"source":"2,3"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.0133",
 				"error":"0.0009",
-				"source":"5"
+				"source":"6"
 			}
 		],
 		"host":[
@@ -110,7 +119,7 @@
 		"lumdist":[
 			{
 				"value":"643.2",
-				"source":"4",
+				"source":"5",
 				"kind":"host",
 				"unit":"Mpc"
 			}
@@ -118,25 +127,25 @@
 		"maxabsmag":[
 			{
 				"value":"-17.64",
-				"source":"4"
+				"source":"5"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"21.4",
-				"source":"3,2,4"
+				"source":"2,3,5"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2010/04/09",
-				"source":"3,2,4"
+				"source":"2,3,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"16:00:23.10",
-				"source":"1,3,2",
+				"source":"1,2,3",
 				"unit":"hours"
 			}
 		],
@@ -150,7 +159,7 @@
 		"velocity":[
 			{
 				"value":"37110",
-				"source":"4",
+				"source":"5",
 				"kind":"host",
 				"unit":"km/s"
 			}
@@ -160,7 +169,18 @@
 				"time":"55295.5",
 				"u_time":"MJD",
 				"magnitude":"21.4",
-				"source":"3,2"
+				"source":"2,3"
+			},
+			{
+				"time":"55673.5521",
+				"u_time":"MJD",
+				"band":"W2",
+				"system":"Swift",
+				"magnitude":"21.153",
+				"upperlimit":true,
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"4"
 			}
 		]
 	}

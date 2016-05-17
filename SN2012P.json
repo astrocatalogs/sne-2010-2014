@@ -3,45 +3,59 @@
 		"name":"SN2012P",
 		"sources":[
 			{
-				"name":"Barbon, Cappellaro, & Turatto (1989)",
-				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-				"bibcode":"1989A&AS...81..421B",
-				"alias":"1",
-				"secondary":true
+				"name":"Swift Supernovae",
+				"url":"http://people.physics.tamu.edu/pbrown/SwiftSN/swift_sn.html",
+				"alias":"1"
 			},
 			{
-				"name":"Borsato et al. (2012)",
+				"name":"Asiago Supernova Catalogue",
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"bibcode":"1989A&AS...81..421B",
+				"alias":"2",
+				"secondary":true,
+				"reference":"Barbon, Cappellaro, & Turatto (1989)"
+			},
+			{
+				"name":"CBET 2993",
 				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/002900/CBET002993.txt",
 				"bibcode":"2012CBET.2993....2B",
-				"alias":"2"
+				"alias":"3",
+				"reference":"Borsato et al. (2012)"
 			},
 			{
 				"name":"Latest Supernovae",
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3",
-				"secondary":true
-			},
-			{
-				"name":"Guillochon, Parrent, & Margutti (2016)",
-				"url":"https://sne.space",
-				"bibcode":"2016arXiv160501054G",
 				"alias":"4",
 				"secondary":true
 			},
 			{
-				"name":"Schlafly & Finkbeiner (2011)",
-				"bibcode":"2011ApJ...737..103S",
+				"name":"CBET2993",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/002900/CBET002993.txt",
 				"alias":"5"
+			},
+			{
+				"name":"The Open Supernova Catalog",
+				"url":"https://sne.space",
+				"bibcode":"2016arXiv160501054G",
+				"alias":"6",
+				"secondary":true,
+				"reference":"Guillochon, Parrent, & Margutti (2016)"
+			},
+			{
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"alias":"7",
+				"reference":"Schlafly & Finkbeiner (2011)"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2012P",
-				"source":"1,3,2"
+				"source":"1,2,4,3"
 			},
 			{
 				"value":"PSN J14595904+0153251",
-				"source":"2,1"
+				"source":"3,2"
 			},
 			{
 				"value":"PTF12os",
@@ -50,137 +64,495 @@
 		],
 		"claimedtype":[
 			{
-				"value":"Ib/c",
-				"source":"1,2"
+				"value":"IIb",
+				"source":"3,4"
 			},
 			{
-				"value":"IIb",
-				"source":"3,2"
+				"value":"Ib/c",
+				"source":"2,5"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"20.04",
-				"source":"4",
+				"source":"6",
 				"unit":"Mpc"
 			}
 		],
 		"dec":[
 			{
 				"value":"+01:53:24.4",
-				"source":"1,3,2",
+				"source":"2,3,4",
 				"unit":"degrees"
 			},
 			{
 				"value":"+01:53:25.1",
-				"source":"1,2",
+				"source":"2,5",
 				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2012/01/22",
-				"source":"1,3,2"
+				"source":"2,3,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Briganti",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"value":"Italian Supernovae Search Project",
-				"source":"3,2"
+				"source":"3,4"
 			},
 			{
 				"value":"ISSP",
-				"source":"1,2"
+				"source":"2,5"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.0437",
 				"error":"0.0005",
-				"source":"5"
+				"source":"7"
 			}
 		],
 		"host":[
 			{
 				"value":"NGC 5806",
-				"source":"1,3,2"
+				"source":"2,3,4,5"
 			}
 		],
 		"hostdec":[
 			{
 				"value":"+01:53:28",
-				"source":"1",
+				"source":"2",
 				"unit":"degrees"
 			}
 		],
 		"hostra":[
 			{
 				"value":"15:00:01",
-				"source":"1",
+				"source":"2",
 				"unit":"hours"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"20.13",
-				"source":"4",
+				"source":"6",
 				"unit":"Mpc"
 			}
 		],
 		"maxabsmag":[
 			{
-				"value":"-16.52",
-				"source":"4"
+				"value":"-14.49",
+				"source":"6"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"15",
-				"source":"3,2,4"
+				"value":"17.03",
+				"source":"1,6"
+			}
+		],
+		"maxband":[
+			{
+				"value":"B",
+				"source":"1,6"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2012/01/21",
-				"source":"3,2,4"
+				"value":"2012/01/25",
+				"source":"1,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"14:59:59.12",
-				"source":"1",
+				"source":"2",
 				"unit":"hours"
 			},
 			{
 				"value":"14:59:59.04",
-				"source":"3,2,1",
+				"source":"3,4,2,5",
 				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.004533",
-				"source":"3,2"
+				"source":"3,4"
 			}
 		],
 		"velocity":[
 			{
 				"value":"1351",
-				"source":"1",
+				"source":"2",
 				"kind":"host",
 				"unit":"km/s"
 			}
 		],
 		"photometry":[
 			{
+				"time":"55940.1883",
+				"u_time":"MJD",
+				"band":"W1",
+				"system":"Swift",
+				"magnitude":"19.098",
+				"e_magnitude":"0.337",
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55940.1912",
+				"u_time":"MJD",
+				"band":"U",
+				"system":"Swift",
+				"magnitude":"17.387",
+				"e_magnitude":"0.128",
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55940.1958",
+				"u_time":"MJD",
+				"band":"W2",
+				"system":"Swift",
+				"magnitude":"19.783",
+				"upperlimit":true,
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55940.2162",
+				"u_time":"MJD",
+				"band":"M2",
+				"system":"Swift",
+				"magnitude":"19.818",
+				"upperlimit":true,
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55942.6318",
+				"u_time":"MJD",
+				"band":"W1",
+				"system":"Swift",
+				"magnitude":"18.972",
+				"e_magnitude":"0.290",
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55942.6340",
+				"u_time":"MJD",
+				"band":"U",
+				"system":"Swift",
+				"magnitude":"17.100",
+				"e_magnitude":"0.108",
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55942.6358",
+				"u_time":"MJD",
+				"band":"W2",
+				"system":"Swift",
+				"magnitude":"19.883",
+				"upperlimit":true,
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55942.6525",
+				"u_time":"MJD",
+				"band":"M2",
+				"system":"Swift",
+				"magnitude":"19.868",
+				"upperlimit":true,
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
 				"time":"55947.5",
 				"u_time":"MJD",
 				"magnitude":"15.0",
-				"source":"3,2"
+				"source":"3,4"
+			},
+			{
+				"time":"55950.7013",
+				"u_time":"MJD",
+				"band":"W1",
+				"system":"Swift",
+				"magnitude":"19.074",
+				"e_magnitude":"0.259",
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55950.7045",
+				"u_time":"MJD",
+				"band":"U",
+				"system":"Swift",
+				"magnitude":"17.442",
+				"e_magnitude":"0.118",
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55950.7061",
+				"u_time":"MJD",
+				"band":"B",
+				"system":"Swift",
+				"magnitude":"17.040",
+				"e_magnitude":"0.082",
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55950.7109",
+				"u_time":"MJD",
+				"band":"W2",
+				"system":"Swift",
+				"magnitude":"20.150",
+				"upperlimit":true,
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55950.7156",
+				"u_time":"MJD",
+				"band":"V",
+				"system":"Swift",
+				"magnitude":"16.170",
+				"e_magnitude":"0.078",
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55950.7217",
+				"u_time":"MJD",
+				"band":"M2",
+				"system":"Swift",
+				"magnitude":"20.125",
+				"upperlimit":true,
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55951.3488",
+				"u_time":"MJD",
+				"band":"W1",
+				"system":"Swift",
+				"magnitude":"19.317",
+				"e_magnitude":"0.312",
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55951.3500",
+				"u_time":"MJD",
+				"band":"U",
+				"system":"Swift",
+				"magnitude":"17.775",
+				"e_magnitude":"0.142",
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55951.3506",
+				"u_time":"MJD",
+				"band":"B",
+				"system":"Swift",
+				"magnitude":"17.029",
+				"e_magnitude":"0.082",
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55951.3521",
+				"u_time":"MJD",
+				"band":"W2",
+				"system":"Swift",
+				"magnitude":"20.136",
+				"upperlimit":true,
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55951.3540",
+				"u_time":"MJD",
+				"band":"V",
+				"system":"Swift",
+				"magnitude":"16.196",
+				"e_magnitude":"0.080",
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55951.3562",
+				"u_time":"MJD",
+				"band":"M2",
+				"system":"Swift",
+				"magnitude":"20.127",
+				"upperlimit":true,
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55953.1082",
+				"u_time":"MJD",
+				"band":"W1",
+				"system":"Swift",
+				"magnitude":"19.395",
+				"e_magnitude":"0.363",
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55953.1103",
+				"u_time":"MJD",
+				"band":"U",
+				"system":"Swift",
+				"magnitude":"17.904",
+				"e_magnitude":"0.166",
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55953.1114",
+				"u_time":"MJD",
+				"band":"B",
+				"system":"Swift",
+				"magnitude":"17.172",
+				"e_magnitude":"0.090",
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55953.1145",
+				"u_time":"MJD",
+				"band":"W2",
+				"system":"Swift",
+				"magnitude":"19.980",
+				"upperlimit":true,
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55953.1176",
+				"u_time":"MJD",
+				"band":"V",
+				"system":"Swift",
+				"magnitude":"16.249",
+				"e_magnitude":"0.087",
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55953.1221",
+				"u_time":"MJD",
+				"band":"M2",
+				"system":"Swift",
+				"magnitude":"19.980",
+				"upperlimit":true,
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55955.4829",
+				"u_time":"MJD",
+				"band":"W1",
+				"system":"Swift",
+				"magnitude":"19.703",
+				"e_magnitude":"0.422",
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55955.4850",
+				"u_time":"MJD",
+				"band":"U",
+				"system":"Swift",
+				"magnitude":"18.434",
+				"e_magnitude":"0.215",
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55955.4860",
+				"u_time":"MJD",
+				"band":"B",
+				"system":"Swift",
+				"magnitude":"17.580",
+				"e_magnitude":"0.102",
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55955.4890",
+				"u_time":"MJD",
+				"band":"W2",
+				"system":"Swift",
+				"magnitude":"20.137",
+				"upperlimit":true,
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55955.4920",
+				"u_time":"MJD",
+				"band":"V",
+				"system":"Swift",
+				"magnitude":"16.444",
+				"e_magnitude":"0.087",
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
+			},
+			{
+				"time":"55955.4961",
+				"u_time":"MJD",
+				"band":"M2",
+				"system":"Swift",
+				"magnitude":"20.125",
+				"upperlimit":true,
+				"telescope":"Swift",
+				"instrument":"UVOT",
+				"source":"1"
 			}
 		]
 	}

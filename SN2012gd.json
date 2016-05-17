@@ -3,17 +3,19 @@
 		"name":"SN2012gd",
 		"sources":[
 			{
-				"name":"Barbon, Cappellaro, & Turatto (1989)",
+				"name":"Asiago Supernova Catalogue",
 				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
 				"bibcode":"1989A&AS...81..421B",
 				"alias":"1",
-				"secondary":true
+				"secondary":true,
+				"reference":"Barbon, Cappellaro, & Turatto (1989)"
 			},
 			{
-				"name":"Tomasella et al. (2012)",
+				"name":"CBET 3292",
 				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/003200/CBET003292.txt",
 				"bibcode":"2012CBET.3292....2T",
-				"alias":"2"
+				"alias":"2",
+				"reference":"Tomasella et al. (2012)"
 			},
 			{
 				"name":"Latest Supernovae",
@@ -22,22 +24,30 @@
 				"secondary":true
 			},
 			{
-				"name":"Drake et al. (2009)",
+				"name":"Catalina Sky Survey",
 				"url":"http://nesssi.cacr.caltech.edu/catalina/AllSN.html",
 				"bibcode":"2009ApJ...696..870D",
-				"alias":"4"
+				"alias":"4",
+				"reference":"Drake et al. (2009)"
 			},
 			{
-				"name":"Guillochon, Parrent, & Margutti (2016)",
+				"name":"CBET3292",
+				"url":"http://www.cbat.eps.harvard.edu/iau/cbet/003200/CBET003292.txt",
+				"alias":"5"
+			},
+			{
+				"name":"The Open Supernova Catalog",
 				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"5",
-				"secondary":true
+				"alias":"6",
+				"secondary":true,
+				"reference":"Guillochon, Parrent, & Margutti (2016)"
 			},
 			{
-				"name":"Schlafly & Finkbeiner (2011)",
+				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
-				"alias":"6"
+				"alias":"7",
+				"reference":"Schlafly & Finkbeiner (2011)"
 			}
 		],
 		"alias":[
@@ -53,20 +63,20 @@
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1,3,2"
+				"source":"1,2,3,5"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"240",
-				"source":"5",
+				"source":"6",
 				"unit":"Mpc"
 			}
 		],
 		"dec":[
 			{
 				"value":"+21:16:20.6",
-				"source":"1,3,2",
+				"source":"1,2,3,5",
 				"unit":"degrees"
 			},
 			{
@@ -78,7 +88,7 @@
 		"discoverdate":[
 			{
 				"value":"2012/10/23",
-				"source":"1,3,2"
+				"source":"1,2,3"
 			}
 		],
 		"discoverer":[
@@ -88,20 +98,20 @@
 			},
 			{
 				"value":"MASTER",
-				"source":"3,2,1"
+				"source":"2,3,1,5"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.0581",
 				"error":"0.0017",
-				"source":"6"
+				"source":"7"
 			}
 		],
 		"host":[
 			{
 				"value":"PGC 1646513",
-				"source":"1,3,2"
+				"source":"1,2,3,5"
 			}
 		],
 		"hostdec":[
@@ -121,32 +131,32 @@
 		"lumdist":[
 			{
 				"value":"250",
-				"source":"5",
+				"source":"6",
 				"unit":"Mpc"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-20",
-				"source":"5"
+				"source":"6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.9",
-				"source":"3,2,5"
+				"source":"2,3,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2012/10/22",
-				"source":"3,2,5"
+				"source":"2,3,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"01:51:47.70",
-				"source":"1,3,2",
+				"source":"1,2,3,5",
 				"unit":"hours"
 			},
 			{
@@ -158,7 +168,7 @@
 		"redshift":[
 			{
 				"value":"0.055",
-				"source":"3,2,1"
+				"source":"2,3,1,5"
 			}
 		],
 		"velocity":[
@@ -185,6 +195,7 @@
 				"band":"C",
 				"magnitude":"20.163",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -194,6 +205,7 @@
 				"band":"C",
 				"magnitude":"20.2698",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -203,6 +215,7 @@
 				"band":"C",
 				"magnitude":"20.2852",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -212,6 +225,7 @@
 				"band":"C",
 				"magnitude":"20.2579",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -221,6 +235,7 @@
 				"band":"C",
 				"magnitude":"19.428499",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -230,6 +245,7 @@
 				"band":"C",
 				"magnitude":"20.6127",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -239,6 +255,7 @@
 				"band":"C",
 				"magnitude":"19.8372",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -248,6 +265,7 @@
 				"band":"C",
 				"magnitude":"18.885401",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -257,6 +275,7 @@
 				"band":"C",
 				"magnitude":"19.000999",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -266,6 +285,7 @@
 				"band":"C",
 				"magnitude":"20.4594",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -275,6 +295,7 @@
 				"band":"C",
 				"magnitude":"18.7862",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -284,6 +305,7 @@
 				"band":"C",
 				"magnitude":"17.8601",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -293,6 +315,7 @@
 				"band":"C",
 				"magnitude":"18.504601",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -302,6 +325,7 @@
 				"band":"C",
 				"magnitude":"18.7453",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -311,6 +335,7 @@
 				"band":"C",
 				"magnitude":"18.640301",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -320,6 +345,7 @@
 				"band":"C",
 				"magnitude":"19.436199",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -329,6 +355,7 @@
 				"band":"C",
 				"magnitude":"20.537901",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -338,6 +365,7 @@
 				"band":"C",
 				"magnitude":"20.5149",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -347,6 +375,7 @@
 				"band":"C",
 				"magnitude":"20.5536",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -356,6 +385,7 @@
 				"band":"C",
 				"magnitude":"20.496799",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -365,6 +395,7 @@
 				"band":"C",
 				"magnitude":"19.8937",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -374,6 +405,7 @@
 				"band":"C",
 				"magnitude":"16.590799",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -383,6 +415,7 @@
 				"band":"C",
 				"magnitude":"20.382799",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -392,6 +425,7 @@
 				"band":"C",
 				"magnitude":"19.510599",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -401,6 +435,7 @@
 				"band":"C",
 				"magnitude":"17.871599",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -410,6 +445,7 @@
 				"band":"C",
 				"magnitude":"18.0742",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -419,6 +455,7 @@
 				"band":"C",
 				"magnitude":"18.396099",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -428,6 +465,7 @@
 				"band":"C",
 				"magnitude":"18.003099",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -437,6 +475,7 @@
 				"band":"C",
 				"magnitude":"17.9716",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -446,6 +485,7 @@
 				"band":"C",
 				"magnitude":"17.3797",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -455,6 +495,7 @@
 				"band":"C",
 				"magnitude":"18.489901",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -464,6 +505,7 @@
 				"band":"C",
 				"magnitude":"19.412001",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -473,6 +515,7 @@
 				"band":"C",
 				"magnitude":"18.9886",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -482,6 +525,7 @@
 				"band":"C",
 				"magnitude":"17.7328",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -491,6 +535,7 @@
 				"band":"C",
 				"magnitude":"18.4993",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -500,6 +545,7 @@
 				"band":"C",
 				"magnitude":"17.9858",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -509,6 +555,7 @@
 				"band":"C",
 				"magnitude":"18.503599",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -518,6 +565,7 @@
 				"band":"C",
 				"magnitude":"18.1343",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -527,6 +575,7 @@
 				"band":"C",
 				"magnitude":"19.738199",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -536,6 +585,7 @@
 				"band":"C",
 				"magnitude":"17.752399",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -545,6 +595,7 @@
 				"band":"C",
 				"magnitude":"19.133301",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -554,6 +605,7 @@
 				"band":"C",
 				"magnitude":"19.841499",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -563,6 +615,7 @@
 				"band":"C",
 				"magnitude":"19.803699",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -572,6 +625,7 @@
 				"band":"C",
 				"magnitude":"19.8111",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -581,6 +635,7 @@
 				"band":"C",
 				"magnitude":"19.6901",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -590,6 +645,7 @@
 				"band":"C",
 				"magnitude":"20.589701",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -599,6 +655,7 @@
 				"band":"C",
 				"magnitude":"20.6814",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -608,6 +665,7 @@
 				"band":"C",
 				"magnitude":"20.699699",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -617,6 +675,7 @@
 				"band":"C",
 				"magnitude":"20.468599",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -626,6 +685,7 @@
 				"band":"C",
 				"magnitude":"20.7773",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -635,6 +695,7 @@
 				"band":"C",
 				"magnitude":"20.754801",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -644,6 +705,7 @@
 				"band":"C",
 				"magnitude":"20.8074",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -653,6 +715,7 @@
 				"band":"C",
 				"magnitude":"20.546499",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -662,6 +725,7 @@
 				"band":"C",
 				"magnitude":"20.641399",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -671,6 +735,7 @@
 				"band":"C",
 				"magnitude":"20.617001",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -680,6 +745,7 @@
 				"band":"C",
 				"magnitude":"20.5776",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -699,6 +765,7 @@
 				"band":"C",
 				"magnitude":"20.6224",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -708,6 +775,7 @@
 				"band":"C",
 				"magnitude":"20.570299",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -717,6 +785,7 @@
 				"band":"C",
 				"magnitude":"20.6551",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -726,6 +795,7 @@
 				"band":"C",
 				"magnitude":"20.659201",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -735,6 +805,7 @@
 				"band":"C",
 				"magnitude":"20.0424",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -744,6 +815,7 @@
 				"band":"C",
 				"magnitude":"20.299999",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -753,6 +825,7 @@
 				"band":"C",
 				"magnitude":"20.3799",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -762,6 +835,7 @@
 				"band":"C",
 				"magnitude":"20.635099",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -771,6 +845,7 @@
 				"band":"C",
 				"magnitude":"20.6278",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -780,6 +855,7 @@
 				"band":"C",
 				"magnitude":"20.5021",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -789,6 +865,7 @@
 				"band":"C",
 				"magnitude":"20.628799",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -798,6 +875,7 @@
 				"band":"C",
 				"magnitude":"19.439301",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -807,6 +885,7 @@
 				"band":"C",
 				"magnitude":"20.478701",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -816,6 +895,7 @@
 				"band":"C",
 				"magnitude":"20.405199",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -825,6 +905,7 @@
 				"band":"C",
 				"magnitude":"20.516199",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -834,6 +915,7 @@
 				"band":"C",
 				"magnitude":"19.7437",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -843,6 +925,7 @@
 				"band":"C",
 				"magnitude":"20.176901",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -852,6 +935,7 @@
 				"band":"C",
 				"magnitude":"20.485399",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -861,6 +945,7 @@
 				"band":"C",
 				"magnitude":"20.538",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -870,6 +955,7 @@
 				"band":"C",
 				"magnitude":"20.547501",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -879,6 +965,7 @@
 				"band":"C",
 				"magnitude":"19.747299",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -888,6 +975,7 @@
 				"band":"C",
 				"magnitude":"19.341499",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -897,6 +985,7 @@
 				"band":"C",
 				"magnitude":"19.7265",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -906,6 +995,7 @@
 				"band":"C",
 				"magnitude":"19.9597",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -915,6 +1005,7 @@
 				"band":"C",
 				"magnitude":"20.3064",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -924,6 +1015,7 @@
 				"band":"C",
 				"magnitude":"20.2523",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -933,6 +1025,7 @@
 				"band":"C",
 				"magnitude":"20.439199",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -942,6 +1035,7 @@
 				"band":"C",
 				"magnitude":"20.6987",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -951,6 +1045,7 @@
 				"band":"C",
 				"magnitude":"20.7236",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -960,6 +1055,7 @@
 				"band":"C",
 				"magnitude":"20.744699",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -969,6 +1065,7 @@
 				"band":"C",
 				"magnitude":"20.746099",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -978,6 +1075,7 @@
 				"band":"C",
 				"magnitude":"20.5616",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -987,6 +1085,7 @@
 				"band":"C",
 				"magnitude":"20.596901",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -996,6 +1095,7 @@
 				"band":"C",
 				"magnitude":"20.6113",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1005,6 +1105,7 @@
 				"band":"C",
 				"magnitude":"20.148899",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1014,6 +1115,7 @@
 				"band":"C",
 				"magnitude":"20.7934",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1023,6 +1125,7 @@
 				"band":"C",
 				"magnitude":"19.816999",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1032,6 +1135,7 @@
 				"band":"C",
 				"magnitude":"19.5516",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1041,6 +1145,7 @@
 				"band":"C",
 				"magnitude":"20.734501",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1050,6 +1155,7 @@
 				"band":"C",
 				"magnitude":"20.035",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1059,6 +1165,7 @@
 				"band":"C",
 				"magnitude":"20.7603",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1068,6 +1175,7 @@
 				"band":"C",
 				"magnitude":"19.9797",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1077,6 +1185,7 @@
 				"band":"C",
 				"magnitude":"20.742901",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1086,6 +1195,7 @@
 				"band":"C",
 				"magnitude":"20.6661",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1095,6 +1205,7 @@
 				"band":"C",
 				"magnitude":"20.6133",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1104,6 +1215,7 @@
 				"band":"C",
 				"magnitude":"19.5959",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1113,6 +1225,7 @@
 				"band":"C",
 				"magnitude":"20.6147",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1122,6 +1235,7 @@
 				"band":"C",
 				"magnitude":"20.5245",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1131,6 +1245,7 @@
 				"band":"C",
 				"magnitude":"20.5208",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1140,6 +1255,7 @@
 				"band":"C",
 				"magnitude":"20.209801",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1149,6 +1265,7 @@
 				"band":"C",
 				"magnitude":"20.171801",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1158,6 +1275,7 @@
 				"band":"C",
 				"magnitude":"19.6604",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1167,6 +1285,7 @@
 				"band":"C",
 				"magnitude":"20.670099",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1176,6 +1295,7 @@
 				"band":"C",
 				"magnitude":"19.8911",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1185,6 +1305,7 @@
 				"band":"C",
 				"magnitude":"19.650999",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1194,6 +1315,7 @@
 				"band":"C",
 				"magnitude":"20.737301",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1203,6 +1325,7 @@
 				"band":"C",
 				"magnitude":"20.800301",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1212,6 +1335,7 @@
 				"band":"C",
 				"magnitude":"20.882",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1221,6 +1345,7 @@
 				"band":"C",
 				"magnitude":"20.298901",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1230,6 +1355,7 @@
 				"band":"C",
 				"magnitude":"19.4944",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1239,6 +1365,7 @@
 				"band":"C",
 				"magnitude":"20.8638",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1248,6 +1375,7 @@
 				"band":"C",
 				"magnitude":"20.640699",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1257,6 +1385,7 @@
 				"band":"C",
 				"magnitude":"20.7239",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1286,6 +1415,7 @@
 				"band":"C",
 				"magnitude":"20.499399",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1295,6 +1425,7 @@
 				"band":"C",
 				"magnitude":"20.5998",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1304,6 +1435,7 @@
 				"band":"C",
 				"magnitude":"20.026899",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1313,6 +1445,7 @@
 				"band":"C",
 				"magnitude":"20.4298",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1322,6 +1455,7 @@
 				"band":"C",
 				"magnitude":"20.4028",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1331,6 +1465,7 @@
 				"band":"C",
 				"magnitude":"20.4086",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1340,6 +1475,7 @@
 				"band":"C",
 				"magnitude":"20.6933",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1349,6 +1485,7 @@
 				"band":"C",
 				"magnitude":"20.6014",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1358,6 +1495,7 @@
 				"band":"C",
 				"magnitude":"20.664499",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1367,6 +1505,7 @@
 				"band":"C",
 				"magnitude":"20.7479",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1376,6 +1515,7 @@
 				"band":"C",
 				"magnitude":"20.741199",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1395,6 +1535,7 @@
 				"band":"C",
 				"magnitude":"20.693399",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1404,6 +1545,7 @@
 				"band":"C",
 				"magnitude":"20.6677",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1413,6 +1555,7 @@
 				"band":"C",
 				"magnitude":"20.165001",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1422,6 +1565,7 @@
 				"band":"C",
 				"magnitude":"20.395",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1431,6 +1575,7 @@
 				"band":"C",
 				"magnitude":"20.6287",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1440,6 +1585,7 @@
 				"band":"C",
 				"magnitude":"20.6252",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1449,6 +1595,7 @@
 				"band":"C",
 				"magnitude":"20.806801",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1458,6 +1605,7 @@
 				"band":"C",
 				"magnitude":"20.7682",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1467,6 +1615,7 @@
 				"band":"C",
 				"magnitude":"20.849001",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1476,6 +1625,7 @@
 				"band":"C",
 				"magnitude":"20.7523",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1485,6 +1635,7 @@
 				"band":"C",
 				"magnitude":"20.715599",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1494,6 +1645,7 @@
 				"band":"C",
 				"magnitude":"20.7696",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1503,6 +1655,7 @@
 				"band":"C",
 				"magnitude":"20.2932",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1512,6 +1665,7 @@
 				"band":"C",
 				"magnitude":"20.0522",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1521,6 +1675,7 @@
 				"band":"C",
 				"magnitude":"20.147699",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1530,6 +1685,7 @@
 				"band":"C",
 				"magnitude":"20.496901",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1539,6 +1695,7 @@
 				"band":"C",
 				"magnitude":"20.4482",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1548,6 +1705,7 @@
 				"band":"C",
 				"magnitude":"20.891899",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1557,6 +1715,7 @@
 				"band":"C",
 				"magnitude":"20.761801",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1566,6 +1725,7 @@
 				"band":"C",
 				"magnitude":"20.842899",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1575,6 +1735,7 @@
 				"band":"C",
 				"magnitude":"20.7778",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1584,6 +1745,7 @@
 				"band":"C",
 				"magnitude":"20.7005",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1593,6 +1755,7 @@
 				"band":"C",
 				"magnitude":"20.713499",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1602,6 +1765,7 @@
 				"band":"C",
 				"magnitude":"20.7822",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1611,6 +1775,7 @@
 				"band":"C",
 				"magnitude":"20.427601",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1620,6 +1785,7 @@
 				"band":"C",
 				"magnitude":"20.414",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1629,6 +1795,7 @@
 				"band":"C",
 				"magnitude":"20.4328",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1638,6 +1805,7 @@
 				"band":"C",
 				"magnitude":"20.3489",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1647,6 +1815,7 @@
 				"band":"C",
 				"magnitude":"20.7407",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1656,6 +1825,7 @@
 				"band":"C",
 				"magnitude":"20.756201",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1665,6 +1835,7 @@
 				"band":"C",
 				"magnitude":"20.747999",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1674,6 +1845,7 @@
 				"band":"C",
 				"magnitude":"20.5693",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1683,6 +1855,7 @@
 				"band":"C",
 				"magnitude":"20.830299",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1692,6 +1865,7 @@
 				"band":"C",
 				"magnitude":"20.6457",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1701,6 +1875,7 @@
 				"band":"C",
 				"magnitude":"20.684799",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1710,6 +1885,7 @@
 				"band":"C",
 				"magnitude":"19.6817",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1719,6 +1895,7 @@
 				"band":"C",
 				"magnitude":"20.814199",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1728,6 +1905,7 @@
 				"band":"C",
 				"magnitude":"20.8139",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1737,6 +1915,7 @@
 				"band":"C",
 				"magnitude":"20.823299",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1746,6 +1925,7 @@
 				"band":"C",
 				"magnitude":"20.803801",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1755,6 +1935,7 @@
 				"band":"C",
 				"magnitude":"20.734699",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1764,6 +1945,7 @@
 				"band":"C",
 				"magnitude":"20.6903",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1773,6 +1955,7 @@
 				"band":"C",
 				"magnitude":"20.568501",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1782,6 +1965,7 @@
 				"band":"C",
 				"magnitude":"20.509701",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1791,6 +1975,7 @@
 				"band":"C",
 				"magnitude":"20.987499",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1800,6 +1985,7 @@
 				"band":"C",
 				"magnitude":"20.9557",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1809,6 +1995,7 @@
 				"band":"C",
 				"magnitude":"20.8606",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1818,6 +2005,7 @@
 				"band":"C",
 				"magnitude":"20.953699",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -1905,7 +2093,7 @@
 				"time":"56222.5",
 				"u_time":"MJD",
 				"magnitude":"16.9",
-				"source":"3,2"
+				"source":"2,3"
 			},
 			{
 				"time":"56233.439941",
@@ -2033,6 +2221,7 @@
 				"band":"C",
 				"magnitude":"20.769899",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2042,6 +2231,7 @@
 				"band":"C",
 				"magnitude":"20.628799",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2051,6 +2241,7 @@
 				"band":"C",
 				"magnitude":"20.8015",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2060,6 +2251,7 @@
 				"band":"C",
 				"magnitude":"20.7435",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2069,6 +2261,7 @@
 				"band":"C",
 				"magnitude":"20.3841",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2078,6 +2271,7 @@
 				"band":"C",
 				"magnitude":"20.3946",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2087,6 +2281,7 @@
 				"band":"C",
 				"magnitude":"19.690701",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2096,6 +2291,7 @@
 				"band":"C",
 				"magnitude":"20.451099",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2105,6 +2301,7 @@
 				"band":"C",
 				"magnitude":"20.2377",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2114,6 +2311,7 @@
 				"band":"C",
 				"magnitude":"20.2131",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2123,6 +2321,7 @@
 				"band":"C",
 				"magnitude":"20.223499",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2132,6 +2331,7 @@
 				"band":"C",
 				"magnitude":"20.2691",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2141,6 +2341,7 @@
 				"band":"C",
 				"magnitude":"20.737301",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2150,6 +2351,7 @@
 				"band":"C",
 				"magnitude":"20.7404",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2159,6 +2361,7 @@
 				"band":"C",
 				"magnitude":"20.6924",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2168,6 +2371,7 @@
 				"band":"C",
 				"magnitude":"20.7449",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2177,6 +2381,7 @@
 				"band":"C",
 				"magnitude":"20.392799",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2186,6 +2391,7 @@
 				"band":"C",
 				"magnitude":"20.459499",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2195,6 +2401,7 @@
 				"band":"C",
 				"magnitude":"20.4214",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2204,6 +2411,7 @@
 				"band":"C",
 				"magnitude":"20.4604",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2213,6 +2421,7 @@
 				"band":"C",
 				"magnitude":"20.684401",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2222,6 +2431,7 @@
 				"band":"C",
 				"magnitude":"20.6534",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2231,6 +2441,7 @@
 				"band":"C",
 				"magnitude":"20.6126",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2240,6 +2451,7 @@
 				"band":"C",
 				"magnitude":"20.6798",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2249,6 +2461,7 @@
 				"band":"C",
 				"magnitude":"20.899401",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2258,6 +2471,7 @@
 				"band":"C",
 				"magnitude":"20.897699",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2267,6 +2481,7 @@
 				"band":"C",
 				"magnitude":"20.9489",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2276,6 +2491,7 @@
 				"band":"C",
 				"magnitude":"20.937099",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2285,6 +2501,7 @@
 				"band":"C",
 				"magnitude":"20.731701",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2294,6 +2511,7 @@
 				"band":"C",
 				"magnitude":"20.097799",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2313,6 +2531,7 @@
 				"band":"C",
 				"magnitude":"20.8092",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2322,6 +2541,7 @@
 				"band":"C",
 				"magnitude":"20.7318",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2331,6 +2551,7 @@
 				"band":"C",
 				"magnitude":"20.656",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2340,6 +2561,7 @@
 				"band":"C",
 				"magnitude":"20.7113",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2349,6 +2571,7 @@
 				"band":"C",
 				"magnitude":"20.7827",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2358,6 +2581,7 @@
 				"band":"C",
 				"magnitude":"20.6558",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2367,6 +2591,7 @@
 				"band":"C",
 				"magnitude":"20.663401",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2376,6 +2601,7 @@
 				"band":"C",
 				"magnitude":"20.6756",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2385,6 +2611,7 @@
 				"band":"C",
 				"magnitude":"20.5849",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2394,6 +2621,7 @@
 				"band":"C",
 				"magnitude":"20.5958",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2403,6 +2631,7 @@
 				"band":"C",
 				"magnitude":"20.578199",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2412,6 +2641,7 @@
 				"band":"C",
 				"magnitude":"20.5488",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2421,6 +2651,7 @@
 				"band":"C",
 				"magnitude":"20.5819",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2430,6 +2661,7 @@
 				"band":"C",
 				"magnitude":"20.688801",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2439,6 +2671,7 @@
 				"band":"C",
 				"magnitude":"20.6668",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2448,6 +2681,7 @@
 				"band":"C",
 				"magnitude":"20.523199",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2457,6 +2691,7 @@
 				"band":"C",
 				"magnitude":"20.737801",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2466,6 +2701,7 @@
 				"band":"C",
 				"magnitude":"20.633101",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2475,6 +2711,7 @@
 				"band":"C",
 				"magnitude":"20.5853",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2484,6 +2721,7 @@
 				"band":"C",
 				"magnitude":"20.6243",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2493,6 +2731,7 @@
 				"band":"C",
 				"magnitude":"20.6066",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2502,6 +2741,7 @@
 				"band":"C",
 				"magnitude":"20.583799",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2511,6 +2751,7 @@
 				"band":"C",
 				"magnitude":"20.539499",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2520,6 +2761,7 @@
 				"band":"C",
 				"magnitude":"20.5783",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2529,6 +2771,7 @@
 				"band":"C",
 				"magnitude":"20.516199",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2538,6 +2781,7 @@
 				"band":"C",
 				"magnitude":"20.6376",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2547,6 +2791,7 @@
 				"band":"C",
 				"magnitude":"20.323",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2556,6 +2801,7 @@
 				"band":"C",
 				"magnitude":"20.993799",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2565,6 +2811,7 @@
 				"band":"C",
 				"magnitude":"20.3102",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2574,6 +2821,7 @@
 				"band":"C",
 				"magnitude":"20.4044",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2583,6 +2831,7 @@
 				"band":"C",
 				"magnitude":"20.465599",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2592,6 +2841,7 @@
 				"band":"C",
 				"magnitude":"20.460501",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2601,6 +2851,7 @@
 				"band":"C",
 				"magnitude":"20.9466",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2610,6 +2861,7 @@
 				"band":"C",
 				"magnitude":"20.994499",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2619,6 +2871,7 @@
 				"band":"C",
 				"magnitude":"20.942101",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2628,6 +2881,7 @@
 				"band":"C",
 				"magnitude":"20.5718",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2637,6 +2891,7 @@
 				"band":"C",
 				"magnitude":"20.5203",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2646,6 +2901,7 @@
 				"band":"C",
 				"magnitude":"20.520201",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2655,6 +2911,7 @@
 				"band":"C",
 				"magnitude":"20.4576",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2664,6 +2921,7 @@
 				"band":"C",
 				"magnitude":"20.5516",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2673,6 +2931,7 @@
 				"band":"C",
 				"magnitude":"20.728399",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2682,6 +2941,7 @@
 				"band":"C",
 				"magnitude":"20.8311",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2691,6 +2951,7 @@
 				"band":"C",
 				"magnitude":"20.6695",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2700,6 +2961,7 @@
 				"band":"C",
 				"magnitude":"20.729601",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2709,6 +2971,7 @@
 				"band":"C",
 				"magnitude":"20.8097",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2718,6 +2981,7 @@
 				"band":"C",
 				"magnitude":"20.4396",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2727,6 +2991,7 @@
 				"band":"C",
 				"magnitude":"20.813499",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2736,6 +3001,7 @@
 				"band":"C",
 				"magnitude":"20.6399",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2745,6 +3011,7 @@
 				"band":"C",
 				"magnitude":"20.133101",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2754,6 +3021,7 @@
 				"band":"C",
 				"magnitude":"20.8008",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2763,6 +3031,7 @@
 				"band":"C",
 				"magnitude":"20.857599",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2772,6 +3041,7 @@
 				"band":"C",
 				"magnitude":"20.9151",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2781,6 +3051,7 @@
 				"band":"C",
 				"magnitude":"20.2216",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2790,6 +3061,7 @@
 				"band":"C",
 				"magnitude":"20.2934",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2799,6 +3071,7 @@
 				"band":"C",
 				"magnitude":"20.7274",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2808,6 +3081,7 @@
 				"band":"C",
 				"magnitude":"20.7628",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2817,6 +3091,7 @@
 				"band":"C",
 				"magnitude":"20.827999",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2836,6 +3111,7 @@
 				"band":"C",
 				"magnitude":"20.8468",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			},
@@ -2845,6 +3121,7 @@
 				"band":"C",
 				"magnitude":"20.822901",
 				"upperlimit":true,
+				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"4"
 			}
