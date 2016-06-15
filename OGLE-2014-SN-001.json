@@ -3,20 +3,31 @@
 		"name":"OGLE-2014-SN-001",
 		"sources":[
 			{
-				"name":"OGLE-IV Transient Detection System",
+				"name":"OGLE page",
 				"url":"http://ogle.astrouw.edu.pl/ogle4/transients/transients.html",
 				"alias":"1"
 			},
 			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2",
+				"secondary":true
+			},
+			{
+				"name":"OGLE-IV Transient Detection System",
+				"url":"http://ogle.astrouw.edu.pl/ogle4/transients/transients.html",
+				"alias":"3"
+			},
+			{
 				"name":"class= CV 0",
 				"url":"http://www.astronomerstelegram.org/?read=5718",
-				"alias":"2"
+				"alias":"4"
 			},
 			{
 				"name":"WISeREP",
 				"url":"http://wiserep.weizmann.ac.il/",
 				"bibcode":"2012PASP..124..668Y",
-				"alias":"3",
+				"alias":"5",
 				"secondary":true,
 				"reference":"Yaron & Gal-Yam (2012)"
 			},
@@ -24,77 +35,108 @@
 				"name":"The Open Supernova Catalog",
 				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"4",
+				"alias":"6",
 				"secondary":true,
 				"reference":"Guillochon, Parrent, & Margutti (2016)"
+			},
+			{
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"alias":"7",
+				"reference":"Schlafly & Finkbeiner (2011)"
 			}
 		],
 		"alias":[
 			{
 				"value":"OGLE-2014-SN-001",
-				"source":"1,3"
+				"source":"1,2,3,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"II",
-				"source":"3"
+				"source":"5"
+			},
+			{
+				"value":"CV",
+				"source":"1,2"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"9",
-				"source":"4",
+				"source":"6",
 				"unit":"Mpc"
+			}
+		],
+		"dec":[
+			{
+				"value":"-72:48:16.48",
+				"source":"1,2",
+				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2013/08/28",
-				"source":"4,1,2"
+				"value":"2014/01/02",
+				"source":"1,2"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"OGLE-IV wide field survey",
+				"source":"1,2"
+			}
+		],
+		"ebv":[
+			{
+				"value":"0.1502",
+				"error":"0.0044",
+				"source":"7"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"9",
-				"source":"4",
+				"source":"6",
 				"unit":"Mpc"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-10",
-				"source":"4"
+				"source":"6"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"19.07",
-				"source":"4,1,2"
-			}
-		],
-		"maxband":[
-			{
-				"value":"I",
-				"source":"4,1,2"
+				"value":"19",
+				"source":"6,1,2"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2014/01/02",
-				"source":"4,1,2"
+				"value":"2014/01/01",
+				"source":"6,1,2"
+			}
+		],
+		"ra":[
+			{
+				"value":"07:02:35.668",
+				"source":"1,2",
+				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.002",
-				"source":"3"
+				"source":"5"
 			}
 		],
 		"velocity":[
 			{
 				"value":"600",
-				"source":"4",
+				"source":"6",
 				"unit":"km/s"
 			}
 		],
@@ -106,7 +148,7 @@
 				"system":"Vega",
 				"magnitude":"21.714",
 				"e_magnitude":"0.719",
-				"source":"1,2"
+				"source":"3,4"
 			},
 			{
 				"time":"56544.41593",
@@ -115,7 +157,7 @@
 				"system":"Vega",
 				"magnitude":"21.680",
 				"e_magnitude":"0.769",
-				"source":"1,2"
+				"source":"3,4"
 			},
 			{
 				"time":"56558.39922",
@@ -124,7 +166,7 @@
 				"system":"Vega",
 				"magnitude":"24.510",
 				"e_magnitude":"6.239",
-				"source":"1,2"
+				"source":"3,4"
 			},
 			{
 				"time":"56583.38177",
@@ -133,7 +175,7 @@
 				"system":"Vega",
 				"magnitude":"24.150",
 				"e_magnitude":"6.084",
-				"source":"1,2"
+				"source":"3,4"
 			},
 			{
 				"time":"56622.35064",
@@ -142,7 +184,7 @@
 				"system":"Vega",
 				"magnitude":"22.866",
 				"e_magnitude":"1.124",
-				"source":"1,2"
+				"source":"3,4"
 			},
 			{
 				"time":"56638.32228",
@@ -151,7 +193,7 @@
 				"system":"Vega",
 				"magnitude":"23.257",
 				"e_magnitude":"0.958",
-				"source":"1,2"
+				"source":"3,4"
 			},
 			{
 				"time":"56643.31489",
@@ -160,7 +202,7 @@
 				"system":"Vega",
 				"magnitude":"21.508",
 				"e_magnitude":"0.373",
-				"source":"1,2"
+				"source":"3,4"
 			},
 			{
 				"time":"56655.36760",
@@ -169,7 +211,7 @@
 				"system":"Vega",
 				"magnitude":"23.165",
 				"e_magnitude":"1.945",
-				"source":"1,2"
+				"source":"3,4"
 			},
 			{
 				"time":"56658.34648",
@@ -178,6 +220,12 @@
 				"system":"Vega",
 				"magnitude":"19.250",
 				"e_magnitude":"0.032",
+				"source":"3,4"
+			},
+			{
+				"time":"56658.5",
+				"u_time":"MJD",
+				"magnitude":"19.0",
 				"source":"1,2"
 			},
 			{
@@ -187,7 +235,7 @@
 				"system":"Vega",
 				"magnitude":"19.073",
 				"e_magnitude":"0.027",
-				"source":"1,2"
+				"source":"3,4"
 			},
 			{
 				"time":"56660.27346",
@@ -196,7 +244,7 @@
 				"system":"Vega",
 				"magnitude":"19.922",
 				"e_magnitude":"0.054",
-				"source":"1,2"
+				"source":"3,4"
 			},
 			{
 				"time":"56662.33071",
@@ -205,7 +253,7 @@
 				"system":"Vega",
 				"magnitude":"19.672",
 				"e_magnitude":"0.053",
-				"source":"1,2"
+				"source":"3,4"
 			},
 			{
 				"time":"56665.31359",
@@ -214,7 +262,7 @@
 				"system":"Vega",
 				"magnitude":"19.990",
 				"e_magnitude":"0.113",
-				"source":"1,2"
+				"source":"3,4"
 			},
 			{
 				"time":"56669.34224",
@@ -223,7 +271,7 @@
 				"system":"Vega",
 				"magnitude":"23.003",
 				"e_magnitude":"1.111",
-				"source":"1,2"
+				"source":"3,4"
 			},
 			{
 				"time":"56690.24890",
@@ -232,7 +280,7 @@
 				"system":"Vega",
 				"magnitude":"22.898",
 				"e_magnitude":"0.775",
-				"source":"1,2"
+				"source":"3,4"
 			},
 			{
 				"time":"56700.22862",
@@ -241,7 +289,7 @@
 				"system":"Vega",
 				"magnitude":"27.513",
 				"upperlimit":true,
-				"source":"1,2"
+				"source":"3,4"
 			},
 			{
 				"time":"56705.23443",
@@ -250,7 +298,7 @@
 				"system":"Vega",
 				"magnitude":"21.544",
 				"e_magnitude":"0.513",
-				"source":"1,2"
+				"source":"3,4"
 			}
 		],
 		"spectra":[
@@ -4365,7 +4413,7 @@
 						"3.50224e-17"
 					]
 				],
-				"source":"3"
+				"source":"5"
 			},
 			{
 				"instrument":"ESO-NTT - EFOSC2-NTT",
@@ -8438,7 +8486,7 @@
 						"0.0"
 					]
 				],
-				"source":"3"
+				"source":"5"
 			}
 		]
 	}
