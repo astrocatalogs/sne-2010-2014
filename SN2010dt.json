@@ -79,58 +79,58 @@
 				"reference":"Kelly et al. (2015)"
 			},
 			{
+				"name":"2015arXiv150201589P",
+				"bibcode":"2015arXiv150201589P",
+				"alias":"13",
+				"reference":"Planck Collaboration et al. (2015)"
+			},
+			{
 				"name":"2012PASP..124..668Y",
 				"bibcode":"2012PASP..124..668Y",
-				"alias":"13",
+				"alias":"14",
 				"reference":"Yaron & Gal-Yam (2012)"
 			},
 			{
 				"name":"2014arXiv1408.1430M",
 				"bibcode":"2014arXiv1408.1430M",
-				"alias":"14",
+				"alias":"15",
 				"reference":"Maguire et al. (2014)"
 			},
 			{
 				"name":"2010ATel.2736....1M",
 				"bibcode":"2010ATel.2736....1M",
-				"alias":"15",
+				"alias":"16",
 				"reference":"Maguire et al. (2010)"
 			},
 			{
 				"name":"2014MNRAS.444.3258M",
 				"bibcode":"2014MNRAS.444.3258M",
-				"alias":"16",
+				"alias":"17",
 				"reference":"Maguire et al. (2014)"
 			},
 			{
 				"name":"The Open Supernova Catalog",
 				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"17",
+				"alias":"18",
 				"secondary":true,
 				"reference":"Guillochon, Parrent, & Margutti (2016)"
 			},
 			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
-				"alias":"18",
-				"reference":"Schlafly & Finkbeiner (2011)"
-			},
-			{
-				"name":"2015arXiv150201589P",
-				"bibcode":"2015arXiv150201589P",
 				"alias":"19",
-				"reference":"Planck Collaboration et al. (2015)"
+				"reference":"Schlafly & Finkbeiner (2011)"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2010dt",
-				"source":"1,3,4,5,6,7,8,9,10,13"
+				"source":"1,3,4,5,6,7,8,9,10,14"
 			},
 			{
 				"value":"PTF10inf",
-				"source":"13,1,16"
+				"source":"14,1,17"
 			},
 			{
 				"value":"PS1-1000306",
@@ -140,23 +140,23 @@
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1,2,3,5,6,7,8,9,13"
+				"source":"1,2,3,5,6,7,8,9,14"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"234",
-				"source":"11,10",
+				"source":"10,11",
 				"unit":"Mpc"
 			},
 			{
 				"value":"244.343",
-				"source":"12,10",
+				"source":"10,12",
 				"unit":"Mpc"
 			},
 			{
 				"value":"248.886",
-				"source":"12,10",
+				"source":"10,12",
 				"unit":"Mpc"
 			}
 		],
@@ -169,7 +169,7 @@
 			{
 				"value":"+32:40:30.4",
 				"source":"5,7,8,9",
-				"unit":"nospace"
+				"unit":"degrees"
 			},
 			{
 				"value":"+32:40:30.40",
@@ -178,13 +178,13 @@
 			},
 			{
 				"value":"+32:40:27.7",
-				"source":"1,15",
+				"source":"1,16",
 				"unit":"degrees"
 			},
 			{
 				"value":"+32:40:27.84",
-				"source":"16",
-				"unit":"floatdegrees"
+				"source":"17",
+				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
@@ -207,13 +207,14 @@
 			{
 				"value":"0.0287",
 				"error":"0.001",
-				"source":"18"
+				"source":"18,19",
+				"derived":true
 			}
 		],
 		"host":[
 			{
 				"value":"CGCG 168-029",
-				"source":"3,11,10,12"
+				"source":"3,10,11,12"
 			},
 			{
 				"value":"PGC 58829",
@@ -223,37 +224,55 @@
 		"hostdec":[
 			{
 				"value":"+32:40:40.4",
-				"source":"4"
+				"source":"4",
+				"unit":"degrees"
 			},
 			{
 				"value":"+32:40:41",
 				"source":"5",
-				"unit":"nospace"
+				"unit":"degrees"
 			},
 			{
 				"value":"+32:40:40.1",
-				"source":"9"
+				"source":"9",
+				"unit":"degrees"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"30.48",
+				"source":"18,3,4",
+				"unit":"arcseconds",
+				"derived":true
+			}
+		],
+		"hostoffsetdist":[
+			{
+				"value":"32.84",
+				"source":"10,11,18,3,4"
 			}
 		],
 		"hostra":[
 			{
 				"value":"16:43:13.22",
-				"source":"4"
+				"source":"4",
+				"unit":"hours"
 			},
 			{
 				"value":"16:43:13",
 				"source":"5",
-				"unit":"nospace"
+				"unit":"hours"
 			},
 			{
 				"value":"16:43:13.31",
-				"source":"9"
+				"source":"9",
+				"unit":"hours"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"243.4",
-				"source":"17,19,4",
+				"source":"13,18,4",
 				"kind":"host",
 				"unit":"Mpc",
 				"derived":true
@@ -262,26 +281,29 @@
 		"maxabsmag":[
 			{
 				"value":"-18.93",
-				"source":"17,19,4",
+				"source":"13,18,4",
 				"derived":true
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"18",
-				"source":"17,3"
+				"source":"18,3",
+				"derived":true
 			}
 		],
 		"maxband":[
 			{
 				"value":"B",
-				"source":"17,3"
+				"source":"18,3",
+				"derived":true
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2010/06/08",
-				"source":"17,3"
+				"source":"18,3",
+				"derived":true
 			}
 		],
 		"ra":[
@@ -293,17 +315,17 @@
 			{
 				"value":"16:43:14.68",
 				"source":"5,6,7,8,9",
-				"unit":"nospace"
+				"unit":"hours"
 			},
 			{
 				"value":"16:43:15.06",
-				"source":"1,15",
+				"source":"1,16",
 				"unit":"hours"
 			},
 			{
 				"value":"16:43:15.12",
-				"source":"16",
-				"unit":"floatdegrees"
+				"source":"17",
+				"unit":"hours"
 			}
 		],
 		"redshift":[
@@ -16341,7 +16363,7 @@
 						"4.7129535e-17"
 					]
 				],
-				"source":"14,13"
+				"source":"14,15"
 			}
 		]
 	}

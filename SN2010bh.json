@@ -63,18 +63,18 @@
 				"reference":"Bufano et al. (2012)"
 			},
 			{
-				"name":"2011ApJ...737..103S",
-				"bibcode":"2011ApJ...737..103S",
-				"alias":"10",
-				"reference":"Schlafly & Finkbeiner (2011)"
-			},
-			{
 				"name":"The Open Supernova Catalog",
 				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"11",
+				"alias":"10",
 				"secondary":true,
 				"reference":"Guillochon, Parrent, & Margutti (2016)"
+			},
+			{
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"alias":"11",
+				"reference":"Schlafly & Finkbeiner (2011)"
 			},
 			{
 				"name":"2015arXiv150201589P",
@@ -102,7 +102,7 @@
 		"comovingdist":[
 			{
 				"value":"259",
-				"source":"11,12,8",
+				"source":"10,12,8",
 				"unit":"Mpc",
 				"derived":true
 			}
@@ -111,7 +111,7 @@
 			{
 				"value":"-56:15:20.2",
 				"source":"3,5,6,7",
-				"unit":"nospace"
+				"unit":"degrees"
 			},
 			{
 				"value":"-56:15:20.20",
@@ -139,7 +139,8 @@
 			{
 				"value":"0.1004",
 				"error":"0.0012",
-				"source":"10"
+				"source":"10,11",
+				"derived":true
 			}
 		],
 		"host":[
@@ -152,28 +153,44 @@
 			{
 				"value":"-56:15:20",
 				"source":"3",
-				"unit":"nospace"
+				"unit":"degrees"
 			},
 			{
 				"value":"-56:15:20.0",
-				"source":"7"
+				"source":"7",
+				"unit":"degrees"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"12",
+				"source":"10,3,5,6,7",
+				"unit":"arcseconds",
+				"derived":true
+			}
+		],
+		"hostoffsetdist":[
+			{
+				"value":"14",
+				"source":"10,12,3,5,6,7,8"
 			}
 		],
 		"hostra":[
 			{
 				"value":"07:10:31",
 				"source":"3",
-				"unit":"nospace"
+				"unit":"hours"
 			},
 			{
 				"value":"07:10:31.00",
-				"source":"7"
+				"source":"7",
+				"unit":"hours"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"274",
-				"source":"11,12,8",
+				"source":"10,12,8",
 				"unit":"Mpc",
 				"derived":true
 			}
@@ -182,7 +199,7 @@
 			{
 				"value":"07:10:31.8",
 				"source":"3,5,6",
-				"unit":"nospace"
+				"unit":"hours"
 			},
 			{
 				"value":"07:10:31.80",
@@ -7646,7 +7663,7 @@
 						"9.99306e-18"
 					]
 				],
-				"source":"9,8"
+				"source":"8,9"
 			},
 			{
 				"instrument":"VLT-UT2 - X-Shooter",
@@ -16381,7 +16398,7 @@
 						"2.67035e-17"
 					]
 				],
-				"source":"9,8"
+				"source":"8,9"
 			},
 			{
 				"instrument":"VLT-UT2 - X-Shooter",
@@ -25116,7 +25133,7 @@
 						"1.33126e-17"
 					]
 				],
-				"source":"9,8"
+				"source":"8,9"
 			},
 			{
 				"instrument":"VLT-UT2 - X-Shooter",
@@ -33851,7 +33868,7 @@
 						"2.00112e-17"
 					]
 				],
-				"source":"9,8"
+				"source":"8,9"
 			},
 			{
 				"instrument":"VLT-UT2 - X-Shooter",
@@ -42586,7 +42603,7 @@
 						"4.03268e-17"
 					]
 				],
-				"source":"9,8"
+				"source":"8,9"
 			},
 			{
 				"instrument":"VLT-UT2 - X-Shooter",
@@ -51321,7 +51338,7 @@
 						"7.16139e-17"
 					]
 				],
-				"source":"9,8"
+				"source":"8,9"
 			},
 			{
 				"instrument":"VLT-UT2 - X-Shooter",
@@ -60056,7 +60073,7 @@
 						"2.03114e-16"
 					]
 				],
-				"source":"9,8"
+				"source":"8,9"
 			},
 			{
 				"instrument":"VLT-UT2 - X-Shooter",
@@ -68791,7 +68808,7 @@
 						"3.03048e-18"
 					]
 				],
-				"source":"9,8"
+				"source":"8,9"
 			},
 			{
 				"instrument":"VLT-UT2 - X-Shooter",
@@ -77526,7 +77543,7 @@
 						"1.68599e-18"
 					]
 				],
-				"source":"9,8"
+				"source":"8,9"
 			},
 			{
 				"instrument":"VLT-UT1 - FORS2",
@@ -85729,7 +85746,7 @@
 						"2.39534e-17"
 					]
 				],
-				"source":"9,8"
+				"source":"8,9"
 			},
 			{
 				"instrument":"VLT-UT1 - FORS2",
@@ -93932,7 +93949,7 @@
 						"1.60212e-17"
 					]
 				],
-				"source":"9,8"
+				"source":"8,9"
 			},
 			{
 				"instrument":"VLT-UT1 - FORS2",
@@ -102135,7 +102152,7 @@
 						"1.50893e-17"
 					]
 				],
-				"source":"9,8"
+				"source":"8,9"
 			},
 			{
 				"instrument":"VLT-UT2 - X-Shooter",
@@ -110870,7 +110887,7 @@
 						"2.66531e-17"
 					]
 				],
-				"source":"9,8"
+				"source":"8,9"
 			},
 			{
 				"instrument":"VLT-UT2 - X-Shooter",
@@ -119605,7 +119622,7 @@
 						"-1.47367e-16"
 					]
 				],
-				"source":"9,8"
+				"source":"8,9"
 			},
 			{
 				"instrument":"VLT-UT1 - FORS2",
@@ -127808,7 +127825,7 @@
 						"7.4773e-18"
 					]
 				],
-				"source":"9,8"
+				"source":"8,9"
 			},
 			{
 				"instrument":"VLT-UT1 - FORS2",
@@ -136007,7 +136024,7 @@
 						"9.72377e-18"
 					]
 				],
-				"source":"9,8"
+				"source":"8,9"
 			}
 		]
 	}

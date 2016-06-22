@@ -122,12 +122,12 @@
 			{
 				"value":"+15:28:14.16",
 				"source":"7",
-				"unit":"floatdegrees"
+				"unit":"degrees"
 			},
 			{
 				"value":"+22:32:59.28",
 				"source":"7",
-				"unit":"floatdegrees"
+				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
@@ -150,7 +150,8 @@
 			{
 				"value":"0.0308",
 				"error":"0.0018",
-				"source":"11"
+				"source":"10,11",
+				"derived":true
 			}
 		],
 		"host":[
@@ -163,14 +164,28 @@
 			{
 				"value":"+15:28:14",
 				"source":"3",
-				"unit":"nospace"
+				"unit":"degrees"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"12",
+				"source":"1,10,2,3,4,5,6",
+				"unit":"arcseconds",
+				"derived":true
+			}
+		],
+		"hostoffsetdist":[
+			{
+				"value":"19",
+				"source":"1,10,12,2,3,4,5,6,8"
 			}
 		],
 		"hostra":[
 			{
 				"value":"11:37:04",
 				"source":"3",
-				"unit":"nospace"
+				"unit":"hours"
 			}
 		],
 		"lumdist":[
@@ -191,19 +206,22 @@
 		"maxappmag":[
 			{
 				"value":"15.28",
-				"source":"10,7"
+				"source":"10,7",
+				"derived":true
 			}
 		],
 		"maxband":[
 			{
 				"value":"C",
-				"source":"10,7"
+				"source":"10,7",
+				"derived":true
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2011/04/05",
-				"source":"10,7"
+				"source":"10,7",
+				"derived":true
 			}
 		],
 		"ra":[
@@ -215,12 +233,12 @@
 			{
 				"value":"11:37:04.8",
 				"source":"7",
-				"unit":"floatdegrees"
+				"unit":"hours"
 			},
 			{
 				"value":"03:38:34.392",
 				"source":"7",
-				"unit":"floatdegrees"
+				"unit":"hours"
 			}
 		],
 		"redshift":[
@@ -6028,6 +6046,46 @@
 				"band":"C",
 				"magnitude":"19.9196",
 				"e_magnitude":"0.158901",
+				"includeshost":true,
+				"telescope":"Catalina Schmidt",
+				"source":"7"
+			},
+			{
+				"time":"57555.439941",
+				"u_time":"MJD",
+				"band":"C",
+				"magnitude":"20.041",
+				"upperlimit":true,
+				"includeshost":true,
+				"telescope":"Catalina Schmidt",
+				"source":"7"
+			},
+			{
+				"time":"57555.47998",
+				"u_time":"MJD",
+				"band":"C",
+				"magnitude":"20.042601",
+				"upperlimit":true,
+				"includeshost":true,
+				"telescope":"Catalina Schmidt",
+				"source":"7"
+			},
+			{
+				"time":"57555.52002",
+				"u_time":"MJD",
+				"band":"C",
+				"magnitude":"20.07",
+				"upperlimit":true,
+				"includeshost":true,
+				"telescope":"Catalina Schmidt",
+				"source":"7"
+			},
+			{
+				"time":"57555.560059",
+				"u_time":"MJD",
+				"band":"C",
+				"magnitude":"20.0562",
+				"upperlimit":true,
 				"includeshost":true,
 				"telescope":"Catalina Schmidt",
 				"source":"7"
@@ -22574,7 +22632,7 @@
 						"0.0686177"
 					]
 				],
-				"source":"9,8"
+				"source":"8,9"
 			},
 			{
 				"instrument":"Keck1 - LRIS",
@@ -56601,7 +56659,7 @@
 						"0.0942954"
 					]
 				],
-				"source":"9,8"
+				"source":"8,9"
 			},
 			{
 				"instrument":"Keck1 - LRIS",
@@ -87668,7 +87726,7 @@
 						"0.0299814"
 					]
 				],
-				"source":"9,8"
+				"source":"8,9"
 			}
 		]
 	}

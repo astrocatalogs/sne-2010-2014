@@ -125,7 +125,7 @@
 		"comovingdist":[
 			{
 				"value":"610.6",
-				"source":"12,14,11",
+				"source":"11,12,14",
 				"unit":"Mpc",
 				"derived":true
 			}
@@ -139,7 +139,7 @@
 			{
 				"value":"+26:16:42.2",
 				"source":"5,7,8",
-				"unit":"nospace"
+				"unit":"degrees"
 			},
 			{
 				"value":"+26:16:42.20",
@@ -149,7 +149,7 @@
 			{
 				"value":"+26:16:42.24",
 				"source":"9",
-				"unit":"floatdegrees"
+				"unit":"degrees"
 			},
 			{
 				"value":"+26:16:42.44",
@@ -177,7 +177,8 @@
 			{
 				"value":"0.0102",
 				"error":"0.0004",
-				"source":"13"
+				"source":"12,13",
+				"derived":true
 			}
 		],
 		"host":[
@@ -190,20 +191,34 @@
 			{
 				"value":"+26:16:42",
 				"source":"5",
-				"unit":"nospace"
+				"unit":"degrees"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"11.58",
+				"source":"1,12,2,5",
+				"unit":"arcseconds",
+				"derived":true
+			}
+		],
+		"hostoffsetdist":[
+			{
+				"value":"30",
+				"source":"1,11,12,14,2,5"
 			}
 		],
 		"hostra":[
 			{
 				"value":"13:50:57",
 				"source":"5",
-				"unit":"nospace"
+				"unit":"hours"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"697.8",
-				"source":"12,14,11",
+				"source":"11,12,14",
 				"kind":"spectroscopic",
 				"unit":"Mpc",
 				"derived":true
@@ -212,20 +227,22 @@
 		"maxabsmag":[
 			{
 				"value":"-21.52",
-				"source":"12,14,11",
+				"source":"11,12,14",
 				"derived":true
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17.7",
-				"source":"12,4"
+				"source":"12,4",
+				"derived":true
 			}
 		],
 		"maxband":[
 			{
 				"value":"g",
-				"source":"12,4"
+				"source":"12,4",
+				"derived":true
 			}
 		],
 		"maxdate":[
@@ -243,12 +260,12 @@
 			{
 				"value":"13:50:57.79",
 				"source":"5,6,7,8",
-				"unit":"nospace"
+				"unit":"hours"
 			},
 			{
 				"value":"13:50:57.84",
 				"source":"9",
-				"unit":"floatdegrees"
+				"unit":"hours"
 			},
 			{
 				"value":"13:50:57.798",
@@ -266,7 +283,7 @@
 		"velocity":[
 			{
 				"value":"39780",
-				"source":"12,11",
+				"source":"11,12",
 				"kind":"spectroscopic",
 				"unit":"km/s",
 				"derived":true
@@ -5962,6 +5979,46 @@
 				"u_time":"MJD",
 				"band":"C",
 				"magnitude":"20.444901",
+				"upperlimit":true,
+				"includeshost":true,
+				"telescope":"Catalina Schmidt",
+				"source":"9"
+			},
+			{
+				"time":"57554.439941",
+				"u_time":"MJD",
+				"band":"C",
+				"magnitude":"20.235399",
+				"upperlimit":true,
+				"includeshost":true,
+				"telescope":"Catalina Schmidt",
+				"source":"9"
+			},
+			{
+				"time":"57554.47998",
+				"u_time":"MJD",
+				"band":"C",
+				"magnitude":"20.2264",
+				"upperlimit":true,
+				"includeshost":true,
+				"telescope":"Catalina Schmidt",
+				"source":"9"
+			},
+			{
+				"time":"57554.52002",
+				"u_time":"MJD",
+				"band":"C",
+				"magnitude":"20.211599",
+				"upperlimit":true,
+				"includeshost":true,
+				"telescope":"Catalina Schmidt",
+				"source":"9"
+			},
+			{
+				"time":"57554.560059",
+				"u_time":"MJD",
+				"band":"C",
+				"magnitude":"20.2006",
 				"upperlimit":true,
 				"includeshost":true,
 				"telescope":"Catalina Schmidt",
@@ -15995,7 +16052,7 @@
 						"1.45527e-17"
 					]
 				],
-				"source":"4,10"
+				"source":"10,4"
 			},
 			{
 				"instrument":"TNG - NICS",
@@ -20595,7 +20652,7 @@
 						"6.4802e-17"
 					]
 				],
-				"source":"4,10"
+				"source":"10,4"
 			},
 			{
 				"instrument":"Other - Other",
@@ -31383,7 +31440,7 @@
 						"1.03633e-17"
 					]
 				],
-				"source":"4,10"
+				"source":"10,4"
 			},
 			{
 				"instrument":"VLT-UT1 - FORS1",
@@ -41595,7 +41652,7 @@
 						"1.47477e-18"
 					]
 				],
-				"source":"4,10"
+				"source":"10,4"
 			},
 			{
 				"instrument":"Other - Other",
@@ -51959,7 +52016,7 @@
 						"2.06186e-18"
 					]
 				],
-				"source":"4,10"
+				"source":"10,4"
 			},
 			{
 				"instrument":"VLT-UT2 - X-Shooter",
@@ -56071,7 +56128,7 @@
 						"3.59345e-16"
 					]
 				],
-				"source":"4,10"
+				"source":"10,4"
 			}
 		]
 	}

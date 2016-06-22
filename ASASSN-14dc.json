@@ -63,12 +63,12 @@
 		],
 		"alias":[
 			{
-				"value":"PSN J02183806+3336583",
-				"source":"1,2,4"
-			},
-			{
 				"value":"ASASSN-14dc",
 				"source":"1,2,4,5"
+			},
+			{
+				"value":"PSN J02183806+3336583",
+				"source":"1,2,4"
 			}
 		],
 		"claimedtype":[
@@ -84,7 +84,7 @@
 		"comovingdist":[
 			{
 				"value":"190",
-				"source":"7,9,2,4,5",
+				"source":"2,4,5,7,9",
 				"unit":"Mpc",
 				"derived":true
 			}
@@ -98,7 +98,7 @@
 			{
 				"value":"+33:36:58.32",
 				"source":"5,2",
-				"unit":"floatdegrees"
+				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
@@ -117,7 +117,8 @@
 			{
 				"value":"0.0623",
 				"error":"0.0031",
-				"source":"8"
+				"source":"7,8",
+				"derived":true
 			}
 		],
 		"host":[
@@ -130,6 +131,14 @@
 				"source":"5,2"
 			}
 		],
+		"hostdec":[
+			{
+				"value":"+33:36:55.6",
+				"source":"7",
+				"unit":"degrees",
+				"derived":true
+			}
+		],
 		"hostoffset":[
 			{
 				"value":"3.24",
@@ -137,10 +146,32 @@
 				"unit":"arcseconds"
 			}
 		],
+		"hostoffsetang":[
+			{
+				"value":"8.878",
+				"source":"1,2,4,7",
+				"unit":"arcseconds",
+				"derived":true
+			}
+		],
+		"hostoffsetdist":[
+			{
+				"value":"7.833",
+				"source":"1,2,4,5,7,9"
+			}
+		],
+		"hostra":[
+			{
+				"value":"02:18:38.25",
+				"source":"7",
+				"unit":"hours",
+				"derived":true
+			}
+		],
 		"lumdist":[
 			{
 				"value":"200",
-				"source":"7,9,2,4,5",
+				"source":"2,4,5,7,9",
 				"unit":"Mpc",
 				"derived":true
 			}
@@ -148,20 +179,22 @@
 		"maxabsmag":[
 			{
 				"value":"-21",
-				"source":"7,9,2,4,5",
+				"source":"2,4,5,7,9",
 				"derived":true
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"15.8",
-				"source":"7,2,4"
+				"source":"2,4,7",
+				"derived":true
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2014/06/23",
-				"source":"7,2,4"
+				"source":"2,4,7",
+				"derived":true
 			}
 		],
 		"ra":[
@@ -173,7 +206,7 @@
 			{
 				"value":"02:18:38.064",
 				"source":"5,2",
-				"unit":"floatdegrees"
+				"unit":"hours"
 			}
 		],
 		"redshift":[
@@ -185,7 +218,7 @@
 		"velocity":[
 			{
 				"value":"13000",
-				"source":"7,2,4,5",
+				"source":"2,4,5,7",
 				"unit":"km/s",
 				"derived":true
 			}

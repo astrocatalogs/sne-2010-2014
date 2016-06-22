@@ -43,18 +43,18 @@
 				"reference":"Melandri et al. (2012)"
 			},
 			{
-				"name":"2011ApJ...737..103S",
-				"bibcode":"2011ApJ...737..103S",
-				"alias":"7",
-				"reference":"Schlafly & Finkbeiner (2011)"
-			},
-			{
 				"name":"The Open Supernova Catalog",
 				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"8",
+				"alias":"7",
 				"secondary":true,
 				"reference":"Guillochon, Parrent, & Margutti (2016)"
+			},
+			{
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"alias":"8",
+				"reference":"Schlafly & Finkbeiner (2011)"
 			},
 			{
 				"name":"2015arXiv150201589P",
@@ -86,7 +86,7 @@
 		"comovingdist":[
 			{
 				"value":"1170",
-				"source":"8,9,5",
+				"source":"5,7,9",
 				"unit":"Mpc",
 				"derived":true
 			}
@@ -95,7 +95,7 @@
 			{
 				"value":"+14:01:07.5",
 				"source":"1,3,4",
-				"unit":"nospace"
+				"unit":"degrees"
 			},
 			{
 				"value":"+14:01:07.50",
@@ -123,7 +123,8 @@
 			{
 				"value":"0.0303",
 				"error":"0.0013",
-				"source":"7"
+				"source":"7,8",
+				"derived":true
 			}
 		],
 		"host":[
@@ -136,20 +137,34 @@
 			{
 				"value":"+14:01:07",
 				"source":"1",
-				"unit":"nospace"
+				"unit":"degrees"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"5.722",
+				"source":"1,2,3,4,7",
+				"unit":"arcseconds",
+				"derived":true
+			}
+		],
+		"hostoffsetdist":[
+			{
+				"value":"25.3",
+				"source":"1,2,3,4,5,7,9"
 			}
 		],
 		"hostra":[
 			{
 				"value":"09:07:38",
 				"source":"1",
-				"unit":"nospace"
+				"unit":"hours"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"1500",
-				"source":"8,9,5",
+				"source":"5,7,9",
 				"unit":"Mpc",
 				"derived":true
 			}
@@ -158,7 +173,7 @@
 			{
 				"value":"09:07:38.38",
 				"source":"1,2,3,4",
-				"unit":"nospace"
+				"unit":"hours"
 			}
 		],
 		"redshift":[
@@ -170,7 +185,7 @@
 		"velocity":[
 			{
 				"value":"73200",
-				"source":"8,5",
+				"source":"5,7",
 				"unit":"km/s",
 				"derived":true
 			}
@@ -8361,7 +8376,7 @@
 						"-3.89E-21"
 					]
 				],
-				"source":"6,5"
+				"source":"5,6"
 			},
 			{
 				"instrument":"VLT-UT1 - FORS2",
@@ -16352,7 +16367,7 @@
 						"1.93E-19"
 					]
 				],
-				"source":"6,5"
+				"source":"5,6"
 			},
 			{
 				"instrument":"VLT-UT1 - FORS2",
@@ -24199,7 +24214,7 @@
 						"-2.15E-20"
 					]
 				],
-				"source":"6,5"
+				"source":"5,6"
 			},
 			{
 				"instrument":"VLT-UT1 - FORS2",
@@ -32058,7 +32073,7 @@
 						"6.01e-20"
 					]
 				],
-				"source":"6,5"
+				"source":"5,6"
 			},
 			{
 				"instrument":"VLT-UT1 - FORS2",
@@ -39433,7 +39448,7 @@
 						"5.25e-19"
 					]
 				],
-				"source":"6,5"
+				"source":"5,6"
 			}
 		]
 	}

@@ -147,12 +147,12 @@
 		"comovingdist":[
 			{
 				"value":"101",
-				"source":"5,13",
+				"source":"13,5",
 				"unit":"Mpc"
 			},
 			{
 				"value":"106",
-				"source":"14,13",
+				"source":"13,14",
 				"unit":"Mpc"
 			}
 		],
@@ -160,7 +160,7 @@
 			{
 				"value":"+23:09:38.88",
 				"source":"4",
-				"unit":"floatdegrees"
+				"unit":"degrees"
 			},
 			{
 				"value":"+23:09:41.8",
@@ -170,7 +170,7 @@
 			{
 				"value":"+23:09:33.6",
 				"source":"8,10,11,12",
-				"unit":"nospace"
+				"unit":"degrees"
 			},
 			{
 				"value":"+23:09:33.30",
@@ -198,49 +198,68 @@
 			{
 				"value":"0.0261",
 				"error":"0.0015",
-				"source":"18"
+				"source":"1,18",
+				"derived":true
 			}
 		],
 		"host":[
 			{
 				"value":"NGC 2929",
-				"source":"8,9,10,11,12,5,13,14"
+				"source":"8,9,10,11,12,13,5,14"
 			}
 		],
 		"hostdec":[
 			{
 				"value":"+23:09:38.8",
-				"source":"6"
+				"source":"6",
+				"unit":"degrees"
 			},
 			{
 				"value":"+23:09:42",
 				"source":"8",
-				"unit":"nospace"
+				"unit":"degrees"
 			},
 			{
 				"value":"+23:09:42.4",
-				"source":"12"
+				"source":"12",
+				"unit":"degrees"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"0.7543",
+				"source":"1,4,6",
+				"unit":"arcseconds",
+				"derived":true
+			}
+		],
+		"hostoffsetdist":[
+			{
+				"value":"0.3603",
+				"source":"1,13,14,15,4,5,6"
 			}
 		],
 		"hostra":[
 			{
 				"value":"09:37:29.95",
-				"source":"6"
+				"source":"6",
+				"unit":"hours"
 			},
 			{
 				"value":"09:37:30",
 				"source":"8",
-				"unit":"nospace"
+				"unit":"hours"
 			},
 			{
 				"value":"09:37:29.82",
-				"source":"12"
+				"source":"12",
+				"unit":"hours"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"112.96",
-				"source":"1,19,4,15",
+				"source":"1,13,14,15,19,4,5",
 				"kind":"heliocentric",
 				"unit":"Mpc",
 				"derived":true
@@ -249,33 +268,36 @@
 		"maxabsmag":[
 			{
 				"value":"-17.845",
-				"source":"1,19,4,15",
+				"source":"1,13,14,15,19,4,5",
 				"derived":true
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17.42",
-				"source":"1,7"
+				"source":"1,7",
+				"derived":true
 			}
 		],
 		"maxband":[
 			{
 				"value":"B",
-				"source":"1,7"
+				"source":"1,7",
+				"derived":true
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2010/10/22",
-				"source":"1,7"
+				"source":"1,7",
+				"derived":true
 			}
 		],
 		"ra":[
 			{
 				"value":"09:37:30",
 				"source":"4",
-				"unit":"floatdegrees"
+				"unit":"hours"
 			},
 			{
 				"value":"09:37:29.83",
@@ -285,7 +307,7 @@
 			{
 				"value":"09:37:30.30",
 				"source":"8,10,11,12",
-				"unit":"nospace"
+				"unit":"hours"
 			},
 			{
 				"value":"09:37:30.24",
@@ -297,7 +319,7 @@
 			{
 				"value":"0.025047",
 				"error":"1e-05",
-				"source":"4,15",
+				"source":"4,13,5,14,15",
 				"kind":"heliocentric"
 			}
 		],
@@ -19232,7 +19254,7 @@
 						"0.135735"
 					]
 				],
-				"source":"16,15"
+				"source":"15,16"
 			},
 			{
 				"instrument":"Gemini-N - GMOS",
@@ -27248,7 +27270,7 @@
 						"4.09433e-17"
 					]
 				],
-				"source":"17,15"
+				"source":"15,17"
 			},
 			{
 				"instrument":"Keck1 - LRIS",
@@ -32917,7 +32939,7 @@
 						"0.169955"
 					]
 				],
-				"source":"16,15"
+				"source":"15,16"
 			},
 			{
 				"instrument":"HST - STIS",
@@ -41626,7 +41648,7 @@
 						"8.02111e-17"
 					]
 				],
-				"source":"17,15"
+				"source":"15,17"
 			},
 			{
 				"instrument":"Gemini-N - GMOS",
@@ -62134,7 +62156,7 @@
 						"0.0868456"
 					]
 				],
-				"source":"16,15"
+				"source":"15,16"
 			},
 			{
 				"instrument":"P200 - DBSP",
@@ -67311,7 +67333,7 @@
 						"0.197977"
 					]
 				],
-				"source":"16,15"
+				"source":"15,16"
 			},
 			{
 				"instrument":"HST - STIS",
@@ -77400,7 +77422,7 @@
 						"1.04055e-16"
 					]
 				],
-				"source":"17,15"
+				"source":"15,17"
 			},
 			{
 				"instrument":"Gemini-N - GMOS",
@@ -98496,7 +98518,7 @@
 						"0.1587717329"
 					]
 				],
-				"source":"16,15"
+				"source":"15,16"
 			},
 			{
 				"instrument":"HST - STIS",
@@ -108593,7 +108615,7 @@
 						"1.18695e-16"
 					]
 				],
-				"source":"17,15"
+				"source":"15,17"
 			},
 			{
 				"instrument":"Gemini-N - GMOS",
@@ -129837,7 +129859,7 @@
 						"0.183548"
 					]
 				],
-				"source":"16,15"
+				"source":"15,16"
 			},
 			{
 				"instrument":"WHT-4.2m - ISIS",
@@ -157674,7 +157696,7 @@
 						"2.029060675e-16"
 					]
 				],
-				"source":"16,15"
+				"source":"15,16"
 			},
 			{
 				"instrument":"HST - STIS",
@@ -166179,7 +166201,7 @@
 						"1.88231e-16"
 					]
 				],
-				"source":"17,15"
+				"source":"15,17"
 			}
 		]
 	}

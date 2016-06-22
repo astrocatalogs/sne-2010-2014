@@ -41,60 +41,60 @@
 				"secondary":true
 			},
 			{
+				"name":"2015arXiv150201589P",
+				"bibcode":"2015arXiv150201589P",
+				"alias":"7",
+				"reference":"Planck Collaboration et al. (2015)"
+			},
+			{
 				"name":"2014ApJ...784..105W",
 				"bibcode":"2014ApJ...784..105W",
-				"alias":"7",
+				"alias":"8",
 				"reference":"Weyant et al. (2014)"
 			},
 			{
 				"name":"2012MNRAS.426.2359M",
 				"bibcode":"2012MNRAS.426.2359M",
-				"alias":"8",
+				"alias":"9",
 				"reference":"Maguire et al. (2012)"
 			},
 			{
 				"name":"2012PASP..124..668Y",
 				"bibcode":"2012PASP..124..668Y",
-				"alias":"9",
+				"alias":"10",
 				"reference":"Yaron & Gal-Yam (2012)"
 			},
 			{
 				"name":"2014arXiv1408.1430M",
 				"bibcode":"2014arXiv1408.1430M",
-				"alias":"10",
+				"alias":"11",
 				"reference":"Maguire et al. (2014)"
 			},
 			{
 				"name":"The Open Supernova Catalog",
 				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"11",
+				"alias":"12",
 				"secondary":true,
 				"reference":"Guillochon, Parrent, & Margutti (2016)"
 			},
 			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
-				"alias":"12",
-				"reference":"Schlafly & Finkbeiner (2011)"
-			},
-			{
-				"name":"2015arXiv150201589P",
-				"bibcode":"2015arXiv150201589P",
 				"alias":"13",
-				"reference":"Planck Collaboration et al. (2015)"
+				"reference":"Schlafly & Finkbeiner (2011)"
 			}
 		],
 		"alias":[
 			{
 				"value":"PTF10xyt",
-				"source":"1,2,3,4,5,6,9"
+				"source":"1,2,3,4,5,6,10"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"9"
+				"source":"10"
 			}
 		],
 		"comovingdist":[
@@ -105,7 +105,7 @@
 			},
 			{
 				"value":"228",
-				"source":"7,6",
+				"source":"6,8",
 				"unit":"Mpc"
 			},
 			{
@@ -120,7 +120,7 @@
 			},
 			{
 				"value":"250",
-				"source":"8,6",
+				"source":"6,9",
 				"unit":"Mpc"
 			}
 		],
@@ -128,7 +128,7 @@
 			{
 				"value":"+13:47:26.16",
 				"source":"2",
-				"unit":"floatdegrees"
+				"unit":"degrees"
 			},
 			{
 				"value":"+13:47:26.2",
@@ -139,32 +139,50 @@
 		"discoverdate":[
 			{
 				"value":"2010/10/17",
-				"source":"11,5"
+				"source":"12,5",
+				"derived":true
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.0446",
 				"error":"0.0005",
-				"source":"12"
+				"source":"12,13",
+				"derived":true
 			}
 		],
 		"hostdec":[
 			{
 				"value":"+13:47:26.1",
-				"source":"4"
+				"source":"4",
+				"unit":"degrees"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"0.3059",
+				"source":"12,2,4",
+				"unit":"arcseconds",
+				"derived":true
+			}
+		],
+		"hostoffsetdist":[
+			{
+				"value":"0.3153",
+				"source":"10,12,2,3,4,5,6"
 			}
 		],
 		"hostra":[
 			{
 				"value":"23:19:02.42",
-				"source":"4"
+				"source":"4",
+				"unit":"hours"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"220",
-				"source":"11,13,2,3,9",
+				"source":"10,12,2,3,7",
 				"kind":"heliocentric",
 				"unit":"Mpc",
 				"derived":true
@@ -173,33 +191,36 @@
 		"maxabsmag":[
 			{
 				"value":"-18",
-				"source":"11,13,2,3,9",
+				"source":"10,12,2,3,7",
 				"derived":true
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"19.07",
-				"source":"11,5"
+				"source":"12,5",
+				"derived":true
 			}
 		],
 		"maxband":[
 			{
 				"value":"H",
-				"source":"11,5"
+				"source":"12,5",
+				"derived":true
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2010/10/17",
-				"source":"11,5"
+				"source":"12,5",
+				"derived":true
 			}
 		],
 		"ra":[
 			{
 				"value":"23:19:02.4",
 				"source":"2",
-				"unit":"floatdegrees"
+				"unit":"hours"
 			},
 			{
 				"value":"23:19:02.43",
@@ -211,14 +232,14 @@
 			{
 				"value":"0.049",
 				"error":"0.001",
-				"source":"2,3,9",
+				"source":"2,3,10",
 				"kind":"heliocentric"
 			}
 		],
 		"velocity":[
 			{
 				"value":"14000",
-				"source":"11,2,3,9",
+				"source":"10,12,2,3",
 				"kind":"heliocentric",
 				"unit":"km/s",
 				"derived":true
@@ -9434,7 +9455,7 @@
 						"0.225278005"
 					]
 				],
-				"source":"10,9"
+				"source":"10,11"
 			},
 			{
 				"instrument":"Gemini-N - GMOS",
@@ -29946,7 +29967,7 @@
 						"0.05852422"
 					]
 				],
-				"source":"10,9"
+				"source":"10,11"
 			},
 			{
 				"instrument":"P200 - DBSP",
@@ -35123,7 +35144,7 @@
 						"0.0758146"
 					]
 				],
-				"source":"10,9"
+				"source":"10,11"
 			},
 			{
 				"instrument":"HST - STIS",
@@ -40257,7 +40278,7 @@
 						"1.92627e-16"
 					]
 				],
-				"source":"9"
+				"source":"10"
 			}
 		]
 	}
