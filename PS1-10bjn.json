@@ -1,47 +1,47 @@
 {
 	"PS1-10bjn":{
-		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
 		"name":"PS1-10bjn",
 		"sources":[
 			{
-				"name":"SIMBAD astronomical database",
-				"url":"http://simbad.u-strasbg.fr/",
-				"bibcode":"2000A&AS..143....9W",
-				"alias":"1",
-				"secondary":true,
-				"reference":"Wenger et al. (2000)"
+				"name":"2015arXiv150201589P",
+				"bibcode":"2015arXiv150201589P",
+				"reference":"Planck Collaboration et al. (2015)",
+				"alias":"1"
 			},
 			{
 				"name":"2014ApJ...795...44R",
 				"bibcode":"2014ApJ...795...44R",
-				"alias":"2",
-				"reference":"Rest et al. (2014)"
-			},
-			{
-				"name":"The Open Supernova Catalog",
-				"url":"https://sne.space",
-				"bibcode":"2016arXiv160501054G",
-				"alias":"3",
-				"secondary":true,
-				"reference":"Guillochon, Parrent, & Margutti (2016)"
+				"reference":"Rest et al. (2014)",
+				"alias":"2"
 			},
 			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
-				"alias":"4",
-				"reference":"Schlafly & Finkbeiner (2011)"
+				"reference":"Schlafly & Finkbeiner (2011)",
+				"alias":"3"
 			},
 			{
-				"name":"2015arXiv150201589P",
-				"bibcode":"2015arXiv150201589P",
-				"alias":"5",
-				"reference":"Planck Collaboration et al. (2015)"
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2016arXiv160501054G",
+				"reference":"Guillochon, Parrent, & Margutti (2016)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"4"
+			},
+			{
+				"name":"SIMBAD astronomical database",
+				"bibcode":"2000A&AS..143....9W",
+				"reference":"Wenger et al. (2000)",
+				"secondary":true,
+				"url":"http://simbad.u-strasbg.fr/",
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"PS1-10bjn",
-				"source":"1,2"
+				"source":"2,5"
 			}
 		],
 		"claimedtype":[
@@ -53,16 +53,16 @@
 		"comovingdist":[
 			{
 				"value":"1200",
-				"source":"2,3,5",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,4"
 			}
 		],
 		"dec":[
 			{
 				"value":"-01:45:44.83",
-				"source":"1,2",
-				"unit":"degrees"
+				"u_value":"degrees",
+				"source":"2,5"
 			}
 		],
 		"discoverdate":[
@@ -74,324 +74,323 @@
 		"ebv":[
 			{
 				"value":"0.0474",
-				"error":"0.0014",
-				"source":"3,4",
-				"derived":true
+				"derived":true,
+				"e_value":"0.0014",
+				"source":"3,4"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"1500",
-				"source":"2,3,5",
+				"derived":true,
 				"kind":"heliocentric",
-				"unit":"Mpc",
-				"derived":true
+				"u_value":"Mpc",
+				"source":"1,2,4"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-19",
-				"source":"2,3,5",
-				"derived":true
+				"derived":true,
+				"source":"1,2,4"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"21.58",
-				"source":"2,3",
-				"derived":true
+				"derived":true,
+				"source":"2,4"
 			}
 		],
 		"maxband":[
 			{
 				"value":"g",
-				"source":"2,3",
-				"derived":true
+				"derived":true,
+				"source":"2,4"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2010/10/31",
-				"source":"2,3",
-				"derived":true
+				"derived":true,
+				"source":"2,4"
 			}
 		],
 		"ra":[
 			{
 				"value":"23:27:37.793",
-				"source":"1,2",
-				"unit":"hours"
+				"u_value":"hours",
+				"source":"2,5"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.29",
-				"error":"0.01",
-				"source":"2",
-				"kind":"heliocentric"
+				"e_value":"0.01",
+				"kind":"heliocentric",
+				"source":"2"
 			}
 		],
 		"velocity":[
 			{
 				"value":"75000",
-				"source":"2,3",
 				"kind":"heliocentric",
-				"unit":"km/s",
-				"derived":true
+				"u_value":"km/s",
+				"source":"4"
 			}
 		],
 		"photometry":[
 			{
 				"time":"55476.4542",
-				"u_time":"MJD",
 				"band":"g",
-				"system":"AB",
-				"magnitude":"23.317",
 				"e_magnitude":"0.225",
-				"telescope":"PS1",
 				"instrument":"PS1",
+				"magnitude":"23.317",
+				"system":"AB",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
 				"time":"55476.468348",
-				"u_time":"MJD",
 				"band":"r",
-				"system":"AB",
-				"magnitude":"23.292",
 				"e_magnitude":"0.205",
-				"telescope":"PS1",
 				"instrument":"PS1",
+				"magnitude":"23.292",
+				"system":"AB",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
 				"time":"55477.266802",
-				"u_time":"MJD",
 				"band":"i",
-				"system":"AB",
-				"magnitude":"23.201",
 				"e_magnitude":"0.084",
-				"telescope":"PS1",
 				"instrument":"PS1",
+				"magnitude":"23.201",
+				"system":"AB",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
 				"time":"55479.268158",
-				"u_time":"MJD",
 				"band":"g",
-				"system":"AB",
-				"magnitude":"23.267",
 				"e_magnitude":"0.289",
-				"telescope":"PS1",
 				"instrument":"PS1",
+				"magnitude":"23.267",
+				"system":"AB",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
 				"time":"55479.280915",
-				"u_time":"MJD",
 				"band":"r",
-				"system":"AB",
-				"magnitude":"22.681",
 				"e_magnitude":"0.128",
-				"telescope":"PS1",
 				"instrument":"PS1",
+				"magnitude":"22.681",
+				"system":"AB",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
 				"time":"55480.360819",
-				"u_time":"MJD",
 				"band":"i",
-				"system":"AB",
-				"magnitude":"22.429",
 				"e_magnitude":"0.079",
-				"telescope":"PS1",
 				"instrument":"PS1",
+				"magnitude":"22.429",
+				"system":"AB",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
 				"time":"55482.270711",
-				"u_time":"MJD",
 				"band":"g",
-				"system":"AB",
-				"magnitude":"22.195",
 				"e_magnitude":"0.129",
-				"telescope":"PS1",
 				"instrument":"PS1",
+				"magnitude":"22.195",
+				"system":"AB",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
 				"time":"55482.284747",
-				"u_time":"MJD",
 				"band":"r",
-				"system":"AB",
-				"magnitude":"21.992",
 				"e_magnitude":"0.099",
-				"telescope":"PS1",
 				"instrument":"PS1",
+				"magnitude":"21.992",
+				"system":"AB",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
 				"time":"55483.264121",
-				"u_time":"MJD",
 				"band":"i",
-				"system":"AB",
-				"magnitude":"22.029",
 				"e_magnitude":"0.097",
-				"telescope":"PS1",
 				"instrument":"PS1",
+				"magnitude":"22.029",
+				"system":"AB",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
 				"time":"55485.258746",
-				"u_time":"MJD",
 				"band":"g",
-				"system":"AB",
-				"magnitude":"21.893",
 				"e_magnitude":"0.189",
-				"telescope":"PS1",
 				"instrument":"PS1",
+				"magnitude":"21.893",
+				"system":"AB",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
 				"time":"55485.273092",
-				"u_time":"MJD",
 				"band":"r",
-				"system":"AB",
-				"magnitude":"21.898",
 				"e_magnitude":"0.113",
-				"telescope":"PS1",
 				"instrument":"PS1",
+				"magnitude":"21.898",
+				"system":"AB",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
 				"time":"55498.258979",
-				"u_time":"MJD",
 				"band":"i",
-				"system":"AB",
-				"magnitude":"21.345",
 				"e_magnitude":"0.028",
-				"telescope":"PS1",
 				"instrument":"PS1",
+				"magnitude":"21.345",
+				"system":"AB",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
 				"time":"55500.258217",
-				"u_time":"MJD",
 				"band":"r",
-				"system":"AB",
-				"magnitude":"21.407",
 				"e_magnitude":"0.041",
-				"telescope":"PS1",
 				"instrument":"PS1",
+				"magnitude":"21.407",
+				"system":"AB",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
 				"time":"55500.271526",
-				"u_time":"MJD",
 				"band":"g",
-				"system":"AB",
-				"magnitude":"21.583",
 				"e_magnitude":"0.09",
-				"telescope":"PS1",
 				"instrument":"PS1",
+				"magnitude":"21.583",
+				"system":"AB",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
 				"time":"55501.387317",
-				"u_time":"MJD",
 				"band":"i",
-				"system":"AB",
-				"magnitude":"21.415",
 				"e_magnitude":"0.05",
-				"telescope":"PS1",
 				"instrument":"PS1",
+				"magnitude":"21.415",
+				"system":"AB",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
 				"time":"55503.338972",
-				"u_time":"MJD",
 				"band":"g",
-				"system":"AB",
-				"magnitude":"21.872",
 				"e_magnitude":"0.102",
-				"telescope":"PS1",
 				"instrument":"PS1",
+				"magnitude":"21.872",
+				"system":"AB",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
 				"time":"55503.351514",
-				"u_time":"MJD",
 				"band":"r",
-				"system":"AB",
-				"magnitude":"21.424",
 				"e_magnitude":"0.035",
-				"telescope":"PS1",
 				"instrument":"PS1",
+				"magnitude":"21.424",
+				"system":"AB",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
 				"time":"55504.409695",
-				"u_time":"MJD",
 				"band":"i",
-				"system":"AB",
-				"magnitude":"21.458",
 				"e_magnitude":"0.035",
-				"telescope":"PS1",
 				"instrument":"PS1",
+				"magnitude":"21.458",
+				"system":"AB",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
 				"time":"55507.330023",
-				"u_time":"MJD",
 				"band":"i",
-				"system":"AB",
-				"magnitude":"21.52",
 				"e_magnitude":"0.058",
-				"telescope":"PS1",
 				"instrument":"PS1",
+				"magnitude":"21.52",
+				"system":"AB",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
 				"time":"55510.313548",
-				"u_time":"MJD",
 				"band":"i",
-				"system":"AB",
-				"magnitude":"21.708",
 				"e_magnitude":"0.053",
-				"telescope":"PS1",
 				"instrument":"PS1",
+				"magnitude":"21.708",
+				"system":"AB",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
 				"time":"55530.339934",
-				"u_time":"MJD",
 				"band":"r",
-				"system":"AB",
-				"magnitude":"22.292",
 				"e_magnitude":"0.205",
-				"telescope":"PS1",
 				"instrument":"PS1",
+				"magnitude":"22.292",
+				"system":"AB",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
 				"time":"55534.30229",
-				"u_time":"MJD",
 				"band":"i",
-				"system":"AB",
-				"magnitude":"22.378",
 				"e_magnitude":"0.107",
-				"telescope":"PS1",
 				"instrument":"PS1",
+				"magnitude":"22.378",
+				"system":"AB",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
 				"time":"55536.26925",
-				"u_time":"MJD",
 				"band":"r",
-				"system":"AB",
-				"magnitude":"23.19",
 				"e_magnitude":"0.295",
-				"telescope":"PS1",
 				"instrument":"PS1",
+				"magnitude":"23.19",
+				"system":"AB",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"2"
 			}
 		]

@@ -1,36 +1,32 @@
 {
 	"SSS120420:204522-504405":{
-		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
 		"name":"SSS120420:204522-504405",
 		"sources":[
 			{
-				"name":"SIMBAD astronomical database",
-				"url":"http://simbad.u-strasbg.fr/",
-				"bibcode":"2000A&AS..143....9W",
-				"alias":"1",
-				"secondary":true,
-				"reference":"Wenger et al. (2000)"
+				"name":"2015arXiv150201589P",
+				"bibcode":"2015arXiv150201589P",
+				"reference":"Planck Collaboration et al. (2015)",
+				"alias":"1"
 			},
 			{
 				"name":"2012ATel.4063....1B",
 				"bibcode":"2012ATel.4063....1B",
-				"alias":"2",
-				"reference":"Benitez-Herrera et al. (2012)"
+				"reference":"Benitez-Herrera et al. (2012)",
+				"alias":"2"
+			},
+			{
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"reference":"Schlafly & Finkbeiner (2011)",
+				"alias":"3"
 			},
 			{
 				"name":"Catalina Sky Survey",
-				"url":"http://nesssi.cacr.caltech.edu/catalina/AllSN.html",
 				"bibcode":"2009ApJ...696..870D",
-				"alias":"3",
-				"reference":"Drake et al. (2009)"
-			},
-			{
-				"name":"WISeREP",
-				"url":"http://wiserep.weizmann.ac.il/",
-				"bibcode":"2012PASP..124..668Y",
-				"alias":"4",
-				"secondary":true,
-				"reference":"Yaron & Gal-Yam (2012)"
+				"reference":"Drake et al. (2009)",
+				"url":"http://nesssi.cacr.caltech.edu/catalina/AllSN.html",
+				"alias":"4"
 			},
 			{
 				"name":"CBAT TOCP",
@@ -39,64 +35,69 @@
 			},
 			{
 				"name":"Latest Supernovae",
+				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
 				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
-				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"7",
+				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
-				"reference":"Guillochon, Parrent, & Margutti (2016)"
+				"url":"https://sne.space",
+				"alias":"7"
 			},
 			{
-				"name":"2011ApJ...737..103S",
-				"bibcode":"2011ApJ...737..103S",
-				"alias":"8",
-				"reference":"Schlafly & Finkbeiner (2011)"
+				"name":"WISeREP",
+				"bibcode":"2012PASP..124..668Y",
+				"reference":"Yaron & Gal-Yam (2012)",
+				"secondary":true,
+				"url":"http://wiserep.weizmann.ac.il/",
+				"alias":"8"
 			},
 			{
-				"name":"2015arXiv150201589P",
-				"bibcode":"2015arXiv150201589P",
-				"alias":"9",
-				"reference":"Planck Collaboration et al. (2015)"
+				"name":"SIMBAD astronomical database",
+				"bibcode":"2000A&AS..143....9W",
+				"reference":"Wenger et al. (2000)",
+				"secondary":true,
+				"url":"http://simbad.u-strasbg.fr/",
+				"alias":"9"
 			}
 		],
 		"alias":[
 			{
 				"value":"SSS120420:204522-504405",
-				"source":"1,3,4,5,6"
+				"source":"5,6,9"
 			},
 			{
 				"value":"PSN J20452209-5044052",
-				"source":"5,6"
+				"source":"4,5,6,8"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1,2,4,5,6"
+				"source":"2,5,6,8,9"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"57",
-				"source":"4,5,6,7,9",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,5,6,7,8"
 			}
 		],
 		"dec":[
 			{
 				"value":"-50:44:05.2",
-				"source":"1,2,5,6",
-				"unit":"degrees"
+				"u_value":"degrees",
+				"source":"2,5,6,9"
 			},
 			{
 				"value":"-50:44:05.28",
-				"source":"3",
-				"unit":"degrees"
+				"u_value":"degrees",
+				"source":"4"
 			}
 		],
 		"discoverdate":[
@@ -114,9 +115,9 @@
 		"ebv":[
 			{
 				"value":"0.0333",
-				"error":"0.0011",
-				"source":"7,8",
-				"derived":true
+				"derived":true,
+				"e_value":"0.0011",
+				"source":"3,7"
 			}
 		],
 		"host":[
@@ -128,6075 +129,2003 @@
 		"lumdist":[
 			{
 				"value":"58",
-				"source":"4,5,6,7,9",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,5,6,7,8"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-17",
-				"source":"4,5,6,7,9",
-				"derived":true
+				"derived":true,
+				"source":"1,5,6,7,8"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.33",
-				"source":"3,7",
-				"derived":true
+				"derived":true,
+				"source":"4,7"
 			}
 		],
 		"maxband":[
 			{
 				"value":"C",
-				"source":"3,7",
-				"derived":true
+				"derived":true,
+				"source":"4,7"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2012/04/29",
-				"source":"3,7",
-				"derived":true
+				"derived":true,
+				"source":"4,7"
 			}
 		],
 		"ra":[
 			{
 				"value":"20:45:22.09",
-				"source":"1,2,5,6",
-				"unit":"hours"
+				"u_value":"hours",
+				"source":"2,5,6,9"
 			},
 			{
 				"value":"20:45:22.08",
-				"source":"3",
-				"unit":"hours"
+				"u_value":"hours",
+				"source":"4"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.013",
-				"source":"4,5,6"
+				"source":"5,6,8"
 			}
 		],
 		"velocity":[
 			{
 				"value":"3900",
-				"source":"4,5,6,7",
-				"unit":"km/s",
-				"derived":true
+				"u_value":"km/s",
+				"source":"7"
 			}
 		],
 		"photometry":[
 			{
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"15.3",
 				"e_magnitude":"1.0",
 				"host":true,
+				"magnitude":"15.3",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"source":"4"
 			},
 			{
 				"time":"53554.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.346701",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.346701",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53554.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.6998",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.6998",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53578.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.869101",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.869101",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53578.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.7467",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.7467",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53591.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.6968",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.6968",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53591.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.483601",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.483601",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53607.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.656401",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.656401",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53607.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.914",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.914",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53620.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.538401",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.538401",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53620.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.1105",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.1105",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53635.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.7064",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.7064",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53635.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.849199",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.849199",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53653.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.0655",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.0655",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53653.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"18.9669",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"18.9669",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53669.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"18.978001",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"18.978001",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53669.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.511999",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.511999",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53701.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.5172",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.5172",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53701.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"18.173201",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"18.173201",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53830.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.7997",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.7997",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53848.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.2467",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.2467",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53848.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.242201",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.242201",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53878.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.7026",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.7026",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53878.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.7861",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.7861",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53892.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.6124",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.6124",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53892.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.3549",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.3549",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53914.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.949699",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.949699",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53914.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.8414",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.8414",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53936.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.868401",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.868401",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53936.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.8095",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.8095",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53942.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.7288",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.7288",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53942.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.958599",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.958599",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53959.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.341101",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.341101",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53959.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.272699",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.272699",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53969.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.0198",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.0198",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53969.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.9916",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.9916",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53979.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.557501",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.557501",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"53979.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.432501",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.432501",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54000.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.529301",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.529301",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54000.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.67",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.67",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54008.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.555401",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.555401",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54008.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.229",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.229",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54014.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"18.809799",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"18.809799",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54014.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"18.5672",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"18.5672",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54019.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.7929",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.7929",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54019.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.792",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.792",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54027.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"18.0576",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"18.0576",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54065.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.139999",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.139999",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54065.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.1273",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.1273",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54197.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"18.964899",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"18.964899",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54197.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.027",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.027",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54215.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.398399",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.398399",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54215.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.5137",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.5137",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54239.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.283199",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.283199",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54240.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.723101",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.723101",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54240.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.708",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.708",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54260.440002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.84",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.84",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54260.559998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.8335",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.8335",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54295.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.254299",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.254299",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54295.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"17.836599",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"17.836599",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54306.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.351",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.351",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54306.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.3864",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.3864",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54321.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.6432",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.6432",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54321.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.163601",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.163601",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54351.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.522301",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.522301",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54351.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.4487",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.4487",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54360.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.550301",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.550301",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54360.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.958599",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.958599",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54385.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.509501",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.509501",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54385.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.613701",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.613701",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54402.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.962",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.962",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54402.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.024",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.024",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54591.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.8006",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.8006",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54591.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.068501",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.068501",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54622.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.810301",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.810301",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54622.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.230499",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.230499",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54642.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.817301",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.817301",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54642.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.799999",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.799999",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54672.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.9345",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.9345",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54672.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.134501",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.134501",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54686.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.914101",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.914101",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54686.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.85",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.85",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54687.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.004101",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.004101",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54687.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.0527",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.0527",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54705.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.894899",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.894899",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54705.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.433901",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.433901",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54735.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.163601",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.163601",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54735.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.072701",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.072701",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54765.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.3414",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.3414",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54765.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.0441",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.0441",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54779.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.382099",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.382099",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54779.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.4065",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.4065",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54943.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.029301",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.029301",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54943.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.4956",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.4956",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54943.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.0187",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.0187",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54943.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.9156",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.9156",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54980.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.831699",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.831699",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54980.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.7973",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.7973",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54980.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.7948",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.7948",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"54980.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.7845",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.7845",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55029.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.760599",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.760599",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55029.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.7456",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.7456",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55029.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.7796",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.7796",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55029.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.7778",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.7778",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55058.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.399",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.399",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55058.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.427099",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.427099",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55058.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.4491",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.4491",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55058.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.4293",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.4293",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55087.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.3312",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.3312",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55087.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.247999",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.247999",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55087.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.336599",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.336599",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55087.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.038601",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.038601",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55120.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.2293",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.2293",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55120.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.2929",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.2929",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55120.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.2269",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.2269",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55120.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.3069",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.3069",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55147.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.403999",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.403999",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55147.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.908001",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.908001",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55147.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"17.7866",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"17.7866",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55147.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"18.8634",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"18.8634",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55359.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.304399",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.304399",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55359.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.2306",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.2306",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55359.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.2069",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.2069",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55359.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.198601",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.198601",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55381.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.235701",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.235701",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55381.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.1273",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.1273",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55381.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.1521",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.1521",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55381.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"18.5821",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"18.5821",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55392.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.2376",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.2376",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55392.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.098801",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.098801",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55392.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.5306",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.5306",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55392.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.491199",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.491199",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55439.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.122601",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.122601",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55439.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.123199",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.123199",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55439.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.992399",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.992399",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55439.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.040899",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.040899",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55474.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.7157",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.7157",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55474.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.830601",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.830601",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55474.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.923401",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.923401",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55474.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.9694",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.9694",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55501.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.3913",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.3913",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55501.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"18.9529",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"18.9529",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55501.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"18.0963",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"18.0963",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55501.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.350201",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.350201",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55681.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.396",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.396",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55681.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.437599",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.437599",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55681.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.2605",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.2605",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55681.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"18.717899",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"18.717899",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55707.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.0998",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.0998",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55707.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.0755",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.0755",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55707.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.1094",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.1094",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55707.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.0695",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.0695",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55739.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.9811",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.9811",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55739.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.366699",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.366699",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55739.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.4053",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.4053",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55739.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.3741",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.3741",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55766.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.4133",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.4133",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55766.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.1359",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.1359",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55766.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.672899",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.672899",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55766.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"17.7306",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"17.7306",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55803.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.8416",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.8416",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55803.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.262199",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.262199",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55803.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.3048",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.3048",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55803.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.858999",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.858999",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55837.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.9214",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.9214",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55837.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.964899",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.964899",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55837.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.9596",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.9596",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"55837.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.9261",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.9261",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"56037.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"17.2351",
 				"e_magnitude":"0.077345",
 				"includeshost":true,
+				"magnitude":"17.2351",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"56037.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"17.4354",
 				"e_magnitude":"0.084523",
 				"includeshost":true,
+				"magnitude":"17.4354",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"56037.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"17.051901",
 				"e_magnitude":"0.070559",
 				"includeshost":true,
+				"magnitude":"17.051901",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"56037.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"17.204",
 				"e_magnitude":"0.075305",
 				"includeshost":true,
+				"magnitude":"17.204",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"56038.5",
-				"u_time":"MJD",
 				"magnitude":"16.6",
+				"u_time":"MJD",
 				"source":"5,6"
 			},
 			{
 				"time":"56043.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"17.396",
 				"e_magnitude":"0.070745",
 				"includeshost":true,
+				"magnitude":"17.396",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"56043.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"17.386999",
 				"e_magnitude":"0.071059",
 				"includeshost":true,
+				"magnitude":"17.386999",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"56043.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"17.5791",
 				"e_magnitude":"0.079413",
 				"includeshost":true,
+				"magnitude":"17.5791",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"56043.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"17.233801",
 				"e_magnitude":"0.068965",
 				"includeshost":true,
+				"magnitude":"17.233801",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"56046.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"17.6961",
 				"e_magnitude":"0.095784",
 				"includeshost":true,
+				"magnitude":"17.6961",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"56046.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"16.6334",
 				"e_magnitude":"0.058717",
 				"includeshost":true,
+				"magnitude":"16.6334",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"56046.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"16.745199",
 				"e_magnitude":"0.062562",
 				"includeshost":true,
+				"magnitude":"16.745199",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"56046.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"16.3274",
 				"e_magnitude":"0.051435",
 				"includeshost":true,
+				"magnitude":"16.3274",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"56072.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"18.032301",
 				"e_magnitude":"0.113674",
 				"includeshost":true,
+				"magnitude":"18.032301",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"56072.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"17.8673",
 				"e_magnitude":"0.105819",
 				"includeshost":true,
+				"magnitude":"17.8673",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"56072.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"17.3843",
 				"e_magnitude":"0.088662",
 				"includeshost":true,
+				"magnitude":"17.3843",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"56072.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"18.4412",
 				"e_magnitude":"0.14454",
 				"includeshost":true,
+				"magnitude":"18.4412",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"56133.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.7078",
 				"e_magnitude":"0.233594",
 				"includeshost":true,
+				"magnitude":"19.7078",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"56133.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"18.704901",
 				"e_magnitude":"0.148529",
 				"includeshost":true,
+				"magnitude":"18.704901",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"56133.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.1273",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.1273",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"56133.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.112301",
 				"e_magnitude":"0.179066",
 				"includeshost":true,
+				"magnitude":"19.112301",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"56173.439941",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.0334",
 				"e_magnitude":"0.141456",
 				"includeshost":true,
+				"magnitude":"19.0334",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"56173.47998",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"20.016001",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"20.016001",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"56173.52002",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.9739",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.9739",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			},
 			{
 				"time":"56173.560059",
-				"u_time":"MJD",
 				"band":"C",
-				"magnitude":"19.9517",
-				"upperlimit":true,
 				"includeshost":true,
+				"magnitude":"19.9517",
 				"telescope":"Catalina Schmidt",
-				"source":"3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
 			}
 		],
 		"spectra":[
 			{
-				"instrument":"ESO-NTT - EFOSC2-NTT",
-				"u_time":"MJD",
 				"time":"56039.0",
-				"observer":"BENITEZ/VALENTI",
-				"reducer":"BENITEZ/VALENTI",
-				"filename":"fSSS2045_20120422_Gr13_Free_slit1.5_1_f.asci",
-				"waveunit":"Angstrom",
-				"fluxunit":"erg/s/cm^2/Angstrom",
-				"data":[
-					[
-						"3662.924072",
-						"2.772188E-16"
-					],
-					[
-						"3668.439876",
-						"2.691038E-16"
-					],
-					[
-						"3673.955679",
-						"2.740566E-16"
-					],
-					[
-						"3679.471482",
-						"1.873831E-16"
-					],
-					[
-						"3684.987286",
-						"2.258723E-16"
-					],
-					[
-						"3690.503089",
-						"2.163731E-16"
-					],
-					[
-						"3696.018892",
-						"2.329941E-16"
-					],
-					[
-						"3701.534696",
-						"2.066025E-16"
-					],
-					[
-						"3707.050499",
-						"2.544918E-16"
-					],
-					[
-						"3712.566302",
-						"2.57045e-16"
-					],
-					[
-						"3718.082106",
-						"2.417364E-16"
-					],
-					[
-						"3723.597909",
-						"3.014087E-16"
-					],
-					[
-						"3729.113712",
-						"3.029502E-16"
-					],
-					[
-						"3734.629516",
-						"2.832953E-16"
-					],
-					[
-						"3740.145319",
-						"2.771645E-16"
-					],
-					[
-						"3745.661122",
-						"3.226504E-16"
-					],
-					[
-						"3751.176926",
-						"3.256502E-16"
-					],
-					[
-						"3756.692729",
-						"3.097918E-16"
-					],
-					[
-						"3762.208532",
-						"3.745876E-16"
-					],
-					[
-						"3767.724336",
-						"3.359982E-16"
-					],
-					[
-						"3773.240139",
-						"3.491643E-16"
-					],
-					[
-						"3778.755942",
-						"3.414674E-16"
-					],
-					[
-						"3784.271746",
-						"3.531388E-16"
-					],
-					[
-						"3789.787549",
-						"3.716035E-16"
-					],
-					[
-						"3795.303352",
-						"3.825081E-16"
-					],
-					[
-						"3800.819156",
-						"3.736328E-16"
-					],
-					[
-						"3806.334959",
-						"3.405094E-16"
-					],
-					[
-						"3811.850762",
-						"3.218945E-16"
-					],
-					[
-						"3817.366566",
-						"2.743236E-16"
-					],
-					[
-						"3822.882369",
-						"2.731306E-16"
-					],
-					[
-						"3828.398172",
-						"2.194489E-16"
-					],
-					[
-						"3833.913976",
-						"1.776173E-16"
-					],
-					[
-						"3839.429779",
-						"1.510881E-16"
-					],
-					[
-						"3844.945582",
-						"1.618795E-16"
-					],
-					[
-						"3850.461386",
-						"1.282141E-16"
-					],
-					[
-						"3855.977189",
-						"1.180476E-16"
-					],
-					[
-						"3861.492992",
-						"1.034517E-16"
-					],
-					[
-						"3867.008796",
-						"9.462918E-17"
-					],
-					[
-						"3872.524599",
-						"9.299916E-17"
-					],
-					[
-						"3878.040402",
-						"1.07155e-16"
-					],
-					[
-						"3883.556206",
-						"1.008203E-16"
-					],
-					[
-						"3889.072009",
-						"1.01343e-16"
-					],
-					[
-						"3894.587812",
-						"1.184274E-16"
-					],
-					[
-						"3900.103616",
-						"1.393773E-16"
-					],
-					[
-						"3905.619419",
-						"1.659359E-16"
-					],
-					[
-						"3911.135222",
-						"1.771995E-16"
-					],
-					[
-						"3916.651026",
-						"2.200363E-16"
-					],
-					[
-						"3922.166829",
-						"2.407467E-16"
-					],
-					[
-						"3927.682632",
-						"2.775541E-16"
-					],
-					[
-						"3933.198436",
-						"2.798117E-16"
-					],
-					[
-						"3938.714239",
-						"3.120503E-16"
-					],
-					[
-						"3944.230042",
-						"3.433081E-16"
-					],
-					[
-						"3949.745846",
-						"3.409585E-16"
-					],
-					[
-						"3955.261649",
-						"3.729636E-16"
-					],
-					[
-						"3960.777452",
-						"3.744254E-16"
-					],
-					[
-						"3966.293256",
-						"3.891571E-16"
-					],
-					[
-						"3971.809059",
-						"4.103995E-16"
-					],
-					[
-						"3977.324862",
-						"4.36569e-16"
-					],
-					[
-						"3982.840666",
-						"4.435161E-16"
-					],
-					[
-						"3988.356469",
-						"4.514358E-16"
-					],
-					[
-						"3993.872272",
-						"4.809283E-16"
-					],
-					[
-						"3999.388076",
-						"4.774511E-16"
-					],
-					[
-						"4004.903879",
-						"5.058479E-16"
-					],
-					[
-						"4010.419683",
-						"5.086388E-16"
-					],
-					[
-						"4015.935486",
-						"5.152217E-16"
-					],
-					[
-						"4021.451289",
-						"5.19276e-16"
-					],
-					[
-						"4026.967093",
-						"4.885372E-16"
-					],
-					[
-						"4032.482896",
-						"5.061782E-16"
-					],
-					[
-						"4037.998699",
-						"5.148495E-16"
-					],
-					[
-						"4043.514503",
-						"5.284819E-16"
-					],
-					[
-						"4049.030306",
-						"5.138904E-16"
-					],
-					[
-						"4054.546109",
-						"4.943305E-16"
-					],
-					[
-						"4060.061913",
-						"4.97792e-16"
-					],
-					[
-						"4065.577716",
-						"4.752525E-16"
-					],
-					[
-						"4071.093519",
-						"4.511407E-16"
-					],
-					[
-						"4076.609323",
-						"4.553824E-16"
-					],
-					[
-						"4082.125126",
-						"4.495491E-16"
-					],
-					[
-						"4087.640929",
-						"4.237837E-16"
-					],
-					[
-						"4093.156733",
-						"4.279586E-16"
-					],
-					[
-						"4098.672536",
-						"3.864964E-16"
-					],
-					[
-						"4104.188339",
-						"3.857623E-16"
-					],
-					[
-						"4109.704143",
-						"3.786429E-16"
-					],
-					[
-						"4115.219946",
-						"3.403324E-16"
-					],
-					[
-						"4120.735749",
-						"3.514355E-16"
-					],
-					[
-						"4126.251553",
-						"3.311622E-16"
-					],
-					[
-						"4131.767356",
-						"3.338477E-16"
-					],
-					[
-						"4137.283159",
-						"3.194237E-16"
-					],
-					[
-						"4142.798963",
-						"2.875512E-16"
-					],
-					[
-						"4148.314766",
-						"2.737161E-16"
-					],
-					[
-						"4153.830569",
-						"2.730831E-16"
-					],
-					[
-						"4159.346373",
-						"2.764293E-16"
-					],
-					[
-						"4164.862176",
-						"2.782695E-16"
-					],
-					[
-						"4170.377979",
-						"2.858522E-16"
-					],
-					[
-						"4175.893783",
-						"2.885901E-16"
-					],
-					[
-						"4181.409586",
-						"3.066788E-16"
-					],
-					[
-						"4186.925389",
-						"2.729693E-16"
-					],
-					[
-						"4192.441193",
-						"3.079413E-16"
-					],
-					[
-						"4197.956996",
-						"2.975984E-16"
-					],
-					[
-						"4203.472799",
-						"3.017219E-16"
-					],
-					[
-						"4208.988603",
-						"2.985775E-16"
-					],
-					[
-						"4214.504406",
-						"2.942601E-16"
-					],
-					[
-						"4220.020209",
-						"3.164899E-16"
-					],
-					[
-						"4225.536013",
-						"3.150608E-16"
-					],
-					[
-						"4231.051816",
-						"3.087326E-16"
-					],
-					[
-						"4236.567619",
-						"3.368856E-16"
-					],
-					[
-						"4242.083423",
-						"3.392081E-16"
-					],
-					[
-						"4247.599226",
-						"3.351589E-16"
-					],
-					[
-						"4253.115029",
-						"3.487692E-16"
-					],
-					[
-						"4258.630833",
-						"3.368033E-16"
-					],
-					[
-						"4264.146636",
-						"3.502048E-16"
-					],
-					[
-						"4269.662439",
-						"3.471746E-16"
-					],
-					[
-						"4275.178243",
-						"3.510704E-16"
-					],
-					[
-						"4280.694046",
-						"3.374275E-16"
-					],
-					[
-						"4286.209849",
-						"3.399962E-16"
-					],
-					[
-						"4291.725653",
-						"3.702095E-16"
-					],
-					[
-						"4297.241456",
-						"3.731638E-16"
-					],
-					[
-						"4302.757259",
-						"3.534685E-16"
-					],
-					[
-						"4308.273063",
-						"3.530236E-16"
-					],
-					[
-						"4313.788866",
-						"3.512575E-16"
-					],
-					[
-						"4319.304669",
-						"3.565279E-16"
-					],
-					[
-						"4324.820473",
-						"3.641223E-16"
-					],
-					[
-						"4330.336276",
-						"3.444103E-16"
-					],
-					[
-						"4335.852079",
-						"3.539001E-16"
-					],
-					[
-						"4341.367883",
-						"3.81892e-16"
-					],
-					[
-						"4346.883686",
-						"3.684406E-16"
-					],
-					[
-						"4352.399489",
-						"3.795223E-16"
-					],
-					[
-						"4357.915293",
-						"3.744387E-16"
-					],
-					[
-						"4363.431096",
-						"3.891469E-16"
-					],
-					[
-						"4368.946899",
-						"4.014862E-16"
-					],
-					[
-						"4374.462703",
-						"4.086724E-16"
-					],
-					[
-						"4379.978506",
-						"3.988715E-16"
-					],
-					[
-						"4385.494309",
-						"4.065392E-16"
-					],
-					[
-						"4391.010113",
-						"3.98819e-16"
-					],
-					[
-						"4396.525916",
-						"4.037863E-16"
-					],
-					[
-						"4402.041719",
-						"4.032808E-16"
-					],
-					[
-						"4407.557523",
-						"3.794297E-16"
-					],
-					[
-						"4413.073326",
-						"3.867914E-16"
-					],
-					[
-						"4418.589129",
-						"3.6797e-16"
-					],
-					[
-						"4424.104933",
-						"3.722672E-16"
-					],
-					[
-						"4429.620736",
-						"3.527776E-16"
-					],
-					[
-						"4435.136539",
-						"3.428807E-16"
-					],
-					[
-						"4440.652343",
-						"3.417353E-16"
-					],
-					[
-						"4446.168146",
-						"3.127342E-16"
-					],
-					[
-						"4451.683949",
-						"3.103456E-16"
-					],
-					[
-						"4457.199753",
-						"2.919919E-16"
-					],
-					[
-						"4462.715556",
-						"2.788074E-16"
-					],
-					[
-						"4468.231359",
-						"2.579105E-16"
-					],
-					[
-						"4473.747163",
-						"2.538298E-16"
-					],
-					[
-						"4479.262966",
-						"2.416866E-16"
-					],
-					[
-						"4484.778769",
-						"2.284379E-16"
-					],
-					[
-						"4490.294573",
-						"2.33687e-16"
-					],
-					[
-						"4495.810376",
-						"2.071144E-16"
-					],
-					[
-						"4501.32618",
-						"2.084472E-16"
-					],
-					[
-						"4506.841983",
-						"2.058567E-16"
-					],
-					[
-						"4512.357786",
-						"2.096338E-16"
-					],
-					[
-						"4517.87359",
-						"2.197475E-16"
-					],
-					[
-						"4523.389393",
-						"2.351017E-16"
-					],
-					[
-						"4528.905196",
-						"2.311047E-16"
-					],
-					[
-						"4534.421",
-						"2.390627E-16"
-					],
-					[
-						"4539.936803",
-						"2.551161E-16"
-					],
-					[
-						"4545.452606",
-						"2.438404E-16"
-					],
-					[
-						"4550.96841",
-						"2.520435E-16"
-					],
-					[
-						"4556.484213",
-						"2.825308E-16"
-					],
-					[
-						"4562.000016",
-						"3.16799e-16"
-					],
-					[
-						"4567.51582",
-						"3.025182E-16"
-					],
-					[
-						"4573.031623",
-						"3.288642E-16"
-					],
-					[
-						"4578.547426",
-						"3.619844E-16"
-					],
-					[
-						"4584.06323",
-						"3.74367e-16"
-					],
-					[
-						"4589.579033",
-						"3.950131E-16"
-					],
-					[
-						"4595.094836",
-						"4.171508E-16"
-					],
-					[
-						"4600.61064",
-						"4.556269E-16"
-					],
-					[
-						"4606.126443",
-						"4.792915E-16"
-					],
-					[
-						"4611.642246",
-						"5.03433e-16"
-					],
-					[
-						"4617.15805",
-						"5.371259E-16"
-					],
-					[
-						"4622.673853",
-						"5.465252E-16"
-					],
-					[
-						"4628.189656",
-						"5.775993E-16"
-					],
-					[
-						"4633.70546",
-						"6.049233E-16"
-					],
-					[
-						"4639.221263",
-						"6.114866E-16"
-					],
-					[
-						"4644.737066",
-						"6.52722e-16"
-					],
-					[
-						"4650.25287",
-						"6.862044E-16"
-					],
-					[
-						"4655.768673",
-						"7.142939E-16"
-					],
-					[
-						"4661.284476",
-						"7.086309E-16"
-					],
-					[
-						"4666.80028",
-						"7.66903e-16"
-					],
-					[
-						"4672.316083",
-						"7.796919E-16"
-					],
-					[
-						"4677.831886",
-						"8.163765E-16"
-					],
-					[
-						"4683.34769",
-						"8.302204E-16"
-					],
-					[
-						"4688.863493",
-						"8.513942E-16"
-					],
-					[
-						"4694.379296",
-						"8.738275E-16"
-					],
-					[
-						"4699.8951",
-						"8.828465E-16"
-					],
-					[
-						"4705.410903",
-						"8.92059e-16"
-					],
-					[
-						"4710.926706",
-						"8.898224E-16"
-					],
-					[
-						"4716.44251",
-						"8.720281E-16"
-					],
-					[
-						"4721.958313",
-						"8.47324e-16"
-					],
-					[
-						"4727.474116",
-						"8.361333E-16"
-					],
-					[
-						"4732.98992",
-						"8.341993E-16"
-					],
-					[
-						"4738.505723",
-						"7.951941E-16"
-					],
-					[
-						"4744.021526",
-						"7.654162E-16"
-					],
-					[
-						"4749.53733",
-						"7.601958E-16"
-					],
-					[
-						"4755.053133",
-						"7.314507E-16"
-					],
-					[
-						"4760.568936",
-						"7.233923E-16"
-					],
-					[
-						"4766.08474",
-						"7.202068E-16"
-					],
-					[
-						"4771.600543",
-						"6.904582E-16"
-					],
-					[
-						"4777.116346",
-						"6.739753E-16"
-					],
-					[
-						"4782.63215",
-						"6.893185E-16"
-					],
-					[
-						"4788.147953",
-						"6.860569E-16"
-					],
-					[
-						"4793.663756",
-						"6.485247E-16"
-					],
-					[
-						"4799.17956",
-						"6.311489E-16"
-					],
-					[
-						"4804.695363",
-						"6.252117E-16"
-					],
-					[
-						"4810.211166",
-						"5.876489E-16"
-					],
-					[
-						"4815.72697",
-						"5.401098E-16"
-					],
-					[
-						"4821.242773",
-						"4.75483e-16"
-					],
-					[
-						"4826.758576",
-						"4.150059E-16"
-					],
-					[
-						"4832.27438",
-						"3.947172E-16"
-					],
-					[
-						"4837.790183",
-						"3.505565E-16"
-					],
-					[
-						"4843.305986",
-						"3.459105E-16"
-					],
-					[
-						"4848.82179",
-						"3.164779E-16"
-					],
-					[
-						"4854.337593",
-						"3.177089E-16"
-					],
-					[
-						"4859.853396",
-						"2.9687e-16"
-					],
-					[
-						"4865.3692",
-						"3.055189E-16"
-					],
-					[
-						"4870.885003",
-						"3.017984E-16"
-					],
-					[
-						"4876.400806",
-						"3.087228E-16"
-					],
-					[
-						"4881.91661",
-						"2.76912e-16"
-					],
-					[
-						"4887.432413",
-						"2.889311E-16"
-					],
-					[
-						"4892.948216",
-						"3.013296E-16"
-					],
-					[
-						"4898.46402",
-						"2.91217e-16"
-					],
-					[
-						"4903.979823",
-						"2.791774E-16"
-					],
-					[
-						"4909.495626",
-						"2.775248E-16"
-					],
-					[
-						"4915.01143",
-						"2.941619E-16"
-					],
-					[
-						"4920.527233",
-						"2.807866E-16"
-					],
-					[
-						"4926.043036",
-						"2.677401E-16"
-					],
-					[
-						"4931.55884",
-						"2.703916E-16"
-					],
-					[
-						"4937.074643",
-						"2.654427E-16"
-					],
-					[
-						"4942.590446",
-						"2.96531e-16"
-					],
-					[
-						"4948.10625",
-						"3.020781E-16"
-					],
-					[
-						"4953.622053",
-						"3.004848E-16"
-					],
-					[
-						"4959.137856",
-						"2.848421E-16"
-					],
-					[
-						"4964.65366",
-						"3.15611e-16"
-					],
-					[
-						"4970.169463",
-						"3.127821E-16"
-					],
-					[
-						"4975.685266",
-						"3.260275E-16"
-					],
-					[
-						"4981.20107",
-						"3.406427E-16"
-					],
-					[
-						"4986.716873",
-						"3.479587E-16"
-					],
-					[
-						"4992.232677",
-						"3.499738E-16"
-					],
-					[
-						"4997.74848",
-						"3.600267E-16"
-					],
-					[
-						"5003.264283",
-						"3.899346E-16"
-					],
-					[
-						"5008.780087",
-						"3.896459E-16"
-					],
-					[
-						"5014.29589",
-						"4.079077E-16"
-					],
-					[
-						"5019.811693",
-						"4.458032E-16"
-					],
-					[
-						"5025.327497",
-						"4.418818E-16"
-					],
-					[
-						"5030.8433",
-						"4.716812E-16"
-					],
-					[
-						"5036.359103",
-						"4.597046E-16"
-					],
-					[
-						"5041.874907",
-						"4.690306E-16"
-					],
-					[
-						"5047.39071",
-						"4.640571E-16"
-					],
-					[
-						"5052.906513",
-						"4.420017E-16"
-					],
-					[
-						"5058.422317",
-						"4.211586E-16"
-					],
-					[
-						"5063.93812",
-						"4.022703E-16"
-					],
-					[
-						"5069.453923",
-						"3.659456E-16"
-					],
-					[
-						"5074.969727",
-						"3.512836E-16"
-					],
-					[
-						"5080.48553",
-						"3.490372E-16"
-					],
-					[
-						"5086.001333",
-						"3.322085E-16"
-					],
-					[
-						"5091.517137",
-						"3.187468E-16"
-					],
-					[
-						"5097.03294",
-						"3.11422e-16"
-					],
-					[
-						"5102.548743",
-						"3.00881e-16"
-					],
-					[
-						"5108.064547",
-						"2.788566E-16"
-					],
-					[
-						"5113.58035",
-						"2.803638E-16"
-					],
-					[
-						"5119.096153",
-						"2.771837E-16"
-					],
-					[
-						"5124.611957",
-						"2.603572E-16"
-					],
-					[
-						"5130.12776",
-						"2.666904E-16"
-					],
-					[
-						"5135.643563",
-						"2.614965E-16"
-					],
-					[
-						"5141.159367",
-						"2.643032E-16"
-					],
-					[
-						"5146.67517",
-						"2.835416E-16"
-					],
-					[
-						"5152.190973",
-						"2.723516E-16"
-					],
-					[
-						"5157.706777",
-						"2.794174E-16"
-					],
-					[
-						"5163.22258",
-						"2.856985E-16"
-					],
-					[
-						"5168.738383",
-						"2.919891E-16"
-					],
-					[
-						"5174.254187",
-						"2.999758E-16"
-					],
-					[
-						"5179.76999",
-						"3.064247E-16"
-					],
-					[
-						"5185.285793",
-						"3.070823E-16"
-					],
-					[
-						"5190.801597",
-						"3.208789E-16"
-					],
-					[
-						"5196.3174",
-						"3.330522E-16"
-					],
-					[
-						"5201.833203",
-						"3.356285E-16"
-					],
-					[
-						"5207.349007",
-						"3.279933E-16"
-					],
-					[
-						"5212.86481",
-						"3.367918E-16"
-					],
-					[
-						"5218.380613",
-						"3.390239E-16"
-					],
-					[
-						"5223.896417",
-						"3.527017E-16"
-					],
-					[
-						"5229.41222",
-						"3.433885E-16"
-					],
-					[
-						"5234.928023",
-						"3.545179E-16"
-					],
-					[
-						"5240.443827",
-						"3.487427E-16"
-					],
-					[
-						"5245.95963",
-						"3.610146E-16"
-					],
-					[
-						"5251.475433",
-						"3.705865E-16"
-					],
-					[
-						"5256.991237",
-						"3.659443E-16"
-					],
-					[
-						"5262.50704",
-						"3.809928E-16"
-					],
-					[
-						"5268.022843",
-						"3.845413E-16"
-					],
-					[
-						"5273.538647",
-						"3.889018E-16"
-					],
-					[
-						"5279.05445",
-						"3.853858E-16"
-					],
-					[
-						"5284.570253",
-						"3.959354E-16"
-					],
-					[
-						"5290.086057",
-						"4.154974E-16"
-					],
-					[
-						"5295.60186",
-						"3.976038E-16"
-					],
-					[
-						"5301.117663",
-						"4.099279E-16"
-					],
-					[
-						"5306.633467",
-						"4.274373E-16"
-					],
-					[
-						"5312.14927",
-						"4.34826e-16"
-					],
-					[
-						"5317.665073",
-						"4.360896E-16"
-					],
-					[
-						"5323.180877",
-						"4.378281E-16"
-					],
-					[
-						"5328.69668",
-						"4.5948e-16"
-					],
-					[
-						"5334.212483",
-						"4.574365E-16"
-					],
-					[
-						"5339.728287",
-						"4.716878E-16"
-					],
-					[
-						"5345.24409",
-						"4.867938E-16"
-					],
-					[
-						"5350.759893",
-						"4.961128E-16"
-					],
-					[
-						"5356.275697",
-						"5.13626e-16"
-					],
-					[
-						"5361.7915",
-						"5.256934E-16"
-					],
-					[
-						"5367.307303",
-						"5.135256E-16"
-					],
-					[
-						"5372.823107",
-						"5.23669e-16"
-					],
-					[
-						"5378.33891",
-						"5.43733e-16"
-					],
-					[
-						"5383.854713",
-						"5.373554E-16"
-					],
-					[
-						"5389.370517",
-						"5.39618e-16"
-					],
-					[
-						"5394.88632",
-						"5.4724e-16"
-					],
-					[
-						"5400.402123",
-						"5.495934E-16"
-					],
-					[
-						"5405.917927",
-						"5.497063E-16"
-					],
-					[
-						"5411.43373",
-						"5.454816E-16"
-					],
-					[
-						"5416.949533",
-						"5.379356E-16"
-					],
-					[
-						"5422.465337",
-						"5.442317E-16"
-					],
-					[
-						"5427.98114",
-						"5.427179E-16"
-					],
-					[
-						"5433.496943",
-						"5.575139E-16"
-					],
-					[
-						"5439.012747",
-						"5.433877E-16"
-					],
-					[
-						"5444.52855",
-						"5.46386e-16"
-					],
-					[
-						"5450.044353",
-						"5.46961e-16"
-					],
-					[
-						"5455.560157",
-						"5.622651E-16"
-					],
-					[
-						"5461.07596",
-						"5.616554E-16"
-					],
-					[
-						"5466.591763",
-						"5.720465E-16"
-					],
-					[
-						"5472.107567",
-						"5.680385E-16"
-					],
-					[
-						"5477.62337",
-						"5.693876E-16"
-					],
-					[
-						"5483.139174",
-						"5.606382E-16"
-					],
-					[
-						"5488.654977",
-						"5.570425E-16"
-					],
-					[
-						"5494.17078",
-						"5.343936E-16"
-					],
-					[
-						"5499.686584",
-						"5.455172E-16"
-					],
-					[
-						"5505.202387",
-						"5.180571E-16"
-					],
-					[
-						"5510.71819",
-						"4.83919e-16"
-					],
-					[
-						"5516.233994",
-						"4.924462E-16"
-					],
-					[
-						"5521.749797",
-						"4.70053e-16"
-					],
-					[
-						"5527.2656",
-						"4.67894e-16"
-					],
-					[
-						"5532.781404",
-						"4.256927E-16"
-					],
-					[
-						"5538.297207",
-						"4.221801E-16"
-					],
-					[
-						"5543.81301",
-						"4.393256E-16"
-					],
-					[
-						"5549.328814",
-						"4.550784E-16"
-					],
-					[
-						"5554.844617",
-						"4.360392E-16"
-					],
-					[
-						"5560.36042",
-						"4.575017E-16"
-					],
-					[
-						"5565.876224",
-						"5.090594E-16"
-					],
-					[
-						"5571.392027",
-						"4.542339E-16"
-					],
-					[
-						"5576.90783",
-						"4.398473E-16"
-					],
-					[
-						"5582.423634",
-						"4.546646E-16"
-					],
-					[
-						"5587.939437",
-						"4.833287E-16"
-					],
-					[
-						"5593.45524",
-						"4.859569E-16"
-					],
-					[
-						"5598.971044",
-						"5.076213E-16"
-					],
-					[
-						"5604.486847",
-						"5.022806E-16"
-					],
-					[
-						"5610.00265",
-						"5.113447E-16"
-					],
-					[
-						"5615.518454",
-						"5.226353E-16"
-					],
-					[
-						"5621.034257",
-						"5.060609E-16"
-					],
-					[
-						"5626.55006",
-						"5.164443E-16"
-					],
-					[
-						"5632.065864",
-						"4.976792E-16"
-					],
-					[
-						"5637.581667",
-						"4.998144E-16"
-					],
-					[
-						"5643.09747",
-						"4.823216E-16"
-					],
-					[
-						"5648.613274",
-						"4.757969E-16"
-					],
-					[
-						"5654.129077",
-						"4.783747E-16"
-					],
-					[
-						"5659.64488",
-						"4.550507E-16"
-					],
-					[
-						"5665.160684",
-						"4.279919E-16"
-					],
-					[
-						"5670.676487",
-						"4.207429E-16"
-					],
-					[
-						"5676.19229",
-						"4.100653E-16"
-					],
-					[
-						"5681.708094",
-						"3.977769E-16"
-					],
-					[
-						"5687.223897",
-						"3.692054E-16"
-					],
-					[
-						"5692.7397",
-						"3.631052E-16"
-					],
-					[
-						"5698.255504",
-						"3.555169E-16"
-					],
-					[
-						"5703.771307",
-						"3.418121E-16"
-					],
-					[
-						"5709.28711",
-						"3.20217e-16"
-					],
-					[
-						"5714.802914",
-						"3.163595E-16"
-					],
-					[
-						"5720.318717",
-						"2.921836E-16"
-					],
-					[
-						"5725.83452",
-						"2.925721E-16"
-					],
-					[
-						"5731.350324",
-						"2.565795E-16"
-					],
-					[
-						"5736.866127",
-						"2.495643E-16"
-					],
-					[
-						"5742.38193",
-						"2.220749E-16"
-					],
-					[
-						"5747.897734",
-						"2.234574E-16"
-					],
-					[
-						"5753.413537",
-						"2.005363E-16"
-					],
-					[
-						"5758.92934",
-						"1.950561E-16"
-					],
-					[
-						"5764.445144",
-						"1.982402E-16"
-					],
-					[
-						"5769.960947",
-						"1.971982E-16"
-					],
-					[
-						"5775.47675",
-						"1.908615E-16"
-					],
-					[
-						"5780.992554",
-						"1.868155E-16"
-					],
-					[
-						"5786.508357",
-						"1.911153E-16"
-					],
-					[
-						"5792.02416",
-						"1.944325E-16"
-					],
-					[
-						"5797.539964",
-						"1.924856E-16"
-					],
-					[
-						"5803.055767",
-						"2.086914E-16"
-					],
-					[
-						"5808.57157",
-						"2.174589E-16"
-					],
-					[
-						"5814.087374",
-						"2.193788E-16"
-					],
-					[
-						"5819.603177",
-						"2.322861E-16"
-					],
-					[
-						"5825.11898",
-						"2.458009E-16"
-					],
-					[
-						"5830.634784",
-						"2.597396E-16"
-					],
-					[
-						"5836.150587",
-						"2.745276E-16"
-					],
-					[
-						"5841.66639",
-						"2.971073E-16"
-					],
-					[
-						"5847.182194",
-						"3.003853E-16"
-					],
-					[
-						"5852.697997",
-						"3.47676e-16"
-					],
-					[
-						"5858.2138",
-						"3.574645E-16"
-					],
-					[
-						"5863.729604",
-						"3.738847E-16"
-					],
-					[
-						"5869.245407",
-						"4.044367E-16"
-					],
-					[
-						"5874.76121",
-						"4.348716E-16"
-					],
-					[
-						"5880.277014",
-						"4.603967E-16"
-					],
-					[
-						"5885.792817",
-						"4.682184E-16"
-					],
-					[
-						"5891.30862",
-						"5.104549E-16"
-					],
-					[
-						"5896.824424",
-						"5.236551E-16"
-					],
-					[
-						"5902.340227",
-						"5.239746E-16"
-					],
-					[
-						"5907.85603",
-						"5.781444E-16"
-					],
-					[
-						"5913.371834",
-						"5.857345E-16"
-					],
-					[
-						"5918.887637",
-						"6.08736e-16"
-					],
-					[
-						"5924.40344",
-						"6.229075E-16"
-					],
-					[
-						"5929.919244",
-						"6.352894E-16"
-					],
-					[
-						"5935.435047",
-						"6.469384E-16"
-					],
-					[
-						"5940.95085",
-						"6.458961E-16"
-					],
-					[
-						"5946.466654",
-						"6.794223E-16"
-					],
-					[
-						"5951.982457",
-						"6.606212E-16"
-					],
-					[
-						"5957.49826",
-						"6.489554E-16"
-					],
-					[
-						"5963.014064",
-						"6.662086E-16"
-					],
-					[
-						"5968.529867",
-						"6.655917E-16"
-					],
-					[
-						"5974.045671",
-						"6.643456E-16"
-					],
-					[
-						"5979.561474",
-						"6.410211E-16"
-					],
-					[
-						"5985.077277",
-						"6.207534E-16"
-					],
-					[
-						"5990.593081",
-						"6.064449E-16"
-					],
-					[
-						"5996.108884",
-						"5.904954E-16"
-					],
-					[
-						"6001.624687",
-						"5.682895E-16"
-					],
-					[
-						"6007.140491",
-						"5.50399e-16"
-					],
-					[
-						"6012.656294",
-						"5.374916E-16"
-					],
-					[
-						"6018.172097",
-						"5.341631E-16"
-					],
-					[
-						"6023.687901",
-						"5.132457E-16"
-					],
-					[
-						"6029.203704",
-						"4.85946e-16"
-					],
-					[
-						"6034.719507",
-						"4.899485E-16"
-					],
-					[
-						"6040.235311",
-						"4.796564E-16"
-					],
-					[
-						"6045.751114",
-						"4.631368E-16"
-					],
-					[
-						"6051.266917",
-						"4.481907E-16"
-					],
-					[
-						"6056.782721",
-						"4.442497E-16"
-					],
-					[
-						"6062.298524",
-						"4.414127E-16"
-					],
-					[
-						"6067.814327",
-						"4.276383E-16"
-					],
-					[
-						"6073.330131",
-						"4.13197e-16"
-					],
-					[
-						"6078.845934",
-						"3.984674E-16"
-					],
-					[
-						"6084.361737",
-						"3.885222E-16"
-					],
-					[
-						"6089.877541",
-						"3.596266E-16"
-					],
-					[
-						"6095.393344",
-						"3.495826E-16"
-					],
-					[
-						"6100.909147",
-						"3.387572E-16"
-					],
-					[
-						"6106.424951",
-						"3.201497E-16"
-					],
-					[
-						"6111.940754",
-						"3.08412e-16"
-					],
-					[
-						"6117.456557",
-						"3.173372E-16"
-					],
-					[
-						"6122.972361",
-						"2.93012e-16"
-					],
-					[
-						"6128.488164",
-						"2.718661E-16"
-					],
-					[
-						"6134.003967",
-						"2.845589E-16"
-					],
-					[
-						"6139.519771",
-						"2.890531E-16"
-					],
-					[
-						"6145.035574",
-						"2.744499E-16"
-					],
-					[
-						"6150.551377",
-						"2.822461E-16"
-					],
-					[
-						"6156.067181",
-						"2.822032E-16"
-					],
-					[
-						"6161.582984",
-						"2.930795E-16"
-					],
-					[
-						"6167.098787",
-						"2.95186e-16"
-					],
-					[
-						"6172.614591",
-						"2.962404E-16"
-					],
-					[
-						"6178.130394",
-						"3.102458E-16"
-					],
-					[
-						"6183.646197",
-						"3.150736E-16"
-					],
-					[
-						"6189.162001",
-						"3.185755E-16"
-					],
-					[
-						"6194.677804",
-						"3.082697E-16"
-					],
-					[
-						"6200.193607",
-						"2.895993E-16"
-					],
-					[
-						"6205.709411",
-						"3.100718E-16"
-					],
-					[
-						"6211.225214",
-						"3.142839E-16"
-					],
-					[
-						"6216.741017",
-						"3.218455E-16"
-					],
-					[
-						"6222.256821",
-						"3.037063E-16"
-					],
-					[
-						"6227.772624",
-						"3.018498E-16"
-					],
-					[
-						"6233.288427",
-						"2.975789E-16"
-					],
-					[
-						"6238.804231",
-						"3.040069E-16"
-					],
-					[
-						"6244.320034",
-						"2.961039E-16"
-					],
-					[
-						"6249.835837",
-						"3.020824E-16"
-					],
-					[
-						"6255.351641",
-						"2.915145E-16"
-					],
-					[
-						"6260.867444",
-						"3.041689E-16"
-					],
-					[
-						"6266.383247",
-						"2.992449E-16"
-					],
-					[
-						"6271.899051",
-						"3.023288E-16"
-					],
-					[
-						"6277.414854",
-						"3.110243E-16"
-					],
-					[
-						"6282.930657",
-						"3.183078E-16"
-					],
-					[
-						"6288.446461",
-						"3.196454E-16"
-					],
-					[
-						"6293.962264",
-						"3.152431E-16"
-					],
-					[
-						"6299.478067",
-						"3.218455E-16"
-					],
-					[
-						"6304.993871",
-						"3.147569E-16"
-					],
-					[
-						"6310.509674",
-						"3.256269E-16"
-					],
-					[
-						"6316.025477",
-						"3.240546E-16"
-					],
-					[
-						"6321.541281",
-						"3.184939E-16"
-					],
-					[
-						"6327.057084",
-						"3.274909E-16"
-					],
-					[
-						"6332.572887",
-						"3.163376E-16"
-					],
-					[
-						"6338.088691",
-						"3.216495E-16"
-					],
-					[
-						"6343.604494",
-						"3.227378E-16"
-					],
-					[
-						"6349.120297",
-						"3.142356E-16"
-					],
-					[
-						"6354.636101",
-						"3.15388e-16"
-					],
-					[
-						"6360.151904",
-						"3.164373E-16"
-					],
-					[
-						"6365.667707",
-						"2.918469E-16"
-					],
-					[
-						"6371.183511",
-						"3.024955E-16"
-					],
-					[
-						"6376.699314",
-						"2.809247E-16"
-					],
-					[
-						"6382.215117",
-						"2.691914E-16"
-					],
-					[
-						"6387.730921",
-						"2.551369E-16"
-					],
-					[
-						"6393.246724",
-						"2.440707E-16"
-					],
-					[
-						"6398.762527",
-						"2.32883e-16"
-					],
-					[
-						"6404.278331",
-						"2.410835E-16"
-					],
-					[
-						"6409.794134",
-						"2.081626E-16"
-					],
-					[
-						"6415.309937",
-						"2.106067E-16"
-					],
-					[
-						"6420.825741",
-						"1.922856E-16"
-					],
-					[
-						"6426.341544",
-						"1.905422E-16"
-					],
-					[
-						"6431.857347",
-						"2.021292E-16"
-					],
-					[
-						"6437.373151",
-						"1.953948E-16"
-					],
-					[
-						"6442.888954",
-						"1.843797E-16"
-					],
-					[
-						"6448.404757",
-						"1.96351e-16"
-					],
-					[
-						"6453.920561",
-						"2.096356E-16"
-					],
-					[
-						"6459.436364",
-						"2.123614E-16"
-					],
-					[
-						"6464.952168",
-						"2.104512E-16"
-					],
-					[
-						"6470.467971",
-						"2.219315E-16"
-					],
-					[
-						"6475.983774",
-						"2.231206E-16"
-					],
-					[
-						"6481.499578",
-						"2.283625E-16"
-					],
-					[
-						"6487.015381",
-						"2.425909E-16"
-					],
-					[
-						"6492.531184",
-						"2.459651E-16"
-					],
-					[
-						"6498.046988",
-						"2.588011E-16"
-					],
-					[
-						"6503.562791",
-						"2.747612E-16"
-					],
-					[
-						"6509.078594",
-						"2.892855E-16"
-					],
-					[
-						"6514.594398",
-						"3.052814E-16"
-					],
-					[
-						"6520.110201",
-						"3.115207E-16"
-					],
-					[
-						"6525.626004",
-						"3.067329E-16"
-					],
-					[
-						"6531.141808",
-						"3.251145E-16"
-					],
-					[
-						"6536.657611",
-						"3.460587E-16"
-					],
-					[
-						"6542.173414",
-						"3.434403E-16"
-					],
-					[
-						"6547.689218",
-						"3.49545e-16"
-					],
-					[
-						"6553.205021",
-						"3.523291E-16"
-					],
-					[
-						"6558.720824",
-						"3.648613E-16"
-					],
-					[
-						"6564.236628",
-						"3.548e-16"
-					],
-					[
-						"6569.752431",
-						"3.545977E-16"
-					],
-					[
-						"6575.268234",
-						"3.64994e-16"
-					],
-					[
-						"6580.784038",
-						"3.740695E-16"
-					],
-					[
-						"6586.299841",
-						"3.879456E-16"
-					],
-					[
-						"6591.815644",
-						"3.999502E-16"
-					],
-					[
-						"6597.331448",
-						"3.884561E-16"
-					],
-					[
-						"6602.847251",
-						"3.974284E-16"
-					],
-					[
-						"6608.363054",
-						"3.791524E-16"
-					],
-					[
-						"6613.878858",
-						"3.956509E-16"
-					],
-					[
-						"6619.394661",
-						"3.954696E-16"
-					],
-					[
-						"6624.910464",
-						"3.814418E-16"
-					],
-					[
-						"6630.426268",
-						"3.893674E-16"
-					],
-					[
-						"6635.942071",
-						"3.865339E-16"
-					],
-					[
-						"6641.457874",
-						"3.911021E-16"
-					],
-					[
-						"6646.973678",
-						"3.600329E-16"
-					],
-					[
-						"6652.489481",
-						"3.481571E-16"
-					],
-					[
-						"6658.005284",
-						"3.61733e-16"
-					],
-					[
-						"6663.521088",
-						"3.444718E-16"
-					],
-					[
-						"6669.036891",
-						"3.380505E-16"
-					],
-					[
-						"6674.552694",
-						"3.382064E-16"
-					],
-					[
-						"6680.068498",
-						"3.202679E-16"
-					],
-					[
-						"6685.584301",
-						"3.105835E-16"
-					],
-					[
-						"6691.100104",
-						"2.916212E-16"
-					],
-					[
-						"6696.615908",
-						"2.811181E-16"
-					],
-					[
-						"6702.131711",
-						"2.701179E-16"
-					],
-					[
-						"6707.647514",
-						"2.477221E-16"
-					],
-					[
-						"6713.163318",
-						"2.478612E-16"
-					],
-					[
-						"6718.679121",
-						"2.300882E-16"
-					],
-					[
-						"6724.194924",
-						"2.058747E-16"
-					],
-					[
-						"6729.710728",
-						"1.996351E-16"
-					],
-					[
-						"6735.226531",
-						"1.849598E-16"
-					],
-					[
-						"6740.742334",
-						"1.754654E-16"
-					],
-					[
-						"6746.258138",
-						"1.752359E-16"
-					],
-					[
-						"6751.773941",
-						"1.712997E-16"
-					],
-					[
-						"6757.289744",
-						"1.575192E-16"
-					],
-					[
-						"6762.805548",
-						"1.447506E-16"
-					],
-					[
-						"6768.321351",
-						"1.385797E-16"
-					],
-					[
-						"6773.837154",
-						"1.358075E-16"
-					],
-					[
-						"6779.352958",
-						"1.402018E-16"
-					],
-					[
-						"6784.868761",
-						"1.362919E-16"
-					],
-					[
-						"6790.384564",
-						"1.189218E-16"
-					],
-					[
-						"6795.900368",
-						"1.151932E-16"
-					],
-					[
-						"6801.416171",
-						"1.096464E-16"
-					],
-					[
-						"6806.931974",
-						"1.059118E-16"
-					],
-					[
-						"6812.447778",
-						"1.168587E-16"
-					],
-					[
-						"6817.963581",
-						"9.016433E-17"
-					],
-					[
-						"6823.479384",
-						"8.602618E-17"
-					],
-					[
-						"6828.995188",
-						"9.54445e-17"
-					],
-					[
-						"6834.510991",
-						"1.018234E-16"
-					],
-					[
-						"6840.026794",
-						"8.706653E-17"
-					],
-					[
-						"6845.542598",
-						"8.977796E-17"
-					],
-					[
-						"6851.058401",
-						"9.467437E-17"
-					],
-					[
-						"6856.574204",
-						"8.381793E-17"
-					],
-					[
-						"6862.090008",
-						"7.30095e-17"
-					],
-					[
-						"6867.605811",
-						"8.764406E-17"
-					],
-					[
-						"6873.121614",
-						"8.680044E-17"
-					],
-					[
-						"6878.637418",
-						"7.035852E-17"
-					],
-					[
-						"6884.153221",
-						"7.745952E-17"
-					],
-					[
-						"6889.669024",
-						"7.834832E-17"
-					],
-					[
-						"6895.184828",
-						"8.014888E-17"
-					],
-					[
-						"6900.700631",
-						"7.956653E-17"
-					],
-					[
-						"6906.216434",
-						"8.627561E-17"
-					],
-					[
-						"6911.732238",
-						"9.698644E-17"
-					],
-					[
-						"6917.248041",
-						"8.191795E-17"
-					],
-					[
-						"6922.763844",
-						"8.99043e-17"
-					],
-					[
-						"6928.279648",
-						"9.656784E-17"
-					],
-					[
-						"6933.795451",
-						"8.660818E-17"
-					],
-					[
-						"6939.311255",
-						"8.609688E-17"
-					],
-					[
-						"6944.827058",
-						"8.925975E-17"
-					],
-					[
-						"6950.342861",
-						"9.569324E-17"
-					],
-					[
-						"6955.858665",
-						"8.897421E-17"
-					],
-					[
-						"6961.374468",
-						"1.051651E-16"
-					],
-					[
-						"6966.890271",
-						"1.074167E-16"
-					],
-					[
-						"6972.406075",
-						"1.000098E-16"
-					],
-					[
-						"6977.921878",
-						"1.113198E-16"
-					],
-					[
-						"6983.437681",
-						"1.01282e-16"
-					],
-					[
-						"6988.953485",
-						"1.219943E-16"
-					],
-					[
-						"6994.469288",
-						"1.142338E-16"
-					],
-					[
-						"6999.985091",
-						"1.122844E-16"
-					],
-					[
-						"7005.500895",
-						"1.133821E-16"
-					],
-					[
-						"7011.016698",
-						"1.298367E-16"
-					],
-					[
-						"7016.532501",
-						"1.27701e-16"
-					],
-					[
-						"7022.048305",
-						"1.275224E-16"
-					],
-					[
-						"7027.564108",
-						"1.336529E-16"
-					],
-					[
-						"7033.079911",
-						"1.288875E-16"
-					],
-					[
-						"7038.595715",
-						"1.332682E-16"
-					],
-					[
-						"7044.111518",
-						"1.172009E-16"
-					],
-					[
-						"7049.627321",
-						"1.252101E-16"
-					],
-					[
-						"7055.143125",
-						"1.368442E-16"
-					],
-					[
-						"7060.658928",
-						"1.279256E-16"
-					],
-					[
-						"7066.174731",
-						"1.153467E-16"
-					],
-					[
-						"7071.690535",
-						"1.221722E-16"
-					],
-					[
-						"7077.206338",
-						"1.350509E-16"
-					],
-					[
-						"7082.722141",
-						"1.286121E-16"
-					],
-					[
-						"7088.237945",
-						"1.178425E-16"
-					],
-					[
-						"7093.753748",
-						"1.28351e-16"
-					],
-					[
-						"7099.269551",
-						"1.331578E-16"
-					],
-					[
-						"7104.785355",
-						"1.368722E-16"
-					],
-					[
-						"7110.301158",
-						"1.224217E-16"
-					],
-					[
-						"7115.816961",
-						"1.207982E-16"
-					],
-					[
-						"7121.332765",
-						"1.194428E-16"
-					],
-					[
-						"7126.848568",
-						"1.302867E-16"
-					],
-					[
-						"7132.364371",
-						"1.333591E-16"
-					],
-					[
-						"7137.880175",
-						"1.288683E-16"
-					],
-					[
-						"7143.395978",
-						"1.242301E-16"
-					],
-					[
-						"7148.911781",
-						"1.28175e-16"
-					],
-					[
-						"7154.427585",
-						"1.293153E-16"
-					],
-					[
-						"7159.943388",
-						"1.342692E-16"
-					],
-					[
-						"7165.459191",
-						"1.29305e-16"
-					],
-					[
-						"7170.974995",
-						"1.258558E-16"
-					],
-					[
-						"7176.490798",
-						"1.233277E-16"
-					],
-					[
-						"7182.006601",
-						"1.347103E-16"
-					],
-					[
-						"7187.522405",
-						"1.438379E-16"
-					],
-					[
-						"7193.038208",
-						"1.404448E-16"
-					],
-					[
-						"7198.554011",
-						"1.395982E-16"
-					],
-					[
-						"7204.069815",
-						"1.476625E-16"
-					],
-					[
-						"7209.585618",
-						"1.436e-16"
-					],
-					[
-						"7215.101421",
-						"1.564819E-16"
-					],
-					[
-						"7220.617225",
-						"1.590651E-16"
-					],
-					[
-						"7226.133028",
-						"1.627805E-16"
-					],
-					[
-						"7231.648831",
-						"1.885307E-16"
-					],
-					[
-						"7237.164635",
-						"1.636342E-16"
-					],
-					[
-						"7242.680438",
-						"1.609254E-16"
-					],
-					[
-						"7248.196241",
-						"1.709781E-16"
-					],
-					[
-						"7253.712045",
-						"1.784541E-16"
-					],
-					[
-						"7259.227848",
-						"1.850299E-16"
-					],
-					[
-						"7264.743651",
-						"1.759738E-16"
-					],
-					[
-						"7270.259455",
-						"1.868877E-16"
-					],
-					[
-						"7275.775258",
-						"1.852355E-16"
-					],
-					[
-						"7281.291061",
-						"1.931873E-16"
-					],
-					[
-						"7286.806865",
-						"1.871623E-16"
-					],
-					[
-						"7292.322668",
-						"1.837477E-16"
-					],
-					[
-						"7297.838471",
-						"1.968073E-16"
-					],
-					[
-						"7303.354275",
-						"1.819093E-16"
-					],
-					[
-						"7308.870078",
-						"1.870612E-16"
-					],
-					[
-						"7314.385881",
-						"2.061299E-16"
-					],
-					[
-						"7319.901685",
-						"2.002292E-16"
-					],
-					[
-						"7325.417488",
-						"2.007911E-16"
-					],
-					[
-						"7330.933291",
-						"2.156998E-16"
-					],
-					[
-						"7336.449095",
-						"2.019665E-16"
-					],
-					[
-						"7341.964898",
-						"2.108815E-16"
-					],
-					[
-						"7347.480701",
-						"2.07157e-16"
-					],
-					[
-						"7352.996505",
-						"2.116122E-16"
-					],
-					[
-						"7358.512308",
-						"2.115243E-16"
-					],
-					[
-						"7364.028111",
-						"2.181835E-16"
-					],
-					[
-						"7369.543915",
-						"2.242597E-16"
-					],
-					[
-						"7375.059718",
-						"2.321875E-16"
-					],
-					[
-						"7380.575521",
-						"2.291468E-16"
-					],
-					[
-						"7386.091325",
-						"2.382646E-16"
-					],
-					[
-						"7391.607128",
-						"2.144278E-16"
-					],
-					[
-						"7397.122931",
-						"2.267744E-16"
-					],
-					[
-						"7402.638735",
-						"2.390051E-16"
-					],
-					[
-						"7408.154538",
-						"2.151848E-16"
-					],
-					[
-						"7413.670341",
-						"2.233852E-16"
-					],
-					[
-						"7419.186145",
-						"2.1473e-16"
-					],
-					[
-						"7424.701948",
-						"2.17724e-16"
-					],
-					[
-						"7430.217752",
-						"2.226325E-16"
-					],
-					[
-						"7435.733555",
-						"1.952709E-16"
-					],
-					[
-						"7441.249358",
-						"1.969526E-16"
-					],
-					[
-						"7446.765162",
-						"2.13195e-16"
-					],
-					[
-						"7452.280965",
-						"1.997304E-16"
-					],
-					[
-						"7457.796768",
-						"1.949296E-16"
-					],
-					[
-						"7463.312572",
-						"1.989499E-16"
-					],
-					[
-						"7468.828375",
-						"1.935711E-16"
-					],
-					[
-						"7474.344178",
-						"1.806061E-16"
-					],
-					[
-						"7479.859982",
-						"1.883612E-16"
-					],
-					[
-						"7485.375785",
-						"1.748291E-16"
-					],
-					[
-						"7490.891588",
-						"2.546738E-16"
-					],
-					[
-						"7496.407392",
-						"2.725129E-18"
-					],
-					[
-						"7501.923195",
-						"-2.595311E-16"
-					],
-					[
-						"7507.438998",
-						"1.408394E-16"
-					],
-					[
-						"7512.954802",
-						"1.83931e-16"
-					],
-					[
-						"7518.470605",
-						"2.052959E-16"
-					],
-					[
-						"7523.986408",
-						"1.879902E-16"
-					],
-					[
-						"7529.502212",
-						"1.9278e-16"
-					],
-					[
-						"7535.018015",
-						"2.002999E-16"
-					],
-					[
-						"7540.533818",
-						"2.03436e-16"
-					],
-					[
-						"7546.049622",
-						"1.983272E-16"
-					],
-					[
-						"7551.565425",
-						"1.977394E-16"
-					],
-					[
-						"7557.081228",
-						"2.02195e-16"
-					],
-					[
-						"7562.597032",
-						"1.930598E-16"
-					],
-					[
-						"7568.112835",
-						"1.925305E-16"
-					],
-					[
-						"7573.628638",
-						"1.855951E-16"
-					],
-					[
-						"7579.144442",
-						"2.069702E-16"
-					],
-					[
-						"7584.660245",
-						"2.160739E-16"
-					],
-					[
-						"7590.176048",
-						"2.116362E-16"
-					],
-					[
-						"7595.691852",
-						"2.394325E-16"
-					],
-					[
-						"7601.207655",
-						"2.418912E-16"
-					],
-					[
-						"7606.723458",
-						"2.191773E-16"
-					],
-					[
-						"7612.239262",
-						"2.008189E-16"
-					],
-					[
-						"7617.755065",
-						"1.914541E-16"
-					],
-					[
-						"7623.270868",
-						"1.936035E-16"
-					],
-					[
-						"7628.786672",
-						"1.981749E-16"
-					],
-					[
-						"7634.302475",
-						"2.165666E-16"
-					],
-					[
-						"7639.818278",
-						"1.887293E-16"
-					],
-					[
-						"7645.334082",
-						"1.882819E-16"
-					],
-					[
-						"7650.849885",
-						"1.745224E-16"
-					],
-					[
-						"7656.365688",
-						"1.610227E-16"
-					],
-					[
-						"7661.881492",
-						"1.672259E-16"
-					],
-					[
-						"7667.397295",
-						"1.681962E-16"
-					],
-					[
-						"7672.913098",
-						"1.594025E-16"
-					],
-					[
-						"7678.428902",
-						"1.54855e-16"
-					],
-					[
-						"7683.944705",
-						"1.566198E-16"
-					],
-					[
-						"7689.460508",
-						"1.472216E-16"
-					],
-					[
-						"7694.976312",
-						"1.537026E-16"
-					],
-					[
-						"7700.492115",
-						"1.575882E-16"
-					],
-					[
-						"7706.007918",
-						"1.572395E-16"
-					],
-					[
-						"7711.523722",
-						"1.366045E-16"
-					],
-					[
-						"7717.039525",
-						"1.27839e-16"
-					],
-					[
-						"7722.555328",
-						"1.454996E-16"
-					],
-					[
-						"7728.071132",
-						"1.228479E-16"
-					],
-					[
-						"7733.586935",
-						"1.415592E-16"
-					],
-					[
-						"7739.102738",
-						"1.493399E-16"
-					],
-					[
-						"7744.618542",
-						"1.454688E-16"
-					],
-					[
-						"7750.134345",
-						"1.552649E-16"
-					],
-					[
-						"7755.650148",
-						"1.680211E-16"
-					],
-					[
-						"7761.165952",
-						"1.712124E-16"
-					],
-					[
-						"7766.681755",
-						"1.656411E-16"
-					],
-					[
-						"7772.197558",
-						"1.755806E-16"
-					],
-					[
-						"7777.713362",
-						"1.722362E-16"
-					],
-					[
-						"7783.229165",
-						"1.796387E-16"
-					],
-					[
-						"7788.744968",
-						"1.709692E-16"
-					],
-					[
-						"7794.260772",
-						"1.781388E-16"
-					],
-					[
-						"7799.776575",
-						"1.954051E-16"
-					],
-					[
-						"7805.292378",
-						"1.897e-16"
-					],
-					[
-						"7810.808182",
-						"2.005862E-16"
-					],
-					[
-						"7816.323985",
-						"1.879318E-16"
-					],
-					[
-						"7821.839788",
-						"1.966113E-16"
-					],
-					[
-						"7827.355592",
-						"2.113576E-16"
-					],
-					[
-						"7832.871395",
-						"2.125776E-16"
-					],
-					[
-						"7838.387198",
-						"1.879412E-16"
-					],
-					[
-						"7843.903002",
-						"1.984725E-16"
-					],
-					[
-						"7849.418805",
-						"2.013188E-16"
-					],
-					[
-						"7854.934608",
-						"2.026089E-16"
-					],
-					[
-						"7860.450412",
-						"2.203893E-16"
-					],
-					[
-						"7865.966215",
-						"1.996821E-16"
-					],
-					[
-						"7871.482018",
-						"1.806459E-16"
-					],
-					[
-						"7876.997822",
-						"1.791965E-16"
-					],
-					[
-						"7882.513625",
-						"1.886942E-16"
-					],
-					[
-						"7888.029428",
-						"2.011897E-16"
-					],
-					[
-						"7893.545232",
-						"1.944211E-16"
-					],
-					[
-						"7899.061035",
-						"1.828203E-16"
-					],
-					[
-						"7904.576838",
-						"1.800965E-16"
-					],
-					[
-						"7910.092642",
-						"1.820515E-16"
-					],
-					[
-						"7915.608445",
-						"1.695474E-16"
-					],
-					[
-						"7921.124249",
-						"1.752178E-16"
-					],
-					[
-						"7926.640052",
-						"1.424404E-16"
-					],
-					[
-						"7932.155855",
-						"1.376984E-16"
-					],
-					[
-						"7937.671659",
-						"1.468567E-16"
-					],
-					[
-						"7943.187462",
-						"1.508834E-16"
-					],
-					[
-						"7948.703265",
-						"1.455621E-16"
-					],
-					[
-						"7954.219069",
-						"1.460215E-16"
-					],
-					[
-						"7959.734872",
-						"1.397609E-16"
-					],
-					[
-						"7965.250675",
-						"1.219462E-16"
-					],
-					[
-						"7970.766479",
-						"1.193773E-16"
-					],
-					[
-						"7976.282282",
-						"1.384248E-16"
-					],
-					[
-						"7981.798085",
-						"1.205207E-16"
-					],
-					[
-						"7987.313889",
-						"1.183427E-16"
-					],
-					[
-						"7992.829692",
-						"1.177575E-16"
-					],
-					[
-						"7998.345495",
-						"1.075228E-16"
-					],
-					[
-						"8003.861299",
-						"9.970224E-17"
-					],
-					[
-						"8009.377102",
-						"1.019679E-16"
-					],
-					[
-						"8014.892905",
-						"1.082324E-16"
-					],
-					[
-						"8020.408709",
-						"1.153835E-16"
-					],
-					[
-						"8025.924512",
-						"1.005507E-16"
-					],
-					[
-						"8031.440315",
-						"8.004207E-17"
-					],
-					[
-						"8036.956119",
-						"8.046058E-17"
-					],
-					[
-						"8042.471922",
-						"7.783152E-17"
-					],
-					[
-						"8047.987725",
-						"6.891807E-17"
-					],
-					[
-						"8053.503529",
-						"5.756705E-17"
-					],
-					[
-						"8059.019332",
-						"7.325206E-17"
-					],
-					[
-						"8064.535135",
-						"6.789649E-17"
-					],
-					[
-						"8070.050939",
-						"6.834406E-17"
-					],
-					[
-						"8075.566742",
-						"7.216076E-17"
-					],
-					[
-						"8081.082545",
-						"7.244392E-17"
-					],
-					[
-						"8086.598349",
-						"7.898263E-17"
-					],
-					[
-						"8092.114152",
-						"8.592263E-17"
-					],
-					[
-						"8097.629955",
-						"7.253148E-17"
-					],
-					[
-						"8103.145759",
-						"5.303961E-17"
-					],
-					[
-						"8108.661562",
-						"6.688537E-17"
-					],
-					[
-						"8114.177365",
-						"6.424381E-17"
-					],
-					[
-						"8119.693169",
-						"6.342766E-17"
-					],
-					[
-						"8125.208972",
-						"7.934356E-17"
-					],
-					[
-						"8130.724775",
-						"9.494525E-17"
-					],
-					[
-						"8136.240579",
-						"7.773154E-17"
-					],
-					[
-						"8141.756382",
-						"5.968976E-17"
-					],
-					[
-						"8147.272185",
-						"6.877071E-17"
-					],
-					[
-						"8152.787989",
-						"5.948123E-17"
-					],
-					[
-						"8158.303792",
-						"7.357044E-17"
-					],
-					[
-						"8163.819595",
-						"7.727446E-17"
-					],
-					[
-						"8169.335399",
-						"6.507416E-17"
-					],
-					[
-						"8174.851202",
-						"6.084679E-17"
-					],
-					[
-						"8180.367005",
-						"6.005211E-17"
-					],
-					[
-						"8185.882809",
-						"6.90691e-17"
-					],
-					[
-						"8191.398612",
-						"6.114602E-17"
-					],
-					[
-						"8196.914415",
-						"7.831527E-17"
-					],
-					[
-						"8202.430219",
-						"7.546504E-17"
-					],
-					[
-						"8207.946022",
-						"6.844161E-17"
-					],
-					[
-						"8213.461825",
-						"7.01505e-17"
-					],
-					[
-						"8218.977629",
-						"4.728325E-17"
-					],
-					[
-						"8224.493432",
-						"6.657488E-17"
-					],
-					[
-						"8230.009235",
-						"6.041267E-17"
-					],
-					[
-						"8235.525039",
-						"6.346144E-17"
-					],
-					[
-						"8241.040842",
-						"5.068965E-17"
-					],
-					[
-						"8246.556645",
-						"5.525193E-17"
-					],
-					[
-						"8252.072449",
-						"6.366124E-17"
-					],
-					[
-						"8257.588252",
-						"5.085183E-17"
-					],
-					[
-						"8263.104055",
-						"3.505256E-17"
-					],
-					[
-						"8268.619859",
-						"3.50576e-17"
-					],
-					[
-						"8274.135662",
-						"5.045391E-17"
-					],
-					[
-						"8279.651465",
-						"5.289924E-17"
-					],
-					[
-						"8285.167269",
-						"4.983236E-17"
-					],
-					[
-						"8290.683072",
-						"4.812342E-17"
-					],
-					[
-						"8296.198875",
-						"2.6352e-17"
-					],
-					[
-						"8301.714679",
-						"1.692734E-17"
-					],
-					[
-						"8307.230482",
-						"3.35774e-17"
-					],
-					[
-						"8312.746285",
-						"3.516123E-17"
-					],
-					[
-						"8318.262089",
-						"1.999498E-17"
-					],
-					[
-						"8323.777892",
-						"2.956512E-17"
-					],
-					[
-						"8329.293695",
-						"1.593256E-17"
-					],
-					[
-						"8334.809499",
-						"-1.320212E-17"
-					],
-					[
-						"8340.325302",
-						"-9.195106E-18"
-					],
-					[
-						"8345.841105",
-						"1.718349E-18"
-					],
-					[
-						"8351.356909",
-						"2.135529E-18"
-					],
-					[
-						"8356.872712",
-						"1.060486E-17"
-					],
-					[
-						"8362.388515",
-						"3.0247e-18"
-					],
-					[
-						"8367.904319",
-						"8.543327E-18"
-					],
-					[
-						"8373.420122",
-						"3.25042e-17"
-					],
-					[
-						"8378.935925",
-						"1.571757E-17"
-					],
-					[
-						"8384.451729",
-						"-6.592083E-18"
-					],
-					[
-						"8389.967532",
-						"3.069618E-17"
-					],
-					[
-						"8395.483335",
-						"2.207059E-17"
-					],
-					[
-						"8400.999139",
-						"2.009506E-17"
-					],
-					[
-						"8406.514942",
-						"2.164568E-17"
-					],
-					[
-						"8412.030746",
-						"4.107838E-18"
-					],
-					[
-						"8417.546549",
-						"2.450475E-17"
-					],
-					[
-						"8423.062352",
-						"2.782731E-17"
-					],
-					[
-						"8428.578156",
-						"2.54886e-17"
-					],
-					[
-						"8434.093959",
-						"2.922313E-17"
-					],
-					[
-						"8439.609762",
-						"1.520651E-17"
-					],
-					[
-						"8445.125566",
-						"3.389353E-18"
-					],
-					[
-						"8450.641369",
-						"1.112352E-17"
-					],
-					[
-						"8456.157172",
-						"1.097916E-18"
-					],
-					[
-						"8461.672976",
-						"1.512485E-17"
-					],
-					[
-						"8467.188779",
-						"1.532345E-17"
-					],
-					[
-						"8472.704582",
-						"4.789055E-19"
-					],
-					[
-						"8478.220386",
-						"2.158525E-17"
-					],
-					[
-						"8483.736189",
-						"1.220004E-17"
-					],
-					[
-						"8489.251992",
-						"2.232014E-17"
-					],
-					[
-						"8494.767796",
-						"4.355663E-17"
-					],
-					[
-						"8500.283599",
-						"2.527601E-17"
-					],
-					[
-						"8505.799402",
-						"2.144446E-17"
-					],
-					[
-						"8511.315206",
-						"3.486178E-17"
-					],
-					[
-						"8516.831009",
-						"1.400196E-17"
-					],
-					[
-						"8522.346812",
-						"3.551463E-17"
-					],
-					[
-						"8527.862616",
-						"5.015616E-17"
-					],
-					[
-						"8533.378419",
-						"4.701867E-17"
-					],
-					[
-						"8538.894222",
-						"3.967389E-17"
-					],
-					[
-						"8544.410026",
-						"2.281875E-17"
-					],
-					[
-						"8549.925829",
-						"5.5049e-17"
-					],
-					[
-						"8555.441632",
-						"6.236629E-17"
-					],
-					[
-						"8560.957436",
-						"6.245769E-17"
-					],
-					[
-						"8566.473239",
-						"6.890226E-17"
-					],
-					[
-						"8571.989042",
-						"6.771427E-17"
-					],
-					[
-						"8577.504846",
-						"6.268276E-17"
-					],
-					[
-						"8583.020649",
-						"7.70379e-17"
-					],
-					[
-						"8588.536452",
-						"6.053288E-17"
-					],
-					[
-						"8594.052256",
-						"7.903676E-17"
-					],
-					[
-						"8599.568059",
-						"7.259488E-17"
-					],
-					[
-						"8605.083862",
-						"7.40469e-17"
-					],
-					[
-						"8610.599666",
-						"8.009986E-17"
-					],
-					[
-						"8616.115469",
-						"8.78984e-17"
-					],
-					[
-						"8621.631272",
-						"7.632689E-17"
-					],
-					[
-						"8627.147076",
-						"5.805334E-17"
-					],
-					[
-						"8632.662879",
-						"8.546139E-17"
-					],
-					[
-						"8638.178682",
-						"9.133731E-17"
-					],
-					[
-						"8643.694486",
-						"6.634507E-17"
-					],
-					[
-						"8649.210289",
-						"5.719476E-17"
-					],
-					[
-						"8654.726092",
-						"8.452457E-17"
-					],
-					[
-						"8660.241896",
-						"7.271914E-17"
-					],
-					[
-						"8665.757699",
-						"7.928559E-17"
-					],
-					[
-						"8671.273502",
-						"9.537599E-17"
-					],
-					[
-						"8676.789306",
-						"9.807597E-17"
-					],
-					[
-						"8682.305109",
-						"1.30617e-16"
-					],
-					[
-						"8687.820912",
-						"9.483939E-17"
-					],
-					[
-						"8693.336716",
-						"1.050587E-16"
-					],
-					[
-						"8698.852519",
-						"1.007553E-16"
-					],
-					[
-						"8704.368322",
-						"8.981223E-17"
-					],
-					[
-						"8709.884126",
-						"9.955452E-17"
-					],
-					[
-						"8715.399929",
-						"9.019147E-17"
-					],
-					[
-						"8720.915732",
-						"9.809914E-17"
-					],
-					[
-						"8726.431536",
-						"8.450686E-17"
-					],
-					[
-						"8731.947339",
-						"1.059334E-16"
-					],
-					[
-						"8737.463142",
-						"1.154271E-16"
-					],
-					[
-						"8742.978946",
-						"1.000985E-16"
-					],
-					[
-						"8748.494749",
-						"9.228725E-17"
-					],
-					[
-						"8754.010552",
-						"9.831799E-17"
-					],
-					[
-						"8759.526356",
-						"1.162327E-16"
-					],
-					[
-						"8765.042159",
-						"9.773308E-17"
-					],
-					[
-						"8770.557962",
-						"1.001311E-16"
-					],
-					[
-						"8776.073766",
-						"7.844782E-17"
-					],
-					[
-						"8781.589569",
-						"6.126534E-17"
-					],
-					[
-						"8787.105372",
-						"8.113582E-17"
-					],
-					[
-						"8792.621176",
-						"9.241918E-17"
-					],
-					[
-						"8798.136979",
-						"8.939078E-17"
-					],
-					[
-						"8803.652782",
-						"8.531941E-17"
-					],
-					[
-						"8809.168586",
-						"1.032933E-16"
-					],
-					[
-						"8814.684389",
-						"1.241124E-16"
-					],
-					[
-						"8820.200192",
-						"1.120453E-16"
-					],
-					[
-						"8825.715996",
-						"1.187022E-16"
-					],
-					[
-						"8831.231799",
-						"1.187521E-16"
-					],
-					[
-						"8836.747602",
-						"1.109112E-16"
-					],
-					[
-						"8842.263406",
-						"9.005514E-17"
-					],
-					[
-						"8847.779209",
-						"1.190304E-16"
-					],
-					[
-						"8853.295012",
-						"1.117511E-16"
-					],
-					[
-						"8858.810816",
-						"1.141316E-16"
-					],
-					[
-						"8864.326619",
-						"1.328068E-16"
-					],
-					[
-						"8869.842422",
-						"1.366156E-16"
-					],
-					[
-						"8875.358226",
-						"1.403777E-16"
-					],
-					[
-						"8880.874029",
-						"1.185479E-16"
-					],
-					[
-						"8886.389832",
-						"1.112084E-16"
-					],
-					[
-						"8891.905636",
-						"1.00845e-16"
-					],
-					[
-						"8897.421439",
-						"9.900432E-17"
-					],
-					[
-						"8902.937243",
-						"1.191286E-16"
-					],
-					[
-						"8908.453046",
-						"1.484802E-16"
-					],
-					[
-						"8913.968849",
-						"1.161436E-16"
-					],
-					[
-						"8919.484653",
-						"1.153193E-16"
-					],
-					[
-						"8925.000456",
-						"1.060344E-16"
-					],
-					[
-						"8930.516259",
-						"1.133273E-16"
-					],
-					[
-						"8936.032063",
-						"1.351621E-16"
-					],
-					[
-						"8941.547866",
-						"1.031774E-16"
-					],
-					[
-						"8947.063669",
-						"1.009395E-16"
-					],
-					[
-						"8952.579473",
-						"1.16095e-16"
-					],
-					[
-						"8958.095276",
-						"9.648564E-17"
-					],
-					[
-						"8963.611079",
-						"9.347636E-17"
-					],
-					[
-						"8969.126883",
-						"1.134023E-16"
-					],
-					[
-						"8974.642686",
-						"1.251914E-16"
-					],
-					[
-						"8980.158489",
-						"1.019825E-16"
-					],
-					[
-						"8985.674293",
-						"8.944181E-17"
-					],
-					[
-						"8991.190096",
-						"1.17364e-16"
-					],
-					[
-						"8996.705899",
-						"9.860041E-17"
-					],
-					[
-						"9002.221703",
-						"5.761472E-17"
-					],
-					[
-						"9007.737506",
-						"1.019987E-16"
-					],
-					[
-						"9013.253309",
-						"1.095651E-16"
-					],
-					[
-						"9018.769113",
-						"1.076261E-16"
-					],
-					[
-						"9024.284916",
-						"1.011903E-16"
-					],
-					[
-						"9029.800719",
-						"1.032185E-16"
-					],
-					[
-						"9035.316523",
-						"9.832681E-17"
-					],
-					[
-						"9040.832326",
-						"9.830575E-17"
-					],
-					[
-						"9046.348129",
-						"1.129565E-16"
-					],
-					[
-						"9051.863933",
-						"6.775312E-17"
-					],
-					[
-						"9057.379736",
-						"1.115161E-16"
-					],
-					[
-						"9062.895539",
-						"8.521783E-17"
-					],
-					[
-						"9068.411343",
-						"8.089754E-17"
-					],
-					[
-						"9073.927146",
-						"1.06074e-16"
-					],
-					[
-						"9079.442949",
-						"8.763315E-17"
-					],
-					[
-						"9084.958753",
-						"1.19912e-16"
-					],
-					[
-						"9090.474556",
-						"9.422586E-17"
-					],
-					[
-						"9095.990359",
-						"8.690942E-17"
-					],
-					[
-						"9101.506163",
-						"8.914676E-17"
-					],
-					[
-						"9107.021966",
-						"8.439693E-17"
-					],
-					[
-						"9112.537769",
-						"8.822436E-17"
-					],
-					[
-						"9118.053573",
-						"9.158141E-17"
-					],
-					[
-						"9123.569376",
-						"9.625402E-17"
-					],
-					[
-						"9129.085179",
-						"8.512018E-17"
-					],
-					[
-						"9134.600983",
-						"9.091969E-17"
-					],
-					[
-						"9140.116786",
-						"1.01506e-16"
-					],
-					[
-						"9145.632589",
-						"7.646027E-17"
-					],
-					[
-						"9151.148393",
-						"5.299681E-17"
-					],
-					[
-						"9156.664196",
-						"6.986536E-17"
-					],
-					[
-						"9162.179999",
-						"7.818e-17"
-					],
-					[
-						"9167.695803",
-						"8.137428E-17"
-					],
-					[
-						"9173.211606",
-						"6.634951E-17"
-					],
-					[
-						"9178.727409",
-						"6.180492E-17"
-					],
-					[
-						"9184.243213",
-						"8.293802E-17"
-					],
-					[
-						"9189.759016",
-						"7.13342e-17"
-					],
-					[
-						"9195.274819",
-						"6.370604E-17"
-					],
-					[
-						"9200.790623",
-						"7.35586e-17"
-					],
-					[
-						"9206.306426",
-						"7.379649E-17"
-					],
-					[
-						"9211.822229",
-						"6.511864E-17"
-					],
-					[
-						"9217.338033",
-						"1.054884E-16"
-					],
-					[
-						"9222.853836",
-						"7.73189e-17"
-					],
-					[
-						"9228.369639",
-						"6.102205E-17"
-					],
-					[
-						"9233.885443",
-						"8.86637e-17"
-					],
-					[
-						"9239.401246",
-						"5.60704e-17"
-					],
-					[
-						"9244.917049",
-						"7.237741E-17"
-					],
-					[
-						"9250.432853",
-						"6.221894E-17"
-					],
-					[
-						"9255.948656",
-						"9.334085E-17"
-					]
-				],
-				"source":"4"
-			},
-			{
-				"instrument":"ESO-NTT - EFOSC2-NTT",
-				"u_time":"MJD",
-				"time":"56039.0",
-				"observer":"BENITEZ/VALENTI",
-				"reducer":"BENITEZ/VALENTI",
 				"filename":"SSS120420-204522-504_20120421_Gr13_Free_slit1.5_56456_1.ascii",
-				"waveunit":"Angstrom",
-				"fluxunit":"erg/s/cm^2/Angstrom",
+				"instrument":"ESO-NTT - EFOSC2-NTT",
+				"observer":"BENITEZ/VALENTI",
+				"redshift":"0.013",
+				"reducer":"BENITEZ/VALENTI",
+				"reduction":"final",
+				"survey":"PESSTO-SSDR",
+				"u_fluxes":"erg/s/cm^2/Angstrom",
+				"u_time":"MJD",
+				"u_wavelengths":"Angstrom",
 				"data":[
 					[
 						"3661.449951",
@@ -10259,7 +6188,7 @@
 						"6.846914E-17"
 					]
 				],
-				"source":"4"
+				"source":"8"
 			}
 		]
 	}

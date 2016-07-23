@@ -1,46 +1,48 @@
 {
 	"LSQ13ddb":{
-		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
 		"name":"LSQ13ddb",
 		"sources":[
 			{
-				"name":"WISeREP",
-				"url":"http://wiserep.weizmann.ac.il/",
-				"bibcode":"2012PASP..124..668Y",
-				"alias":"1",
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2016arXiv160501054G",
+				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
-				"reference":"Yaron & Gal-Yam (2012)"
+				"url":"https://sne.space",
+				"alias":"1"
 			},
 			{
-				"name":"The Open Supernova Catalog",
-				"url":"https://sne.space",
-				"bibcode":"2016arXiv160501054G",
-				"alias":"2",
+				"name":"WISeREP",
+				"bibcode":"2012PASP..124..668Y",
+				"reference":"Yaron & Gal-Yam (2012)",
 				"secondary":true,
-				"reference":"Guillochon, Parrent, & Margutti (2016)"
+				"url":"http://wiserep.weizmann.ac.il/",
+				"alias":"2"
 			}
 		],
 		"alias":[
 			{
 				"value":"LSQ13ddb",
-				"source":"1"
+				"source":"2"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2012/12/14",
-				"source":"1,2",
-				"derived":true
+				"derived":true,
+				"source":"1,2"
 			}
 		],
 		"spectra":[
 			{
-				"instrument":"ESO-NTT - EFOSC2-NTT",
-				"u_time":"MJD",
 				"time":"56275.0",
 				"filename":"LSQ13ddb_20121213_Gr13_Free_slit1.0_56456_1.ascii",
-				"waveunit":"Angstrom",
-				"fluxunit":"erg/s/cm^2/Angstrom",
+				"instrument":"ESO-NTT - EFOSC2-NTT",
+				"reduction":"final",
+				"survey":"PESSTO-SSDR",
+				"u_fluxes":"erg/s/cm^2/Angstrom",
+				"u_time":"MJD",
+				"u_wavelengths":"Angstrom",
 				"data":[
 					[
 						"3667.657227",
@@ -4103,7 +4105,7 @@
 						"0."
 					]
 				],
-				"source":"1"
+				"source":"2"
 			}
 		]
 	}

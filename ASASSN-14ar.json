@@ -1,184 +1,183 @@
 {
 	"ASASSN-14ar":{
-		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
 		"name":"ASASSN-14ar",
 		"sources":[
 			{
+				"name":"2015arXiv150201589P",
+				"bibcode":"2015arXiv150201589P",
+				"reference":"Planck Collaboration et al. (2015)",
+				"alias":"1"
+			},
+			{
 				"name":"ATel 6102",
-				"url":"http://www.astronomerstelegram.org/?read=6102",
 				"bibcode":"2014ATel.6102....1S",
-				"alias":"1",
-				"reference":"Stanek et al. (2014)"
-			},
-			{
-				"name":"Latest Supernovae",
-				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2",
-				"secondary":true
-			},
-			{
-				"name":"ASAS-SN Supernovae",
-				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
-				"alias":"3"
+				"reference":"Stanek et al. (2014)",
+				"url":"http://www.astronomerstelegram.org/?read=6102",
+				"alias":"2"
 			},
 			{
 				"name":"ATel 6105",
-				"url":"http://www.astronomerstelegram.org/?read=6105",
 				"bibcode":"2014ATel.6105....1M",
-				"alias":"4",
-				"reference":"Mosquera et al. (2014)"
-			},
-			{
-				"name":"The Open Supernova Catalog",
-				"url":"https://sne.space",
-				"bibcode":"2016arXiv160501054G",
-				"alias":"5",
-				"secondary":true,
-				"reference":"Guillochon, Parrent, & Margutti (2016)"
+				"reference":"Mosquera et al. (2014)",
+				"url":"http://www.astronomerstelegram.org/?read=6105",
+				"alias":"3"
 			},
 			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
-				"alias":"6",
-				"reference":"Schlafly & Finkbeiner (2011)"
+				"reference":"Schlafly & Finkbeiner (2011)",
+				"alias":"4"
 			},
 			{
-				"name":"2015arXiv150201589P",
-				"bibcode":"2015arXiv150201589P",
-				"alias":"7",
-				"reference":"Planck Collaboration et al. (2015)"
+				"name":"ASAS-SN Supernovae",
+				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
+				"alias":"5"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"6"
+			},
+			{
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2016arXiv160501054G",
+				"reference":"Guillochon, Parrent, & Margutti (2016)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"ASASSN-14ar",
-				"source":"1,2,3"
+				"source":"2,5,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia-91bg",
-				"source":"1,2,3,4"
+				"source":"2,3,5,6"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"101.2",
-				"source":"1,3,5,7",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,5,7"
 			}
 		],
 		"dec":[
 			{
 				"value":"+37:36:06.5",
-				"source":"1,2",
-				"unit":"degrees"
+				"u_value":"degrees",
+				"source":"2,6"
 			},
 			{
 				"value":"+37:36:07.56",
-				"source":"3,1",
-				"unit":"degrees"
+				"u_value":"degrees",
+				"source":"2,5"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2014/04/24",
-				"source":"1,2"
+				"source":"2,6"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"All Sky Automated Survey for SuperNovae (ASAS-SN)",
-				"source":"1,2"
+				"source":"2,6"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.0172",
-				"error":"0.0009",
-				"source":"5,6",
-				"derived":true
+				"derived":true,
+				"e_value":"0.0009",
+				"source":"4,7"
 			}
 		],
 		"host":[
 			{
 				"value":"IC 527",
-				"source":"1,2"
+				"source":"2,6"
 			},
 			{
 				"value":"IC 0527",
-				"source":"3,1"
+				"source":"2,5"
 			}
 		],
 		"hostoffsetang":[
 			{
 				"value":"1.41",
-				"source":"3,1",
-				"unit":"arcseconds"
+				"u_value":"arcseconds",
+				"source":"2,5"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"103.5",
-				"source":"1,3,5,7",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,5,7"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-18.87",
-				"source":"1,3,5,7",
-				"derived":true
+				"derived":true,
+				"source":"1,2,5,7"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.2",
-				"source":"1,2,5",
-				"derived":true
+				"derived":true,
+				"source":"2,6,7"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2014/04/23",
-				"source":"1,2,5",
-				"derived":true
+				"derived":true,
+				"source":"2,6,7"
 			}
 		],
 		"ra":[
 			{
 				"value":"09:09:41.70",
-				"source":"1,2",
-				"unit":"hours"
+				"u_value":"hours",
+				"source":"2,6"
 			},
 			{
 				"value":"09:09:41.76",
-				"source":"3,1",
-				"unit":"hours"
+				"u_value":"hours",
+				"source":"2,5"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.02298",
-				"source":"3,1"
+				"source":"2,5"
 			}
 		],
 		"velocity":[
 			{
 				"value":"6810",
-				"source":"1,3,5",
-				"unit":"km/s",
-				"derived":true
+				"u_value":"km/s",
+				"source":"7"
 			}
 		],
 		"photometry":[
 			{
 				"time":"56770.5",
-				"u_time":"MJD",
 				"magnitude":"16.2",
-				"source":"1,2"
+				"u_time":"MJD",
+				"source":"2,6"
 			}
 		]
 	}

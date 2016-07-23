@@ -1,33 +1,32 @@
 {
 	"iPTF14ih":{
-		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
 		"name":"iPTF14ih",
 		"sources":[
 			{
-				"name":"SIMBAD astronomical database",
-				"url":"http://simbad.u-strasbg.fr/",
-				"bibcode":"2000A&AS..143....9W",
-				"alias":"1",
-				"secondary":true,
-				"reference":"Wenger et al. (2000)"
+				"name":"2015arXiv150201589P",
+				"bibcode":"2015arXiv150201589P",
+				"reference":"Planck Collaboration et al. (2015)",
+				"alias":"1"
 			},
 			{
-				"name":"2014ATel.5807....1A",
+				"name":"ATel 5807",
 				"bibcode":"2014ATel.5807....1A",
-				"alias":"2",
-				"reference":"Arcavi et al. (2014)"
-			},
-			{
-				"name":"Latest Supernovae",
-				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3",
-				"secondary":true
+				"reference":"Arcavi et al. (2014)",
+				"url":"http://www.astronomerstelegram.org/?read=5807",
+				"alias":"2"
 			},
 			{
 				"name":"2012PASP..124..668Y",
 				"bibcode":"2012PASP..124..668Y",
-				"alias":"4",
-				"reference":"Yaron & Gal-Yam (2012)"
+				"reference":"Yaron & Gal-Yam (2012)",
+				"alias":"3"
+			},
+			{
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"reference":"Schlafly & Finkbeiner (2011)",
+				"alias":"4"
 			},
 			{
 				"name":"Pan-STARRS 3Pi",
@@ -40,877 +39,881 @@
 				"alias":"6"
 			},
 			{
-				"name":"The Open Supernova Catalog",
-				"url":"https://sne.space",
-				"bibcode":"2016arXiv160501054G",
-				"alias":"7",
+				"name":"Latest Supernovae",
 				"secondary":true,
-				"reference":"Guillochon, Parrent, & Margutti (2016)"
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"7"
 			},
 			{
-				"name":"2011ApJ...737..103S",
-				"bibcode":"2011ApJ...737..103S",
-				"alias":"8",
-				"reference":"Schlafly & Finkbeiner (2011)"
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2016arXiv160501054G",
+				"reference":"Guillochon, Parrent, & Margutti (2016)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"8"
 			},
 			{
-				"name":"2015arXiv150201589P",
-				"bibcode":"2015arXiv150201589P",
-				"alias":"9",
-				"reference":"Planck Collaboration et al. (2015)"
+				"name":"SIMBAD astronomical database",
+				"bibcode":"2000A&AS..143....9W",
+				"reference":"Wenger et al. (2000)",
+				"secondary":true,
+				"url":"http://simbad.u-strasbg.fr/",
+				"alias":"9"
 			}
 		],
 		"alias":[
 			{
 				"value":"iPTF14ih",
-				"source":"1,2,3,4,5,6"
+				"source":"2,3,5,6,7,9"
 			},
 			{
 				"value":"PS1-13dtc",
-				"source":"5"
+				"source":"3,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"II",
-				"source":"1,2,3,4"
+				"source":"2,3,7,9"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"128.7",
-				"source":"2,3,4,7,9",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,3,7,8"
 			}
 		],
 		"dec":[
 			{
 				"value":"+15:47:43.4",
-				"source":"1,2,3,5,6",
-				"unit":"degrees"
+				"u_value":"degrees",
+				"source":"2,5,6,7,9"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2014/01/23",
-				"source":"2,3"
+				"source":"2,7"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"PTF",
-				"source":"2,3"
+				"source":"2,7"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.219",
-				"error":"0.0041",
-				"source":"7,8",
-				"derived":true
+				"derived":true,
+				"e_value":"0.0041",
+				"source":"4,8"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"132.5",
-				"source":"2,3,4,7,9",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,3,7,8"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-16.44",
-				"source":"2,3,4,7,9",
-				"derived":true
+				"derived":true,
+				"source":"1,2,3,7,8"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"19.17",
-				"source":"2,5,6,7",
-				"derived":true
+				"derived":true,
+				"source":"2,5,6,8"
 			}
 		],
 		"maxband":[
 			{
 				"value":"g",
-				"source":"2,5,6,7",
-				"derived":true
+				"derived":true,
+				"source":"2,5,6,8"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2013/11/03",
-				"source":"2,5,6,7",
-				"derived":true
+				"derived":true,
+				"source":"2,5,6,8"
 			}
 		],
 		"ra":[
 			{
 				"value":"03:39:43.88",
-				"source":"1,2,3",
-				"unit":"hours"
+				"u_value":"hours",
+				"source":"2,7,9"
 			},
 			{
 				"value":"03:39:43.86",
-				"source":"2,5,6",
-				"unit":"hours"
+				"u_value":"hours",
+				"source":"2,5,6"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.02929",
-				"source":"2,3,4"
+				"source":"2,3,7"
 			}
 		],
 		"velocity":[
 			{
 				"value":"8652",
-				"source":"2,3,4,7",
-				"unit":"km/s",
-				"derived":true
+				"u_value":"km/s",
+				"source":"8"
 			}
 		],
 		"photometry":[
 			{
 				"time":"56526.5497807999",
-				"u_time":"MJD",
 				"band":"y",
 				"magnitude":"18.3",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"56526.5702348347",
-				"u_time":"MJD",
 				"band":"z",
 				"magnitude":"20.4",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"56550.6468230459",
-				"u_time":"MJD",
 				"band":"y",
 				"magnitude":"18.3",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"56567.6070177663",
-				"u_time":"MJD",
 				"band":"i",
 				"magnitude":"20.7",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"56567.6208650768",
-				"u_time":"MJD",
 				"band":"i",
 				"magnitude":"20.7",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"56593.5780401402",
-				"u_time":"MJD",
 				"band":"i",
 				"magnitude":"20.7",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"56593.6063462253",
-				"u_time":"MJD",
 				"band":"i",
 				"magnitude":"20.7",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"56595.5321599048",
-				"u_time":"MJD",
 				"band":"r",
-				"magnitude":"18.5121",
 				"e_magnitude":"0.0404767",
+				"magnitude":"18.5121",
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
 				"source":"2,5,6"
 			},
 			{
 				"time":"56595.5441140258",
-				"u_time":"MJD",
 				"band":"r",
-				"magnitude":"18.5048",
 				"e_magnitude":"0.0279356",
+				"magnitude":"18.5048",
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
 				"source":"2,5,6"
 			},
 			{
 				"time":"56595.5562368816",
-				"u_time":"MJD",
 				"band":"i",
-				"magnitude":"18.4832",
 				"e_magnitude":"0.0336084",
+				"magnitude":"18.4832",
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
 				"source":"2,5,6"
 			},
 			{
 				"time":"56595.569421342",
-				"u_time":"MJD",
 				"band":"i",
-				"magnitude":"18.4514",
 				"e_magnitude":"0.0491778",
+				"magnitude":"18.4514",
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
 				"source":"2,5,6"
 			},
 			{
 				"time":"56597.5466050855",
-				"u_time":"MJD",
 				"band":"g",
 				"magnitude":"21.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"56597.5588439755",
-				"u_time":"MJD",
 				"band":"g",
 				"magnitude":"21.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"56597.5710339622",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"56597.5825183773",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"56599.5404300486",
-				"u_time":"MJD",
 				"band":"g",
 				"magnitude":"21.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"56599.5531887077",
-				"u_time":"MJD",
 				"band":"g",
 				"magnitude":"21.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"56599.5672768602",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"56599.57934491",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"56599.5919184914",
-				"u_time":"MJD",
 				"band":"g",
-				"magnitude":"19.1738",
 				"e_magnitude":"0.078327",
+				"magnitude":"19.1738",
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
 				"source":"2,5,6"
 			},
 			{
 				"time":"56599.6044141544",
-				"u_time":"MJD",
 				"band":"g",
-				"magnitude":"19.1758",
 				"e_magnitude":"0.09371",
+				"magnitude":"19.1758",
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
 				"source":"2,5,6"
 			},
 			{
 				"time":"56633.2678021565",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"56633.277647586",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"56673.3335415353",
-				"u_time":"MJD",
 				"band":"y",
 				"magnitude":"18.3",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"56673.3340646518",
-				"u_time":"MJD",
 				"band":"y",
 				"magnitude":"18.3",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"56679.5",
-				"u_time":"MJD",
 				"magnitude":"20.2",
-				"source":"2,3"
+				"u_time":"MJD",
+				"source":"2,7"
 			},
 			{
 				"time":"57037.3290309753",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57037.3407100397",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57037.3524327349",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57037.3641828284",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57039.3031919189",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57039.316983344",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57039.3308331971",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57039.3446633518",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57262.5356825508",
-				"u_time":"MJD",
 				"band":"i",
 				"magnitude":"20.7",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57262.5466720462",
-				"u_time":"MJD",
 				"band":"i",
 				"magnitude":"20.7",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57262.5576505576",
-				"u_time":"MJD",
 				"band":"i",
 				"magnitude":"20.7",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57262.5686258362",
-				"u_time":"MJD",
 				"band":"i",
 				"magnitude":"20.7",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57305.5812081403",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57305.5932030966",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57305.605191721",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57305.617154148",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57330.386979537",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57330.3999730777",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57330.4129887764",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57334.3691313696",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57334.3817012939",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57334.3941897048",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57344.3422487834",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57344.3538583391",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57344.3655802016",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57344.3775403877",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57358.3154978725",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57358.3281191746",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57358.3408296484",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57358.3536377796",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57359.3136002352",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57359.3245701422",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57359.33558241",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57359.3466399727",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57369.2242040443",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57369.2371041006",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57369.2500509565",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57369.2630478685",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57390.3171716761",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57390.3313770966",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57390.3452225579",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57390.3591937772",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57400.3356762463",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57400.3471072129",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57400.3585522492",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57400.3699812745",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57412.3062250433",
-				"u_time":"MJD",
 				"band":"i",
 				"magnitude":"20.7",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57412.3176686545",
-				"u_time":"MJD",
 				"band":"i",
 				"magnitude":"20.7",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57412.3291484495",
-				"u_time":"MJD",
 				"band":"i",
 				"magnitude":"20.7",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57412.3405815287",
-				"u_time":"MJD",
 				"band":"i",
 				"magnitude":"20.7",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57418.2644179302",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57418.2771591683",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57418.2900303685",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57418.3029305112",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			},
 			{
 				"time":"57475.2317816983",
-				"u_time":"MJD",
 				"band":"z",
 				"magnitude":"20.4",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"upperlimit":true,
 				"source":"2,5,6"
 			}
 		],
 		"spectra":[
 			{
-				"instrument":"P200 - DBSP",
-				"u_time":"MJD",
 				"time":"56680.0",
-				"observer":"Drake",
-				"reducer":"Cao",
 				"filename":"14ih_20140123_P200_v1.ascii",
-				"waveunit":"Angstrom",
-				"fluxunit":"erg/s/cm^2/Angstrom",
+				"instrument":"P200 - DBSP",
+				"observer":"Drake",
+				"redshift":"0.02929",
+				"reducer":"Cao",
+				"reduction":"final",
+				"survey":"iPTF",
+				"u_fluxes":"erg/s/cm^2/Angstrom",
+				"u_time":"MJD",
+				"u_wavelengths":"Angstrom",
 				"data":[
 					[
 						"3800.0",
@@ -17073,19 +17076,19 @@
 						"2.7141e-19"
 					],
 					[
-						"10001.21353",
+						"10001.213534",
 						"-5.6034e-19"
 					],
 					[
-						"10002.74811",
+						"10002.748108",
 						"8.2861e-19"
 					],
 					[
-						"10004.28268",
+						"10004.282682",
 						"4.6904e-19"
 					],
 					[
-						"10005.81726",
+						"10005.817256",
 						"1.0975e-19"
 					],
 					[
@@ -17093,19 +17096,19 @@
 						"1.6683e-18"
 					],
 					[
-						"10008.8864",
+						"10008.886404",
 						"-1.2496e-19"
 					],
 					[
-						"10010.42098",
+						"10010.420978",
 						"4.494e-19"
 					],
 					[
-						"10011.95555",
+						"10011.955552",
 						"5.3173e-18"
 					],
 					[
-						"10013.49013",
+						"10013.490126",
 						"4.9188e-18"
 					],
 					[
@@ -17113,19 +17116,19 @@
 						"-2.2617e-19"
 					],
 					[
-						"10016.55927",
+						"10016.559274",
 						"-1.7834e-18"
 					],
 					[
-						"10018.09385",
+						"10018.093848",
 						"1.798e-18"
 					],
 					[
-						"10019.62842",
+						"10019.628422",
 						"3.2155e-18"
 					],
 					[
-						"10021.163",
+						"10021.162996",
 						"3.5122e-18"
 					],
 					[
@@ -17133,19 +17136,19 @@
 						"1.7846e-18"
 					],
 					[
-						"10024.23214",
+						"10024.232144",
 						"2.0264e-18"
 					],
 					[
-						"10025.76672",
+						"10025.766718",
 						"2.968e-19"
 					],
 					[
-						"10027.30129",
+						"10027.301292",
 						"-1.8962e-18"
 					],
 					[
-						"10028.83587",
+						"10028.835866",
 						"1.9812e-18"
 					],
 					[
@@ -17153,19 +17156,19 @@
 						"1.2382e-18"
 					],
 					[
-						"10031.90501",
+						"10031.905014",
 						"4.0285e-19"
 					],
 					[
-						"10033.43959",
+						"10033.439588",
 						"1.3484e-18"
 					],
 					[
-						"10034.97416",
+						"10034.974162",
 						"4.482e-19"
 					],
 					[
-						"10036.50874",
+						"10036.508736",
 						"1.1366e-18"
 					],
 					[
@@ -17173,19 +17176,19 @@
 						"2.6846e-18"
 					],
 					[
-						"10039.57788",
+						"10039.577884",
 						"3.7238e-18"
 					],
 					[
-						"10041.11246",
+						"10041.112458",
 						"3.2945e-18"
 					],
 					[
-						"10042.64703",
+						"10042.647032",
 						"1.4185e-18"
 					],
 					[
-						"10044.18161",
+						"10044.181606",
 						"1.0328e-18"
 					],
 					[
@@ -17193,19 +17196,19 @@
 						"1.0268e-18"
 					],
 					[
-						"10047.25075",
+						"10047.250754",
 						"1.374e-18"
 					],
 					[
-						"10048.78533",
+						"10048.785328",
 						"2.0318e-18"
 					],
 					[
-						"10050.3199",
+						"10050.319902",
 						"5.9761e-19"
 					],
 					[
-						"10051.85448",
+						"10051.854476",
 						"1.8344e-18"
 					],
 					[
@@ -17213,19 +17216,19 @@
 						"1.9486e-18"
 					],
 					[
-						"10054.92362",
+						"10054.923624",
 						"-2.3391e-19"
 					],
 					[
-						"10056.4582",
+						"10056.458198",
 						"1.6819e-18"
 					],
 					[
-						"10057.99277",
+						"10057.992772",
 						"3.7033e-18"
 					],
 					[
-						"10059.52735",
+						"10059.527346",
 						"2.2432e-18"
 					],
 					[
@@ -17233,19 +17236,19 @@
 						"9.4006e-19"
 					],
 					[
-						"10062.59649",
+						"10062.596494",
 						"-4.7003e-19"
 					],
 					[
-						"10064.13107",
+						"10064.131068",
 						"7.6513e-19"
 					],
 					[
-						"10065.66564",
+						"10065.665642",
 						"2.7101e-19"
 					],
 					[
-						"10067.20022",
+						"10067.200216",
 						"1.0882e-18"
 					],
 					[
@@ -17253,19 +17256,19 @@
 						"3.7477e-18"
 					],
 					[
-						"10070.26936",
+						"10070.269364",
 						"2.7643e-18"
 					],
 					[
-						"10071.80394",
+						"10071.803938",
 						"1.7297e-18"
 					],
 					[
-						"10073.33851",
+						"10073.338512",
 						"-3.103e-19"
 					],
 					[
-						"10074.87309",
+						"10074.873086",
 						"-1.4356e-18"
 					],
 					[
@@ -17273,19 +17276,19 @@
 						"1.8401e-18"
 					],
 					[
-						"10077.94223",
+						"10077.942234",
 						"2.5544e-18"
 					],
 					[
-						"10079.47681",
+						"10079.476808",
 						"-4.2555e-19"
 					],
 					[
-						"10081.01138",
+						"10081.011382",
 						"-1.3268e-18"
 					],
 					[
-						"10082.54596",
+						"10082.545956",
 						"-5.7477e-18"
 					],
 					[
@@ -17293,19 +17296,19 @@
 						"-2.0353e-18"
 					],
 					[
-						"10085.6151",
+						"10085.615104",
 						"3.0249e-19"
 					],
 					[
-						"10087.14968",
+						"10087.149678",
 						"4.9209e-19"
 					],
 					[
-						"10088.68425",
+						"10088.684252",
 						"5.4104e-19"
 					],
 					[
-						"10090.21883",
+						"10090.218826",
 						"-4.7981e-19"
 					],
 					[
@@ -17313,19 +17316,19 @@
 						"1.3554e-19"
 					],
 					[
-						"10093.28797",
+						"10093.287974",
 						"5.6967e-19"
 					],
 					[
-						"10094.82255",
+						"10094.822548",
 						"-1.2181e-18"
 					],
 					[
-						"10096.35712",
+						"10096.357122",
 						"6.1199e-19"
 					],
 					[
-						"10097.8917",
+						"10097.891696",
 						"1.8418e-18"
 					],
 					[
@@ -17333,19 +17336,19 @@
 						"3.706e-18"
 					],
 					[
-						"10100.96084",
+						"10100.960844",
 						"3.8078e-18"
 					],
 					[
-						"10102.49542",
+						"10102.495418",
 						"4.3443e-18"
 					],
 					[
-						"10104.02999",
+						"10104.029992",
 						"6.1625e-18"
 					],
 					[
-						"10105.56457",
+						"10105.564566",
 						"3.3067e-19"
 					],
 					[
@@ -17353,19 +17356,19 @@
 						"-1.1744e-18"
 					],
 					[
-						"10108.63371",
+						"10108.633714",
 						"1.0149e-18"
 					],
 					[
-						"10110.16829",
+						"10110.168288",
 						"8.8436e-19"
 					],
 					[
-						"10111.70286",
+						"10111.702862",
 						"2.455e-19"
 					],
 					[
-						"10113.23744",
+						"10113.237436",
 						"1.6094e-18"
 					],
 					[
@@ -17373,19 +17376,19 @@
 						"4.6022e-19"
 					],
 					[
-						"10116.30658",
+						"10116.306584",
 						"1.3584e-18"
 					],
 					[
-						"10117.84116",
+						"10117.841158",
 						"3.9046e-18"
 					],
 					[
-						"10119.37573",
+						"10119.375732",
 						"3.9663e-18"
 					],
 					[
-						"10120.91031",
+						"10120.910306",
 						"-2.9682e-18"
 					],
 					[
@@ -17393,19 +17396,19 @@
 						"1.2921e-18"
 					],
 					[
-						"10123.97945",
+						"10123.979454",
 						"1.4674e-18"
 					],
 					[
-						"10125.51403",
+						"10125.514028",
 						"-1.6818e-18"
 					],
 					[
-						"10127.0486",
+						"10127.048602",
 						"-3.1589e-18"
 					],
 					[
-						"10128.58318",
+						"10128.583176",
 						"-4.1904e-19"
 					],
 					[
@@ -17413,19 +17416,19 @@
 						"9.4468e-19"
 					],
 					[
-						"10131.65232",
+						"10131.652324",
 						"5.177e-19"
 					],
 					[
-						"10133.1869",
+						"10133.186898",
 						"1.9825e-18"
 					],
 					[
-						"10134.72147",
+						"10134.721472",
 						"6.5195e-19"
 					],
 					[
-						"10136.25605",
+						"10136.256046",
 						"-8.837e-19"
 					],
 					[
@@ -17433,19 +17436,19 @@
 						"2.0492e-18"
 					],
 					[
-						"10139.32519",
+						"10139.325194",
 						"1.2352e-18"
 					],
 					[
-						"10140.85977",
+						"10140.859768",
 						"-3.6071e-19"
 					],
 					[
-						"10142.39434",
+						"10142.394342",
 						"-5.5662e-19"
 					],
 					[
-						"10143.92892",
+						"10143.928916",
 						"1.7195e-18"
 					],
 					[
@@ -17453,19 +17456,19 @@
 						"2.3132e-18"
 					],
 					[
-						"10146.99806",
+						"10146.998064",
 						"3.2022e-19"
 					],
 					[
-						"10148.53264",
+						"10148.532638",
 						"2.429e-19"
 					],
 					[
-						"10150.06721",
+						"10150.067212",
 						"-1.4239e-18"
 					],
 					[
-						"10151.60179",
+						"10151.601786",
 						"2.8571e-19"
 					],
 					[
@@ -17473,19 +17476,19 @@
 						"-3.0366e-18"
 					],
 					[
-						"10154.67093",
+						"10154.670934",
 						"3.4978e-19"
 					],
 					[
-						"10156.20551",
+						"10156.205508",
 						"2.5171e-18"
 					],
 					[
-						"10157.74008",
+						"10157.740082",
 						"2.1931e-18"
 					],
 					[
-						"10159.27466",
+						"10159.274656",
 						"2.9499e-19"
 					],
 					[
@@ -17493,19 +17496,19 @@
 						"-2.5613e-18"
 					],
 					[
-						"10162.3438",
+						"10162.343804",
 						"-1.3804e-18"
 					],
 					[
-						"10163.87838",
+						"10163.878378",
 						"3.7214e-18"
 					],
 					[
-						"10165.41295",
+						"10165.412952",
 						"3.2485e-18"
 					],
 					[
-						"10166.94753",
+						"10166.947526",
 						"1.04e-18"
 					],
 					[
@@ -17513,19 +17516,19 @@
 						"4.8409e-18"
 					],
 					[
-						"10170.01667",
+						"10170.016674",
 						"2.0789e-19"
 					],
 					[
-						"10171.55125",
+						"10171.551248",
 						"7.5696e-18"
 					],
 					[
-						"10173.08582",
+						"10173.085822",
 						"4.6644e-18"
 					],
 					[
-						"10174.6204",
+						"10174.620396",
 						"-3.1538e-18"
 					],
 					[
@@ -17533,19 +17536,19 @@
 						"-3.8937e-18"
 					],
 					[
-						"10177.68954",
+						"10177.689544",
 						"-2.089e-19"
 					],
 					[
-						"10179.22412",
+						"10179.224118",
 						"1.3054e-18"
 					],
 					[
-						"10180.75869",
+						"10180.758692",
 						"1.5894e-18"
 					],
 					[
-						"10182.29327",
+						"10182.293266",
 						"9.2222e-19"
 					],
 					[
@@ -17553,19 +17556,19 @@
 						"2.1558e-18"
 					],
 					[
-						"10185.36241",
+						"10185.362414",
 						"6.5807e-18"
 					],
 					[
-						"10186.89699",
+						"10186.896988",
 						"3.2806e-18"
 					],
 					[
-						"10188.43156",
+						"10188.431562",
 						"1.8588e-18"
 					],
 					[
-						"10189.96614",
+						"10189.966136",
 						"2.1557e-18"
 					],
 					[
@@ -17573,19 +17576,19 @@
 						"-1.1528e-18"
 					],
 					[
-						"10193.03528",
+						"10193.035284",
 						"-4.5833e-20"
 					],
 					[
-						"10194.56986",
+						"10194.569858",
 						"-3.6956e-19"
 					],
 					[
-						"10196.10443",
+						"10196.104432",
 						"1.8097e-18"
 					],
 					[
-						"10197.63901",
+						"10197.639006",
 						"4.7745e-18"
 					],
 					[
@@ -17593,19 +17596,19 @@
 						"3.4181e-18"
 					],
 					[
-						"10200.70815",
+						"10200.708154",
 						"2.2759e-18"
 					],
 					[
-						"10202.24273",
+						"10202.242728",
 						"2.4428e-19"
 					],
 					[
-						"10203.7773",
+						"10203.777302",
 						"-2.9015e-18"
 					],
 					[
-						"10205.31188",
+						"10205.311876",
 						"-3.4138e-18"
 					],
 					[
@@ -17613,19 +17616,19 @@
 						"-2.1953e-18"
 					],
 					[
-						"10208.38102",
+						"10208.381024",
 						"1.9774e-18"
 					],
 					[
-						"10209.9156",
+						"10209.915598",
 						"3.1517e-18"
 					],
 					[
-						"10211.45017",
+						"10211.450172",
 						"4.9512e-18"
 					],
 					[
-						"10212.98475",
+						"10212.984746",
 						"3.2354e-18"
 					],
 					[
@@ -17633,19 +17636,19 @@
 						"4.44e-19"
 					],
 					[
-						"10216.05389",
+						"10216.053894",
 						"2.0603e-18"
 					],
 					[
-						"10217.58847",
+						"10217.588468",
 						"2.8824e-18"
 					],
 					[
-						"10219.12304",
+						"10219.123042",
 						"1.7486e-18"
 					],
 					[
-						"10220.65762",
+						"10220.657616",
 						"1.9353e-18"
 					],
 					[
@@ -17653,19 +17656,19 @@
 						"2.7338e-19"
 					],
 					[
-						"10223.72676",
+						"10223.726764",
 						"3.1897e-18"
 					],
 					[
-						"10225.26134",
+						"10225.261338",
 						"7.4226e-18"
 					],
 					[
-						"10226.79591",
+						"10226.795912",
 						"3.1341e-18"
 					],
 					[
-						"10228.33049",
+						"10228.330486",
 						"6.112e-18"
 					],
 					[
@@ -17673,19 +17676,19 @@
 						"8.2654e-18"
 					],
 					[
-						"10231.39963",
+						"10231.399634",
 						"2.6644e-18"
 					],
 					[
-						"10232.93421",
+						"10232.934208",
 						"1.0418e-18"
 					],
 					[
-						"10234.46878",
+						"10234.468782",
 						"1.699e-18"
 					],
 					[
-						"10236.00336",
+						"10236.003356",
 						"4.516e-19"
 					],
 					[
@@ -17693,19 +17696,19 @@
 						"-1.6088e-19"
 					],
 					[
-						"10239.0725",
+						"10239.072504",
 						"1.6e-18"
 					],
 					[
-						"10240.60708",
+						"10240.607078",
 						"2.8986e-18"
 					],
 					[
-						"10242.14165",
+						"10242.141652",
 						"1.9985e-18"
 					],
 					[
-						"10243.67623",
+						"10243.676226",
 						"1.7656e-18"
 					],
 					[
@@ -17713,19 +17716,19 @@
 						"1.9795e-18"
 					],
 					[
-						"10246.74537",
+						"10246.745374",
 						"-1.2751e-19"
 					],
 					[
-						"10248.27995",
+						"10248.279948",
 						"2.0637e-18"
 					],
 					[
-						"10249.81452",
+						"10249.814522",
 						"2.6014e-18"
 					],
 					[
-						"10251.3491",
+						"10251.349096",
 						"2.0258e-18"
 					],
 					[
@@ -17733,19 +17736,19 @@
 						"5.1334e-18"
 					],
 					[
-						"10254.41824",
+						"10254.418244",
 						"5.4596e-18"
 					],
 					[
-						"10255.95282",
+						"10255.952818",
 						"1.7982e-18"
 					],
 					[
-						"10257.48739",
+						"10257.487392",
 						"1.313e-18"
 					],
 					[
-						"10259.02197",
+						"10259.021966",
 						"2.155e-18"
 					],
 					[
@@ -17753,19 +17756,19 @@
 						"-2.5408e-19"
 					],
 					[
-						"10262.09111",
+						"10262.091114",
 						"-3.3077e-18"
 					],
 					[
-						"10263.62569",
+						"10263.625688",
 						"-4.4847e-19"
 					],
 					[
-						"10265.16026",
+						"10265.160262",
 						"9.2687e-19"
 					],
 					[
-						"10266.69484",
+						"10266.694836",
 						"1.7014e-18"
 					],
 					[
@@ -17773,19 +17776,19 @@
 						"-3.363e-19"
 					],
 					[
-						"10269.76398",
+						"10269.763984",
 						"-6.339e-19"
 					],
 					[
-						"10271.29856",
+						"10271.298558",
 						"-2.0617e-19"
 					],
 					[
-						"10272.83313",
+						"10272.833132",
 						"-4.2475e-18"
 					],
 					[
-						"10274.36771",
+						"10274.367706",
 						"-2.6771e-18"
 					],
 					[
@@ -17793,19 +17796,19 @@
 						"4.3674e-18"
 					],
 					[
-						"10277.43685",
+						"10277.436854",
 						"2.4859e-18"
 					],
 					[
-						"10278.97143",
+						"10278.971428",
 						"1.2328e-18"
 					],
 					[
-						"10280.506",
+						"10280.506002",
 						"3.3702e-18"
 					],
 					[
-						"10282.04058",
+						"10282.040576",
 						"-2.687e-19"
 					],
 					[
@@ -17813,19 +17816,19 @@
 						"2.5976e-18"
 					],
 					[
-						"10285.10972",
+						"10285.109724",
 						"-5.7826e-18"
 					],
 					[
-						"10286.6443",
+						"10286.644298",
 						"-9.0791e-18"
 					],
 					[
-						"10288.17887",
+						"10288.178872",
 						"6.8832e-18"
 					],
 					[
-						"10289.71345",
+						"10289.713446",
 						"7.7432e-18"
 					],
 					[
@@ -17833,19 +17836,19 @@
 						"4.0255e-18"
 					],
 					[
-						"10292.78259",
+						"10292.782594",
 						"1.6046e-18"
 					],
 					[
-						"10294.31717",
+						"10294.317168",
 						"6.8082e-19"
 					],
 					[
-						"10295.85174",
+						"10295.851742",
 						"-4.3156e-18"
 					],
 					[
-						"10297.38632",
+						"10297.386316",
 						"-3.6353e-18"
 					],
 					[
@@ -17853,19 +17856,19 @@
 						"-2.5378e-19"
 					],
 					[
-						"10300.45546",
+						"10300.455464",
 						"7.9384e-18"
 					],
 					[
-						"10301.99004",
+						"10301.990038",
 						"9.2036e-18"
 					],
 					[
-						"10303.52461",
+						"10303.524612",
 						"4.8654e-18"
 					],
 					[
-						"10305.05919",
+						"10305.059186",
 						"3.4088e-18"
 					],
 					[
@@ -17873,19 +17876,19 @@
 						"-3.6233e-18"
 					],
 					[
-						"10308.12833",
+						"10308.128334",
 						"3.7023e-18"
 					],
 					[
-						"10309.66291",
+						"10309.662908",
 						"3.3293e-18"
 					],
 					[
-						"10311.19748",
+						"10311.197482",
 						"-6.7793e-18"
 					],
 					[
-						"10312.73206",
+						"10312.732056",
 						"-3.0041e-18"
 					],
 					[
@@ -17893,19 +17896,19 @@
 						"5.9325e-18"
 					],
 					[
-						"10315.8012",
+						"10315.801204",
 						"8.1096e-18"
 					],
 					[
-						"10317.33578",
+						"10317.335778",
 						"1.6022e-18"
 					],
 					[
-						"10318.87035",
+						"10318.870352",
 						"2.9225e-18"
 					],
 					[
-						"10320.40493",
+						"10320.404926",
 						"1.9974e-18"
 					],
 					[
@@ -17913,19 +17916,19 @@
 						"1.8203e-18"
 					],
 					[
-						"10323.47407",
+						"10323.474074",
 						"1.4149e-18"
 					],
 					[
-						"10325.00865",
+						"10325.008648",
 						"1.2283e-18"
 					],
 					[
-						"10326.54322",
+						"10326.543222",
 						"2.5761e-19"
 					],
 					[
-						"10328.0778",
+						"10328.077796",
 						"1.5167e-19"
 					],
 					[
@@ -17933,19 +17936,19 @@
 						"3.266e-18"
 					],
 					[
-						"10331.14694",
+						"10331.146944",
 						"-1.6642e-18"
 					],
 					[
-						"10332.68152",
+						"10332.681518",
 						"-4.5639e-18"
 					],
 					[
-						"10334.21609",
+						"10334.216092",
 						"1.9715e-19"
 					],
 					[
-						"10335.75067",
+						"10335.750666",
 						"2.3507e-18"
 					],
 					[
@@ -17953,19 +17956,19 @@
 						"2.1408e-18"
 					],
 					[
-						"10338.81981",
+						"10338.819814",
 						"-1.176e-18"
 					],
 					[
-						"10340.35439",
+						"10340.354388",
 						"-4.2842e-19"
 					],
 					[
-						"10341.88896",
+						"10341.888962",
 						"-1.5313e-18"
 					],
 					[
-						"10343.42354",
+						"10343.423536",
 						"-2.2443e-18"
 					],
 					[
@@ -17973,19 +17976,19 @@
 						"3.2022e-18"
 					],
 					[
-						"10346.49268",
+						"10346.492684",
 						"7.907e-19"
 					],
 					[
-						"10348.02726",
+						"10348.027258",
 						"2.0962e-19"
 					],
 					[
-						"10349.56183",
+						"10349.561832",
 						"6.7256e-18"
 					],
 					[
-						"10351.09641",
+						"10351.096406",
 						"4.708e-18"
 					],
 					[
@@ -17993,19 +17996,19 @@
 						"-6.4177e-18"
 					],
 					[
-						"10354.16555",
+						"10354.165554",
 						"-2.9866e-18"
 					],
 					[
-						"10355.70013",
+						"10355.700128",
 						"-6.6368e-18"
 					],
 					[
-						"10357.2347",
+						"10357.234702",
 						"-1.8517e-17"
 					],
 					[
-						"10358.76928",
+						"10358.769276",
 						"-2.2442e-17"
 					],
 					[
@@ -18013,19 +18016,19 @@
 						"-3.5872e-18"
 					],
 					[
-						"10361.83842",
+						"10361.838424",
 						"5.9684e-18"
 					],
 					[
-						"10363.373",
+						"10363.372998",
 						"2.8664e-18"
 					],
 					[
-						"10364.90757",
+						"10364.907572",
 						"4.0144e-18"
 					],
 					[
-						"10366.44215",
+						"10366.442146",
 						"2.6107e-18"
 					],
 					[
@@ -18033,19 +18036,19 @@
 						"-4.6453e-18"
 					],
 					[
-						"10369.51129",
+						"10369.511294",
 						"-5.5111e-18"
 					],
 					[
-						"10371.04587",
+						"10371.045868",
 						"-4.762e-18"
 					],
 					[
-						"10372.58044",
+						"10372.580442",
 						"5.3394e-19"
 					],
 					[
-						"10374.11502",
+						"10374.115016",
 						"-5.8405e-18"
 					],
 					[
@@ -18053,19 +18056,19 @@
 						"-2.386e-18"
 					],
 					[
-						"10377.18416",
+						"10377.184164",
 						"1.107e-17"
 					],
 					[
-						"10378.71874",
+						"10378.718738",
 						"9.6558e-18"
 					],
 					[
-						"10380.25331",
+						"10380.253312",
 						"5.6212e-18"
 					],
 					[
-						"10381.78789",
+						"10381.787886",
 						"-2.5213e-19"
 					],
 					[
@@ -18073,19 +18076,19 @@
 						"-1.3753e-18"
 					],
 					[
-						"10384.85703",
+						"10384.857034",
 						"-7.5197e-19"
 					],
 					[
-						"10386.39161",
+						"10386.391608",
 						"1.9912e-18"
 					],
 					[
-						"10387.92618",
+						"10387.926182",
 						"7.4734e-19"
 					],
 					[
-						"10389.46076",
+						"10389.460756",
 						"-1.3033e-20"
 					],
 					[
@@ -18093,19 +18096,19 @@
 						"-1.657e-18"
 					],
 					[
-						"10392.5299",
+						"10392.529904",
 						"-2.9217e-18"
 					],
 					[
-						"10394.06448",
+						"10394.064478",
 						"5.3968e-18"
 					],
 					[
-						"10395.59905",
+						"10395.599052",
 						"6.1322e-18"
 					],
 					[
-						"10397.13363",
+						"10397.133626",
 						"2.3091e-18"
 					],
 					[
@@ -18113,19 +18116,19 @@
 						"2.7117e-18"
 					],
 					[
-						"10400.20277",
+						"10400.202774",
 						"1.8805e-18"
 					],
 					[
-						"10401.73735",
+						"10401.737348",
 						"-1.1161e-18"
 					],
 					[
-						"10403.27192",
+						"10403.271922",
 						"-3.2277e-18"
 					],
 					[
-						"10404.8065",
+						"10404.806496",
 						"-1.6033e-18"
 					],
 					[
@@ -18133,19 +18136,19 @@
 						"2.541e-18"
 					],
 					[
-						"10407.87564",
+						"10407.875644",
 						"6.1755e-18"
 					],
 					[
-						"10409.41022",
+						"10409.410218",
 						"4.9374e-18"
 					],
 					[
-						"10410.94479",
+						"10410.944792",
 						"2.0466e-18"
 					],
 					[
-						"10412.47937",
+						"10412.479366",
 						"2.6787e-18"
 					],
 					[
@@ -18153,19 +18156,19 @@
 						"2.6692e-18"
 					],
 					[
-						"10415.54851",
+						"10415.548514",
 						"8.2529e-18"
 					],
 					[
-						"10417.08309",
+						"10417.083088",
 						"2.0121e-17"
 					],
 					[
-						"10418.61766",
+						"10418.617662",
 						"2.1103e-17"
 					],
 					[
-						"10420.15224",
+						"10420.152236",
 						"8.9675e-18"
 					],
 					[
@@ -18173,19 +18176,19 @@
 						"-2.6678e-18"
 					],
 					[
-						"10423.22138",
+						"10423.221384",
 						"-5.0855e-18"
 					],
 					[
-						"10424.75596",
+						"10424.755958",
 						"-1.5276e-18"
 					],
 					[
-						"10426.29053",
+						"10426.290532",
 						"2.8901e-18"
 					],
 					[
-						"10427.82511",
+						"10427.825106",
 						"3.5861e-18"
 					],
 					[
@@ -18193,19 +18196,19 @@
 						"4.0931e-18"
 					],
 					[
-						"10430.89425",
+						"10430.894254",
 						"3.6092e-18"
 					],
 					[
-						"10432.42883",
+						"10432.428828",
 						"-4.201e-19"
 					],
 					[
-						"10433.9634",
+						"10433.963402",
 						"-2.9079e-18"
 					],
 					[
-						"10435.49798",
+						"10435.497976",
 						"-5.2639e-19"
 					],
 					[
@@ -18213,19 +18216,19 @@
 						"-5.8735e-19"
 					],
 					[
-						"10438.56712",
+						"10438.567124",
 						"-7.2051e-19"
 					],
 					[
-						"10440.1017",
+						"10440.101698",
 						"-6.6237e-19"
 					],
 					[
-						"10441.63627",
+						"10441.636272",
 						"-9.7645e-19"
 					],
 					[
-						"10443.17085",
+						"10443.170846",
 						"1.2777e-18"
 					],
 					[
@@ -18233,19 +18236,19 @@
 						"2.3031e-18"
 					],
 					[
-						"10446.23999",
+						"10446.239994",
 						"1.6836e-18"
 					],
 					[
-						"10447.77457",
+						"10447.774568",
 						"3.3152e-19"
 					],
 					[
-						"10449.30914",
+						"10449.309142",
 						"1.1058e-19"
 					],
 					[
-						"10450.84372",
+						"10450.843716",
 						"1.1996e-19"
 					],
 					[
@@ -18253,7 +18256,7 @@
 						"0.0"
 					]
 				],
-				"source":"4"
+				"source":"3"
 			}
 		]
 	}

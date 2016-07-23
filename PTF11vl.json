@@ -1,53 +1,53 @@
 {
 	"PTF11vl":{
-		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
 		"name":"PTF11vl",
 		"sources":[
 			{
-				"name":"SIMBAD astronomical database",
-				"url":"http://simbad.u-strasbg.fr/",
-				"bibcode":"2000A&AS..143....9W",
-				"alias":"1",
-				"secondary":true,
-				"reference":"Wenger et al. (2000)"
+				"name":"2015arXiv150201589P",
+				"bibcode":"2015arXiv150201589P",
+				"reference":"Planck Collaboration et al. (2015)",
+				"alias":"1"
 			},
 			{
 				"name":"2014MNRAS.438.1391P",
 				"bibcode":"2014MNRAS.438.1391P",
-				"alias":"2",
-				"reference":"Pan et al. (2014)"
+				"reference":"Pan et al. (2014)",
+				"alias":"2"
 			},
 			{
 				"name":"2012PASP..124..668Y",
 				"bibcode":"2012PASP..124..668Y",
-				"alias":"3",
-				"reference":"Yaron & Gal-Yam (2012)"
-			},
-			{
-				"name":"The Open Supernova Catalog",
-				"url":"https://sne.space",
-				"bibcode":"2016arXiv160501054G",
-				"alias":"4",
-				"secondary":true,
-				"reference":"Guillochon, Parrent, & Margutti (2016)"
+				"reference":"Yaron & Gal-Yam (2012)",
+				"alias":"3"
 			},
 			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
-				"alias":"5",
-				"reference":"Schlafly & Finkbeiner (2011)"
+				"reference":"Schlafly & Finkbeiner (2011)",
+				"alias":"4"
 			},
 			{
-				"name":"2015arXiv150201589P",
-				"bibcode":"2015arXiv150201589P",
-				"alias":"6",
-				"reference":"Planck Collaboration et al. (2015)"
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2016arXiv160501054G",
+				"reference":"Guillochon, Parrent, & Margutti (2016)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"5"
+			},
+			{
+				"name":"SIMBAD astronomical database",
+				"bibcode":"2000A&AS..143....9W",
+				"reference":"Wenger et al. (2000)",
+				"secondary":true,
+				"url":"http://simbad.u-strasbg.fr/",
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"PTF11vl",
-				"source":"1,2,3"
+				"source":"2,3,6"
 			}
 		],
 		"claimedtype":[
@@ -59,76 +59,78 @@
 		"comovingdist":[
 			{
 				"value":"199",
-				"source":"2,4,6",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,5"
 			}
 		],
 		"dec":[
 			{
 				"value":"+27:43:39.7",
-				"source":"1,2",
-				"unit":"degrees"
+				"u_value":"degrees",
+				"source":"2,6"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2011/01/26",
-				"source":"3,4",
-				"derived":true
+				"derived":true,
+				"source":"3,5"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.043",
-				"error":"0.0018",
-				"source":"4,5",
-				"derived":true
+				"derived":true,
+				"e_value":"0.0018",
+				"source":"4,5"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"208",
-				"source":"2,4,6",
+				"derived":true,
 				"kind":"heliocentric",
-				"unit":"Mpc",
-				"derived":true
+				"u_value":"Mpc",
+				"source":"1,2,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"16:28:40.27",
-				"source":"1,2",
-				"unit":"hours"
+				"u_value":"hours",
+				"source":"2,6"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.0454",
-				"source":"2",
-				"kind":"heliocentric"
+				"kind":"heliocentric",
+				"source":"2"
 			}
 		],
 		"velocity":[
 			{
 				"value":"13300",
-				"source":"2,4",
 				"kind":"heliocentric",
-				"unit":"km/s",
-				"derived":true
+				"u_value":"km/s",
+				"source":"5"
 			}
 		],
 		"spectra":[
 			{
-				"instrument":"Lick 3m - KAST",
-				"u_time":"MJD",
 				"time":"55587.0",
-				"observer":"Silverman",
-				"reducer":"Silverman",
 				"filename":"11vl_20110126_Lick 3-m_v1.ascii",
-				"waveunit":"Angstrom",
-				"fluxunit":"Uncalibrated",
-				"errorunit":"Uncalibrated",
+				"instrument":"Lick 3m - KAST",
+				"observer":"Silverman",
+				"redshift":"0.045",
+				"reducer":"Silverman",
+				"reduction":"final",
+				"survey":"PTF",
+				"u_errors":"Uncalibrated",
+				"u_fluxes":"Uncalibrated",
+				"u_time":"MJD",
+				"u_wavelengths":"Angstrom",
 				"data":[
 					[
 						"3484.00",
@@ -14822,8 +14824,8 @@
 					],
 					[
 						"9366.00",
-						"-0.0031158",
-						"-0.0031158"
+						"-0.00311580",
+						"-0.00311580"
 					],
 					[
 						"9368.00",
@@ -14932,8 +14934,8 @@
 					],
 					[
 						"9410.00",
-						"-0.0017526",
-						"-0.0017526"
+						"-0.00175260",
+						"-0.00175260"
 					],
 					[
 						"9412.00",
@@ -15147,8 +15149,8 @@
 					],
 					[
 						"9496.00",
-						"-0.00061838",
-						"-0.00061838"
+						"-0.000618380",
+						"-0.000618380"
 					],
 					[
 						"9498.00",
@@ -15307,13 +15309,13 @@
 					],
 					[
 						"9560.00",
-						"-0.0090942",
-						"-0.0090942"
+						"-0.00909420",
+						"-0.00909420"
 					],
 					[
 						"9562.00",
-						"-0.0093248",
-						"-0.0093248"
+						"-0.00932480",
+						"-0.00932480"
 					],
 					[
 						"9564.00",
@@ -15637,8 +15639,8 @@
 					],
 					[
 						"9692.00",
-						"-0.0082147",
-						"-0.0082147"
+						"-0.00821470",
+						"-0.00821470"
 					],
 					[
 						"9694.00",
@@ -15817,8 +15819,8 @@
 					],
 					[
 						"9764.00",
-						"-0.00094272",
-						"-0.00094272"
+						"-0.000942720",
+						"-0.000942720"
 					],
 					[
 						"9766.00",
@@ -16247,8 +16249,8 @@
 					],
 					[
 						"9936.00",
-						"0.0007835",
-						"0.0007835"
+						"0.000783500",
+						"0.000783500"
 					],
 					[
 						"9938.00",
@@ -16257,8 +16259,8 @@
 					],
 					[
 						"9940.00",
-						"-0.008007",
-						"-0.008007"
+						"-0.00800700",
+						"-0.00800700"
 					],
 					[
 						"9942.00",
@@ -16452,8 +16454,8 @@
 					],
 					[
 						"10018.0",
-						"-0.0043934",
-						"-0.0043934"
+						"-0.00439340",
+						"-0.00439340"
 					],
 					[
 						"10020.0",

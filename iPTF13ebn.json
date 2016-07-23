@@ -1,88 +1,90 @@
 {
 	"iPTF13ebn":{
-		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
 		"name":"iPTF13ebn",
 		"sources":[
 			{
+				"name":"2015arXiv150201589P",
+				"bibcode":"2015arXiv150201589P",
+				"reference":"Planck Collaboration et al. (2015)",
+				"alias":"1"
+			},
+			{
 				"name":"2012PASP..124..668Y",
 				"bibcode":"2012PASP..124..668Y",
-				"alias":"1",
-				"reference":"Yaron & Gal-Yam (2012)"
+				"reference":"Yaron & Gal-Yam (2012)",
+				"alias":"2"
 			},
 			{
 				"name":"The Open Supernova Catalog",
-				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"2",
+				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
-				"reference":"Guillochon, Parrent, & Margutti (2016)"
-			},
-			{
-				"name":"2015arXiv150201589P",
-				"bibcode":"2015arXiv150201589P",
-				"alias":"3",
-				"reference":"Planck Collaboration et al. (2015)"
+				"url":"https://sne.space",
+				"alias":"3"
 			}
 		],
 		"alias":[
 			{
 				"value":"iPTF13ebn",
-				"source":"1"
+				"source":"2"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1"
+				"source":"2"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"340",
-				"source":"1,2,3",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,3"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2013/11/29",
-				"source":"1,2",
-				"derived":true
+				"derived":true,
+				"source":"2,3"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"370",
-				"source":"1,2,3",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,3"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.078",
-				"source":"1"
+				"source":"2"
 			}
 		],
 		"velocity":[
 			{
 				"value":"22000",
-				"source":"1,2",
-				"unit":"km/s",
-				"derived":true
+				"u_value":"km/s",
+				"source":"3"
 			}
 		],
 		"spectra":[
 			{
-				"instrument":"Keck2 - DEIMOS",
-				"u_time":"MJD",
 				"time":"56625.0",
-				"observer":"Cao",
-				"reducer":"De Cia",
 				"filename":"13ebn_20131129_Keck2_v1.ascii",
-				"waveunit":"Angstrom",
-				"fluxunit":"Uncalibrated",
+				"instrument":"Keck2 - DEIMOS",
+				"observer":"Cao",
+				"redshift":"0.078",
+				"reducer":"De Cia",
+				"reduction":"final",
+				"survey":"iPTF",
+				"u_fluxes":"Uncalibrated",
+				"u_time":"MJD",
+				"u_wavelengths":"Angstrom",
 				"data":[
 					[
 						"4905.0",
@@ -654,7 +656,7 @@
 					],
 					[
 						"5075.4",
-						"0.0009524"
+						"9.524000E-4"
 					],
 					[
 						"5076.6",
@@ -1958,7 +1960,7 @@
 					],
 					[
 						"5466.6",
-						"0.00050869"
+						"5.086900E-4"
 					],
 					[
 						"5467.8",
@@ -4190,7 +4192,7 @@
 					],
 					[
 						"6136.2",
-						"0.00077671"
+						"7.767100E-4"
 					],
 					[
 						"6137.4",
@@ -4230,7 +4232,7 @@
 					],
 					[
 						"6148.2",
-						"0.00052594"
+						"5.259400E-4"
 					],
 					[
 						"6149.4",
@@ -4298,7 +4300,7 @@
 					],
 					[
 						"6168.6",
-						"0.0004934"
+						"4.934000E-4"
 					],
 					[
 						"6169.8",
@@ -5306,7 +5308,7 @@
 					],
 					[
 						"6471.0",
-						"0.00086803"
+						"8.680300E-4"
 					],
 					[
 						"6472.2",
@@ -6514,7 +6516,7 @@
 					],
 					[
 						"6833.4",
-						"0.00095915"
+						"9.591500E-4"
 					],
 					[
 						"6834.6",
@@ -8646,7 +8648,7 @@
 					],
 					[
 						"7473.0",
-						"0.00046784"
+						"4.678400E-4"
 					],
 					[
 						"7474.2",
@@ -10154,7 +10156,7 @@
 					],
 					[
 						"7949.0",
-						"0.00036851"
+						"3.685100E-4"
 					],
 					[
 						"7950.2",
@@ -10966,7 +10968,7 @@
 					],
 					[
 						"8192.6",
-						"0.00035909"
+						"3.590900E-4"
 					],
 					[
 						"8193.8",
@@ -11006,7 +11008,7 @@
 					],
 					[
 						"8204.6",
-						"0.0002938"
+						"2.938000E-4"
 					],
 					[
 						"8205.8",
@@ -11754,7 +11756,7 @@
 					],
 					[
 						"8429.0",
-						"0.00039635"
+						"3.963500E-4"
 					],
 					[
 						"8430.2",
@@ -11826,7 +11828,7 @@
 					],
 					[
 						"8450.6",
-						"0.00043138"
+						"4.313800E-4"
 					],
 					[
 						"8451.8",
@@ -11886,7 +11888,7 @@
 					],
 					[
 						"8468.6",
-						"0.00029927"
+						"2.992700E-4"
 					],
 					[
 						"8469.8",
@@ -12138,7 +12140,7 @@
 					],
 					[
 						"8544.2",
-						"0.00023941"
+						"2.394100E-4"
 					],
 					[
 						"8545.4",
@@ -12286,7 +12288,7 @@
 					],
 					[
 						"8588.6",
-						"0.00023605"
+						"2.360500E-4"
 					],
 					[
 						"8589.8",
@@ -12598,7 +12600,7 @@
 					],
 					[
 						"8682.2",
-						"0.00025587"
+						"2.558700E-4"
 					],
 					[
 						"8683.4",
@@ -13966,7 +13968,7 @@
 					],
 					[
 						"9092.6",
-						"0.00013415"
+						"1.341500E-4"
 					],
 					[
 						"9093.8",
@@ -15106,7 +15108,7 @@
 					],
 					[
 						"9434.6",
-						"0.0004983"
+						"4.983000E-4"
 					],
 					[
 						"9435.8",
@@ -16638,7 +16640,7 @@
 					],
 					[
 						"9894.2",
-						"7.9821e-05"
+						"7.982100E-5"
 					],
 					[
 						"9895.4",
@@ -16706,7 +16708,7 @@
 					],
 					[
 						"9914.6",
-						"0.0003816"
+						"3.816000E-4"
 					],
 					[
 						"9915.8",
@@ -16866,7 +16868,7 @@
 					],
 					[
 						"9962.6",
-						"0.00066586"
+						"6.658600E-4"
 					],
 					[
 						"9963.8",
@@ -17122,7 +17124,7 @@
 					],
 					[
 						"10039.4",
-						"0.00054461"
+						"5.446100E-4"
 					],
 					[
 						"10040.6",
@@ -17425,7 +17427,7 @@
 						"4.825920E-4"
 					]
 				],
-				"source":"1"
+				"source":"2"
 			}
 		]
 	}

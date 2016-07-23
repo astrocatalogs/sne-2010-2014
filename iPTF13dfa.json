@@ -1,88 +1,90 @@
 {
 	"iPTF13dfa":{
-		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
 		"name":"iPTF13dfa",
 		"sources":[
 			{
+				"name":"2015arXiv150201589P",
+				"bibcode":"2015arXiv150201589P",
+				"reference":"Planck Collaboration et al. (2015)",
+				"alias":"1"
+			},
+			{
 				"name":"2012PASP..124..668Y",
 				"bibcode":"2012PASP..124..668Y",
-				"alias":"1",
-				"reference":"Yaron & Gal-Yam (2012)"
+				"reference":"Yaron & Gal-Yam (2012)",
+				"alias":"2"
 			},
 			{
 				"name":"The Open Supernova Catalog",
-				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"2",
+				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
-				"reference":"Guillochon, Parrent, & Margutti (2016)"
-			},
-			{
-				"name":"2015arXiv150201589P",
-				"bibcode":"2015arXiv150201589P",
-				"alias":"3",
-				"reference":"Planck Collaboration et al. (2015)"
+				"url":"https://sne.space",
+				"alias":"3"
 			}
 		],
 		"alias":[
 			{
 				"value":"iPTF13dfa",
-				"source":"1"
+				"source":"2"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1"
+				"source":"2"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"320",
-				"source":"1,2,3",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,3"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2013/09/04",
-				"source":"1,2",
-				"derived":true
+				"derived":true,
+				"source":"2,3"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"350",
-				"source":"1,2,3",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,3"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.074",
-				"source":"1"
+				"source":"2"
 			}
 		],
 		"velocity":[
 			{
 				"value":"21000",
-				"source":"1,2",
-				"unit":"km/s",
-				"derived":true
+				"u_value":"km/s",
+				"source":"3"
 			}
 		],
 		"spectra":[
 			{
-				"instrument":"P200 - DBSP",
-				"u_time":"MJD",
 				"time":"56539.0",
-				"observer":"Waszczak, Johansson, O'Sullivan",
-				"reducer":"Sagi",
 				"filename":"13dfa_20130904_P200_v2.ascii",
-				"waveunit":"Angstrom",
-				"fluxunit":"erg/s/cm^2/Angstrom",
+				"instrument":"P200 - DBSP",
+				"observer":"Waszczak, Johansson, O'Sullivan",
+				"redshift":"0.074",
+				"reducer":"Sagi",
+				"reduction":"final",
+				"survey":"iPTF",
+				"u_fluxes":"erg/s/cm^2/Angstrom",
+				"u_time":"MJD",
+				"u_wavelengths":"Angstrom",
 				"data":[
 					[
 						"3500",
@@ -18721,7 +18723,7 @@
 						"4.2255e-17"
 					]
 				],
-				"source":"1"
+				"source":"2"
 			}
 		]
 	}

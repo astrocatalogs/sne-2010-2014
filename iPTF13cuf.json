@@ -1,170 +1,172 @@
 {
 	"iPTF13cuf":{
-		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
 		"name":"iPTF13cuf",
 		"sources":[
 			{
-				"name":"SIMBAD astronomical database",
-				"url":"http://simbad.u-strasbg.fr/",
-				"bibcode":"2000A&AS..143....9W",
-				"alias":"1",
-				"secondary":true,
-				"reference":"Wenger et al. (2000)"
+				"name":"2015arXiv150201589P",
+				"bibcode":"2015arXiv150201589P",
+				"reference":"Planck Collaboration et al. (2015)",
+				"alias":"1"
 			},
 			{
 				"name":"2013ATel.5407....1A",
 				"bibcode":"2013ATel.5407....1A",
-				"alias":"2",
-				"reference":"Arcavi et al. (2013)"
-			},
-			{
-				"name":"Latest Supernovae",
-				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3",
-				"secondary":true
+				"reference":"Arcavi et al. (2013)",
+				"alias":"2"
 			},
 			{
 				"name":"2012PASP..124..668Y",
 				"bibcode":"2012PASP..124..668Y",
-				"alias":"4",
-				"reference":"Yaron & Gal-Yam (2012)"
-			},
-			{
-				"name":"The Open Supernova Catalog",
-				"url":"https://sne.space",
-				"bibcode":"2016arXiv160501054G",
-				"alias":"5",
-				"secondary":true,
-				"reference":"Guillochon, Parrent, & Margutti (2016)"
+				"reference":"Yaron & Gal-Yam (2012)",
+				"alias":"3"
 			},
 			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
-				"alias":"6",
-				"reference":"Schlafly & Finkbeiner (2011)"
+				"reference":"Schlafly & Finkbeiner (2011)",
+				"alias":"4"
 			},
 			{
-				"name":"2015arXiv150201589P",
-				"bibcode":"2015arXiv150201589P",
-				"alias":"7",
-				"reference":"Planck Collaboration et al. (2015)"
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"5"
+			},
+			{
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2016arXiv160501054G",
+				"reference":"Guillochon, Parrent, & Margutti (2016)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"6"
+			},
+			{
+				"name":"SIMBAD astronomical database",
+				"bibcode":"2000A&AS..143....9W",
+				"reference":"Wenger et al. (2000)",
+				"secondary":true,
+				"url":"http://simbad.u-strasbg.fr/",
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"iPTF13cuf",
-				"source":"1,2,3,4"
+				"source":"2,3,5,7"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"IIn",
-				"source":"1,2,3,4"
+				"source":"2,3,5,7"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"920",
-				"source":"2,3,4,5,7",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,3,5,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"+14:37:59.7",
-				"source":"1,2,3",
-				"unit":"degrees"
+				"u_value":"degrees",
+				"source":"2,5,7"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2013/08/12",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"PTF",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.041",
-				"error":"0.0019",
-				"source":"5,6",
-				"derived":true
+				"derived":true,
+				"e_value":"0.0019",
+				"source":"4,6"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"1100",
-				"source":"2,3,4,5,7",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,3,5,6"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-19",
-				"source":"2,3,4,5,7",
-				"derived":true
+				"derived":true,
+				"source":"1,2,3,5,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"21",
-				"source":"2,3,5",
-				"derived":true
+				"derived":true,
+				"source":"2,5,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2013/08/11",
-				"source":"2,3,5",
-				"derived":true
+				"derived":true,
+				"source":"2,5,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"02:04:52.97",
-				"source":"1,2,3",
-				"unit":"hours"
+				"u_value":"hours",
+				"source":"2,5,7"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.22",
-				"source":"2,3,4"
+				"source":"2,3,5"
 			}
 		],
 		"velocity":[
 			{
 				"value":"59000",
-				"source":"2,3,4,5",
-				"unit":"km/s",
-				"derived":true
+				"u_value":"km/s",
+				"source":"6"
 			}
 		],
 		"photometry":[
 			{
 				"time":"56515.5",
-				"u_time":"MJD",
 				"magnitude":"21.0",
-				"source":"2,3"
+				"u_time":"MJD",
+				"source":"2,5"
 			}
 		],
 		"spectra":[
 			{
-				"instrument":"Keck2 - DEIMOS",
-				"u_time":"MJD",
 				"time":"56545.0",
-				"observer":"Clubb, Kelly, Graham",
-				"reducer":"Brad Cenko",
 				"filename":"13cuf_20130910_Keck2_v1.ascii",
-				"waveunit":"Angstrom",
-				"fluxunit":"erg/s/cm^2/Angstrom",
+				"instrument":"Keck2 - DEIMOS",
+				"observer":"Clubb, Kelly, Graham",
+				"redshift":"0.22",
+				"reducer":"Brad Cenko",
+				"reduction":"final",
+				"survey":"iPTF",
+				"u_fluxes":"erg/s/cm^2/Angstrom",
+				"u_time":"MJD",
+				"u_wavelengths":"Angstrom",
 				"data":[
 					[
 						"4450.0",
@@ -32847,7 +32849,7 @@
 						"1.47079e-18"
 					]
 				],
-				"source":"4"
+				"source":"3"
 			}
 		]
 	}

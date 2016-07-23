@@ -1,1092 +1,1094 @@
 {
 	"PS1-10ky":{
-		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
 		"name":"PS1-10ky",
 		"sources":[
 			{
-				"name":"SIMBAD astronomical database",
-				"url":"http://simbad.u-strasbg.fr/",
-				"bibcode":"2000A&AS..143....9W",
-				"alias":"1",
-				"secondary":true,
-				"reference":"Wenger et al. (2000)"
-			},
-			{
-				"name":"2011ApJ...743..114C",
-				"bibcode":"2011ApJ...743..114C",
-				"alias":"2",
-				"reference":"Chomiuk et al. (2011)"
-			},
-			{
-				"name":"2014ApJ...796...87I",
-				"bibcode":"2014ApJ...796...87I",
-				"alias":"3",
-				"reference":"Inserra & Smartt (2014)"
-			},
-			{
 				"name":"2015MNRAS.448.1206M",
 				"bibcode":"2015MNRAS.448.1206M",
-				"alias":"4",
-				"reference":"McCrum et al. (2015)"
-			},
-			{
-				"name":"WISeREP",
-				"url":"http://wiserep.weizmann.ac.il/",
-				"bibcode":"2012PASP..124..668Y",
-				"alias":"5",
-				"secondary":true,
-				"reference":"Yaron & Gal-Yam (2012)"
-			},
-			{
-				"name":"The Open Supernova Catalog",
-				"url":"https://sne.space",
-				"bibcode":"2016arXiv160501054G",
-				"alias":"6",
-				"secondary":true,
-				"reference":"Guillochon, Parrent, & Margutti (2016)"
-			},
-			{
-				"name":"2011ApJ...737..103S",
-				"bibcode":"2011ApJ...737..103S",
-				"alias":"7",
-				"reference":"Schlafly & Finkbeiner (2011)"
+				"reference":"McCrum et al. (2015)",
+				"alias":"1"
 			},
 			{
 				"name":"2015arXiv150201589P",
 				"bibcode":"2015arXiv150201589P",
-				"alias":"8",
-				"reference":"Planck Collaboration et al. (2015)"
+				"reference":"Planck Collaboration et al. (2015)",
+				"alias":"2"
+			},
+			{
+				"name":"2014ApJ...796...87I",
+				"bibcode":"2014ApJ...796...87I",
+				"reference":"Inserra & Smartt (2014)",
+				"alias":"3"
+			},
+			{
+				"name":"2011ApJ...743..114C",
+				"bibcode":"2011ApJ...743..114C",
+				"reference":"Chomiuk et al. (2011)",
+				"alias":"4"
+			},
+			{
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"reference":"Schlafly & Finkbeiner (2011)",
+				"alias":"5"
+			},
+			{
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2016arXiv160501054G",
+				"reference":"Guillochon, Parrent, & Margutti (2016)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"6"
+			},
+			{
+				"name":"WISeREP",
+				"bibcode":"2012PASP..124..668Y",
+				"reference":"Yaron & Gal-Yam (2012)",
+				"secondary":true,
+				"url":"http://wiserep.weizmann.ac.il/",
+				"alias":"7"
+			},
+			{
+				"name":"SIMBAD astronomical database",
+				"bibcode":"2000A&AS..143....9W",
+				"reference":"Wenger et al. (2000)",
+				"secondary":true,
+				"url":"http://simbad.u-strasbg.fr/",
+				"alias":"8"
 			}
 		],
 		"alias":[
 			{
 				"value":"PS1-10ky",
-				"source":"1,4,2,5"
+				"source":"1,4,7,8"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"SLSN-Ic",
-				"source":"4"
+				"source":"1"
 			},
 			{
 				"value":"Ic",
-				"source":"1,3"
+				"source":"3,8"
 			},
 			{
 				"value":"SLSN-I",
-				"source":"5"
+				"source":"7"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"3280",
-				"source":"4,6,8",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"+01:14:23.57",
-				"source":"1,2",
-				"unit":"degrees"
+				"u_value":"degrees",
+				"source":"4,8"
 			},
 			{
 				"value":"+01:14:23.28",
-				"source":"4",
-				"unit":"degrees"
+				"u_value":"degrees",
+				"source":"1"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2010/06/26",
-				"source":"2,6",
-				"derived":true
+				"derived":true,
+				"source":"4,6"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.0299",
-				"error":"0.0014",
-				"source":"6,7",
-				"derived":true
+				"derived":true,
+				"e_value":"0.0014",
+				"source":"5,6"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"6430",
-				"source":"4,6,8",
+				"derived":true,
 				"kind":"spectroscopic",
-				"unit":"Mpc",
-				"derived":true
+				"u_value":"Mpc",
+				"source":"1,2,6"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-22.8",
-				"source":"4,6,8",
-				"derived":true
+				"derived":true,
+				"source":"1,2,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"21.19",
-				"error":"0.077",
-				"source":"4"
+				"e_value":"0.077",
+				"source":"1"
 			}
 		],
 		"maxband":[
 			{
 				"value":"r",
-				"source":"4"
+				"source":"1"
 			}
 		],
 		"ra":[
 			{
 				"value":"22:13:37.851",
-				"source":"1,2",
-				"unit":"hours"
+				"u_value":"hours",
+				"source":"4,8"
 			},
 			{
 				"value":"22:13:37.92",
-				"source":"4",
-				"unit":"hours"
+				"u_value":"hours",
+				"source":"1"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.956",
-				"source":"4",
-				"kind":"spectroscopic"
+				"kind":"spectroscopic",
+				"source":"1"
 			}
 		],
 		"velocity":[
 			{
 				"value":"176000",
-				"source":"4,6",
 				"kind":"spectroscopic",
-				"unit":"km/s",
-				"derived":true
+				"u_value":"km/s",
+				"source":"6"
 			}
 		],
 		"photometry":[
 			{
 				"time":"55373.5",
-				"u_time":"MJD",
 				"band":"y",
-				"magnitude":"21.21",
 				"e_magnitude":"0.18",
-				"source":"2"
+				"magnitude":"21.21",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55388.6",
-				"u_time":"MJD",
 				"band":"z",
-				"magnitude":"21.39",
 				"e_magnitude":"0.07",
-				"source":"2"
+				"magnitude":"21.39",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55389.5",
-				"u_time":"MJD",
 				"band":"g",
-				"magnitude":"21.47",
 				"e_magnitude":"0.04",
-				"source":"2"
+				"magnitude":"21.47",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55389.5",
-				"u_time":"MJD",
 				"band":"r",
-				"magnitude":"21.13",
 				"e_magnitude":"0.03",
-				"source":"2"
+				"magnitude":"21.13",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55398.6",
-				"u_time":"MJD",
 				"band":"g",
-				"magnitude":"21.41",
 				"e_magnitude":"0.12",
-				"source":"2"
+				"magnitude":"21.41",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55398.6",
-				"u_time":"MJD",
 				"band":"r",
-				"magnitude":"21.10",
 				"e_magnitude":"0.08",
-				"source":"2"
+				"magnitude":"21.10",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55400.6",
-				"u_time":"MJD",
 				"band":"z",
-				"magnitude":"21.63",
 				"e_magnitude":"0.28",
-				"source":"2"
+				"magnitude":"21.63",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55402.4",
-				"u_time":"MJD",
 				"band":"y",
-				"magnitude":"21.30",
 				"e_magnitude":"0.25",
-				"source":"2"
+				"magnitude":"21.30",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55408.5",
-				"u_time":"MJD",
 				"band":"NUV",
 				"magnitude":"23.35",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55408.5",
-				"u_time":"MJD",
 				"band":"i",
-				"magnitude":"21.31",
 				"e_magnitude":"0.07",
-				"source":"2"
+				"magnitude":"21.31",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55409.5",
-				"u_time":"MJD",
 				"band":"NUV",
 				"magnitude":"23.25",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55409.5",
-				"u_time":"MJD",
 				"band":"z",
+				"e_magnitude":"0.06",
 				"magnitude":"21.37",
-				"e_magnitude":"0.06",
-				"source":"2"
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55410.5",
-				"u_time":"MJD",
 				"band":"g",
-				"magnitude":"22.08",
 				"e_magnitude":"0.13",
-				"source":"2"
+				"magnitude":"22.08",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55410.5",
-				"u_time":"MJD",
 				"band":"r",
-				"magnitude":"21.30",
 				"e_magnitude":"0.06",
-				"source":"2"
+				"magnitude":"21.30",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55411.5",
-				"u_time":"MJD",
 				"band":"i",
-				"magnitude":"21.48",
 				"e_magnitude":"0.07",
-				"source":"2"
+				"magnitude":"21.48",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55412.5",
-				"u_time":"MJD",
 				"band":"z",
-				"magnitude":"21.25",
 				"e_magnitude":"0.07",
-				"source":"2"
+				"magnitude":"21.25",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55413.5",
-				"u_time":"MJD",
 				"band":"g",
-				"magnitude":"22.05",
 				"e_magnitude":"0.09",
-				"source":"2"
+				"magnitude":"22.05",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55413.5",
-				"u_time":"MJD",
 				"band":"r",
-				"magnitude":"21.34",
 				"e_magnitude":"0.04",
-				"source":"2"
+				"magnitude":"21.34",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55414.5",
-				"u_time":"MJD",
 				"band":"NUV",
 				"magnitude":"23.60",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55414.5",
-				"u_time":"MJD",
 				"band":"i",
-				"magnitude":"21.46",
 				"e_magnitude":"0.04",
-				"source":"2"
+				"magnitude":"21.46",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55415.6",
-				"u_time":"MJD",
 				"band":"z",
-				"magnitude":"21.43",
 				"e_magnitude":"0.10",
-				"source":"2"
+				"magnitude":"21.43",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55416.5",
-				"u_time":"MJD",
 				"band":"NUV",
 				"magnitude":"23.58",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55416.5",
-				"u_time":"MJD",
 				"band":"g",
-				"magnitude":"22.40",
 				"e_magnitude":"0.11",
-				"source":"2"
+				"magnitude":"22.40",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55416.5",
-				"u_time":"MJD",
 				"band":"r",
-				"magnitude":"21.43",
 				"e_magnitude":"0.04",
-				"source":"2"
+				"magnitude":"21.43",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55417.5",
-				"u_time":"MJD",
 				"band":"i",
-				"magnitude":"21.49",
 				"e_magnitude":"0.04",
-				"source":"2"
+				"magnitude":"21.49",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55419.0",
-				"u_time":"MJD",
 				"band":"NUV",
 				"magnitude":"23.58",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55420.5",
-				"u_time":"MJD",
 				"band":"NUV",
 				"magnitude":"23.59",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55422.5",
-				"u_time":"MJD",
 				"band":"NUV",
 				"magnitude":"23.63",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55422.5",
-				"u_time":"MJD",
 				"band":"g",
-				"magnitude":"22.55",
 				"e_magnitude":"0.22",
-				"source":"2"
+				"magnitude":"22.55",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55422.5",
-				"u_time":"MJD",
 				"band":"r",
-				"magnitude":"21.51",
 				"e_magnitude":"0.05",
-				"source":"2"
+				"magnitude":"21.51",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55423.5",
-				"u_time":"MJD",
 				"band":"i",
-				"magnitude":"21.63",
 				"e_magnitude":"0.04",
-				"source":"2"
+				"magnitude":"21.63",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55424.5",
-				"u_time":"MJD",
 				"band":"NUV",
 				"magnitude":"23.66",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55425.4",
-				"u_time":"MJD",
 				"band":"g",
-				"magnitude":"23.03",
 				"e_magnitude":"0.22",
-				"source":"2"
+				"magnitude":"23.03",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55425.4",
-				"u_time":"MJD",
 				"band":"r",
-				"magnitude":"21.76",
 				"e_magnitude":"0.06",
-				"source":"2"
+				"magnitude":"21.76",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55426.5",
-				"u_time":"MJD",
 				"band":"NUV",
 				"magnitude":"23.58",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55426.5",
-				"u_time":"MJD",
 				"band":"i",
-				"magnitude":"21.64",
 				"e_magnitude":"0.05",
-				"source":"2"
+				"magnitude":"21.64",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55427.5",
-				"u_time":"MJD",
 				"band":"z",
-				"magnitude":"21.66",
 				"e_magnitude":"0.08",
-				"source":"2"
+				"magnitude":"21.66",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55428.5",
-				"u_time":"MJD",
 				"band":"NUV",
 				"magnitude":"23.54",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55428.5",
-				"u_time":"MJD",
 				"band":"g",
-				"magnitude":"23.33",
 				"e_magnitude":"0.24",
-				"source":"2"
+				"magnitude":"23.33",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55428.5",
-				"u_time":"MJD",
 				"band":"r",
-				"magnitude":"22.10",
 				"e_magnitude":"0.08",
-				"source":"2"
+				"magnitude":"22.10",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55430.5",
-				"u_time":"MJD",
 				"band":"NUV",
 				"magnitude":"23.56",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55430.5",
-				"u_time":"MJD",
 				"band":"y",
-				"magnitude":"21.63",
 				"e_magnitude":"0.24",
-				"source":"2"
+				"magnitude":"21.63",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55436.4",
-				"u_time":"MJD",
 				"band":"z",
-				"magnitude":"21.98",
 				"e_magnitude":"0.14",
-				"source":"2"
+				"magnitude":"21.98",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55437.5",
-				"u_time":"MJD",
 				"band":"g",
 				"magnitude":"22.68",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55437.5",
-				"u_time":"MJD",
 				"band":"r",
-				"magnitude":"22.05",
 				"e_magnitude":"0.17",
-				"source":"2"
+				"magnitude":"22.05",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55438.5",
-				"u_time":"MJD",
 				"band":"i",
-				"magnitude":"22.19",
 				"e_magnitude":"0.10",
-				"source":"2"
+				"magnitude":"22.19",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55439.3",
-				"u_time":"MJD",
 				"band":"z",
-				"magnitude":"21.77",
 				"e_magnitude":"0.09",
-				"source":"2"
+				"magnitude":"21.77",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55441.5",
-				"u_time":"MJD",
 				"band":"i",
-				"magnitude":"22.16",
 				"e_magnitude":"0.07",
-				"source":"2"
+				"magnitude":"22.16",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55442.5",
-				"u_time":"MJD",
 				"band":"z",
-				"magnitude":"21.90",
 				"e_magnitude":"0.11",
-				"source":"2"
+				"magnitude":"21.90",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55443.5",
-				"u_time":"MJD",
 				"band":"NUV",
 				"magnitude":"23.57",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55443.5",
-				"u_time":"MJD",
 				"band":"g",
 				"magnitude":"23.82",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55443.5",
-				"u_time":"MJD",
 				"band":"r",
-				"magnitude":"22.72",
 				"e_magnitude":"0.13",
-				"source":"2"
+				"magnitude":"22.72",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55444.4",
-				"u_time":"MJD",
 				"band":"i",
-				"magnitude":"22.43",
 				"e_magnitude":"0.10",
-				"source":"2"
+				"magnitude":"22.43",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55445.4",
-				"u_time":"MJD",
 				"band":"NUV",
 				"magnitude":"23.63",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55445.4",
-				"u_time":"MJD",
 				"band":"z",
-				"magnitude":"22.07",
 				"e_magnitude":"0.13",
-				"source":"2"
+				"magnitude":"22.07",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55446.5",
-				"u_time":"MJD",
 				"band":"g",
 				"magnitude":"23.34",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55446.5",
-				"u_time":"MJD",
 				"band":"r",
-				"magnitude":"22.74",
 				"e_magnitude":"0.27",
-				"source":"2"
+				"magnitude":"22.74",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55447.4",
-				"u_time":"MJD",
 				"band":"i",
-				"magnitude":"22.33",
 				"e_magnitude":"0.07",
-				"source":"2"
+				"magnitude":"22.33",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55448.4",
-				"u_time":"MJD",
 				"band":"z",
-				"magnitude":"22.17",
 				"e_magnitude":"0.13",
-				"source":"2"
+				"magnitude":"22.17",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55449.4",
-				"u_time":"MJD",
 				"band":"g",
 				"magnitude":"23.62",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55449.4",
-				"u_time":"MJD",
 				"band":"r",
-				"magnitude":"22.92",
 				"e_magnitude":"0.15",
-				"source":"2"
+				"magnitude":"22.92",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55450.4",
-				"u_time":"MJD",
 				"band":"i",
-				"magnitude":"22.57",
 				"e_magnitude":"0.22",
-				"source":"2"
+				"magnitude":"22.57",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55451.5",
-				"u_time":"MJD",
 				"band":"z",
-				"magnitude":"22.39",
 				"e_magnitude":"0.26",
-				"source":"2"
+				"magnitude":"22.39",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55452.4",
-				"u_time":"MJD",
 				"band":"g",
 				"magnitude":"23.53",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55452.4",
-				"u_time":"MJD",
 				"band":"r",
-				"magnitude":"23.03",
 				"e_magnitude":"0.21",
-				"source":"2"
+				"magnitude":"23.03",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55453.4",
-				"u_time":"MJD",
 				"band":"i",
-				"magnitude":"22.60",
 				"e_magnitude":"0.10",
-				"source":"2"
+				"magnitude":"22.60",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55454.4",
-				"u_time":"MJD",
 				"band":"z",
-				"magnitude":"22.37",
 				"e_magnitude":"0.17",
-				"source":"2"
+				"magnitude":"22.37",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55455.4",
-				"u_time":"MJD",
 				"band":"g",
 				"magnitude":"23.43",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55456.4",
-				"u_time":"MJD",
 				"band":"i",
-				"magnitude":"22.55",
 				"e_magnitude":"0.12",
-				"source":"2"
+				"magnitude":"22.55",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55457.3",
-				"u_time":"MJD",
 				"band":"z",
-				"magnitude":"22.53",
 				"e_magnitude":"0.21",
-				"source":"2"
+				"magnitude":"22.53",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55458.3",
-				"u_time":"MJD",
 				"band":"g",
 				"magnitude":"22.02",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55458.3",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"22.53",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55463.4",
-				"u_time":"MJD",
 				"band":"y",
 				"magnitude":"21.63",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55463.4",
-				"u_time":"MJD",
 				"band":"y",
-				"magnitude":"21.98",
 				"e_magnitude":"0.32",
-				"source":"2"
+				"magnitude":"21.98",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55464.4",
-				"u_time":"MJD",
 				"band":"y",
 				"magnitude":"21.76",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55465.5",
-				"u_time":"MJD",
 				"band":"i",
-				"magnitude":"23.01",
 				"e_magnitude":"0.26",
-				"source":"2"
+				"magnitude":"23.01",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55466.4",
-				"u_time":"MJD",
 				"band":"z",
-				"magnitude":"22.89",
 				"e_magnitude":"0.27",
-				"source":"2"
+				"magnitude":"22.89",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55467.3",
-				"u_time":"MJD",
 				"band":"g",
 				"magnitude":"23.37",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55467.3",
-				"u_time":"MJD",
 				"band":"r",
-				"magnitude":"23.36",
 				"e_magnitude":"0.33",
-				"source":"2"
+				"magnitude":"23.36",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55468.3",
-				"u_time":"MJD",
 				"band":"i",
-				"magnitude":"23.22",
 				"e_magnitude":"0.20",
-				"source":"2"
+				"magnitude":"23.22",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55473.3",
-				"u_time":"MJD",
 				"band":"g",
 				"magnitude":"23.36",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55473.3",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"23.76",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55475.2",
-				"u_time":"MJD",
 				"band":"z",
-				"magnitude":"22.61",
 				"e_magnitude":"0.23",
-				"source":"2"
+				"magnitude":"22.61",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55478.2",
-				"u_time":"MJD",
 				"band":"z",
-				"magnitude":"22.65",
 				"e_magnitude":"0.23",
-				"source":"2"
+				"magnitude":"22.65",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55479.2",
-				"u_time":"MJD",
 				"band":"g",
 				"magnitude":"23.33",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55479.2",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"23.62",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55480.2",
-				"u_time":"MJD",
 				"band":"i",
 				"magnitude":"23.43",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55481.2",
-				"u_time":"MJD",
 				"band":"z",
 				"magnitude":"22.90",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55482.2",
-				"u_time":"MJD",
 				"band":"g",
 				"magnitude":"23.49",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55482.2",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"23.55",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55483.2",
-				"u_time":"MJD",
 				"band":"i",
-				"magnitude":"23.57",
 				"e_magnitude":"0.25",
-				"source":"2"
+				"magnitude":"23.57",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"55484.2",
-				"u_time":"MJD",
 				"band":"z",
 				"magnitude":"23.01",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55486.3",
-				"u_time":"MJD",
 				"band":"i",
 				"magnitude":"23.11",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55492.3",
-				"u_time":"MJD",
 				"band":"y",
 				"magnitude":"21.74",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55496.3",
-				"u_time":"MJD",
 				"band":"z",
 				"magnitude":"22.14",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55498.2",
-				"u_time":"MJD",
 				"band":"i",
 				"magnitude":"23.76",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55499.2",
-				"u_time":"MJD",
 				"band":"z",
 				"magnitude":"22.64",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55500.2",
-				"u_time":"MJD",
 				"band":"g",
 				"magnitude":"23.40",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55500.2",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"23.65",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55501.4",
-				"u_time":"MJD",
 				"band":"i",
 				"magnitude":"23.50",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55502.3",
-				"u_time":"MJD",
 				"band":"z",
 				"magnitude":"22.95",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55503.3",
-				"u_time":"MJD",
 				"band":"g",
 				"magnitude":"23.59",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55503.3",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"23.59",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55507.3",
-				"u_time":"MJD",
 				"band":"i",
 				"magnitude":"23.52",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55508.2",
-				"u_time":"MJD",
 				"band":"z",
 				"magnitude":"22.57",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55510.3",
-				"u_time":"MJD",
 				"band":"i",
 				"magnitude":"23.75",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55512.3",
-				"u_time":"MJD",
 				"band":"g",
 				"magnitude":"22.62",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55523.3",
-				"u_time":"MJD",
 				"band":"y",
 				"magnitude":"21.83",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55530.2",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"22.73",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55535.2",
-				"u_time":"MJD",
 				"band":"z",
 				"magnitude":"22.90",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55536.3",
-				"u_time":"MJD",
 				"band":"g",
 				"magnitude":"22.94",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55536.3",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"23.57",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"55547.2",
-				"u_time":"MJD",
 				"band":"z",
 				"magnitude":"23.07",
+				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
 			}
 		],
 		"spectra":[
 			{
-				"instrument":"MMT - MMT-Blue",
-				"u_time":"MJD",
 				"time":"55394.0",
-				"observer":"Chornock/Berger",
-				"reducer":"Chornock",
 				"filename":"g060270_20100717_mmtblue.flm",
-				"waveunit":"Angstrom",
-				"fluxunit":"Uncalibrated",
-				"errorunit":"Uncalibrated",
+				"instrument":"MMT - MMT-Blue",
+				"observer":"Chornock/Berger",
+				"redshift":"0.96",
+				"reducer":"Chornock",
+				"reduction":"final",
+				"survey":"PS1",
+				"u_errors":"Uncalibrated",
+				"u_fluxes":"Uncalibrated",
+				"u_time":"MJD",
+				"u_wavelengths":"Angstrom",
 				"data":[
 					[
 						"3393.0000",
@@ -14499,18 +14501,21 @@
 						"-0.0024383574"
 					]
 				],
-				"source":"2,5"
+				"source":"4,7"
 			},
 			{
-				"instrument":"Gemini-N - GMOS",
-				"u_time":"MJD",
 				"time":"55398.0",
-				"observer":"Chornock/Berger",
-				"reducer":"Chornock",
 				"filename":"g060270_20100721_gmos.flm",
-				"waveunit":"Angstrom",
-				"fluxunit":"Uncalibrated",
-				"errorunit":"Uncalibrated",
+				"instrument":"Gemini-N - GMOS",
+				"observer":"Chornock/Berger",
+				"redshift":"0.96",
+				"reducer":"Chornock",
+				"reduction":"final",
+				"survey":"PS1",
+				"u_errors":"Uncalibrated",
+				"u_fluxes":"Uncalibrated",
+				"u_time":"MJD",
+				"u_wavelengths":"Angstrom",
 				"data":[
 					[
 						"3390.0000",
@@ -14574,8 +14579,8 @@
 					],
 					[
 						"3400.9200",
-						"0.01239166",
-						"0.01239166"
+						"0.012391660",
+						"0.012391660"
 					],
 					[
 						"3401.8300",
@@ -14624,13 +14629,13 @@
 					],
 					[
 						"3410.0200",
-						"0.01630123",
-						"0.01630123"
+						"0.016301230",
+						"0.016301230"
 					],
 					[
 						"3410.9300",
-						"0.01966904",
-						"0.01966904"
+						"0.019669040",
+						"0.019669040"
 					],
 					[
 						"3411.8400",
@@ -14639,8 +14644,8 @@
 					],
 					[
 						"3412.7500",
-						"0.03338472",
-						"0.03338472"
+						"0.033384720",
+						"0.033384720"
 					],
 					[
 						"3413.6600",
@@ -14764,8 +14769,8 @@
 					],
 					[
 						"3435.5000",
-						"-0.02479451",
-						"-0.02479451"
+						"-0.024794510",
+						"-0.024794510"
 					],
 					[
 						"3436.4100",
@@ -14784,13 +14789,13 @@
 					],
 					[
 						"3439.1400",
-						"-0.02201553",
-						"-0.02201553"
+						"-0.022015530",
+						"-0.022015530"
 					],
 					[
 						"3440.0500",
-						"-0.04357514",
-						"-0.04357514"
+						"-0.043575140",
+						"-0.043575140"
 					],
 					[
 						"3440.9600",
@@ -14839,8 +14844,8 @@
 					],
 					[
 						"3449.1500",
-						"-0.03548159",
-						"-0.03548159"
+						"-0.035481590",
+						"-0.035481590"
 					],
 					[
 						"3450.0600",
@@ -15049,8 +15054,8 @@
 					],
 					[
 						"3487.3700",
-						"0.02982759",
-						"0.02982759"
+						"0.029827590",
+						"0.029827590"
 					],
 					[
 						"3488.2800",
@@ -15094,8 +15099,8 @@
 					],
 					[
 						"3495.5600",
-						"0.06690505",
-						"0.06690505"
+						"0.066905050",
+						"0.066905050"
 					],
 					[
 						"3496.4700",
@@ -15129,8 +15134,8 @@
 					],
 					[
 						"3501.9300",
-						"-0.06869485",
-						"-0.06869485"
+						"-0.068694850",
+						"-0.068694850"
 					],
 					[
 						"3502.8400",
@@ -15304,8 +15309,8 @@
 					],
 					[
 						"3533.7800",
-						"-0.05157172",
-						"-0.05157172"
+						"-0.051571720",
+						"-0.051571720"
 					],
 					[
 						"3534.6900",
@@ -15344,8 +15349,8 @@
 					],
 					[
 						"3541.0600",
-						"0.042865",
-						"0.042865"
+						"0.042865000",
+						"0.042865000"
 					],
 					[
 						"3541.9700",
@@ -15364,8 +15369,8 @@
 					],
 					[
 						"3544.7000",
-						"-0.002872794",
-						"-0.002872794"
+						"-0.0028727940",
+						"-0.0028727940"
 					],
 					[
 						"3545.6100",
@@ -15414,8 +15419,8 @@
 					],
 					[
 						"3553.8000",
-						"-0.01261895",
-						"-0.01261895"
+						"-0.012618950",
+						"-0.012618950"
 					],
 					[
 						"3554.7100",
@@ -15444,8 +15449,8 @@
 					],
 					[
 						"3559.2600",
-						"0.07323821",
-						"0.07323821"
+						"0.073238210",
+						"0.073238210"
 					],
 					[
 						"3560.1700",
@@ -15544,8 +15549,8 @@
 					],
 					[
 						"3577.4600",
-						"0.07831588",
-						"0.07831588"
+						"0.078315880",
+						"0.078315880"
 					],
 					[
 						"3578.3700",
@@ -15604,8 +15609,8 @@
 					],
 					[
 						"3588.3800",
-						"0.009930442",
-						"0.009930442"
+						"0.0099304420",
+						"0.0099304420"
 					],
 					[
 						"3589.2900",
@@ -15644,8 +15649,8 @@
 					],
 					[
 						"3595.6600",
-						"-0.01149558",
-						"-0.01149558"
+						"-0.011495580",
+						"-0.011495580"
 					],
 					[
 						"3596.5700",
@@ -15674,8 +15679,8 @@
 					],
 					[
 						"3601.1200",
-						"0.02635698",
-						"0.02635698"
+						"0.026356980",
+						"0.026356980"
 					],
 					[
 						"3602.0300",
@@ -15719,8 +15724,8 @@
 					],
 					[
 						"3609.3100",
-						"0.08055559",
-						"0.08055559"
+						"0.080555590",
+						"0.080555590"
 					],
 					[
 						"3610.2200",
@@ -15749,8 +15754,8 @@
 					],
 					[
 						"3614.7700",
-						"0.09266377",
-						"0.09266377"
+						"0.092663770",
+						"0.092663770"
 					],
 					[
 						"3615.6800",
@@ -15824,8 +15829,8 @@
 					],
 					[
 						"3628.4200",
-						"-0.06123861",
-						"-0.06123861"
+						"-0.061238610",
+						"-0.061238610"
 					],
 					[
 						"3629.3300",
@@ -15839,8 +15844,8 @@
 					],
 					[
 						"3631.1500",
-						"0.0448541",
-						"0.0448541"
+						"0.044854100",
+						"0.044854100"
 					],
 					[
 						"3632.0600",
@@ -15929,8 +15934,8 @@
 					],
 					[
 						"3647.5300",
-						"0.04295763",
-						"0.04295763"
+						"0.042957630",
+						"0.042957630"
 					],
 					[
 						"3648.4400",
@@ -15994,13 +15999,13 @@
 					],
 					[
 						"3659.3600",
-						"0.03405155",
-						"0.03405155"
+						"0.034051550",
+						"0.034051550"
 					],
 					[
 						"3660.2700",
-						"0.03038393",
-						"0.03038393"
+						"0.030383930",
+						"0.030383930"
 					],
 					[
 						"3661.1800",
@@ -16009,8 +16014,8 @@
 					],
 					[
 						"3662.0900",
-						"-0.01626938",
-						"-0.01626938"
+						"-0.016269380",
+						"-0.016269380"
 					],
 					[
 						"3663.0000",
@@ -16184,8 +16189,8 @@
 					],
 					[
 						"3693.9400",
-						"0.01104741",
-						"0.01104741"
+						"0.011047410",
+						"0.011047410"
 					],
 					[
 						"3694.8500",
@@ -16209,8 +16214,8 @@
 					],
 					[
 						"3698.4900",
-						"-0.005624122",
-						"-0.005624122"
+						"-0.0056241220",
+						"-0.0056241220"
 					],
 					[
 						"3699.4000",
@@ -16219,8 +16224,8 @@
 					],
 					[
 						"3700.3100",
-						"0.01447086",
-						"0.01447086"
+						"0.014470860",
+						"0.014470860"
 					],
 					[
 						"3701.2200",
@@ -16279,8 +16284,8 @@
 					],
 					[
 						"3711.2300",
-						"0.03885284",
-						"0.03885284"
+						"0.038852840",
+						"0.038852840"
 					],
 					[
 						"3712.1400",
@@ -16439,8 +16444,8 @@
 					],
 					[
 						"3740.3500",
-						"0.01459728",
-						"0.01459728"
+						"0.014597280",
+						"0.014597280"
 					],
 					[
 						"3741.2600",
@@ -16489,8 +16494,8 @@
 					],
 					[
 						"3749.4500",
-						"0.02164329",
-						"0.02164329"
+						"0.021643290",
+						"0.021643290"
 					],
 					[
 						"3750.3600",
@@ -16609,8 +16614,8 @@
 					],
 					[
 						"3771.2900",
-						"0.00799626",
-						"0.00799626"
+						"0.0079962600",
+						"0.0079962600"
 					],
 					[
 						"3772.2000",
@@ -16649,8 +16654,8 @@
 					],
 					[
 						"3778.5700",
-						"-0.001521196",
-						"-0.001521196"
+						"-0.0015211960",
+						"-0.0015211960"
 					],
 					[
 						"3779.4800",
@@ -16669,8 +16674,8 @@
 					],
 					[
 						"3782.2100",
-						"-0.01022914",
-						"-0.01022914"
+						"-0.010229140",
+						"-0.010229140"
 					],
 					[
 						"3783.1200",
@@ -16724,8 +16729,8 @@
 					],
 					[
 						"3792.2200",
-						"0.0110816",
-						"0.0110816"
+						"0.011081600",
+						"0.011081600"
 					],
 					[
 						"3793.1300",
@@ -16784,8 +16789,8 @@
 					],
 					[
 						"3803.1400",
-						"0.01010772",
-						"0.01010772"
+						"0.010107720",
+						"0.010107720"
 					],
 					[
 						"3804.0500",
@@ -16809,8 +16814,8 @@
 					],
 					[
 						"3807.6900",
-						"0.01702251",
-						"0.01702251"
+						"0.017022510",
+						"0.017022510"
 					],
 					[
 						"3808.6000",
@@ -16914,8 +16919,8 @@
 					],
 					[
 						"3826.8000",
-						"0.02126081",
-						"0.02126081"
+						"0.021260810",
+						"0.021260810"
 					],
 					[
 						"3827.7100",
@@ -16954,8 +16959,8 @@
 					],
 					[
 						"3834.0800",
-						"-0.00489082",
-						"-0.00489082"
+						"-0.0048908200",
+						"-0.0048908200"
 					],
 					[
 						"3834.9900",
@@ -17009,8 +17014,8 @@
 					],
 					[
 						"3844.0900",
-						"0.01317864",
-						"0.01317864"
+						"0.013178640",
+						"0.013178640"
 					],
 					[
 						"3845.0000",
@@ -17039,8 +17044,8 @@
 					],
 					[
 						"3849.5500",
-						"0.004828476",
-						"0.004828476"
+						"0.0048284760",
+						"0.0048284760"
 					],
 					[
 						"3850.4600",
@@ -17159,13 +17164,13 @@
 					],
 					[
 						"3871.3900",
-						"-0.009625845",
-						"-0.009625845"
+						"-0.0096258450",
+						"-0.0096258450"
 					],
 					[
 						"3872.3000",
-						"0.006019842",
-						"0.006019842"
+						"0.0060198420",
+						"0.0060198420"
 					],
 					[
 						"3873.2100",
@@ -17259,8 +17264,8 @@
 					],
 					[
 						"3889.5900",
-						"0.03503102",
-						"0.03503102"
+						"0.035031020",
+						"0.035031020"
 					],
 					[
 						"3890.5000",
@@ -17309,8 +17314,8 @@
 					],
 					[
 						"3898.6900",
-						"0.004448868",
-						"0.004448868"
+						"0.0044488680",
+						"0.0044488680"
 					],
 					[
 						"3899.6000",
@@ -17319,8 +17324,8 @@
 					],
 					[
 						"3900.5100",
-						"0.01936625",
-						"0.01936625"
+						"0.019366250",
+						"0.019366250"
 					],
 					[
 						"3901.4200",
@@ -17384,8 +17389,8 @@
 					],
 					[
 						"3912.3400",
-						"-0.004901751",
-						"-0.004901751"
+						"-0.0049017510",
+						"-0.0049017510"
 					],
 					[
 						"3913.2500",
@@ -17654,8 +17659,8 @@
 					],
 					[
 						"3961.4800",
-						"-0.005146033",
-						"-0.005146033"
+						"-0.0051460330",
+						"-0.0051460330"
 					],
 					[
 						"3962.3900",
@@ -17794,8 +17799,8 @@
 					],
 					[
 						"3986.9600",
-						"0.0123222",
-						"0.0123222"
+						"0.012322200",
+						"0.012322200"
 					],
 					[
 						"3987.8700",
@@ -17849,8 +17854,8 @@
 					],
 					[
 						"3996.9700",
-						"0.01855651",
-						"0.01855651"
+						"0.018556510",
+						"0.018556510"
 					],
 					[
 						"3997.8800",
@@ -17894,8 +17899,8 @@
 					],
 					[
 						"4005.1600",
-						"0.007044573",
-						"0.007044573"
+						"0.0070445730",
+						"0.0070445730"
 					],
 					[
 						"4006.0700",
@@ -18019,8 +18024,8 @@
 					],
 					[
 						"4027.9100",
-						"0.02309272",
-						"0.02309272"
+						"0.023092720",
+						"0.023092720"
 					],
 					[
 						"4028.8200",
@@ -18109,8 +18114,8 @@
 					],
 					[
 						"4044.2900",
-						"0.02599795",
-						"0.02599795"
+						"0.025997950",
+						"0.025997950"
 					],
 					[
 						"4045.2000",
@@ -18149,8 +18154,8 @@
 					],
 					[
 						"4051.5700",
-						"0.02883428",
-						"0.02883428"
+						"0.028834280",
+						"0.028834280"
 					],
 					[
 						"4052.4800",
@@ -18174,8 +18179,8 @@
 					],
 					[
 						"4056.1200",
-						"0.01178901",
-						"0.01178901"
+						"0.011789010",
+						"0.011789010"
 					],
 					[
 						"4057.0300",
@@ -18194,8 +18199,8 @@
 					],
 					[
 						"4059.7600",
-						"0.01000682",
-						"0.01000682"
+						"0.010006820",
+						"0.010006820"
 					],
 					[
 						"4060.6700",
@@ -18224,8 +18229,8 @@
 					],
 					[
 						"4065.2200",
-						"0.02059078",
-						"0.02059078"
+						"0.020590780",
+						"0.020590780"
 					],
 					[
 						"4066.1300",
@@ -18279,8 +18284,8 @@
 					],
 					[
 						"4075.2300",
-						"0.02390137",
-						"0.02390137"
+						"0.023901370",
+						"0.023901370"
 					],
 					[
 						"4076.1400",
@@ -18324,8 +18329,8 @@
 					],
 					[
 						"4083.4200",
-						"0.00350455",
-						"0.00350455"
+						"0.0035045500",
+						"0.0035045500"
 					],
 					[
 						"4084.3300",
@@ -18369,13 +18374,13 @@
 					],
 					[
 						"4091.6100",
-						"0.01940837",
-						"0.01940837"
+						"0.019408370",
+						"0.019408370"
 					],
 					[
 						"4092.5200",
-						"0.004364577",
-						"0.004364577"
+						"0.0043645770",
+						"0.0043645770"
 					],
 					[
 						"4093.4300",
@@ -18519,8 +18524,8 @@
 					],
 					[
 						"4118.9100",
-						"0.01963862",
-						"0.01963862"
+						"0.019638620",
+						"0.019638620"
 					],
 					[
 						"4119.8200",
@@ -18529,8 +18534,8 @@
 					],
 					[
 						"4120.7300",
-						"-0.0005474991",
-						"-0.0005474991"
+						"-0.00054749910",
+						"-0.00054749910"
 					],
 					[
 						"4121.6400",
@@ -18624,8 +18629,8 @@
 					],
 					[
 						"4138.0200",
-						"0.01380747",
-						"0.01380747"
+						"0.013807470",
+						"0.013807470"
 					],
 					[
 						"4138.9300",
@@ -18699,8 +18704,8 @@
 					],
 					[
 						"4151.6700",
-						"0.00207535",
-						"0.00207535"
+						"0.0020753500",
+						"0.0020753500"
 					],
 					[
 						"4152.5800",
@@ -18789,8 +18794,8 @@
 					],
 					[
 						"4168.0500",
-						"0.00940026",
-						"0.00940026"
+						"0.0094002600",
+						"0.0094002600"
 					],
 					[
 						"4168.9600",
@@ -18814,8 +18819,8 @@
 					],
 					[
 						"4172.6000",
-						"0.003289912",
-						"0.003289912"
+						"0.0032899120",
+						"0.0032899120"
 					],
 					[
 						"4173.5100",
@@ -18859,8 +18864,8 @@
 					],
 					[
 						"4180.7900",
-						"0.01761835",
-						"0.01761835"
+						"0.017618350",
+						"0.017618350"
 					],
 					[
 						"4181.7000",
@@ -18914,8 +18919,8 @@
 					],
 					[
 						"4190.8000",
-						"0.01194738",
-						"0.01194738"
+						"0.011947380",
+						"0.011947380"
 					],
 					[
 						"4191.7100",
@@ -18954,8 +18959,8 @@
 					],
 					[
 						"4198.0800",
-						"0.0007399188",
-						"0.0007399188"
+						"0.00073991880",
+						"0.00073991880"
 					],
 					[
 						"4198.9900",
@@ -19039,8 +19044,8 @@
 					],
 					[
 						"4213.5500",
-						"0.001471841",
-						"0.001471841"
+						"0.0014718410",
+						"0.0014718410"
 					],
 					[
 						"4214.4600",
@@ -19084,8 +19089,8 @@
 					],
 					[
 						"4221.7400",
-						"0.007625249",
-						"0.007625249"
+						"0.0076252490",
+						"0.0076252490"
 					],
 					[
 						"4222.6500",
@@ -19094,8 +19099,8 @@
 					],
 					[
 						"4223.5600",
-						"0.01157866",
-						"0.01157866"
+						"0.011578660",
+						"0.011578660"
 					],
 					[
 						"4224.4700",
@@ -19179,8 +19184,8 @@
 					],
 					[
 						"4239.0300",
-						"0.01009762",
-						"0.01009762"
+						"0.010097620",
+						"0.010097620"
 					],
 					[
 						"4239.9400",
@@ -19274,8 +19279,8 @@
 					],
 					[
 						"4256.3200",
-						"0.00697599",
-						"0.00697599"
+						"0.0069759900",
+						"0.0069759900"
 					],
 					[
 						"4257.2300",
@@ -19294,8 +19299,8 @@
 					],
 					[
 						"4259.9600",
-						"-0.0002678622",
-						"-0.0002678622"
+						"-0.00026786220",
+						"-0.00026786220"
 					],
 					[
 						"4260.8700",
@@ -19369,8 +19374,8 @@
 					],
 					[
 						"4273.6100",
-						"0.001693363",
-						"0.001693363"
+						"0.0016933630",
+						"0.0016933630"
 					],
 					[
 						"4274.5200",
@@ -19464,8 +19469,8 @@
 					],
 					[
 						"4290.9000",
-						"0.01112557",
-						"0.01112557"
+						"0.011125570",
+						"0.011125570"
 					],
 					[
 						"4291.8100",
@@ -19609,8 +19614,8 @@
 					],
 					[
 						"4317.2900",
-						"0.004423816",
-						"0.004423816"
+						"0.0044238160",
+						"0.0044238160"
 					],
 					[
 						"4318.2000",
@@ -19649,8 +19654,8 @@
 					],
 					[
 						"4324.5700",
-						"0.01278413",
-						"0.01278413"
+						"0.012784130",
+						"0.012784130"
 					],
 					[
 						"4325.4800",
@@ -19749,8 +19754,8 @@
 					],
 					[
 						"4342.7700",
-						"0.01428186",
-						"0.01428186"
+						"0.014281860",
+						"0.014281860"
 					],
 					[
 						"4343.6800",
@@ -19769,13 +19774,13 @@
 					],
 					[
 						"4346.4100",
-						"-0.0018521",
-						"-0.0018521"
+						"-0.0018521000",
+						"-0.0018521000"
 					],
 					[
 						"4347.3200",
-						"0.001717976",
-						"0.001717976"
+						"0.0017179760",
+						"0.0017179760"
 					],
 					[
 						"4348.2300",
@@ -19789,8 +19794,8 @@
 					],
 					[
 						"4350.0500",
-						"0.01373939",
-						"0.01373939"
+						"0.013739390",
+						"0.013739390"
 					],
 					[
 						"4350.9600",
@@ -19799,8 +19804,8 @@
 					],
 					[
 						"4351.8700",
-						"0.01798122",
-						"0.01798122"
+						"0.017981220",
+						"0.017981220"
 					],
 					[
 						"4352.7800",
@@ -19869,8 +19874,8 @@
 					],
 					[
 						"4364.6100",
-						"0.01269972",
-						"0.01269972"
+						"0.012699720",
+						"0.012699720"
 					],
 					[
 						"4365.5200",
@@ -19929,8 +19934,8 @@
 					],
 					[
 						"4375.5300",
-						"0.006056902",
-						"0.006056902"
+						"0.0060569020",
+						"0.0060569020"
 					],
 					[
 						"4376.4400",
@@ -19939,8 +19944,8 @@
 					],
 					[
 						"4377.3500",
-						"0.01789757",
-						"0.01789757"
+						"0.017897570",
+						"0.017897570"
 					],
 					[
 						"4378.2600",
@@ -19949,18 +19954,18 @@
 					],
 					[
 						"4379.1700",
-						"-0.006741274",
-						"-0.006741274"
+						"-0.0067412740",
+						"-0.0067412740"
 					],
 					[
 						"4380.0800",
-						"0.002837869",
-						"0.002837869"
+						"0.0028378690",
+						"0.0028378690"
 					],
 					[
 						"4380.9900",
-						"0.02204892",
-						"0.02204892"
+						"0.022048920",
+						"0.022048920"
 					],
 					[
 						"4381.9000",
@@ -19999,8 +20004,8 @@
 					],
 					[
 						"4388.2700",
-						"0.01609229",
-						"0.01609229"
+						"0.016092290",
+						"0.016092290"
 					],
 					[
 						"4389.1800",
@@ -20019,8 +20024,8 @@
 					],
 					[
 						"4391.9100",
-						"0.005677718",
-						"0.005677718"
+						"0.0056777180",
+						"0.0056777180"
 					],
 					[
 						"4392.8200",
@@ -20034,13 +20039,13 @@
 					],
 					[
 						"4394.6400",
-						"0.0146451",
-						"0.0146451"
+						"0.014645100",
+						"0.014645100"
 					],
 					[
 						"4395.5500",
-						"0.02285181",
-						"0.02285181"
+						"0.022851810",
+						"0.022851810"
 					],
 					[
 						"4396.4600",
@@ -20059,8 +20064,8 @@
 					],
 					[
 						"4399.1900",
-						"0.01430748",
-						"0.01430748"
+						"0.014307480",
+						"0.014307480"
 					],
 					[
 						"4400.1000",
@@ -20164,8 +20169,8 @@
 					],
 					[
 						"4418.3000",
-						"0.01685719",
-						"0.01685719"
+						"0.016857190",
+						"0.016857190"
 					],
 					[
 						"4419.2100",
@@ -20214,8 +20219,8 @@
 					],
 					[
 						"4427.4000",
-						"0.01338468",
-						"0.01338468"
+						"0.013384680",
+						"0.013384680"
 					],
 					[
 						"4428.3100",
@@ -20229,8 +20234,8 @@
 					],
 					[
 						"4430.1300",
-						"0.01693027",
-						"0.01693027"
+						"0.016930270",
+						"0.016930270"
 					],
 					[
 						"4431.0400",
@@ -20309,8 +20314,8 @@
 					],
 					[
 						"4444.6900",
-						"0.004161143",
-						"0.004161143"
+						"0.0041611430",
+						"0.0041611430"
 					],
 					[
 						"4445.6000",
@@ -20354,8 +20359,8 @@
 					],
 					[
 						"4452.8800",
-						"0.02103333",
-						"0.02103333"
+						"0.021033330",
+						"0.021033330"
 					],
 					[
 						"4453.7900",
@@ -20379,8 +20384,8 @@
 					],
 					[
 						"4457.4300",
-						"0.02062625",
-						"0.02062625"
+						"0.020626250",
+						"0.020626250"
 					],
 					[
 						"4458.3400",
@@ -20454,13 +20459,13 @@
 					],
 					[
 						"4471.0800",
-						"0.02139608",
-						"0.02139608"
+						"0.021396080",
+						"0.021396080"
 					],
 					[
 						"4471.9900",
-						"0.013591",
-						"0.013591"
+						"0.013591000",
+						"0.013591000"
 					],
 					[
 						"4472.9000",
@@ -20474,8 +20479,8 @@
 					],
 					[
 						"4474.7200",
-						"0.01031362",
-						"0.01031362"
+						"0.010313620",
+						"0.010313620"
 					],
 					[
 						"4475.6300",
@@ -20574,8 +20579,8 @@
 					],
 					[
 						"4492.9200",
-						"0.009338358",
-						"0.009338358"
+						"0.0093383580",
+						"0.0093383580"
 					],
 					[
 						"4493.8300",
@@ -20624,8 +20629,8 @@
 					],
 					[
 						"4502.0200",
-						"0.01112338",
-						"0.01112338"
+						"0.011123380",
+						"0.011123380"
 					],
 					[
 						"4502.9300",
@@ -20729,8 +20734,8 @@
 					],
 					[
 						"4521.1300",
-						"0.005341441",
-						"0.005341441"
+						"0.0053414410",
+						"0.0053414410"
 					],
 					[
 						"4522.0400",
@@ -20804,8 +20809,8 @@
 					],
 					[
 						"4534.7800",
-						"0.01719151",
-						"0.01719151"
+						"0.017191510",
+						"0.017191510"
 					],
 					[
 						"4535.6900",
@@ -20819,8 +20824,8 @@
 					],
 					[
 						"4537.5100",
-						"0.01133684",
-						"0.01133684"
+						"0.011336840",
+						"0.011336840"
 					],
 					[
 						"4538.4200",
@@ -20959,8 +20964,8 @@
 					],
 					[
 						"4562.9900",
-						"0.008658177",
-						"0.008658177"
+						"0.0086581770",
+						"0.0086581770"
 					],
 					[
 						"4563.9000",
@@ -21069,8 +21074,8 @@
 					],
 					[
 						"4583.0100",
-						"0.01414082",
-						"0.01414082"
+						"0.014140820",
+						"0.014140820"
 					],
 					[
 						"4583.9200",
@@ -21109,8 +21114,8 @@
 					],
 					[
 						"4590.2900",
-						"0.0122392",
-						"0.0122392"
+						"0.012239200",
+						"0.012239200"
 					],
 					[
 						"4591.2000",
@@ -21124,8 +21129,8 @@
 					],
 					[
 						"4593.0200",
-						"0.01020518",
-						"0.01020518"
+						"0.010205180",
+						"0.010205180"
 					],
 					[
 						"4593.9300",
@@ -21299,8 +21304,8 @@
 					],
 					[
 						"4624.8700",
-						"0.008357775",
-						"0.008357775"
+						"0.0083577750",
+						"0.0083577750"
 					],
 					[
 						"4625.7800",
@@ -21324,13 +21329,13 @@
 					],
 					[
 						"4629.4200",
-						"0.01347828",
-						"0.01347828"
+						"0.013478280",
+						"0.013478280"
 					],
 					[
 						"4630.3300",
-						"0.008754884",
-						"0.008754884"
+						"0.0087548840",
+						"0.0087548840"
 					],
 					[
 						"4631.2400",
@@ -21414,8 +21419,8 @@
 					],
 					[
 						"4645.8000",
-						"0.01658414",
-						"0.01658414"
+						"0.016584140",
+						"0.016584140"
 					],
 					[
 						"4646.7100",
@@ -21514,8 +21519,8 @@
 					],
 					[
 						"4664.0000",
-						"0.01126603",
-						"0.01126603"
+						"0.011266030",
+						"0.011266030"
 					],
 					[
 						"4664.9100",
@@ -21569,8 +21574,8 @@
 					],
 					[
 						"4674.0100",
-						"0.0123439",
-						"0.0123439"
+						"0.012343900",
+						"0.012343900"
 					],
 					[
 						"4674.9200",
@@ -21614,8 +21619,8 @@
 					],
 					[
 						"4682.2000",
-						"0.01362934",
-						"0.01362934"
+						"0.013629340",
+						"0.013629340"
 					],
 					[
 						"4683.1100",
@@ -21639,8 +21644,8 @@
 					],
 					[
 						"4686.7500",
-						"0.01307024",
-						"0.01307024"
+						"0.013070240",
+						"0.013070240"
 					],
 					[
 						"4687.6600",
@@ -21714,8 +21719,8 @@
 					],
 					[
 						"4700.4000",
-						"0.01029925",
-						"0.01029925"
+						"0.010299250",
+						"0.010299250"
 					],
 					[
 						"4701.3100",
@@ -21859,8 +21864,8 @@
 					],
 					[
 						"4726.7900",
-						"0.01170689",
-						"0.01170689"
+						"0.011706890",
+						"0.011706890"
 					],
 					[
 						"4727.7000",
@@ -21904,8 +21909,8 @@
 					],
 					[
 						"4734.9800",
-						"0.008534858",
-						"0.008534858"
+						"0.0085348580",
+						"0.0085348580"
 					],
 					[
 						"4735.8900",
@@ -21959,8 +21964,8 @@
 					],
 					[
 						"4744.9900",
-						"0.0143396",
-						"0.0143396"
+						"0.014339600",
+						"0.014339600"
 					],
 					[
 						"4745.9000",
@@ -21994,8 +21999,8 @@
 					],
 					[
 						"4751.3600",
-						"0.01301712",
-						"0.01301712"
+						"0.013017120",
+						"0.013017120"
 					],
 					[
 						"4752.2700",
@@ -22019,8 +22024,8 @@
 					],
 					[
 						"4755.9100",
-						"0.01389964",
-						"0.01389964"
+						"0.013899640",
+						"0.013899640"
 					],
 					[
 						"4756.8200",
@@ -22154,8 +22159,8 @@
 					],
 					[
 						"4780.4800",
-						"0.01281129",
-						"0.01281129"
+						"0.012811290",
+						"0.012811290"
 					],
 					[
 						"4781.3900",
@@ -22164,8 +22169,8 @@
 					],
 					[
 						"4782.3000",
-						"0.01223889",
-						"0.01223889"
+						"0.012238890",
+						"0.012238890"
 					],
 					[
 						"4783.2100",
@@ -22189,8 +22194,8 @@
 					],
 					[
 						"4786.8500",
-						"0.00820732",
-						"0.00820732"
+						"0.0082073200",
+						"0.0082073200"
 					],
 					[
 						"4787.7600",
@@ -22284,8 +22289,8 @@
 					],
 					[
 						"4804.1400",
-						"0.009760757",
-						"0.009760757"
+						"0.0097607570",
+						"0.0097607570"
 					],
 					[
 						"4805.0500",
@@ -22324,8 +22329,8 @@
 					],
 					[
 						"4811.4200",
-						"0.01075397",
-						"0.01075397"
+						"0.010753970",
+						"0.010753970"
 					],
 					[
 						"4812.3300",
@@ -22374,8 +22379,8 @@
 					],
 					[
 						"4820.5200",
-						"0.01372428",
-						"0.01372428"
+						"0.013724280",
+						"0.013724280"
 					],
 					[
 						"4821.4300",
@@ -22414,8 +22419,8 @@
 					],
 					[
 						"4827.8000",
-						"0.01116649",
-						"0.01116649"
+						"0.011166490",
+						"0.011166490"
 					],
 					[
 						"4828.7100",
@@ -22459,8 +22464,8 @@
 					],
 					[
 						"4835.9900",
-						"0.01577024",
-						"0.01577024"
+						"0.015770240",
+						"0.015770240"
 					],
 					[
 						"4836.9000",
@@ -22479,8 +22484,8 @@
 					],
 					[
 						"4839.6300",
-						"0.01075902",
-						"0.01075902"
+						"0.010759020",
+						"0.010759020"
 					],
 					[
 						"4840.5400",
@@ -22549,13 +22554,13 @@
 					],
 					[
 						"4852.3700",
-						"0.01129404",
-						"0.01129404"
+						"0.011294040",
+						"0.011294040"
 					],
 					[
 						"4853.2800",
-						"0.01410002",
-						"0.01410002"
+						"0.014100020",
+						"0.014100020"
 					],
 					[
 						"4854.1900",
@@ -22579,8 +22584,8 @@
 					],
 					[
 						"4857.8300",
-						"0.006857532",
-						"0.006857532"
+						"0.0068575320",
+						"0.0068575320"
 					],
 					[
 						"4858.7400",
@@ -22629,13 +22634,13 @@
 					],
 					[
 						"4866.9300",
-						"0.01319153",
-						"0.01319153"
+						"0.013191530",
+						"0.013191530"
 					],
 					[
 						"4867.8400",
-						"0.01329773",
-						"0.01329773"
+						"0.013297730",
+						"0.013297730"
 					],
 					[
 						"4868.7500",
@@ -22659,8 +22664,8 @@
 					],
 					[
 						"4872.3900",
-						"0.01157343",
-						"0.01157343"
+						"0.011573430",
+						"0.011573430"
 					],
 					[
 						"4873.3000",
@@ -22714,8 +22719,8 @@
 					],
 					[
 						"4882.4000",
-						"0.01307678",
-						"0.01307678"
+						"0.013076780",
+						"0.013076780"
 					],
 					[
 						"4883.3100",
@@ -22724,8 +22729,8 @@
 					],
 					[
 						"4884.2200",
-						"0.01569229",
-						"0.01569229"
+						"0.015692290",
+						"0.015692290"
 					],
 					[
 						"4885.1300",
@@ -23004,8 +23009,8 @@
 					],
 					[
 						"4935.1800",
-						"0.01449064",
-						"0.01449064"
+						"0.014490640",
+						"0.014490640"
 					],
 					[
 						"4936.0900",
@@ -23089,8 +23094,8 @@
 					],
 					[
 						"4950.6500",
-						"0.01295299",
-						"0.01295299"
+						"0.012952990",
+						"0.012952990"
 					],
 					[
 						"4951.5600",
@@ -23104,8 +23109,8 @@
 					],
 					[
 						"4953.3800",
-						"0.0136714",
-						"0.0136714"
+						"0.013671400",
+						"0.013671400"
 					],
 					[
 						"4954.2900",
@@ -23174,8 +23179,8 @@
 					],
 					[
 						"4966.1200",
-						"0.01622519",
-						"0.01622519"
+						"0.016225190",
+						"0.016225190"
 					],
 					[
 						"4967.0300",
@@ -23209,8 +23214,8 @@
 					],
 					[
 						"4972.4900",
-						"0.01443125",
-						"0.01443125"
+						"0.014431250",
+						"0.014431250"
 					],
 					[
 						"4973.4000",
@@ -23244,8 +23249,8 @@
 					],
 					[
 						"4978.8600",
-						"0.01148643",
-						"0.01148643"
+						"0.011486430",
+						"0.011486430"
 					],
 					[
 						"4979.7700",
@@ -23294,8 +23299,8 @@
 					],
 					[
 						"4987.9600",
-						"0.01110496",
-						"0.01110496"
+						"0.011104960",
+						"0.011104960"
 					],
 					[
 						"4988.8700",
@@ -23324,8 +23329,8 @@
 					],
 					[
 						"4993.4200",
-						"0.011038",
-						"0.011038"
+						"0.011038000",
+						"0.011038000"
 					],
 					[
 						"4994.3300",
@@ -23394,13 +23399,13 @@
 					],
 					[
 						"5006.1600",
-						"0.01131073",
-						"0.01131073"
+						"0.011310730",
+						"0.011310730"
 					],
 					[
 						"5007.0700",
-						"0.01127086",
-						"0.01127086"
+						"0.011270860",
+						"0.011270860"
 					],
 					[
 						"5007.9800",
@@ -23469,8 +23474,8 @@
 					],
 					[
 						"5019.8100",
-						"0.007419626",
-						"0.007419626"
+						"0.0074196260",
+						"0.0074196260"
 					],
 					[
 						"5020.7200",
@@ -23484,8 +23489,8 @@
 					],
 					[
 						"5022.5400",
-						"0.01098888",
-						"0.01098888"
+						"0.010988880",
+						"0.010988880"
 					],
 					[
 						"5023.4500",
@@ -23534,8 +23539,8 @@
 					],
 					[
 						"5031.6400",
-						"0.008296889",
-						"0.008296889"
+						"0.0082968890",
+						"0.0082968890"
 					],
 					[
 						"5032.5500",
@@ -23634,8 +23639,8 @@
 					],
 					[
 						"5049.8400",
-						"0.008795757",
-						"0.008795757"
+						"0.0087957570",
+						"0.0087957570"
 					],
 					[
 						"5050.7500",
@@ -23754,8 +23759,8 @@
 					],
 					[
 						"5071.6800",
-						"0.008400228",
-						"0.008400228"
+						"0.0084002280",
+						"0.0084002280"
 					],
 					[
 						"5072.5900",
@@ -23824,8 +23829,8 @@
 					],
 					[
 						"5084.4200",
-						"0.006733605",
-						"0.006733605"
+						"0.0067336050",
+						"0.0067336050"
 					],
 					[
 						"5085.3300",
@@ -23859,8 +23864,8 @@
 					],
 					[
 						"5090.7900",
-						"0.004751281",
-						"0.004751281"
+						"0.0047512810",
+						"0.0047512810"
 					],
 					[
 						"5091.7000",
@@ -23909,8 +23914,8 @@
 					],
 					[
 						"5099.8900",
-						"0.00881635",
-						"0.00881635"
+						"0.0088163500",
+						"0.0088163500"
 					],
 					[
 						"5100.8000",
@@ -23964,8 +23969,8 @@
 					],
 					[
 						"5109.9000",
-						"0.00622043",
-						"0.00622043"
+						"0.0062204300",
+						"0.0062204300"
 					],
 					[
 						"5110.8100",
@@ -24029,8 +24034,8 @@
 					],
 					[
 						"5121.7300",
-						"0.0068053",
-						"0.0068053"
+						"0.0068053000",
+						"0.0068053000"
 					],
 					[
 						"5122.6400",
@@ -24174,13 +24179,13 @@
 					],
 					[
 						"5148.1200",
-						"0.00762177",
-						"0.00762177"
+						"0.0076217700",
+						"0.0076217700"
 					],
 					[
 						"5149.0300",
-						"0.007037106",
-						"0.007037106"
+						"0.0070371060",
+						"0.0070371060"
 					],
 					[
 						"5149.9400",
@@ -24274,13 +24279,13 @@
 					],
 					[
 						"5166.3200",
-						"0.006215816",
-						"0.006215816"
+						"0.0062158160",
+						"0.0062158160"
 					],
 					[
 						"5167.2300",
-						"0.00687065",
-						"0.00687065"
+						"0.0068706500",
+						"0.0068706500"
 					],
 					[
 						"5168.1400",
@@ -24294,8 +24299,8 @@
 					],
 					[
 						"5169.9600",
-						"0.004021746",
-						"0.004021746"
+						"0.0040217460",
+						"0.0040217460"
 					],
 					[
 						"5170.8700",
@@ -24324,8 +24329,8 @@
 					],
 					[
 						"5175.4200",
-						"0.007355486",
-						"0.007355486"
+						"0.0073554860",
+						"0.0073554860"
 					],
 					[
 						"5176.3300",
@@ -24349,8 +24354,8 @@
 					],
 					[
 						"5179.9700",
-						"0.00805193",
-						"0.00805193"
+						"0.0080519300",
+						"0.0080519300"
 					],
 					[
 						"5180.8800",
@@ -24489,8 +24494,8 @@
 					],
 					[
 						"5205.4500",
-						"0.009520237",
-						"0.009520237"
+						"0.0095202370",
+						"0.0095202370"
 					],
 					[
 						"5206.3600",
@@ -24499,8 +24504,8 @@
 					],
 					[
 						"5207.2700",
-						"0.005984244",
-						"0.005984244"
+						"0.0059842440",
+						"0.0059842440"
 					],
 					[
 						"5208.1800",
@@ -24594,8 +24599,8 @@
 					],
 					[
 						"5224.5600",
-						"0.008060709",
-						"0.008060709"
+						"0.0080607090",
+						"0.0080607090"
 					],
 					[
 						"5225.4700",
@@ -24644,8 +24649,8 @@
 					],
 					[
 						"5233.6600",
-						"0.01234115",
-						"0.01234115"
+						"0.012341150",
+						"0.012341150"
 					],
 					[
 						"5234.5700",
@@ -24724,8 +24729,8 @@
 					],
 					[
 						"5248.2200",
-						"0.00818384",
-						"0.00818384"
+						"0.0081838400",
+						"0.0081838400"
 					],
 					[
 						"5249.1300",
@@ -24734,8 +24739,8 @@
 					],
 					[
 						"5250.0400",
-						"0.007189136",
-						"0.007189136"
+						"0.0071891360",
+						"0.0071891360"
 					],
 					[
 						"5250.9500",
@@ -24764,8 +24769,8 @@
 					],
 					[
 						"5255.5000",
-						"0.01070883",
-						"0.01070883"
+						"0.010708830",
+						"0.010708830"
 					],
 					[
 						"5256.4100",
@@ -24799,8 +24804,8 @@
 					],
 					[
 						"5261.8700",
-						"0.01038374",
-						"0.01038374"
+						"0.010383740",
+						"0.010383740"
 					],
 					[
 						"5262.7800",
@@ -24969,8 +24974,8 @@
 					],
 					[
 						"5292.8100",
-						"0.007108415",
-						"0.007108415"
+						"0.0071084150",
+						"0.0071084150"
 					],
 					[
 						"5293.7200",
@@ -25044,8 +25049,8 @@
 					],
 					[
 						"5306.4600",
-						"0.01137109",
-						"0.01137109"
+						"0.011371090",
+						"0.011371090"
 					],
 					[
 						"5307.3700",
@@ -25224,8 +25229,8 @@
 					],
 					[
 						"5339.2200",
-						"0.01334464",
-						"0.01334464"
+						"0.013344640",
+						"0.013344640"
 					],
 					[
 						"5340.1300",
@@ -25254,8 +25259,8 @@
 					],
 					[
 						"5344.6800",
-						"0.01223855",
-						"0.01223855"
+						"0.012238550",
+						"0.012238550"
 					],
 					[
 						"5345.5900",
@@ -25289,8 +25294,8 @@
 					],
 					[
 						"5351.0500",
-						"0.01151767",
-						"0.01151767"
+						"0.011517670",
+						"0.011517670"
 					],
 					[
 						"5351.9600",
@@ -25399,13 +25404,13 @@
 					],
 					[
 						"5371.0700",
-						"0.01144056",
-						"0.01144056"
+						"0.011440560",
+						"0.011440560"
 					],
 					[
 						"5371.9800",
-						"0.01245663",
-						"0.01245663"
+						"0.012456630",
+						"0.012456630"
 					],
 					[
 						"5372.8900",
@@ -25454,8 +25459,8 @@
 					],
 					[
 						"5381.0800",
-						"0.01155946",
-						"0.01155946"
+						"0.011559460",
+						"0.011559460"
 					],
 					[
 						"5381.9900",
@@ -25489,8 +25494,8 @@
 					],
 					[
 						"5387.4500",
-						"0.01260568",
-						"0.01260568"
+						"0.012605680",
+						"0.012605680"
 					],
 					[
 						"5388.3600",
@@ -25504,8 +25509,8 @@
 					],
 					[
 						"5390.1800",
-						"0.01144373",
-						"0.01144373"
+						"0.011443730",
+						"0.011443730"
 					],
 					[
 						"5391.0900",
@@ -25544,8 +25549,8 @@
 					],
 					[
 						"5397.4600",
-						"0.01204555",
-						"0.01204555"
+						"0.012045550",
+						"0.012045550"
 					],
 					[
 						"5398.3700",
@@ -25679,8 +25684,8 @@
 					],
 					[
 						"5422.0300",
-						"0.01309522",
-						"0.01309522"
+						"0.013095220",
+						"0.013095220"
 					],
 					[
 						"5422.9400",
@@ -25699,8 +25704,8 @@
 					],
 					[
 						"5425.6700",
-						"0.01129895",
-						"0.01129895"
+						"0.011298950",
+						"0.011298950"
 					],
 					[
 						"5426.5800",
@@ -25804,8 +25809,8 @@
 					],
 					[
 						"5444.7800",
-						"0.01219206",
-						"0.01219206"
+						"0.012192060",
+						"0.012192060"
 					],
 					[
 						"5445.6900",
@@ -25914,8 +25919,8 @@
 					],
 					[
 						"5464.8000",
-						"0.01203217",
-						"0.01203217"
+						"0.012032170",
+						"0.012032170"
 					],
 					[
 						"5465.7100",
@@ -25994,8 +25999,8 @@
 					],
 					[
 						"5479.3600",
-						"0.00959115",
-						"0.00959115"
+						"0.0095911500",
+						"0.0095911500"
 					],
 					[
 						"5480.2700",
@@ -26059,8 +26064,8 @@
 					],
 					[
 						"5491.1900",
-						"0.009053656",
-						"0.009053656"
+						"0.0090536560",
+						"0.0090536560"
 					],
 					[
 						"5492.1000",
@@ -26209,8 +26214,8 @@
 					],
 					[
 						"5518.4900",
-						"0.009989085",
-						"0.009989085"
+						"0.0099890850",
+						"0.0099890850"
 					],
 					[
 						"5519.4000",
@@ -26319,8 +26324,8 @@
 					],
 					[
 						"5538.5100",
-						"0.008233276",
-						"0.008233276"
+						"0.0082332760",
+						"0.0082332760"
 					],
 					[
 						"5539.4200",
@@ -26334,8 +26339,8 @@
 					],
 					[
 						"5541.2400",
-						"0.01206355",
-						"0.01206355"
+						"0.012063550",
+						"0.012063550"
 					],
 					[
 						"5542.1500",
@@ -26444,8 +26449,8 @@
 					],
 					[
 						"5561.2600",
-						"0.009989525",
-						"0.009989525"
+						"0.0099895250",
+						"0.0099895250"
 					],
 					[
 						"5562.1700",
@@ -26514,8 +26519,8 @@
 					],
 					[
 						"5574.0000",
-						"0.01027071",
-						"0.01027071"
+						"0.010270710",
+						"0.010270710"
 					],
 					[
 						"5574.9100",
@@ -26599,8 +26604,8 @@
 					],
 					[
 						"5590.3800",
-						"0.01236695",
-						"0.01236695"
+						"0.012366950",
+						"0.012366950"
 					],
 					[
 						"5591.2900",
@@ -26624,8 +26629,8 @@
 					],
 					[
 						"5594.9300",
-						"0.01188064",
-						"0.01188064"
+						"0.011880640",
+						"0.011880640"
 					],
 					[
 						"5595.8400",
@@ -26739,8 +26744,8 @@
 					],
 					[
 						"5615.8600",
-						"0.009006205",
-						"0.009006205"
+						"0.0090062050",
+						"0.0090062050"
 					],
 					[
 						"5616.7700",
@@ -26774,8 +26779,8 @@
 					],
 					[
 						"5622.2300",
-						"0.01014481",
-						"0.01014481"
+						"0.010144810",
+						"0.010144810"
 					],
 					[
 						"5623.1400",
@@ -26789,8 +26794,8 @@
 					],
 					[
 						"5624.9600",
-						"0.0115947",
-						"0.0115947"
+						"0.011594700",
+						"0.011594700"
 					],
 					[
 						"5625.8700",
@@ -26914,8 +26919,8 @@
 					],
 					[
 						"5647.7100",
-						"0.01041373",
-						"0.01041373"
+						"0.010413730",
+						"0.010413730"
 					],
 					[
 						"5648.6200",
@@ -26974,8 +26979,8 @@
 					],
 					[
 						"5658.6300",
-						"0.01168779",
-						"0.01168779"
+						"0.011687790",
+						"0.011687790"
 					],
 					[
 						"5659.5400",
@@ -26994,8 +26999,8 @@
 					],
 					[
 						"5662.2700",
-						"0.01096588",
-						"0.01096588"
+						"0.010965880",
+						"0.010965880"
 					],
 					[
 						"5663.1800",
@@ -27004,8 +27009,8 @@
 					],
 					[
 						"5664.0900",
-						"0.01137734",
-						"0.01137734"
+						"0.011377340",
+						"0.011377340"
 					],
 					[
 						"5665.0000",
@@ -27034,8 +27039,8 @@
 					],
 					[
 						"5669.5500",
-						"0.009681382",
-						"0.009681382"
+						"0.0096813820",
+						"0.0096813820"
 					],
 					[
 						"5670.4600",
@@ -27069,8 +27074,8 @@
 					],
 					[
 						"5675.9200",
-						"0.01053615",
-						"0.01053615"
+						"0.010536150",
+						"0.010536150"
 					],
 					[
 						"5676.8300",
@@ -27109,8 +27114,8 @@
 					],
 					[
 						"5683.2000",
-						"0.01115971",
-						"0.01115971"
+						"0.011159710",
+						"0.011159710"
 					],
 					[
 						"5684.1100",
@@ -27164,8 +27169,8 @@
 					],
 					[
 						"5693.2100",
-						"0.01036718",
-						"0.01036718"
+						"0.010367180",
+						"0.010367180"
 					],
 					[
 						"5694.1200",
@@ -27219,8 +27224,8 @@
 					],
 					[
 						"5703.2200",
-						"0.01111931",
-						"0.01111931"
+						"0.011119310",
+						"0.011119310"
 					],
 					[
 						"5704.1300",
@@ -27319,8 +27324,8 @@
 					],
 					[
 						"5721.4200",
-						"0.01208215",
-						"0.01208215"
+						"0.012082150",
+						"0.012082150"
 					],
 					[
 						"5722.3300",
@@ -27364,8 +27369,8 @@
 					],
 					[
 						"5729.6100",
-						"0.01034875",
-						"0.01034875"
+						"0.010348750",
+						"0.010348750"
 					],
 					[
 						"5730.5200",
@@ -27374,8 +27379,8 @@
 					],
 					[
 						"5731.4300",
-						"0.01056365",
-						"0.01056365"
+						"0.010563650",
+						"0.010563650"
 					],
 					[
 						"5732.3400",
@@ -27389,8 +27394,8 @@
 					],
 					[
 						"5734.1600",
-						"0.008217391",
-						"0.008217391"
+						"0.0082173910",
+						"0.0082173910"
 					],
 					[
 						"5735.0700",
@@ -27539,8 +27544,8 @@
 					],
 					[
 						"5761.4600",
-						"0.01094349",
-						"0.01094349"
+						"0.010943490",
+						"0.010943490"
 					],
 					[
 						"5762.3700",
@@ -27589,8 +27594,8 @@
 					],
 					[
 						"5770.5600",
-						"0.00944608",
-						"0.00944608"
+						"0.0094460800",
+						"0.0094460800"
 					],
 					[
 						"5771.4700",
@@ -27659,8 +27664,8 @@
 					],
 					[
 						"5783.3000",
-						"0.01155691",
-						"0.01155691"
+						"0.011556910",
+						"0.011556910"
 					],
 					[
 						"5784.2100",
@@ -27674,8 +27679,8 @@
 					],
 					[
 						"5786.0300",
-						"0.00899352",
-						"0.00899352"
+						"0.0089935200",
+						"0.0089935200"
 					],
 					[
 						"5786.9400",
@@ -27684,8 +27689,8 @@
 					],
 					[
 						"5787.8500",
-						"0.01105715",
-						"0.01105715"
+						"0.011057150",
+						"0.011057150"
 					],
 					[
 						"5788.7600",
@@ -27699,8 +27704,8 @@
 					],
 					[
 						"5790.5800",
-						"0.01023474",
-						"0.01023474"
+						"0.010234740",
+						"0.010234740"
 					],
 					[
 						"5791.4900",
@@ -27754,13 +27759,13 @@
 					],
 					[
 						"5800.5900",
-						"0.009971386",
-						"0.009971386"
+						"0.0099713860",
+						"0.0099713860"
 					],
 					[
 						"5801.5000",
-						"0.00891283",
-						"0.00891283"
+						"0.0089128300",
+						"0.0089128300"
 					],
 					[
 						"5802.4100",
@@ -27774,8 +27779,8 @@
 					],
 					[
 						"5804.2300",
-						"0.008511257",
-						"0.008511257"
+						"0.0085112570",
+						"0.0085112570"
 					],
 					[
 						"5805.1400",
@@ -27784,8 +27789,8 @@
 					],
 					[
 						"5806.0500",
-						"0.009197116",
-						"0.009197116"
+						"0.0091971160",
+						"0.0091971160"
 					],
 					[
 						"5806.9600",
@@ -27829,8 +27834,8 @@
 					],
 					[
 						"5814.2400",
-						"0.008867167",
-						"0.008867167"
+						"0.0088671670",
+						"0.0088671670"
 					],
 					[
 						"5815.1500",
@@ -27889,8 +27894,8 @@
 					],
 					[
 						"5825.1600",
-						"0.01054991",
-						"0.01054991"
+						"0.010549910",
+						"0.010549910"
 					],
 					[
 						"5826.0700",
@@ -27934,8 +27939,8 @@
 					],
 					[
 						"5833.3500",
-						"0.00767616",
-						"0.00767616"
+						"0.0076761600",
+						"0.0076761600"
 					],
 					[
 						"5834.2600",
@@ -27999,8 +28004,8 @@
 					],
 					[
 						"5845.1800",
-						"0.01000634",
-						"0.01000634"
+						"0.010006340",
+						"0.010006340"
 					],
 					[
 						"5846.0900",
@@ -28014,8 +28019,8 @@
 					],
 					[
 						"5847.9100",
-						"0.008998023",
-						"0.008998023"
+						"0.0089980230",
+						"0.0089980230"
 					],
 					[
 						"5848.8200",
@@ -28044,8 +28049,8 @@
 					],
 					[
 						"5853.3700",
-						"0.01145123",
-						"0.01145123"
+						"0.011451230",
+						"0.011451230"
 					],
 					[
 						"5854.2800",
@@ -28174,8 +28179,8 @@
 					],
 					[
 						"5877.0300",
-						"0.01000608",
-						"0.01000608"
+						"0.010006080",
+						"0.010006080"
 					],
 					[
 						"5877.9400",
@@ -28379,8 +28384,8 @@
 					],
 					[
 						"5914.3400",
-						"0.01057738",
-						"0.01057738"
+						"0.010577380",
+						"0.010577380"
 					],
 					[
 						"5915.2500",
@@ -28474,8 +28479,8 @@
 					],
 					[
 						"5931.6300",
-						"0.008519016",
-						"0.008519016"
+						"0.0085190160",
+						"0.0085190160"
 					],
 					[
 						"5932.5400",
@@ -28494,8 +28499,8 @@
 					],
 					[
 						"5935.2700",
-						"0.007723254",
-						"0.007723254"
+						"0.0077232540",
+						"0.0077232540"
 					],
 					[
 						"5936.1800",
@@ -28504,8 +28509,8 @@
 					],
 					[
 						"5937.0900",
-						"0.01015966",
-						"0.01015966"
+						"0.010159660",
+						"0.010159660"
 					],
 					[
 						"5938.0000",
@@ -28524,8 +28529,8 @@
 					],
 					[
 						"5940.7300",
-						"0.01035919",
-						"0.01035919"
+						"0.010359190",
+						"0.010359190"
 					],
 					[
 						"5941.6400",
@@ -28644,13 +28649,13 @@
 					],
 					[
 						"5962.5700",
-						"0.009837409",
-						"0.009837409"
+						"0.0098374090",
+						"0.0098374090"
 					],
 					[
 						"5963.4800",
-						"0.00917134",
-						"0.00917134"
+						"0.0091713400",
+						"0.0091713400"
 					],
 					[
 						"5964.3900",
@@ -28689,8 +28694,8 @@
 					],
 					[
 						"5970.7600",
-						"0.01129446",
-						"0.01129446"
+						"0.011294460",
+						"0.011294460"
 					],
 					[
 						"5971.6700",
@@ -28809,8 +28814,8 @@
 					],
 					[
 						"5992.6000",
-						"0.01083753",
-						"0.01083753"
+						"0.010837530",
+						"0.010837530"
 					],
 					[
 						"5993.5100",
@@ -28899,8 +28904,8 @@
 					],
 					[
 						"6008.9800",
-						"0.007410413",
-						"0.007410413"
+						"0.0074104130",
+						"0.0074104130"
 					],
 					[
 						"6009.8900",
@@ -28944,8 +28949,8 @@
 					],
 					[
 						"6017.1700",
-						"0.009929132",
-						"0.009929132"
+						"0.0099291320",
+						"0.0099291320"
 					],
 					[
 						"6018.0800",
@@ -28984,8 +28989,8 @@
 					],
 					[
 						"6024.4500",
-						"0.008593219",
-						"0.008593219"
+						"0.0085932190",
+						"0.0085932190"
 					],
 					[
 						"6025.3600",
@@ -29009,8 +29014,8 @@
 					],
 					[
 						"6029.0000",
-						"0.008995275",
-						"0.008995275"
+						"0.0089952750",
+						"0.0089952750"
 					],
 					[
 						"6029.9100",
@@ -29049,8 +29054,8 @@
 					],
 					[
 						"6036.2800",
-						"0.007552197",
-						"0.007552197"
+						"0.0075521970",
+						"0.0075521970"
 					],
 					[
 						"6037.1900",
@@ -29089,8 +29094,8 @@
 					],
 					[
 						"6043.5600",
-						"0.009062589",
-						"0.009062589"
+						"0.0090625890",
+						"0.0090625890"
 					],
 					[
 						"6044.4700",
@@ -29099,8 +29104,8 @@
 					],
 					[
 						"6045.3800",
-						"0.008220572",
-						"0.008220572"
+						"0.0082205720",
+						"0.0082205720"
 					],
 					[
 						"6046.2900",
@@ -29174,8 +29179,8 @@
 					],
 					[
 						"6059.0300",
-						"0.009756553",
-						"0.009756553"
+						"0.0097565530",
+						"0.0097565530"
 					],
 					[
 						"6059.9400",
@@ -29294,8 +29299,8 @@
 					],
 					[
 						"6080.8700",
-						"0.009063878",
-						"0.009063878"
+						"0.0090638780",
+						"0.0090638780"
 					],
 					[
 						"6081.7800",
@@ -29304,8 +29309,8 @@
 					],
 					[
 						"6082.6900",
-						"0.00854956",
-						"0.00854956"
+						"0.0085495600",
+						"0.0085495600"
 					],
 					[
 						"6083.6000",
@@ -29359,8 +29364,8 @@
 					],
 					[
 						"6092.7000",
-						"0.008481229",
-						"0.008481229"
+						"0.0084812290",
+						"0.0084812290"
 					],
 					[
 						"6093.6100",
@@ -29394,13 +29399,13 @@
 					],
 					[
 						"6099.0700",
-						"0.008295533",
-						"0.008295533"
+						"0.0082955330",
+						"0.0082955330"
 					],
 					[
 						"6099.9800",
-						"0.008384428",
-						"0.008384428"
+						"0.0083844280",
+						"0.0083844280"
 					],
 					[
 						"6100.8900",
@@ -29414,8 +29419,8 @@
 					],
 					[
 						"6102.7100",
-						"0.007941836",
-						"0.007941836"
+						"0.0079418360",
+						"0.0079418360"
 					],
 					[
 						"6103.6200",
@@ -29439,8 +29444,8 @@
 					],
 					[
 						"6107.2600",
-						"0.009655097",
-						"0.009655097"
+						"0.0096550970",
+						"0.0096550970"
 					],
 					[
 						"6108.1700",
@@ -29544,13 +29549,13 @@
 					],
 					[
 						"6126.3700",
-						"0.008368425",
-						"0.008368425"
+						"0.0083684250",
+						"0.0083684250"
 					],
 					[
 						"6127.2800",
-						"0.008616579",
-						"0.008616579"
+						"0.0086165790",
+						"0.0086165790"
 					],
 					[
 						"6128.1900",
@@ -29574,8 +29579,8 @@
 					],
 					[
 						"6131.8300",
-						"0.01182568",
-						"0.01182568"
+						"0.011825680",
+						"0.011825680"
 					],
 					[
 						"6132.7400",
@@ -29599,13 +29604,13 @@
 					],
 					[
 						"6136.3800",
-						"0.007166956",
-						"0.007166956"
+						"0.0071669560",
+						"0.0071669560"
 					],
 					[
 						"6137.2900",
-						"0.008279288",
-						"0.008279288"
+						"0.0082792880",
+						"0.0082792880"
 					],
 					[
 						"6138.2000",
@@ -29619,8 +29624,8 @@
 					],
 					[
 						"6140.0200",
-						"0.009029827",
-						"0.009029827"
+						"0.0090298270",
+						"0.0090298270"
 					],
 					[
 						"6140.9300",
@@ -29639,8 +29644,8 @@
 					],
 					[
 						"6143.6600",
-						"0.009598001",
-						"0.009598001"
+						"0.0095980010",
+						"0.0095980010"
 					],
 					[
 						"6144.5700",
@@ -29679,8 +29684,8 @@
 					],
 					[
 						"6150.9400",
-						"0.008636148",
-						"0.008636148"
+						"0.0086361480",
+						"0.0086361480"
 					],
 					[
 						"6151.8500",
@@ -29689,8 +29694,8 @@
 					],
 					[
 						"6152.7600",
-						"0.007470912",
-						"0.007470912"
+						"0.0074709120",
+						"0.0074709120"
 					],
 					[
 						"6153.6700",
@@ -29709,8 +29714,8 @@
 					],
 					[
 						"6156.4000",
-						"0.008710809",
-						"0.008710809"
+						"0.0087108090",
+						"0.0087108090"
 					],
 					[
 						"6157.3100",
@@ -29749,8 +29754,8 @@
 					],
 					[
 						"6163.6800",
-						"0.008496166",
-						"0.008496166"
+						"0.0084961660",
+						"0.0084961660"
 					],
 					[
 						"6164.5900",
@@ -29779,13 +29784,13 @@
 					],
 					[
 						"6169.1400",
-						"0.01017743",
-						"0.01017743"
+						"0.010177430",
+						"0.010177430"
 					],
 					[
 						"6170.0500",
-						"0.008033828",
-						"0.008033828"
+						"0.0080338280",
+						"0.0080338280"
 					],
 					[
 						"6170.9600",
@@ -29799,8 +29804,8 @@
 					],
 					[
 						"6172.7800",
-						"0.009139444",
-						"0.009139444"
+						"0.0091394440",
+						"0.0091394440"
 					],
 					[
 						"6173.6900",
@@ -29879,8 +29884,8 @@
 					],
 					[
 						"6187.3400",
-						"0.009273219",
-						"0.009273219"
+						"0.0092732190",
+						"0.0092732190"
 					],
 					[
 						"6188.2500",
@@ -29949,8 +29954,8 @@
 					],
 					[
 						"6200.0800",
-						"0.007861543",
-						"0.007861543"
+						"0.0078615430",
+						"0.0078615430"
 					],
 					[
 						"6200.9900",
@@ -29989,13 +29994,13 @@
 					],
 					[
 						"6207.3600",
-						"0.009134585",
-						"0.009134585"
+						"0.0091345850",
+						"0.0091345850"
 					],
 					[
 						"6208.2700",
-						"0.008604958",
-						"0.008604958"
+						"0.0086049580",
+						"0.0086049580"
 					],
 					[
 						"6209.1800",
@@ -30009,8 +30014,8 @@
 					],
 					[
 						"6211.0000",
-						"0.00967336",
-						"0.00967336"
+						"0.0096733600",
+						"0.0096733600"
 					],
 					[
 						"6211.9100",
@@ -30063,18 +30068,21 @@
 						"0.0072130072"
 					]
 				],
-				"source":"2,5"
+				"source":"4,7"
 			},
 			{
-				"instrument":"Gemini-S - GMOS-S",
-				"u_time":"MJD",
 				"time":"55426.0",
-				"observer":"Chornock/Berger",
-				"reducer":"Chornock",
 				"filename":"g060270_20100818_gmos.flm",
-				"waveunit":"Angstrom",
-				"fluxunit":"Uncalibrated",
-				"errorunit":"Uncalibrated",
+				"instrument":"Gemini-S - GMOS-S",
+				"observer":"Chornock/Berger",
+				"redshift":"0.96",
+				"reducer":"Chornock",
+				"reduction":"final",
+				"survey":"PS1",
+				"u_errors":"Uncalibrated",
+				"u_fluxes":"Uncalibrated",
+				"u_time":"MJD",
+				"u_wavelengths":"Angstrom",
 				"data":[
 					[
 						"3600.0000",
@@ -45637,18 +45645,21 @@
 						"0.0037298541"
 					]
 				],
-				"source":"2,5"
+				"source":"4,7"
 			},
 			{
-				"instrument":"Gemini-S - GMOS-S",
-				"u_time":"MJD",
 				"time":"55448.0",
-				"observer":"Chornock/Berger",
-				"reducer":"Chornock",
 				"filename":"g060270_20100909_gmos.flm",
-				"waveunit":"Angstrom",
-				"fluxunit":"Uncalibrated",
-				"errorunit":"Uncalibrated",
+				"instrument":"Gemini-S - GMOS-S",
+				"observer":"Chornock/Berger",
+				"redshift":"0.96",
+				"reducer":"Chornock",
+				"reduction":"final",
+				"survey":"PS1",
+				"u_errors":"Uncalibrated",
+				"u_fluxes":"Uncalibrated",
+				"u_time":"MJD",
+				"u_wavelengths":"Angstrom",
 				"data":[
 					[
 						"5887.0000",
@@ -45777,13 +45788,13 @@
 					],
 					[
 						"5921.5000",
-						"0.001044066",
-						"0.001044066"
+						"0.0010440660",
+						"0.0010440660"
 					],
 					[
 						"5922.8800",
-						"0.0007222635",
-						"0.0007222635"
+						"0.00072226350",
+						"0.00072226350"
 					],
 					[
 						"5924.2600",
@@ -45802,13 +45813,13 @@
 					],
 					[
 						"5928.4000",
-						"0.0009582015",
-						"0.0009582015"
+						"0.00095820150",
+						"0.00095820150"
 					],
 					[
 						"5929.7800",
-						"0.001190385",
-						"0.001190385"
+						"0.0011903850",
+						"0.0011903850"
 					],
 					[
 						"5931.1600",
@@ -45872,8 +45883,8 @@
 					],
 					[
 						"5947.7200",
-						"0.0006871278",
-						"0.0006871278"
+						"0.00068712780",
+						"0.00068712780"
 					],
 					[
 						"5949.1000",
@@ -45917,8 +45928,8 @@
 					],
 					[
 						"5960.1400",
-						"0.001092497",
-						"0.001092497"
+						"0.0010924970",
+						"0.0010924970"
 					],
 					[
 						"5961.5200",
@@ -45937,8 +45948,8 @@
 					],
 					[
 						"5965.6600",
-						"0.0008618781",
-						"0.0008618781"
+						"0.00086187810",
+						"0.00086187810"
 					],
 					[
 						"5967.0400",
@@ -46017,8 +46028,8 @@
 					],
 					[
 						"5987.7400",
-						"0.001161182",
-						"0.001161182"
+						"0.0011611820",
+						"0.0011611820"
 					],
 					[
 						"5989.1200",
@@ -46047,8 +46058,8 @@
 					],
 					[
 						"5996.0200",
-						"0.001103406",
-						"0.001103406"
+						"0.0011034060",
+						"0.0011034060"
 					],
 					[
 						"5997.4000",
@@ -46077,8 +46088,8 @@
 					],
 					[
 						"6004.3000",
-						"0.0007757628",
-						"0.0007757628"
+						"0.00077576280",
+						"0.00077576280"
 					],
 					[
 						"6005.6800",
@@ -46157,8 +46168,8 @@
 					],
 					[
 						"6026.3800",
-						"0.001422691",
-						"0.001422691"
+						"0.0014226910",
+						"0.0014226910"
 					],
 					[
 						"6027.7600",
@@ -46247,8 +46258,8 @@
 					],
 					[
 						"6051.2200",
-						"0.0001423808",
-						"0.0001423808"
+						"0.00014238080",
+						"0.00014238080"
 					],
 					[
 						"6052.6000",
@@ -46337,8 +46348,8 @@
 					],
 					[
 						"6076.0600",
-						"0.001231087",
-						"0.001231087"
+						"0.0012310870",
+						"0.0012310870"
 					],
 					[
 						"6077.4400",
@@ -46522,8 +46533,8 @@
 					],
 					[
 						"6127.1200",
-						"0.001000959",
-						"0.001000959"
+						"0.0010009590",
+						"0.0010009590"
 					],
 					[
 						"6128.5000",
@@ -46537,13 +46548,13 @@
 					],
 					[
 						"6131.2600",
-						"0.001449804",
-						"0.001449804"
+						"0.0014498040",
+						"0.0014498040"
 					],
 					[
 						"6132.6400",
-						"0.001263098",
-						"0.001263098"
+						"0.0012630980",
+						"0.0012630980"
 					],
 					[
 						"6134.0200",
@@ -46562,8 +46573,8 @@
 					],
 					[
 						"6138.1600",
-						"0.001857454",
-						"0.001857454"
+						"0.0018574540",
+						"0.0018574540"
 					],
 					[
 						"6139.5400",
@@ -46577,8 +46588,8 @@
 					],
 					[
 						"6142.3000",
-						"0.001581964",
-						"0.001581964"
+						"0.0015819640",
+						"0.0015819640"
 					],
 					[
 						"6143.6800",
@@ -46597,13 +46608,13 @@
 					],
 					[
 						"6147.8200",
-						"0.00153158",
-						"0.00153158"
+						"0.0015315800",
+						"0.0015315800"
 					],
 					[
 						"6149.2000",
-						"0.001353691",
-						"0.001353691"
+						"0.0013536910",
+						"0.0013536910"
 					],
 					[
 						"6150.5800",
@@ -46657,8 +46668,8 @@
 					],
 					[
 						"6164.3800",
-						"0.001733479",
-						"0.001733479"
+						"0.0017334790",
+						"0.0017334790"
 					],
 					[
 						"6165.7600",
@@ -46747,13 +46758,13 @@
 					],
 					[
 						"6189.2200",
-						"0.001314482",
-						"0.001314482"
+						"0.0013144820",
+						"0.0013144820"
 					],
 					[
 						"6190.6000",
-						"0.001248778",
-						"0.001248778"
+						"0.0012487780",
+						"0.0012487780"
 					],
 					[
 						"6191.9800",
@@ -46812,8 +46823,8 @@
 					],
 					[
 						"6207.1600",
-						"0.002002508",
-						"0.002002508"
+						"0.0020025080",
+						"0.0020025080"
 					],
 					[
 						"6208.5400",
@@ -46967,8 +46978,8 @@
 					],
 					[
 						"6249.9400",
-						"0.001297196",
-						"0.001297196"
+						"0.0012971960",
+						"0.0012971960"
 					],
 					[
 						"6251.3200",
@@ -46982,8 +46993,8 @@
 					],
 					[
 						"6254.0800",
-						"0.001000077",
-						"0.001000077"
+						"0.0010000770",
+						"0.0010000770"
 					],
 					[
 						"6255.4600",
@@ -47017,8 +47028,8 @@
 					],
 					[
 						"6263.7400",
-						"0.002059445",
-						"0.002059445"
+						"0.0020594450",
+						"0.0020594450"
 					],
 					[
 						"6265.1200",
@@ -47042,8 +47053,8 @@
 					],
 					[
 						"6270.6400",
-						"0.001424407",
-						"0.001424407"
+						"0.0014244070",
+						"0.0014244070"
 					],
 					[
 						"6272.0200",
@@ -47067,8 +47078,8 @@
 					],
 					[
 						"6277.5400",
-						"0.0007209528",
-						"0.0007209528"
+						"0.00072095280",
+						"0.00072095280"
 					],
 					[
 						"6278.9200",
@@ -47082,8 +47093,8 @@
 					],
 					[
 						"6281.6800",
-						"0.001230279",
-						"0.001230279"
+						"0.0012302790",
+						"0.0012302790"
 					],
 					[
 						"6283.0600",
@@ -47197,13 +47208,13 @@
 					],
 					[
 						"6314.8000",
-						"0.001270575",
-						"0.001270575"
+						"0.0012705750",
+						"0.0012705750"
 					],
 					[
 						"6316.1800",
-						"0.0009085423",
-						"0.0009085423"
+						"0.00090854230",
+						"0.00090854230"
 					],
 					[
 						"6317.5600",
@@ -47292,8 +47303,8 @@
 					],
 					[
 						"6341.0200",
-						"0.001525029",
-						"0.001525029"
+						"0.0015250290",
+						"0.0015250290"
 					],
 					[
 						"6342.4000",
@@ -47332,8 +47343,8 @@
 					],
 					[
 						"6352.0600",
-						"0.001082129",
-						"0.001082129"
+						"0.0010821290",
+						"0.0010821290"
 					],
 					[
 						"6353.4400",
@@ -47357,13 +47368,13 @@
 					],
 					[
 						"6358.9600",
-						"0.001715698",
-						"0.001715698"
+						"0.0017156980",
+						"0.0017156980"
 					],
 					[
 						"6360.3400",
-						"0.002259021",
-						"0.002259021"
+						"0.0022590210",
+						"0.0022590210"
 					],
 					[
 						"6361.7200",
@@ -47392,8 +47403,8 @@
 					],
 					[
 						"6368.6200",
-						"0.001315337",
-						"0.001315337"
+						"0.0013153370",
+						"0.0013153370"
 					],
 					[
 						"6370.0000",
@@ -47432,8 +47443,8 @@
 					],
 					[
 						"6379.6600",
-						"0.001846673",
-						"0.001846673"
+						"0.0018466730",
+						"0.0018466730"
 					],
 					[
 						"6381.0400",
@@ -47442,8 +47453,8 @@
 					],
 					[
 						"6382.4200",
-						"0.001275051",
-						"0.001275051"
+						"0.0012750510",
+						"0.0012750510"
 					],
 					[
 						"6383.8000",
@@ -47472,8 +47483,8 @@
 					],
 					[
 						"6390.7000",
-						"0.001252822",
-						"0.001252822"
+						"0.0012528220",
+						"0.0012528220"
 					],
 					[
 						"6392.0800",
@@ -47482,8 +47493,8 @@
 					],
 					[
 						"6393.4600",
-						"0.001535911",
-						"0.001535911"
+						"0.0015359110",
+						"0.0015359110"
 					],
 					[
 						"6394.8400",
@@ -47522,8 +47533,8 @@
 					],
 					[
 						"6404.5000",
-						"0.001692755",
-						"0.001692755"
+						"0.0016927550",
+						"0.0016927550"
 					],
 					[
 						"6405.8800",
@@ -47537,8 +47548,8 @@
 					],
 					[
 						"6408.6400",
-						"0.001273166",
-						"0.001273166"
+						"0.0012731660",
+						"0.0012731660"
 					],
 					[
 						"6410.0200",
@@ -47737,8 +47748,8 @@
 					],
 					[
 						"6463.8400",
-						"0.001336713",
-						"0.001336713"
+						"0.0013367130",
+						"0.0013367130"
 					],
 					[
 						"6465.2200",
@@ -47752,8 +47763,8 @@
 					],
 					[
 						"6467.9800",
-						"0.00136977",
-						"0.00136977"
+						"0.0013697700",
+						"0.0013697700"
 					],
 					[
 						"6469.3600",
@@ -47842,8 +47853,8 @@
 					],
 					[
 						"6492.8200",
-						"0.001040124",
-						"0.001040124"
+						"0.0010401240",
+						"0.0010401240"
 					],
 					[
 						"6494.2000",
@@ -47857,8 +47868,8 @@
 					],
 					[
 						"6496.9600",
-						"0.001433942",
-						"0.001433942"
+						"0.0014339420",
+						"0.0014339420"
 					],
 					[
 						"6498.3400",
@@ -47892,8 +47903,8 @@
 					],
 					[
 						"6506.6200",
-						"0.001296479",
-						"0.001296479"
+						"0.0012964790",
+						"0.0012964790"
 					],
 					[
 						"6508.0000",
@@ -47917,8 +47928,8 @@
 					],
 					[
 						"6513.5200",
-						"0.001253998",
-						"0.001253998"
+						"0.0012539980",
+						"0.0012539980"
 					],
 					[
 						"6514.9000",
@@ -47932,8 +47943,8 @@
 					],
 					[
 						"6517.6600",
-						"0.001290737",
-						"0.001290737"
+						"0.0012907370",
+						"0.0012907370"
 					],
 					[
 						"6519.0400",
@@ -48012,8 +48023,8 @@
 					],
 					[
 						"6539.7400",
-						"0.001070874",
-						"0.001070874"
+						"0.0010708740",
+						"0.0010708740"
 					],
 					[
 						"6541.1200",
@@ -48067,8 +48078,8 @@
 					],
 					[
 						"6554.9200",
-						"0.001832798",
-						"0.001832798"
+						"0.0018327980",
+						"0.0018327980"
 					],
 					[
 						"6556.3000",
@@ -48122,13 +48133,13 @@
 					],
 					[
 						"6570.1000",
-						"0.000727953",
-						"0.000727953"
+						"0.00072795300",
+						"0.00072795300"
 					],
 					[
 						"6571.4800",
-						"0.0007071955",
-						"0.0007071955"
+						"0.00070719550",
+						"0.00070719550"
 					],
 					[
 						"6572.8600",
@@ -48327,8 +48338,8 @@
 					],
 					[
 						"6626.6800",
-						"0.001304006",
-						"0.001304006"
+						"0.0013040060",
+						"0.0013040060"
 					],
 					[
 						"6628.0600",
@@ -48352,8 +48363,8 @@
 					],
 					[
 						"6633.5800",
-						"0.001047209",
-						"0.001047209"
+						"0.0010472090",
+						"0.0010472090"
 					],
 					[
 						"6634.9600",
@@ -48377,8 +48388,8 @@
 					],
 					[
 						"6640.4800",
-						"0.001340852",
-						"0.001340852"
+						"0.0013408520",
+						"0.0013408520"
 					],
 					[
 						"6641.8600",
@@ -48387,8 +48398,8 @@
 					],
 					[
 						"6643.2400",
-						"0.001049635",
-						"0.001049635"
+						"0.0010496350",
+						"0.0010496350"
 					],
 					[
 						"6644.6200",
@@ -48442,8 +48453,8 @@
 					],
 					[
 						"6658.4200",
-						"0.000964374",
-						"0.000964374"
+						"0.00096437400",
+						"0.00096437400"
 					],
 					[
 						"6659.8000",
@@ -48472,13 +48483,13 @@
 					],
 					[
 						"6666.7000",
-						"0.00172471",
-						"0.00172471"
+						"0.0017247100",
+						"0.0017247100"
 					],
 					[
 						"6668.0800",
-						"0.001247181",
-						"0.001247181"
+						"0.0012471810",
+						"0.0012471810"
 					],
 					[
 						"6669.4600",
@@ -48557,8 +48568,8 @@
 					],
 					[
 						"6690.1600",
-						"0.001388791",
-						"0.001388791"
+						"0.0013887910",
+						"0.0013887910"
 					],
 					[
 						"6691.5400",
@@ -48622,8 +48633,8 @@
 					],
 					[
 						"6708.1000",
-						"0.001492747",
-						"0.001492747"
+						"0.0014927470",
+						"0.0014927470"
 					],
 					[
 						"6709.4800",
@@ -48797,8 +48808,8 @@
 					],
 					[
 						"6756.4000",
-						"0.001134619",
-						"0.001134619"
+						"0.0011346190",
+						"0.0011346190"
 					],
 					[
 						"6757.7800",
@@ -48877,8 +48888,8 @@
 					],
 					[
 						"6778.4800",
-						"0.001583182",
-						"0.001583182"
+						"0.0015831820",
+						"0.0015831820"
 					],
 					[
 						"6779.8600",
@@ -48917,8 +48928,8 @@
 					],
 					[
 						"6789.5200",
-						"0.001148669",
-						"0.001148669"
+						"0.0011486690",
+						"0.0011486690"
 					],
 					[
 						"6790.9000",
@@ -48977,8 +48988,8 @@
 					],
 					[
 						"6806.0800",
-						"0.001312452",
-						"0.001312452"
+						"0.0013124520",
+						"0.0013124520"
 					],
 					[
 						"6807.4600",
@@ -49012,8 +49023,8 @@
 					],
 					[
 						"6815.7400",
-						"0.001577656",
-						"0.001577656"
+						"0.0015776560",
+						"0.0015776560"
 					],
 					[
 						"6817.1200",
@@ -49072,8 +49083,8 @@
 					],
 					[
 						"6832.3000",
-						"0.001858828",
-						"0.001858828"
+						"0.0018588280",
+						"0.0018588280"
 					],
 					[
 						"6833.6800",
@@ -49102,8 +49113,8 @@
 					],
 					[
 						"6840.5800",
-						"0.0008273532",
-						"0.0008273532"
+						"0.00082735320",
+						"0.00082735320"
 					],
 					[
 						"6841.9600",
@@ -49142,8 +49153,8 @@
 					],
 					[
 						"6851.6200",
-						"0.001975536",
-						"0.001975536"
+						"0.0019755360",
+						"0.0019755360"
 					],
 					[
 						"6853.0000",
@@ -49172,8 +49183,8 @@
 					],
 					[
 						"6859.9000",
-						"0.001367792",
-						"0.001367792"
+						"0.0013677920",
+						"0.0013677920"
 					],
 					[
 						"6861.2800",
@@ -49282,8 +49293,8 @@
 					],
 					[
 						"6890.2600",
-						"0.001104522",
-						"0.001104522"
+						"0.0011045220",
+						"0.0011045220"
 					],
 					[
 						"6891.6400",
@@ -49382,8 +49393,8 @@
 					],
 					[
 						"6917.8600",
-						"0.001964776",
-						"0.001964776"
+						"0.0019647760",
+						"0.0019647760"
 					],
 					[
 						"6919.2400",
@@ -49422,8 +49433,8 @@
 					],
 					[
 						"6928.9000",
-						"0.001390673",
-						"0.001390673"
+						"0.0013906730",
+						"0.0013906730"
 					],
 					[
 						"6930.2800",
@@ -49467,8 +49478,8 @@
 					],
 					[
 						"6941.3200",
-						"0.001416827",
-						"0.001416827"
+						"0.0014168270",
+						"0.0014168270"
 					],
 					[
 						"6942.7000",
@@ -49532,8 +49543,8 @@
 					],
 					[
 						"6959.2600",
-						"0.00133357",
-						"0.00133357"
+						"0.0013335700",
+						"0.0013335700"
 					],
 					[
 						"6960.6400",
@@ -49602,8 +49613,8 @@
 					],
 					[
 						"6978.5800",
-						"0.001993964",
-						"0.001993964"
+						"0.0019939640",
+						"0.0019939640"
 					],
 					[
 						"6979.9600",
@@ -49657,8 +49668,8 @@
 					],
 					[
 						"6993.7600",
-						"0.001434432",
-						"0.001434432"
+						"0.0014344320",
+						"0.0014344320"
 					],
 					[
 						"6995.1400",
@@ -49897,8 +49908,8 @@
 					],
 					[
 						"7060.0000",
-						"0.001656775",
-						"0.001656775"
+						"0.0016567750",
+						"0.0016567750"
 					],
 					[
 						"7061.3800",
@@ -49907,8 +49918,8 @@
 					],
 					[
 						"7062.7600",
-						"0.001669369",
-						"0.001669369"
+						"0.0016693690",
+						"0.0016693690"
 					],
 					[
 						"7064.1400",
@@ -49937,8 +49948,8 @@
 					],
 					[
 						"7071.0400",
-						"0.001322283",
-						"0.001322283"
+						"0.0013222830",
+						"0.0013222830"
 					],
 					[
 						"7072.4200",
@@ -50197,8 +50208,8 @@
 					],
 					[
 						"7142.8000",
-						"0.001592264",
-						"0.001592264"
+						"0.0015922640",
+						"0.0015922640"
 					],
 					[
 						"7144.1800",
@@ -50207,8 +50218,8 @@
 					],
 					[
 						"7145.5600",
-						"0.001813335",
-						"0.001813335"
+						"0.0018133350",
+						"0.0018133350"
 					],
 					[
 						"7146.9400",
@@ -50237,8 +50248,8 @@
 					],
 					[
 						"7153.8400",
-						"0.001391872",
-						"0.001391872"
+						"0.0013918720",
+						"0.0013918720"
 					],
 					[
 						"7155.2200",
@@ -50272,8 +50283,8 @@
 					],
 					[
 						"7163.5000",
-						"0.00159726",
-						"0.00159726"
+						"0.0015972600",
+						"0.0015972600"
 					],
 					[
 						"7164.8800",
@@ -50347,13 +50358,13 @@
 					],
 					[
 						"7184.2000",
-						"0.001632172",
-						"0.001632172"
+						"0.0016321720",
+						"0.0016321720"
 					],
 					[
 						"7185.5800",
-						"0.001600942",
-						"0.001600942"
+						"0.0016009420",
+						"0.0016009420"
 					],
 					[
 						"7186.9600",
@@ -50617,8 +50628,8 @@
 					],
 					[
 						"7258.7200",
-						"0.001451041",
-						"0.001451041"
+						"0.0014510410",
+						"0.0014510410"
 					],
 					[
 						"7260.1000",
@@ -50647,8 +50658,8 @@
 					],
 					[
 						"7267.0000",
-						"0.001169986",
-						"0.001169986"
+						"0.0011699860",
+						"0.0011699860"
 					],
 					[
 						"7268.3800",
@@ -50692,8 +50703,8 @@
 					],
 					[
 						"7279.4200",
-						"0.0012808",
-						"0.0012808"
+						"0.0012808000",
+						"0.0012808000"
 					],
 					[
 						"7280.8000",
@@ -50787,8 +50798,8 @@
 					],
 					[
 						"7305.6400",
-						"0.001513092",
-						"0.001513092"
+						"0.0015130920",
+						"0.0015130920"
 					],
 					[
 						"7307.0200",
@@ -50852,8 +50863,8 @@
 					],
 					[
 						"7323.5800",
-						"0.00183842",
-						"0.00183842"
+						"0.0018384200",
+						"0.0018384200"
 					],
 					[
 						"7324.9600",
@@ -50877,8 +50888,8 @@
 					],
 					[
 						"7330.4800",
-						"0.001618711",
-						"0.001618711"
+						"0.0016187110",
+						"0.0016187110"
 					],
 					[
 						"7331.8600",
@@ -51002,8 +51013,8 @@
 					],
 					[
 						"7364.9800",
-						"0.001801313",
-						"0.001801313"
+						"0.0018013130",
+						"0.0018013130"
 					],
 					[
 						"7366.3600",
@@ -51027,8 +51038,8 @@
 					],
 					[
 						"7371.8800",
-						"0.002284264",
-						"0.002284264"
+						"0.0022842640",
+						"0.0022842640"
 					],
 					[
 						"7373.2600",
@@ -51052,8 +51063,8 @@
 					],
 					[
 						"7378.7800",
-						"0.001318189",
-						"0.001318189"
+						"0.0013181890",
+						"0.0013181890"
 					],
 					[
 						"7380.1600",
@@ -51092,8 +51103,8 @@
 					],
 					[
 						"7389.8200",
-						"0.001494265",
-						"0.001494265"
+						"0.0014942650",
+						"0.0014942650"
 					],
 					[
 						"7391.2000",
@@ -51102,8 +51113,8 @@
 					],
 					[
 						"7392.5800",
-						"0.001585896",
-						"0.001585896"
+						"0.0015858960",
+						"0.0015858960"
 					],
 					[
 						"7393.9600",
@@ -51112,8 +51123,8 @@
 					],
 					[
 						"7395.3400",
-						"0.001677527",
-						"0.001677527"
+						"0.0016775270",
+						"0.0016775270"
 					],
 					[
 						"7396.7200",
@@ -51182,8 +51193,8 @@
 					],
 					[
 						"7416.0400",
-						"0.001622383",
-						"0.001622383"
+						"0.0016223830",
+						"0.0016223830"
 					],
 					[
 						"7417.4200",
@@ -51257,8 +51268,8 @@
 					],
 					[
 						"7436.7400",
-						"0.00102685",
-						"0.00102685"
+						"0.0010268500",
+						"0.0010268500"
 					],
 					[
 						"7438.1200",
@@ -51322,8 +51333,8 @@
 					],
 					[
 						"7454.6800",
-						"0.001612095",
-						"0.001612095"
+						"0.0016120950",
+						"0.0016120950"
 					],
 					[
 						"7456.0600",
@@ -51582,8 +51593,8 @@
 					],
 					[
 						"7526.4400",
-						"0.001715872",
-						"0.001715872"
+						"0.0017158720",
+						"0.0017158720"
 					],
 					[
 						"7527.8200",
@@ -51632,8 +51643,8 @@
 					],
 					[
 						"7540.2400",
-						"0.001861864",
-						"0.001861864"
+						"0.0018618640",
+						"0.0018618640"
 					],
 					[
 						"7541.6200",
@@ -51827,8 +51838,8 @@
 					],
 					[
 						"7594.0600",
-						"0.001586574",
-						"0.001586574"
+						"0.0015865740",
+						"0.0015865740"
 					],
 					[
 						"7595.4400",
@@ -51862,8 +51873,8 @@
 					],
 					[
 						"7603.7200",
-						"0.00204618",
-						"0.00204618"
+						"0.0020461800",
+						"0.0020461800"
 					],
 					[
 						"7605.1000",
@@ -51902,13 +51913,13 @@
 					],
 					[
 						"7614.7600",
-						"0.001567113",
-						"0.001567113"
+						"0.0015671130",
+						"0.0015671130"
 					],
 					[
 						"7616.1400",
-						"0.001775259",
-						"0.001775259"
+						"0.0017752590",
+						"0.0017752590"
 					],
 					[
 						"7617.5200",
@@ -51977,8 +51988,8 @@
 					],
 					[
 						"7635.4600",
-						"0.001946189",
-						"0.001946189"
+						"0.0019461890",
+						"0.0019461890"
 					],
 					[
 						"7636.8400",
@@ -52017,8 +52028,8 @@
 					],
 					[
 						"7646.5000",
-						"0.002032506",
-						"0.002032506"
+						"0.0020325060",
+						"0.0020325060"
 					],
 					[
 						"7647.8800",
@@ -52042,8 +52053,8 @@
 					],
 					[
 						"7653.4000",
-						"0.001155493",
-						"0.001155493"
+						"0.0011554930",
+						"0.0011554930"
 					],
 					[
 						"7654.7800",
@@ -52082,8 +52093,8 @@
 					],
 					[
 						"7664.4400",
-						"0.001725869",
-						"0.001725869"
+						"0.0017258690",
+						"0.0017258690"
 					],
 					[
 						"7665.8200",
@@ -52092,8 +52103,8 @@
 					],
 					[
 						"7667.2000",
-						"0.001353753",
-						"0.001353753"
+						"0.0013537530",
+						"0.0013537530"
 					],
 					[
 						"7668.5800",
@@ -52162,8 +52173,8 @@
 					],
 					[
 						"7686.5200",
-						"0.001354028",
-						"0.001354028"
+						"0.0013540280",
+						"0.0013540280"
 					],
 					[
 						"7687.9000",
@@ -52192,8 +52203,8 @@
 					],
 					[
 						"7694.8000",
-						"0.001643165",
-						"0.001643165"
+						"0.0016431650",
+						"0.0016431650"
 					],
 					[
 						"7696.1800",
@@ -52252,8 +52263,8 @@
 					],
 					[
 						"7711.3600",
-						"0.001914186",
-						"0.001914186"
+						"0.0019141860",
+						"0.0019141860"
 					],
 					[
 						"7712.7400",
@@ -52297,8 +52308,8 @@
 					],
 					[
 						"7723.7800",
-						"0.001250618",
-						"0.001250618"
+						"0.0012506180",
+						"0.0012506180"
 					],
 					[
 						"7725.1600",
@@ -52322,8 +52333,8 @@
 					],
 					[
 						"7730.6800",
-						"0.001324721",
-						"0.001324721"
+						"0.0013247210",
+						"0.0013247210"
 					],
 					[
 						"7732.0600",
@@ -52362,8 +52373,8 @@
 					],
 					[
 						"7741.7200",
-						"0.001228994",
-						"0.001228994"
+						"0.0012289940",
+						"0.0012289940"
 					],
 					[
 						"7743.1000",
@@ -52392,8 +52403,8 @@
 					],
 					[
 						"7750.0000",
-						"0.0007475257",
-						"0.0007475257"
+						"0.00074752570",
+						"0.00074752570"
 					],
 					[
 						"7751.3800",
@@ -52412,8 +52423,8 @@
 					],
 					[
 						"7755.5200",
-						"0.0002539752",
-						"0.0002539752"
+						"0.00025397520",
+						"0.00025397520"
 					],
 					[
 						"7756.9000",
@@ -52502,8 +52513,8 @@
 					],
 					[
 						"7780.3600",
-						"0.001887548",
-						"0.001887548"
+						"0.0018875480",
+						"0.0018875480"
 					],
 					[
 						"7781.7400",
@@ -52572,8 +52583,8 @@
 					],
 					[
 						"7799.6800",
-						"0.002032144",
-						"0.002032144"
+						"0.0020321440",
+						"0.0020321440"
 					],
 					[
 						"7801.0600",
@@ -52587,8 +52598,8 @@
 					],
 					[
 						"7803.8200",
-						"0.001557821",
-						"0.001557821"
+						"0.0015578210",
+						"0.0015578210"
 					],
 					[
 						"7805.2000",
@@ -52632,13 +52643,13 @@
 					],
 					[
 						"7816.2400",
-						"0.001162052",
-						"0.001162052"
+						"0.0011620520",
+						"0.0011620520"
 					],
 					[
 						"7817.6200",
-						"0.001579904",
-						"0.001579904"
+						"0.0015799040",
+						"0.0015799040"
 					],
 					[
 						"7819.0000",
@@ -52687,8 +52698,8 @@
 					],
 					[
 						"7831.4200",
-						"0.0009674175",
-						"0.0009674175"
+						"0.00096741750",
+						"0.00096741750"
 					],
 					[
 						"7832.8000",
@@ -52832,8 +52843,8 @@
 					],
 					[
 						"7871.4400",
-						"0.0009781695",
-						"0.0009781695"
+						"0.00097816950",
+						"0.00097816950"
 					],
 					[
 						"7872.8200",
@@ -52927,8 +52938,8 @@
 					],
 					[
 						"7897.6600",
-						"0.001821038",
-						"0.001821038"
+						"0.0018210380",
+						"0.0018210380"
 					],
 					[
 						"7899.0400",
@@ -52942,8 +52953,8 @@
 					],
 					[
 						"7901.8000",
-						"0.001781885",
-						"0.001781885"
+						"0.0017818850",
+						"0.0017818850"
 					],
 					[
 						"7903.1800",
@@ -53067,8 +53078,8 @@
 					],
 					[
 						"7936.3000",
-						"0.001288376",
-						"0.001288376"
+						"0.0012883760",
+						"0.0012883760"
 					],
 					[
 						"7937.6800",
@@ -53117,8 +53128,8 @@
 					],
 					[
 						"7950.1000",
-						"0.001303362",
-						"0.001303362"
+						"0.0013033620",
+						"0.0013033620"
 					],
 					[
 						"7951.4800",
@@ -53127,8 +53138,8 @@
 					],
 					[
 						"7952.8600",
-						"0.00184152",
-						"0.00184152"
+						"0.0018415200",
+						"0.0018415200"
 					],
 					[
 						"7954.2400",
@@ -53182,13 +53193,13 @@
 					],
 					[
 						"7968.0400",
-						"0.002293689",
-						"0.002293689"
+						"0.0022936890",
+						"0.0022936890"
 					],
 					[
 						"7969.4200",
-						"0.002854748",
-						"0.002854748"
+						"0.0028547480",
+						"0.0028547480"
 					],
 					[
 						"7970.8000",
@@ -53202,8 +53213,8 @@
 					],
 					[
 						"7973.5600",
-						"0.001352104",
-						"0.001352104"
+						"0.0013521040",
+						"0.0013521040"
 					],
 					[
 						"7974.9400",
@@ -53212,8 +53223,8 @@
 					],
 					[
 						"7976.3200",
-						"0.001639467",
-						"0.001639467"
+						"0.0016394670",
+						"0.0016394670"
 					],
 					[
 						"7977.7000",
@@ -53287,8 +53298,8 @@
 					],
 					[
 						"7997.0200",
-						"0.002417692",
-						"0.002417692"
+						"0.0024176920",
+						"0.0024176920"
 					],
 					[
 						"7998.4000",
@@ -53297,8 +53308,8 @@
 					],
 					[
 						"7999.7800",
-						"0.002528641",
-						"0.002528641"
+						"0.0025286410",
+						"0.0025286410"
 					],
 					[
 						"8001.1600",
@@ -53327,8 +53338,8 @@
 					],
 					[
 						"8008.0600",
-						"0.001291419",
-						"0.001291419"
+						"0.0012914190",
+						"0.0012914190"
 					],
 					[
 						"8009.4400",
@@ -53337,8 +53348,8 @@
 					],
 					[
 						"8010.8200",
-						"0.001229354",
-						"0.001229354"
+						"0.0012293540",
+						"0.0012293540"
 					],
 					[
 						"8012.2000",
@@ -53497,8 +53508,8 @@
 					],
 					[
 						"8054.9800",
-						"0.001743547",
-						"0.001743547"
+						"0.0017435470",
+						"0.0017435470"
 					],
 					[
 						"8056.3600",
@@ -53532,8 +53543,8 @@
 					],
 					[
 						"8064.6400",
-						"0.001984379",
-						"0.001984379"
+						"0.0019843790",
+						"0.0019843790"
 					],
 					[
 						"8066.0200",
@@ -53602,8 +53613,8 @@
 					],
 					[
 						"8083.9600",
-						"0.001980424",
-						"0.001980424"
+						"0.0019804240",
+						"0.0019804240"
 					],
 					[
 						"8085.3400",
@@ -53622,8 +53633,8 @@
 					],
 					[
 						"8089.4800",
-						"0.001765285",
-						"0.001765285"
+						"0.0017652850",
+						"0.0017652850"
 					],
 					[
 						"8090.8600",
@@ -53747,8 +53758,8 @@
 					],
 					[
 						"8123.9800",
-						"0.001029156",
-						"0.001029156"
+						"0.0010291560",
+						"0.0010291560"
 					],
 					[
 						"8125.3600",
@@ -53972,8 +53983,8 @@
 					],
 					[
 						"8186.0800",
-						"0.001771398",
-						"0.001771398"
+						"0.0017713980",
+						"0.0017713980"
 					],
 					[
 						"8187.4600",
@@ -54037,8 +54048,8 @@
 					],
 					[
 						"8204.0200",
-						"0.001233805",
-						"0.001233805"
+						"0.0012338050",
+						"0.0012338050"
 					],
 					[
 						"8205.4000",
@@ -54077,8 +54088,8 @@
 					],
 					[
 						"8215.0600",
-						"0.001342781",
-						"0.001342781"
+						"0.0013427810",
+						"0.0013427810"
 					],
 					[
 						"8216.4400",
@@ -54097,8 +54108,8 @@
 					],
 					[
 						"8220.5800",
-						"0.00183796",
-						"0.00183796"
+						"0.0018379600",
+						"0.0018379600"
 					],
 					[
 						"8221.9600",
@@ -54142,8 +54153,8 @@
 					],
 					[
 						"8233.0000",
-						"0.001257717",
-						"0.001257717"
+						"0.0012577170",
+						"0.0012577170"
 					],
 					[
 						"8234.3800",
@@ -54172,8 +54183,8 @@
 					],
 					[
 						"8241.2800",
-						"0.001818613",
-						"0.001818613"
+						"0.0018186130",
+						"0.0018186130"
 					],
 					[
 						"8242.6600",
@@ -54237,13 +54248,13 @@
 					],
 					[
 						"8259.2200",
-						"0.001008694",
-						"0.001008694"
+						"0.0010086940",
+						"0.0010086940"
 					],
 					[
 						"8260.6000",
-						"0.001089528",
-						"0.001089528"
+						"0.0010895280",
+						"0.0010895280"
 					],
 					[
 						"8261.9800",
@@ -54262,8 +54273,8 @@
 					],
 					[
 						"8266.1200",
-						"0.0008404328",
-						"0.0008404328"
+						"0.00084043280",
+						"0.00084043280"
 					],
 					[
 						"8267.5000",
@@ -54332,8 +54343,8 @@
 					],
 					[
 						"8286.8200",
-						"0.001693331",
-						"0.001693331"
+						"0.0016933310",
+						"0.0016933310"
 					],
 					[
 						"8288.2000",
@@ -54427,8 +54438,8 @@
 					],
 					[
 						"8313.0400",
-						"0.001658007",
-						"0.001658007"
+						"0.0016580070",
+						"0.0016580070"
 					],
 					[
 						"8314.4200",
@@ -54482,8 +54493,8 @@
 					],
 					[
 						"8328.2200",
-						"0.001029181",
-						"0.001029181"
+						"0.0010291810",
+						"0.0010291810"
 					],
 					[
 						"8329.6000",
@@ -54512,8 +54523,8 @@
 					],
 					[
 						"8336.5000",
-						"0.0006241269",
-						"0.0006241269"
+						"0.00062412690",
+						"0.00062412690"
 					],
 					[
 						"8337.8800",
@@ -54522,8 +54533,8 @@
 					],
 					[
 						"8339.2600",
-						"0.0003179931",
-						"0.0003179931"
+						"0.00031799310",
+						"0.00031799310"
 					],
 					[
 						"8340.6400",
@@ -54552,18 +54563,18 @@
 					],
 					[
 						"8347.5400",
-						"0.001722339",
-						"0.001722339"
+						"0.0017223390",
+						"0.0017223390"
 					],
 					[
 						"8348.9200",
-						"0.001753697",
-						"0.001753697"
+						"0.0017536970",
+						"0.0017536970"
 					],
 					[
 						"8350.3000",
-						"0.001014098",
-						"0.001014098"
+						"0.0010140980",
+						"0.0010140980"
 					],
 					[
 						"8351.6800",
@@ -54682,13 +54693,13 @@
 					],
 					[
 						"8383.4200",
-						"0.001706282",
-						"0.001706282"
+						"0.0017062820",
+						"0.0017062820"
 					],
 					[
 						"8384.8000",
-						"0.0007925439",
-						"0.0007925439"
+						"0.00079254390",
+						"0.00079254390"
 					],
 					[
 						"8386.1800",
@@ -54722,13 +54733,13 @@
 					],
 					[
 						"8394.4600",
-						"0.001366405",
-						"0.001366405"
+						"0.0013664050",
+						"0.0013664050"
 					],
 					[
 						"8395.8400",
-						"0.001583491",
-						"0.001583491"
+						"0.0015834910",
+						"0.0015834910"
 					],
 					[
 						"8397.2200",
@@ -54767,8 +54778,8 @@
 					],
 					[
 						"8406.8800",
-						"0.001212301",
-						"0.001212301"
+						"0.0012123010",
+						"0.0012123010"
 					],
 					[
 						"8408.2600",
@@ -54777,8 +54788,8 @@
 					],
 					[
 						"8409.6400",
-						"0.00147198",
-						"0.00147198"
+						"0.0014719800",
+						"0.0014719800"
 					],
 					[
 						"8411.0200",
@@ -54817,8 +54828,8 @@
 					],
 					[
 						"8420.6800",
-						"0.001690974",
-						"0.001690974"
+						"0.0016909740",
+						"0.0016909740"
 					],
 					[
 						"8422.0600",
@@ -54902,8 +54913,8 @@
 					],
 					[
 						"8444.1400",
-						"0.001000526",
-						"0.001000526"
+						"0.0010005260",
+						"0.0010005260"
 					],
 					[
 						"8445.5200",
@@ -54927,8 +54938,8 @@
 					],
 					[
 						"8451.0400",
-						"0.001705437",
-						"0.001705437"
+						"0.0017054370",
+						"0.0017054370"
 					],
 					[
 						"8452.4200",
@@ -54942,8 +54953,8 @@
 					],
 					[
 						"8455.1800",
-						"0.001388716",
-						"0.001388716"
+						"0.0013887160",
+						"0.0013887160"
 					],
 					[
 						"8456.5600",
@@ -55032,8 +55043,8 @@
 					],
 					[
 						"8480.0200",
-						"0.002109368",
-						"0.002109368"
+						"0.0021093680",
+						"0.0021093680"
 					],
 					[
 						"8481.4000",
@@ -55097,8 +55108,8 @@
 					],
 					[
 						"8497.9600",
-						"0.002374936",
-						"0.002374936"
+						"0.0023749360",
+						"0.0023749360"
 					],
 					[
 						"8499.3400",
@@ -55172,8 +55183,8 @@
 					],
 					[
 						"8518.6600",
-						"0.001355455",
-						"0.001355455"
+						"0.0013554550",
+						"0.0013554550"
 					],
 					[
 						"8520.0400",
@@ -55277,13 +55288,13 @@
 					],
 					[
 						"8547.6400",
-						"0.001391259",
-						"0.001391259"
+						"0.0013912590",
+						"0.0013912590"
 					],
 					[
 						"8549.0200",
-						"0.0008759066",
-						"0.0008759066"
+						"0.00087590660",
+						"0.00087590660"
 					],
 					[
 						"8550.4000",
@@ -55322,8 +55333,8 @@
 					],
 					[
 						"8560.0600",
-						"0.001663973",
-						"0.001663973"
+						"0.0016639730",
+						"0.0016639730"
 					],
 					[
 						"8561.4400",
@@ -55382,8 +55393,8 @@
 					],
 					[
 						"8576.6200",
-						"0.001810457",
-						"0.001810457"
+						"0.0018104570",
+						"0.0018104570"
 					],
 					[
 						"8578.0000",
@@ -55437,8 +55448,8 @@
 					],
 					[
 						"8591.8000",
-						"0.0008724583",
-						"0.0008724583"
+						"0.00087245830",
+						"0.00087245830"
 					],
 					[
 						"8593.1800",
@@ -55447,8 +55458,8 @@
 					],
 					[
 						"8594.5600",
-						"0.001883016",
-						"0.001883016"
+						"0.0018830160",
+						"0.0018830160"
 					],
 					[
 						"8595.9400",
@@ -55502,8 +55513,8 @@
 					],
 					[
 						"8609.7400",
-						"0.001201075",
-						"0.001201075"
+						"0.0012010750",
+						"0.0012010750"
 					],
 					[
 						"8611.1200",
@@ -55537,8 +55548,8 @@
 					],
 					[
 						"8619.4000",
-						"0.001754895",
-						"0.001754895"
+						"0.0017548950",
+						"0.0017548950"
 					],
 					[
 						"8620.7800",
@@ -55577,8 +55588,8 @@
 					],
 					[
 						"8630.4400",
-						"0.0009255171",
-						"0.0009255171"
+						"0.00092551710",
+						"0.00092551710"
 					],
 					[
 						"8631.8200",
@@ -55627,8 +55638,8 @@
 					],
 					[
 						"8644.2400",
-						"0.001600073",
-						"0.001600073"
+						"0.0016000730",
+						"0.0016000730"
 					],
 					[
 						"8645.6200",
@@ -55667,8 +55678,8 @@
 					],
 					[
 						"8655.2800",
-						"0.002456301",
-						"0.002456301"
+						"0.0024563010",
+						"0.0024563010"
 					],
 					[
 						"8656.6600",
@@ -55717,8 +55728,8 @@
 					],
 					[
 						"8669.0800",
-						"0.001413378",
-						"0.001413378"
+						"0.0014133780",
+						"0.0014133780"
 					],
 					[
 						"8670.4600",
@@ -55777,8 +55788,8 @@
 					],
 					[
 						"8685.6400",
-						"0.002153041",
-						"0.002153041"
+						"0.0021530410",
+						"0.0021530410"
 					],
 					[
 						"8687.0200",
@@ -55802,13 +55813,13 @@
 					],
 					[
 						"8692.5400",
-						"0.001830816",
-						"0.001830816"
+						"0.0018308160",
+						"0.0018308160"
 					],
 					[
 						"8693.9200",
-						"0.001585547",
-						"0.001585547"
+						"0.0015855470",
+						"0.0015855470"
 					],
 					[
 						"8695.3000",
@@ -55852,8 +55863,8 @@
 					],
 					[
 						"8706.3400",
-						"0.001567091",
-						"0.001567091"
+						"0.0015670910",
+						"0.0015670910"
 					],
 					[
 						"8707.7200",
@@ -55937,8 +55948,8 @@
 					],
 					[
 						"8729.8000",
-						"0.001498508",
-						"0.001498508"
+						"0.0014985080",
+						"0.0014985080"
 					],
 					[
 						"8731.1800",
@@ -56012,8 +56023,8 @@
 					],
 					[
 						"8750.5000",
-						"0.001641878",
-						"0.001641878"
+						"0.0016418780",
+						"0.0016418780"
 					],
 					[
 						"8751.8800",
@@ -56087,8 +56098,8 @@
 					],
 					[
 						"8771.2000",
-						"0.002958893",
-						"0.002958893"
+						"0.0029588930",
+						"0.0029588930"
 					],
 					[
 						"8772.5800",
@@ -56112,8 +56123,8 @@
 					],
 					[
 						"8778.1000",
-						"0.003443854",
-						"0.003443854"
+						"0.0034438540",
+						"0.0034438540"
 					],
 					[
 						"8779.4800",
@@ -56127,8 +56138,8 @@
 					],
 					[
 						"8782.2400",
-						"0.0008041863",
-						"0.0008041863"
+						"0.00080418630",
+						"0.00080418630"
 					],
 					[
 						"8783.6200",
@@ -56192,8 +56203,8 @@
 					],
 					[
 						"8800.1800",
-						"0.0009268253",
-						"0.0009268253"
+						"0.00092682530",
+						"0.00092682530"
 					],
 					[
 						"8801.5600",
@@ -56322,8 +56333,8 @@
 					],
 					[
 						"8836.0600",
-						"0.002417151",
-						"0.002417151"
+						"0.0024171510",
+						"0.0024171510"
 					],
 					[
 						"8837.4400",
@@ -56362,8 +56373,8 @@
 					],
 					[
 						"8847.1000",
-						"0.0004670855",
-						"0.0004670855"
+						"0.00046708550",
+						"0.00046708550"
 					],
 					[
 						"8848.4800",
@@ -56437,8 +56448,8 @@
 					],
 					[
 						"8867.8000",
-						"0.002063813",
-						"0.002063813"
+						"0.0020638130",
+						"0.0020638130"
 					],
 					[
 						"8869.1800",
@@ -56457,8 +56468,8 @@
 					],
 					[
 						"8873.3200",
-						"0.0004513908",
-						"0.0004513908"
+						"0.00045139080",
+						"0.00045139080"
 					],
 					[
 						"8874.7000",
@@ -56497,8 +56508,8 @@
 					],
 					[
 						"8884.3600",
-						"0.003699413",
-						"0.003699413"
+						"0.0036994130",
+						"0.0036994130"
 					],
 					[
 						"8885.7400",
@@ -56542,8 +56553,8 @@
 					],
 					[
 						"8896.7800",
-						"0.0009129949",
-						"0.0009129949"
+						"0.00091299490",
+						"0.00091299490"
 					],
 					[
 						"8898.1600",
@@ -56592,8 +56603,8 @@
 					],
 					[
 						"8910.5800",
-						"0.001341244",
-						"0.001341244"
+						"0.0013412440",
+						"0.0013412440"
 					],
 					[
 						"8911.9600",
@@ -56617,8 +56628,8 @@
 					],
 					[
 						"8917.4800",
-						"0.004516362",
-						"0.004516362"
+						"0.0045163620",
+						"0.0045163620"
 					],
 					[
 						"8918.8600",
@@ -56682,8 +56693,8 @@
 					],
 					[
 						"8935.4200",
-						"0.001855014",
-						"0.001855014"
+						"0.0018550140",
+						"0.0018550140"
 					],
 					[
 						"8936.8000",
@@ -56697,8 +56708,8 @@
 					],
 					[
 						"8939.5600",
-						"0.001156284",
-						"0.001156284"
+						"0.0011562840",
+						"0.0011562840"
 					],
 					[
 						"8940.9400",
@@ -56707,8 +56718,8 @@
 					],
 					[
 						"8942.3200",
-						"0.001061662",
-						"0.001061662"
+						"0.0010616620",
+						"0.0010616620"
 					],
 					[
 						"8943.7000",
@@ -56777,8 +56788,8 @@
 					],
 					[
 						"8961.6400",
-						"0.002728889",
-						"0.002728889"
+						"0.0027288890",
+						"0.0027288890"
 					],
 					[
 						"8963.0200",
@@ -56822,8 +56833,8 @@
 					],
 					[
 						"8974.0600",
-						"0.001853707",
-						"0.001853707"
+						"0.0018537070",
+						"0.0018537070"
 					],
 					[
 						"8975.4400",
@@ -56967,8 +56978,8 @@
 					],
 					[
 						"9014.0800",
-						"0.002057781",
-						"0.002057781"
+						"0.0020577810",
+						"0.0020577810"
 					],
 					[
 						"9015.4600",
@@ -56997,8 +57008,8 @@
 					],
 					[
 						"9022.3600",
-						"0.002049735",
-						"0.002049735"
+						"0.0020497350",
+						"0.0020497350"
 					],
 					[
 						"9023.7400",
@@ -57127,8 +57138,8 @@
 					],
 					[
 						"9058.2400",
-						"0.00177184",
-						"0.00177184"
+						"0.0017718400",
+						"0.0017718400"
 					],
 					[
 						"9059.6200",
@@ -57232,8 +57243,8 @@
 					],
 					[
 						"9087.2200",
-						"0.0007731156",
-						"0.0007731156"
+						"0.00077311560",
+						"0.00077311560"
 					],
 					[
 						"9088.6000",
@@ -57312,8 +57323,8 @@
 					],
 					[
 						"9109.3000",
-						"0.001836082",
-						"0.001836082"
+						"0.0018360820",
+						"0.0018360820"
 					],
 					[
 						"9110.6800",
@@ -57367,13 +57378,13 @@
 					],
 					[
 						"9124.4800",
-						"0.0008410237",
-						"0.0008410237"
+						"0.00084102370",
+						"0.00084102370"
 					],
 					[
 						"9125.8600",
-						"0.001771622",
-						"0.001771622"
+						"0.0017716220",
+						"0.0017716220"
 					],
 					[
 						"9127.2400",
@@ -57502,8 +57513,8 @@
 					],
 					[
 						"9161.7400",
-						"0.001574072",
-						"0.001574072"
+						"0.0015740720",
+						"0.0015740720"
 					],
 					[
 						"9163.1200",
@@ -57547,8 +57558,8 @@
 					],
 					[
 						"9174.1600",
-						"0.002263179",
-						"0.002263179"
+						"0.0022631790",
+						"0.0022631790"
 					],
 					[
 						"9175.5400",
@@ -57662,8 +57673,8 @@
 					],
 					[
 						"9205.9000",
-						"0.0003281544",
-						"0.0003281544"
+						"0.00032815440",
+						"0.00032815440"
 					],
 					[
 						"9207.2800",
@@ -57742,8 +57753,8 @@
 					],
 					[
 						"9227.9800",
-						"0.001396579",
-						"0.001396579"
+						"0.0013965790",
+						"0.0013965790"
 					],
 					[
 						"9229.3600",
@@ -57787,8 +57798,8 @@
 					],
 					[
 						"9240.4000",
-						"0.001463297",
-						"0.001463297"
+						"0.0014632970",
+						"0.0014632970"
 					],
 					[
 						"9241.7800",
@@ -57802,8 +57813,8 @@
 					],
 					[
 						"9244.5400",
-						"0.0009015674",
-						"0.0009015674"
+						"0.00090156740",
+						"0.00090156740"
 					],
 					[
 						"9245.9200",
@@ -57817,8 +57828,8 @@
 					],
 					[
 						"9248.6800",
-						"0.0009840033",
-						"0.0009840033"
+						"0.00098400330",
+						"0.00098400330"
 					],
 					[
 						"9250.0600",
@@ -57977,8 +57988,8 @@
 					],
 					[
 						"9292.8400",
-						"0.0005438698",
-						"0.0005438698"
+						"0.00054386980",
+						"0.00054386980"
 					],
 					[
 						"9294.2200",
@@ -57987,8 +57998,8 @@
 					],
 					[
 						"9295.6000",
-						"0.0006738295",
-						"0.0006738295"
+						"0.00067382950",
+						"0.00067382950"
 					],
 					[
 						"9296.9800",
@@ -58147,8 +58158,8 @@
 					],
 					[
 						"9339.7600",
-						"0.01065677",
-						"0.01065677"
+						"0.010656770",
+						"0.010656770"
 					],
 					[
 						"9341.1400",
@@ -58167,8 +58178,8 @@
 					],
 					[
 						"9345.2800",
-						"0.003521186",
-						"0.003521186"
+						"0.0035211860",
+						"0.0035211860"
 					],
 					[
 						"9346.6600",
@@ -58232,8 +58243,8 @@
 					],
 					[
 						"9363.2200",
-						"-0.001544399",
-						"-0.001544399"
+						"-0.0015443990",
+						"-0.0015443990"
 					],
 					[
 						"9364.6000",
@@ -58247,8 +58258,8 @@
 					],
 					[
 						"9367.3600",
-						"0.001989165",
-						"0.001989165"
+						"0.0019891650",
+						"0.0019891650"
 					],
 					[
 						"9368.7400",
@@ -58327,8 +58338,8 @@
 					],
 					[
 						"9389.4400",
-						"0.00468546",
-						"0.00468546"
+						"0.0046854600",
+						"0.0046854600"
 					],
 					[
 						"9390.8200",
@@ -58337,8 +58348,8 @@
 					],
 					[
 						"9392.2000",
-						"0.0007305108",
-						"0.0007305108"
+						"0.00073051080",
+						"0.00073051080"
 					],
 					[
 						"9393.5800",
@@ -58352,8 +58363,8 @@
 					],
 					[
 						"9396.3400",
-						"0.002675059",
-						"0.002675059"
+						"0.0026750590",
+						"0.0026750590"
 					],
 					[
 						"9397.7200",
@@ -58432,8 +58443,8 @@
 					],
 					[
 						"9418.4200",
-						"0.00345794",
-						"0.00345794"
+						"0.0034579400",
+						"0.0034579400"
 					],
 					[
 						"9419.8000",
@@ -58497,8 +58508,8 @@
 					],
 					[
 						"9436.3600",
-						"0.002029055",
-						"0.002029055"
+						"0.0020290550",
+						"0.0020290550"
 					],
 					[
 						"9437.7400",
@@ -58567,8 +58578,8 @@
 					],
 					[
 						"9455.6800",
-						"0.001802572",
-						"0.001802572"
+						"0.0018025720",
+						"0.0018025720"
 					],
 					[
 						"9457.0600",
@@ -58597,8 +58608,8 @@
 					],
 					[
 						"9463.9600",
-						"-0.001610186",
-						"-0.001610186"
+						"-0.0016101860",
+						"-0.0016101860"
 					],
 					[
 						"9465.3400",
@@ -58627,8 +58638,8 @@
 					],
 					[
 						"9472.2400",
-						"-0.0007372114",
-						"-0.0007372114"
+						"-0.00073721140",
+						"-0.00073721140"
 					],
 					[
 						"9473.6200",
@@ -58672,8 +58683,8 @@
 					],
 					[
 						"9484.6600",
-						"0.0008624008",
-						"0.0008624008"
+						"0.00086240080",
+						"0.00086240080"
 					],
 					[
 						"9486.0400",
@@ -58697,8 +58708,8 @@
 					],
 					[
 						"9491.5600",
-						"-0.0006655684",
-						"-0.0006655684"
+						"-0.00066556840",
+						"-0.00066556840"
 					],
 					[
 						"9492.9400",
@@ -58722,8 +58733,8 @@
 					],
 					[
 						"9498.4600",
-						"0.001564817",
-						"0.001564817"
+						"0.0015648170",
+						"0.0015648170"
 					],
 					[
 						"9499.8400",
@@ -58747,8 +58758,8 @@
 					],
 					[
 						"9505.3600",
-						"-0.001221612",
-						"-0.001221612"
+						"-0.0012216120",
+						"-0.0012216120"
 					],
 					[
 						"9506.7400",
@@ -58777,8 +58788,8 @@
 					],
 					[
 						"9513.6400",
-						"0.003147738",
-						"0.003147738"
+						"0.0031477380",
+						"0.0031477380"
 					],
 					[
 						"9515.0200",
@@ -58792,8 +58803,8 @@
 					],
 					[
 						"9517.7800",
-						"0.0005494818",
-						"0.0005494818"
+						"0.00054948180",
+						"0.00054948180"
 					],
 					[
 						"9519.1600",
@@ -58852,8 +58863,8 @@
 					],
 					[
 						"9534.3400",
-						"0.00140105",
-						"0.00140105"
+						"0.0014010500",
+						"0.0014010500"
 					],
 					[
 						"9535.7200",
@@ -59097,8 +59108,8 @@
 					],
 					[
 						"9601.9600",
-						"0.0003014686",
-						"0.0003014686"
+						"0.00030146860",
+						"0.00030146860"
 					],
 					[
 						"9603.3400",
@@ -59137,8 +59148,8 @@
 					],
 					[
 						"9613.0000",
-						"-0.0007833669",
-						"-0.0007833669"
+						"-0.00078336690",
+						"-0.00078336690"
 					],
 					[
 						"9614.3800",
@@ -59307,8 +59318,8 @@
 					],
 					[
 						"9659.9200",
-						"0.001908902",
-						"0.001908902"
+						"0.0019089020",
+						"0.0019089020"
 					],
 					[
 						"9661.3000",
@@ -59327,8 +59338,8 @@
 					],
 					[
 						"9665.4400",
-						"0.002556764",
-						"0.002556764"
+						"0.0025567640",
+						"0.0025567640"
 					],
 					[
 						"9666.8200",
@@ -59582,8 +59593,8 @@
 					],
 					[
 						"9735.8200",
-						"0.001165955",
-						"0.001165955"
+						"0.0011659550",
+						"0.0011659550"
 					],
 					[
 						"9737.2000",
@@ -59757,8 +59768,8 @@
 					],
 					[
 						"9784.1200",
-						"0.001479262",
-						"0.001479262"
+						"0.0014792620",
+						"0.0014792620"
 					],
 					[
 						"9785.5000",
@@ -59802,8 +59813,8 @@
 					],
 					[
 						"9796.5400",
-						"-0.009487044",
-						"-0.009487044"
+						"-0.0094870440",
+						"-0.0094870440"
 					],
 					[
 						"9797.9200",
@@ -59822,8 +59833,8 @@
 					],
 					[
 						"9802.0600",
-						"-0.003159086",
-						"-0.003159086"
+						"-0.0031590860",
+						"-0.0031590860"
 					],
 					[
 						"9803.4400",
@@ -59847,8 +59858,8 @@
 					],
 					[
 						"9808.9600",
-						"-0.0006588749",
-						"-0.0006588749"
+						"-0.00065887490",
+						"-0.00065887490"
 					],
 					[
 						"9810.3400",
@@ -59887,13 +59898,13 @@
 					],
 					[
 						"9820.0000",
-						"0.008050379",
-						"0.008050379"
+						"0.0080503790",
+						"0.0080503790"
 					],
 					[
 						"9821.3800",
-						"0.006493443",
-						"0.006493443"
+						"0.0064934430",
+						"0.0064934430"
 					],
 					[
 						"9822.7600",
@@ -59917,8 +59928,8 @@
 					],
 					[
 						"9828.2800",
-						"0.0002364361",
-						"0.0002364361"
+						"0.00023643610",
+						"0.00023643610"
 					],
 					[
 						"9829.6600",
@@ -59932,8 +59943,8 @@
 					],
 					[
 						"9832.4200",
-						"0.003900499",
-						"0.003900499"
+						"0.0039004990",
+						"0.0039004990"
 					],
 					[
 						"9833.8000",
@@ -59987,8 +59998,8 @@
 					],
 					[
 						"9847.6000",
-						"0.01296679",
-						"0.01296679"
+						"0.012966790",
+						"0.012966790"
 					],
 					[
 						"9848.9800",
@@ -60032,8 +60043,8 @@
 					],
 					[
 						"9860.0200",
-						"-0.001549781",
-						"-0.001549781"
+						"-0.0015497810",
+						"-0.0015497810"
 					],
 					[
 						"9861.4000",
@@ -60057,8 +60068,8 @@
 					],
 					[
 						"9866.9200",
-						"0.001056887",
-						"0.001056887"
+						"0.0010568870",
+						"0.0010568870"
 					],
 					[
 						"9868.3000",
@@ -60082,8 +60093,8 @@
 					],
 					[
 						"9873.8200",
-						"-0.009384836",
-						"-0.009384836"
+						"-0.0093848360",
+						"-0.0093848360"
 					],
 					[
 						"9875.2000",
@@ -60107,8 +60118,8 @@
 					],
 					[
 						"9880.7200",
-						"0.003856123",
-						"0.003856123"
+						"0.0038561230",
+						"0.0038561230"
 					],
 					[
 						"9882.1000",
@@ -60147,8 +60158,8 @@
 					],
 					[
 						"9891.7600",
-						"0.003434918",
-						"0.003434918"
+						"0.0034349180",
+						"0.0034349180"
 					],
 					[
 						"9893.1400",
@@ -60347,8 +60358,8 @@
 					],
 					[
 						"9946.9600",
-						"-0.002165074",
-						"-0.002165074"
+						"-0.0021650740",
+						"-0.0021650740"
 					],
 					[
 						"9948.3400",
@@ -60447,8 +60458,8 @@
 					],
 					[
 						"9975.9400",
-						"0.004942546",
-						"0.004942546"
+						"0.0049425460",
+						"0.0049425460"
 					],
 					[
 						"9977.3200",
@@ -60477,13 +60488,13 @@
 					],
 					[
 						"9984.2200",
-						"0.008577154",
-						"0.008577154"
+						"0.0085771540",
+						"0.0085771540"
 					],
 					[
 						"9985.6000",
-						"0.002869556",
-						"0.002869556"
+						"0.0028695560",
+						"0.0028695560"
 					],
 					[
 						"9986.9800",
@@ -60527,8 +60538,8 @@
 					],
 					[
 						"9998.0200",
-						"0.00104805",
-						"0.00104805"
+						"0.0010480500",
+						"0.0010480500"
 					],
 					[
 						"9999.4000",
@@ -60552,8 +60563,8 @@
 					],
 					[
 						"10004.920",
-						"-0.0008986803",
-						"-0.0008986803"
+						"-0.00089868030",
+						"-0.00089868030"
 					],
 					[
 						"10006.300",
@@ -60582,8 +60593,8 @@
 					],
 					[
 						"10013.200",
-						"0.01885284",
-						"0.01885284"
+						"0.018852840",
+						"0.018852840"
 					],
 					[
 						"10014.580",
@@ -60647,8 +60658,8 @@
 					],
 					[
 						"10031.140",
-						"0.01119695",
-						"0.01119695"
+						"0.011196950",
+						"0.011196950"
 					],
 					[
 						"10032.520",
@@ -60887,8 +60898,8 @@
 					],
 					[
 						"10097.380",
-						"-0.0003793768",
-						"-0.0003793768"
+						"-0.00037937680",
+						"-0.00037937680"
 					],
 					[
 						"10098.760",
@@ -60962,8 +60973,8 @@
 					],
 					[
 						"10118.080",
-						"-0.004843444",
-						"-0.004843444"
+						"-0.0048434440",
+						"-0.0048434440"
 					],
 					[
 						"10119.460",
@@ -60992,8 +61003,8 @@
 					],
 					[
 						"10126.360",
-						"0.01832125",
-						"0.01832125"
+						"0.018321250",
+						"0.018321250"
 					],
 					[
 						"10127.740",
@@ -61012,18 +61023,18 @@
 					],
 					[
 						"10131.880",
-						"0.01208311",
-						"0.01208311"
+						"0.012083110",
+						"0.012083110"
 					],
 					[
 						"10133.260",
-						"0.006375936",
-						"0.006375936"
+						"0.0063759360",
+						"0.0063759360"
 					],
 					[
 						"10134.640",
-						"0.0007126852",
-						"0.0007126852"
+						"0.00071268520",
+						"0.00071268520"
 					],
 					[
 						"10136.020",
@@ -61121,7 +61132,7 @@
 						"-0.0052329183"
 					]
 				],
-				"source":"2,5"
+				"source":"4,7"
 			}
 		]
 	}
