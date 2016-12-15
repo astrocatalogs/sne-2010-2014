@@ -29,15 +29,20 @@
 				"alias":"4"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"5"
+			},
+			{
 				"name":"CBAT TOCP",
 				"url":"http://www.cbat.eps.harvard.edu/unconf/followups/J23560655+2922423.html",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"6"
+				"alias":"7"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -45,7 +50,7 @@
 				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"7"
+				"alias":"8"
 			},
 			{
 				"name":"WISeREP",
@@ -53,7 +58,7 @@
 				"reference":"Yaron & Gal-Yam (2012)",
 				"secondary":true,
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"8"
+				"alias":"9"
 			},
 			{
 				"name":"SIMBAD astronomical database",
@@ -61,27 +66,27 @@
 				"reference":"Wenger et al. (2000)",
 				"secondary":true,
 				"url":"http://simbad.u-strasbg.fr/",
-				"alias":"9"
+				"alias":"10"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2014ek",
-				"source":"3,5,6,7,8"
+				"source":"3,5,6,7,8,9"
 			},
 			{
 				"value":"PSN J23560655+2922423",
-				"source":"5,6,7,9"
+				"source":"6,7,8,10"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"2,9"
+				"source":"2,10"
 			},
 			{
 				"value":"Ia-02cx",
-				"source":"5,6,8"
+				"source":"5,6,7,9"
 			}
 		],
 		"comovingdist":[
@@ -89,26 +94,35 @@
 				"value":"100",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,5,6,7,8"
+				"source":"1,5,8"
 			}
 		],
 		"dec":[
 			{
 				"value":"+29:22:42.3",
 				"u_value":"degrees",
-				"source":"2,5,6,9"
+				"source":"2,6,7,10"
+			},
+			{
+				"value":"+29:22:42.30",
+				"u_value":"degrees",
+				"source":"5"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2014/10/18",
-				"source":"5,6"
+				"value":"2014/10/18.55",
+				"source":"5"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"TNTS",
+				"source":"5"
+			},
+			{
 				"value":"THU-NAOC Transient Survey (TNTS)",
-				"source":"5,6"
+				"source":"6,7"
 			}
 		],
 		"ebv":[
@@ -116,13 +130,13 @@
 				"value":"0.0513",
 				"derived":true,
 				"e_value":"0.0024",
-				"source":"4,7"
+				"source":"4,8"
 			}
 		],
 		"host":[
 			{
 				"value":"UGC 12850",
-				"source":"5,6"
+				"source":"5,6,7"
 			}
 		],
 		"lumdist":[
@@ -130,83 +144,93 @@
 				"value":"104",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,5,6,7,8"
+				"source":"1,5,8"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-18",
 				"derived":true,
-				"source":"1,5,6,7,8"
+				"source":"1,5,8"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17.07",
 				"derived":true,
-				"source":"3,7"
+				"source":"3,8"
 			}
 		],
 		"maxband":[
 			{
 				"value":"V",
 				"derived":true,
-				"source":"3,7"
+				"source":"3,8"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2014/10/27",
 				"derived":true,
-				"source":"3,7"
+				"source":"3,8"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-17.4",
 				"derived":true,
-				"source":"1,5,6,7,8"
+				"source":"1,5,8"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17.65",
 				"derived":true,
-				"source":"3,7"
+				"source":"3,8"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"B",
 				"derived":true,
-				"source":"3,7"
+				"source":"3,8"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2014/10/28",
 				"derived":true,
-				"source":"3,7"
+				"source":"3,8"
 			}
 		],
 		"ra":[
 			{
 				"value":"23:56:06.55",
 				"u_value":"hours",
-				"source":"2,5,6,9"
+				"source":"2,5,6,7,10"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.023",
-				"source":"5,6,8"
+				"kind":"spectroscopic",
+				"source":"5"
+			},
+			{
+				"value":"0.023",
+				"kind":"host",
+				"source":"5"
+			},
+			{
+				"value":"0.023",
+				"source":"6,7,9"
 			}
 		],
 		"velocity":[
 			{
 				"value":"6800",
 				"u_value":"km/s",
-				"source":"7"
+				"source":"8"
 			}
 		],
 		"photometry":[
@@ -214,7 +238,15 @@
 				"time":"56947.5",
 				"magnitude":"18.5",
 				"u_time":"MJD",
-				"source":"5,6"
+				"source":"6,7"
+			},
+			{
+				"time":"56948.55",
+				"band":"Clear",
+				"magnitude":"18.5",
+				"survey":"TNTS",
+				"u_time":"MJD",
+				"source":"5"
 			},
 			{
 				"time":"56953.6840",
@@ -8859,7 +8891,7 @@
 						"1.940121E-16"
 					]
 				],
-				"source":"8"
+				"source":"9"
 			}
 		]
 	}
