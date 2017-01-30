@@ -15,15 +15,19 @@
 				"alias":"2"
 			},
 			{
+				"name":"Howerton Catalog",
+				"alias":"3"
+			},
+			{
 				"name":"Supernova Hunt",
 				"url":"http://nesssi.cacr.caltech.edu/catalina/current.html",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,45 +35,56 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"SNhunt226",
-				"source":"2,4"
+				"source":"2,3,5"
 			},
 			{
 				"value":"PSN J04572161+2402439",
-				"source":"2,3,4"
+				"source":"2,4,5"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Candidate",
+				"source":"3"
 			}
 		],
 		"dec":[
 			{
+				"value":"+24:02:44",
+				"u_value":"degrees",
+				"source":"3"
+			},
+			{
 				"value":"+24:02:43.9",
 				"u_value":"degrees",
-				"source":"2,4"
+				"source":"2,5"
 			},
 			{
 				"value":"+24:02:43.8",
 				"u_value":"degrees",
-				"source":"3"
+				"source":"4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2013/12/31",
-				"source":"2,3,4"
+				"source":"2,3,4,5"
 			}
 		],
 		"discoverer":[
 			{
-				"value":"CRTS",
-				"source":"2,3,4"
+				"value":"Howerton",
+				"source":"3,4"
 			},
 			{
-				"value":"Howerton",
-				"source":"3"
+				"value":"CRTS",
+				"source":"2,4,5"
 			}
 		],
 		"ebv":[
@@ -77,53 +92,81 @@
 				"value":"0.4184",
 				"derived":true,
 				"e_value":"0.0123",
-				"source":"1,5"
+				"source":"1,6"
 			}
 		],
 		"host":[
 			{
+				"value":"WISEP J045721.63+240237.4",
+				"source":"3"
+			},
+			{
 				"value":"PGC 1698595",
-				"source":"2,3,4"
+				"source":"2,4,5"
+			}
+		],
+		"hostdec":[
+			{
+				"value":"+24:02:37.4",
+				"derived":true,
+				"u_value":"degrees",
+				"source":"6"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"6.615",
+				"derived":true,
+				"u_value":"arcseconds",
+				"source":"3,4,6"
+			}
+		],
+		"hostra":[
+			{
+				"value":"04:57:21.63",
+				"derived":true,
+				"u_value":"hours",
+				"source":"6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"19.5",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"2,5,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2013/12/30",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"2,5,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"19.5",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"2,5,6"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2013/12/30",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"2,5,6"
 			}
 		],
 		"ra":[
 			{
-				"value":"04:57:21.61",
-				"u_value":"hours",
-				"source":"2,4"
-			},
-			{
 				"value":"04:57:21.6",
 				"u_value":"hours",
-				"source":"3"
+				"source":"3,4"
+			},
+			{
+				"value":"04:57:21.61",
+				"u_value":"hours",
+				"source":"2,5"
 			}
 		],
 		"photometry":[
@@ -131,7 +174,7 @@
 				"time":"56656.5",
 				"magnitude":"19.5",
 				"u_time":"MJD",
-				"source":"2,4"
+				"source":"2,5"
 			}
 		]
 	}
