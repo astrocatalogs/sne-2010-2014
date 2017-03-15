@@ -10,26 +10,32 @@
 				"alias":"1"
 			},
 			{
+				"name":"2016A&A...594A..13P",
+				"bibcode":"2016A&A...594A..13P",
+				"reference":"Planck Collaboration et al. (2016)",
+				"alias":"2"
+			},
+			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
 				"reference":"Schlafly & Finkbeiner (2011)",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"CBAT TOCP",
 				"url":"http://www.cbat.eps.harvard.edu/unconf/followups/J01560719+1738468.html",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"Supernova Hunt",
 				"url":"http://nesssi.cacr.caltech.edu/catalina/current.html",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -37,23 +43,39 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"6"
+				"alias":"7"
+			},
+			{
+				"name":"NED-D",
+				"bibcode":"1991ASSL..171...89H",
+				"reference":"Helou et al. (1991)",
+				"secondary":true,
+				"url":"http://ned.ipac.caltech.edu/Library/Distances/",
+				"alias":"8"
 			}
 		],
 		"alias":[
 			{
 				"value":"SNhunt29",
-				"source":"1,3,5"
+				"source":"1,4,6"
 			},
 			{
 				"value":"PSN J01560719+1738468",
-				"source":"3,4,5"
+				"source":"4,5,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Candidate",
 				"source":"1"
+			}
+		],
+		"comovingdist":[
+			{
+				"value":"101",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"2,7,8"
 			}
 		],
 		"dec":[
@@ -65,28 +87,28 @@
 			{
 				"value":"+17:38:46.8",
 				"u_value":"degrees",
-				"source":"3,5"
+				"source":"4,6"
 			},
 			{
 				"value":"+17:38:46.68",
 				"u_value":"degrees",
-				"source":"4"
+				"source":"5"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2011/01/03",
-				"source":"1,3,4,5"
+				"source":"1,4,5,6"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Howerton",
-				"source":"1,4"
+				"source":"1,5"
 			},
 			{
 				"value":"CRTS",
-				"source":"3,4,5"
+				"source":"4,5,6"
 			}
 		],
 		"ebv":[
@@ -94,45 +116,94 @@
 				"value":"0.0458",
 				"derived":true,
 				"e_value":"0.0013",
-				"source":"2,6"
+				"source":"3,7"
 			}
 		],
 		"host":[
 			{
 				"value":"IC 1748",
-				"source":"1,3,5"
+				"source":"1,4,6"
 			},
 			{
 				"value":"UGC 1403",
-				"source":"4"
+				"source":"5"
+			}
+		],
+		"hostcomovingdist":[
+			{
+				"value":"101",
+				"derived":true,
+				"source":"2,7,8"
+			}
+		],
+		"hostlumdist":[
+			{
+				"value":"103.1",
+				"derived":true,
+				"source":"2,7,8"
+			}
+		],
+		"hostredshift":[
+			{
+				"value":"0.0229",
+				"derived":true,
+				"source":"2,8"
+			}
+		],
+		"hostvelocity":[
+			{
+				"value":"6790",
+				"source":"7"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"103.1",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"2,7,8"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-16.54",
+				"derived":true,
+				"source":"2,7,8"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"18.5",
 				"derived":true,
-				"source":"3,5,6"
+				"source":"4,6,7"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2011/01/02",
 				"derived":true,
-				"source":"3,5,6"
+				"source":"4,6,7"
+			}
+		],
+		"maxvisualabsmag":[
+			{
+				"value":"-16.57",
+				"derived":true,
+				"source":"2,7,8"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"18.5",
 				"derived":true,
-				"source":"3,5,6"
+				"source":"4,6,7"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2011/01/02",
 				"derived":true,
-				"source":"3,5,6"
+				"source":"4,6,7"
 			}
 		],
 		"ra":[
@@ -144,12 +215,27 @@
 			{
 				"value":"01:56:07.19",
 				"u_value":"hours",
-				"source":"3,5"
+				"source":"4,6"
 			},
 			{
 				"value":"01:56:07.176",
 				"u_value":"hours",
-				"source":"4"
+				"source":"5"
+			}
+		],
+		"redshift":[
+			{
+				"value":"0.0229",
+				"derived":true,
+				"kind":"host",
+				"source":"2,8"
+			}
+		],
+		"velocity":[
+			{
+				"value":"6790",
+				"u_value":"km/s",
+				"source":"7"
 			}
 		],
 		"photometry":[
@@ -157,7 +243,7 @@
 				"time":"55563.5",
 				"magnitude":"18.5",
 				"u_time":"MJD",
-				"source":"3,5"
+				"source":"4,6"
 			}
 		]
 	}
