@@ -28,15 +28,26 @@
 				"alias":"4"
 			},
 			{
+				"name":"CPCS Alert 25451",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=25451",
+				"alias":"5"
+			},
+			{
 				"name":"ASAS-SN Supernovae",
 				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
-				"alias":"5"
+				"alias":"6"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"7"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"6"
+				"alias":"8"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -44,7 +55,7 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"7"
+				"alias":"9"
 			},
 			{
 				"name":"SIMBAD astronomical database",
@@ -52,23 +63,23 @@
 				"reference":"Wenger et al. (2000)",
 				"secondary":true,
 				"url":"http://simbad.u-strasbg.fr/",
-				"alias":"8"
+				"alias":"10"
 			}
 		],
 		"alias":[
 			{
 				"value":"ASASSN-13dl",
-				"source":"2,5,6,8"
+				"source":"2,6,7,8,10"
 			},
 			{
 				"value":"PTF13een",
-				"source":"8"
+				"source":"10"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"2,3,5,6,8"
+				"source":"2,3,6,8,10"
 			}
 		],
 		"comovingdist":[
@@ -76,31 +87,36 @@
 				"value":"120",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,5,6,7"
+				"source":"1,2,6,8,9"
 			}
 		],
 		"dec":[
 			{
 				"value":"+58:12:43.3",
 				"u_value":"degrees",
-				"source":"2,6,8"
+				"source":"2,8,10"
+			},
+			{
+				"value":"+58:12:43.92",
+				"u_value":"degrees",
+				"source":"7"
 			},
 			{
 				"value":"+58:12:43.2",
 				"u_value":"degrees",
-				"source":"2,5"
+				"source":"2,6"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2013/10/10",
-				"source":"2,6"
+				"source":"2,8"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ASAS-SN",
-				"source":"2,6"
+				"source":"2,8"
 			}
 		],
 		"ebv":[
@@ -108,14 +124,14 @@
 				"value":"0.0469",
 				"derived":true,
 				"e_value":"0.0033",
-				"source":"4,7"
+				"source":"4,9"
 			}
 		],
 		"hostoffsetang":[
 			{
 				"value":"2",
 				"u_value":"arcseconds",
-				"source":"2,5"
+				"source":"2,6"
 			}
 		],
 		"lumdist":[
@@ -123,82 +139,877 @@
 				"value":"122",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,5,6,7"
+				"source":"1,2,6,8,9"
 			}
 		],
 		"maxabsmag":[
 			{
-				"value":"-19.3",
+				"value":"-19.1",
 				"derived":true,
-				"source":"1,2,5,6,7"
+				"source":"1,2,6,8,9"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"16.1",
+				"value":"16.28",
 				"derived":true,
-				"source":"2,6,7"
+				"source":"5,7,9"
+			}
+		],
+		"maxband":[
+			{
+				"value":"r",
+				"derived":true,
+				"source":"5,7,9"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2013/10/16",
 				"derived":true,
-				"source":"2,6,7"
+				"source":"5,7,9"
 			}
 		],
 		"maxvisualabsmag":[
 			{
-				"value":"-19.3",
+				"value":"-18.9",
 				"derived":true,
-				"source":"1,2,5,6,7"
+				"source":"1,2,6,8,9"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"16.1",
+				"value":"16.49",
 				"derived":true,
-				"source":"2,6,7"
+				"source":"5,7,9"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"5,7,9"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2013/10/16",
 				"derived":true,
-				"source":"2,6,7"
+				"source":"5,7,9"
 			}
 		],
 		"ra":[
 			{
 				"value":"07:38:49.54",
 				"u_value":"hours",
-				"source":"2,6,8"
+				"source":"2,8,10"
+			},
+			{
+				"value":"07:38:49.2",
+				"u_value":"hours",
+				"source":"7"
 			},
 			{
 				"value":"07:38:49.44",
 				"u_value":"hours",
-				"source":"2,5"
+				"source":"2,6"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.027",
-				"source":"2,5,6"
+				"source":"2,6,8"
 			}
 		],
 		"velocity":[
 			{
 				"value":"8000",
 				"u_value":"km/s",
-				"source":"7"
+				"source":"9"
 			}
 		],
 		"photometry":[
 			{
-				"time":"56581.5",
-				"magnitude":"16.1",
+				"time":"56577.0974",
+				"band":"r",
+				"e_magnitude":"0.0292",
+				"magnitude":"16.4938",
+				"observatory":"Giuseppe Leto APT2 C",
 				"u_time":"MJD",
-				"source":"2,6"
+				"source":"5,7"
+			},
+			{
+				"time":"56577.1011",
+				"band":"i",
+				"e_magnitude":"0.0532",
+				"magnitude":"16.7363",
+				"observatory":"Giuseppe Leto APT2 C",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56577.1169",
+				"band":"B",
+				"e_magnitude":"0.0429",
+				"magnitude":"16.829",
+				"observatory":"Giuseppe Leto APT2 C",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56577.1473",
+				"band":"V",
+				"e_magnitude":"0.0367",
+				"magnitude":"16.5519",
+				"observatory":"Giuseppe Leto APT2 C",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56581.0139",
+				"band":"r",
+				"e_magnitude":"0.0187",
+				"magnitude":"16.371",
+				"observatory":"WiseC18-Yossi Shvart",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56581.029",
+				"band":"V",
+				"e_magnitude":"0.018",
+				"magnitude":"16.5212",
+				"observatory":"WiseC18-Yossi Shvart",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56581.0363",
+				"band":"g",
+				"e_magnitude":"0.0185",
+				"magnitude":"16.5555",
+				"observatory":"WiseC18-Yossi Shvart",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56581.0436",
+				"band":"r",
+				"e_magnitude":"0.0137",
+				"magnitude":"16.3041",
+				"observatory":"WiseC18-Yossi Shvart",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56581.0583",
+				"band":"V",
+				"e_magnitude":"0.0136",
+				"magnitude":"16.4793",
+				"observatory":"WiseC18-Yossi Shvart",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56581.066",
+				"band":"g",
+				"e_magnitude":"0.0149",
+				"magnitude":"16.4868",
+				"observatory":"WiseC18-Yossi Shvart",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56581.0737",
+				"band":"r",
+				"e_magnitude":"0.013",
+				"magnitude":"16.2782",
+				"observatory":"WiseC18-Yossi Shvart",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56581.0883",
+				"band":"V",
+				"e_magnitude":"0.0136",
+				"magnitude":"16.4646",
+				"observatory":"WiseC18-Yossi Shvart",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56581.0959",
+				"band":"g",
+				"e_magnitude":"0.0147",
+				"magnitude":"16.4901",
+				"observatory":"WiseC18-Yossi Shvart",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56581.1118",
+				"band":"V",
+				"e_magnitude":"0.128",
+				"magnitude":"16.6258",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56581.1192",
+				"band":"g",
+				"e_magnitude":"0.132",
+				"magnitude":"16.8284",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56581.128",
+				"band":"r",
+				"e_magnitude":"0.086",
+				"magnitude":"16.5289",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56581.1383",
+				"band":"V",
+				"e_magnitude":"0.0482597",
+				"magnitude":"16.6492",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56581.1397",
+				"band":"V",
+				"e_magnitude":"0.0493841",
+				"magnitude":"16.4619",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56581.1413",
+				"band":"r",
+				"e_magnitude":"0.0575203",
+				"magnitude":"16.4572",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56581.1421",
+				"band":"r",
+				"e_magnitude":"0.054877",
+				"magnitude":"16.5147",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56581.1438",
+				"band":"g",
+				"e_magnitude":"0.092",
+				"magnitude":"16.7811",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56581.1602",
+				"band":"V",
+				"e_magnitude":"0.081",
+				"magnitude":"16.7289",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56582.0503",
+				"band":"V",
+				"e_magnitude":"0.218",
+				"magnitude":"16.8134",
+				"observatory":"Ulrich Kolb, PIRATE,",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56584.082",
+				"band":"r",
+				"e_magnitude":"0.014",
+				"magnitude":"16.9071",
+				"observatory":"Ostrowik 0.6m Lukasz",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56584.1918",
+				"band":"V",
+				"e_magnitude":"0.0796512",
+				"magnitude":"16.9223",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56584.1932",
+				"band":"V",
+				"e_magnitude":"0.0778251",
+				"magnitude":"16.7267",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56584.1947",
+				"band":"r",
+				"e_magnitude":"0.0755454",
+				"magnitude":"16.6062",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56586.1244",
+				"band":"V",
+				"e_magnitude":"0.0581478",
+				"magnitude":"16.8605",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56586.1258",
+				"band":"V",
+				"e_magnitude":"0.0578835",
+				"magnitude":"16.7309",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56586.1273",
+				"band":"r",
+				"e_magnitude":"0.0687559",
+				"magnitude":"16.9931",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56586.128",
+				"band":"r",
+				"e_magnitude":"0.0708768",
+				"magnitude":"16.8822",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56587.1216",
+				"band":"V",
+				"e_magnitude":"0.0681344",
+				"magnitude":"17.0023",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56587.123",
+				"band":"V",
+				"e_magnitude":"0.0631393",
+				"magnitude":"16.7352",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56587.1245",
+				"band":"r",
+				"e_magnitude":"0.0766025",
+				"magnitude":"17.0053",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56587.1252",
+				"band":"r",
+				"e_magnitude":"0.0867623",
+				"magnitude":"16.8843",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56588.119",
+				"band":"V",
+				"e_magnitude":"0.0730333",
+				"magnitude":"16.9421",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56588.1204",
+				"band":"V",
+				"e_magnitude":"0.0642227",
+				"magnitude":"16.8151",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56588.1219",
+				"band":"r",
+				"e_magnitude":"0.0893546",
+				"magnitude":"17.2631",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56588.1226",
+				"band":"r",
+				"e_magnitude":"0.0781269",
+				"magnitude":"16.8579",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56589.1177",
+				"band":"V",
+				"e_magnitude":"0.0809599",
+				"magnitude":"17.1789",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56600.0867",
+				"band":"V",
+				"e_magnitude":"0.0714722",
+				"magnitude":"17.3231",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56600.0882",
+				"band":"V",
+				"e_magnitude":"0.0754994",
+				"magnitude":"17.2657",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56600.0896",
+				"band":"B",
+				"magnitude":"18.9553",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56600.0911",
+				"band":"B",
+				"magnitude":"18.7415",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56601.1019",
+				"band":"i",
+				"magnitude":"17.9301",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56601.1029",
+				"band":"i",
+				"magnitude":"17.957",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56601.1039",
+				"band":"r",
+				"e_magnitude":"0.100977",
+				"magnitude":"17.3745",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56601.1047",
+				"band":"r",
+				"e_magnitude":"0.0935338",
+				"magnitude":"17.5705",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56601.1054",
+				"band":"V",
+				"e_magnitude":"0.0811767",
+				"magnitude":"17.544",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56601.1069",
+				"band":"V",
+				"e_magnitude":"0.0805745",
+				"magnitude":"17.388",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56601.1084",
+				"band":"B",
+				"magnitude":"19.1354",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56601.1098",
+				"band":"B",
+				"magnitude":"19.1735",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56602.0777",
+				"band":"i",
+				"magnitude":"17.3743",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56602.0787",
+				"band":"i",
+				"magnitude":"17.4238",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56602.0797",
+				"band":"r",
+				"e_magnitude":"0.0820367",
+				"magnitude":"17.3896",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56602.0804",
+				"band":"r",
+				"e_magnitude":"0.0864592",
+				"magnitude":"17.5589",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56602.0812",
+				"band":"V",
+				"e_magnitude":"0.113481",
+				"magnitude":"17.882",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56602.0826",
+				"band":"V",
+				"e_magnitude":"0.118383",
+				"magnitude":"17.9263",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56602.0841",
+				"band":"B",
+				"magnitude":"18.8077",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56602.0855",
+				"band":"B",
+				"magnitude":"19.1398",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56603.0811",
+				"band":"i",
+				"magnitude":"18.12",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56603.0821",
+				"band":"i",
+				"magnitude":"17.8106",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56603.0831",
+				"band":"r",
+				"e_magnitude":"0.0989504",
+				"magnitude":"17.6789",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56603.0839",
+				"band":"r",
+				"e_magnitude":"0.0927857",
+				"magnitude":"17.5384",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56603.0848",
+				"band":"V",
+				"e_magnitude":"0.0827311",
+				"magnitude":"17.6526",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56603.0863",
+				"band":"V",
+				"e_magnitude":"0.083323",
+				"magnitude":"17.7435",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56603.0877",
+				"band":"B",
+				"magnitude":"18.7791",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56603.0892",
+				"band":"B",
+				"magnitude":"19.2612",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56604.0722",
+				"band":"i",
+				"magnitude":"17.8528",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56604.0732",
+				"band":"i",
+				"magnitude":"18.1596",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56604.0744",
+				"band":"r",
+				"e_magnitude":"0.0850697",
+				"magnitude":"17.3538",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56604.0751",
+				"band":"r",
+				"e_magnitude":"0.0926848",
+				"magnitude":"17.4879",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56604.0759",
+				"band":"V",
+				"e_magnitude":"0.0862908",
+				"magnitude":"17.962",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56604.0773",
+				"band":"V",
+				"e_magnitude":"0.0853303",
+				"magnitude":"17.9151",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56604.0788",
+				"band":"B",
+				"magnitude":"19.0774",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56604.0803",
+				"band":"B",
+				"magnitude":"19.0023",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56606.9776",
+				"band":"r",
+				"magnitude":"17.7567",
+				"observatory":"WiseC18-Yossi Shvart",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56606.9927",
+				"band":"V",
+				"magnitude":"17.7431",
+				"observatory":"WiseC18-Yossi Shvart",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56607.0074",
+				"band":"r",
+				"e_magnitude":"0.0234",
+				"magnitude":"16.8777",
+				"observatory":"WiseC18-Yossi Shvart",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56607.0227",
+				"band":"V",
+				"magnitude":"17.6504",
+				"observatory":"WiseC18-Yossi Shvart",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56607.0305",
+				"band":"g",
+				"magnitude":"17.6514",
+				"observatory":"WiseC18-Yossi Shvart",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56607.0378",
+				"band":"r",
+				"e_magnitude":"0.0227",
+				"magnitude":"16.8884",
+				"observatory":"WiseC18-Yossi Shvart",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56607.0528",
+				"band":"V",
+				"magnitude":"17.8567",
+				"observatory":"WiseC18-Yossi Shvart",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56607.0601",
+				"band":"g",
+				"magnitude":"17.7412",
+				"observatory":"WiseC18-Yossi Shvart",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56607.0674",
+				"band":"r",
+				"e_magnitude":"0.0214",
+				"magnitude":"16.8768",
+				"observatory":"WiseC18-Yossi Shvart",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56607.0824",
+				"band":"V",
+				"magnitude":"17.8925",
+				"observatory":"WiseC18-Yossi Shvart",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56607.0902",
+				"band":"g",
+				"magnitude":"17.7789",
+				"observatory":"WiseC18-Yossi Shvart",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56607.0975",
+				"band":"r",
+				"e_magnitude":"0.0219",
+				"magnitude":"16.9119",
+				"observatory":"WiseC18-Yossi Shvart",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56607.1121",
+				"band":"V",
+				"magnitude":"17.769",
+				"observatory":"WiseC18-Yossi Shvart",
+				"u_time":"MJD",
+				"source":"5,7"
+			},
+			{
+				"time":"56607.1199",
+				"band":"g",
+				"magnitude":"17.402",
+				"observatory":"WiseC18-Yossi Shvart",
+				"u_time":"MJD",
+				"source":"5,7"
 			}
 		]
 	}

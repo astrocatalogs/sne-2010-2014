@@ -53,15 +53,26 @@
 				"alias":"8"
 			},
 			{
+				"name":"CPCS Alert 25396",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=25396",
+				"alias":"9"
+			},
+			{
 				"name":"ASAS-SN Supernovae",
 				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
-				"alias":"9"
+				"alias":"10"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"11"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"10"
+				"alias":"12"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -69,7 +80,7 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"11"
+				"alias":"13"
 			},
 			{
 				"name":"SIMBAD astronomical database",
@@ -77,27 +88,27 @@
 				"reference":"Wenger et al. (2000)",
 				"secondary":true,
 				"url":"http://simbad.u-strasbg.fr/",
-				"alias":"12"
+				"alias":"14"
 			}
 		],
 		"alias":[
 			{
 				"value":"ASASSN-13dd",
-				"source":"2,3,6,8,9,10,12"
+				"source":"2,3,6,8,10,11,12,14"
 			},
 			{
 				"value":"iPTF13drr",
-				"source":"6,8,10,12"
+				"source":"6,8,12,14"
 			},
 			{
 				"value":"PSN J09073675+0323397",
-				"source":"8,10"
+				"source":"8,12"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"4,5,6,8,9,10,12"
+				"source":"4,5,6,8,10,12,14"
 			}
 		],
 		"comovingdist":[
@@ -105,31 +116,36 @@
 				"value":"55.375",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,6,11"
+				"source":"1,6,13"
 			}
 		],
 		"dec":[
 			{
 				"value":"+03:23:39.7",
 				"u_value":"degrees",
-				"source":"3,8,10,12"
+				"source":"3,8,12,14"
+			},
+			{
+				"value":"+03:23:38.976",
+				"u_value":"degrees",
+				"source":"11"
 			},
 			{
 				"value":"+03:23:38.652",
 				"u_value":"degrees",
-				"source":"3,9"
+				"source":"3,10"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2013/09/24",
-				"source":"8,10"
+				"source":"8,12"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ASAS-SN",
-				"source":"8,10"
+				"source":"8,12"
 			}
 		],
 		"ebv":[
@@ -137,20 +153,20 @@
 				"value":"0.028",
 				"derived":true,
 				"e_value":"0.0008",
-				"source":"7,11"
+				"source":"7,13"
 			}
 		],
 		"host":[
 			{
 				"value":"NGC 2765",
-				"source":"3,8,9,10"
+				"source":"3,8,10,12"
 			}
 		],
 		"hostoffsetang":[
 			{
 				"value":"5.44",
 				"u_value":"arcseconds",
-				"source":"3,9"
+				"source":"3,10"
 			}
 		],
 		"lumdist":[
@@ -158,61 +174,75 @@
 				"value":"56.0703",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,6,11"
+				"source":"1,6,13"
 			}
 		],
 		"maxabsmag":[
 			{
-				"value":"-18.5301",
+				"value":"-19.8301",
 				"derived":true,
-				"source":"1,6,11"
+				"source":"1,6,13"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"15.2",
+				"value":"13.9",
 				"derived":true,
-				"source":"8,10,11"
+				"source":"9,11,13"
+			}
+		],
+		"maxband":[
+			{
+				"value":"z",
+				"derived":true,
+				"source":"9,11,13"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2013/09/23",
+				"value":"2013/09/30",
 				"derived":true,
-				"source":"8,10,11"
+				"source":"9,11,13"
 			}
 		],
 		"maxvisualabsmag":[
 			{
-				"value":"-18.5437",
+				"value":"-19.0437",
 				"derived":true,
-				"source":"1,6,11"
+				"source":"1,6,13"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"15.2",
+				"value":"14.7",
 				"derived":true,
-				"source":"8,10,11"
+				"source":"9,11,13"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"9,11,13"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2013/09/23",
+				"value":"2013/09/30",
 				"derived":true,
-				"source":"8,10,11"
+				"source":"9,11,13"
 			}
 		],
 		"ra":[
 			{
 				"value":"09:07:36.75",
 				"u_value":"hours",
-				"source":"3,8,10,12"
+				"source":"3,8,12,14"
 			},
 			{
 				"value":"09:07:36.72",
 				"u_value":"hours",
-				"source":"3,9"
+				"source":"3,10,11"
 			}
 		],
 		"redshift":[
@@ -225,7 +255,7 @@
 			{
 				"value":"3738.5",
 				"u_value":"km/s",
-				"source":"11"
+				"source":"13"
 			}
 		],
 		"photometry":[
@@ -233,7 +263,7 @@
 				"time":"56558.5",
 				"magnitude":"15.2",
 				"u_time":"MJD",
-				"source":"8,10"
+				"source":"8,12"
 			},
 			{
 				"time":"56562.0144",
@@ -269,6 +299,78 @@
 				"source":"2"
 			},
 			{
+				"time":"56564.6016",
+				"band":"g",
+				"e_magnitude":"0.007",
+				"magnitude":"14.7028",
+				"observatory":"RTT150",
+				"u_time":"MJD",
+				"source":"9,11"
+			},
+			{
+				"time":"56564.6063",
+				"band":"r",
+				"e_magnitude":"0.008",
+				"magnitude":"14.2571",
+				"observatory":"RTT150",
+				"u_time":"MJD",
+				"source":"9,11"
+			},
+			{
+				"time":"56564.6098",
+				"band":"i",
+				"e_magnitude":"0.01",
+				"magnitude":"14.2255",
+				"observatory":"RTT150",
+				"u_time":"MJD",
+				"source":"9,11"
+			},
+			{
+				"time":"56564.6125",
+				"band":"z",
+				"e_magnitude":"0.011",
+				"magnitude":"13.9674",
+				"observatory":"RTT150",
+				"u_time":"MJD",
+				"source":"9,11"
+			},
+			{
+				"time":"56565.6071",
+				"band":"z",
+				"e_magnitude":"0.01",
+				"magnitude":"13.9034",
+				"observatory":"RTT150",
+				"u_time":"MJD",
+				"source":"9,11"
+			},
+			{
+				"time":"56565.6089",
+				"band":"g",
+				"e_magnitude":"0.006",
+				"magnitude":"14.6974",
+				"observatory":"RTT150",
+				"u_time":"MJD",
+				"source":"9,11"
+			},
+			{
+				"time":"56565.6132",
+				"band":"r",
+				"e_magnitude":"0.007",
+				"magnitude":"14.232",
+				"observatory":"RTT150",
+				"u_time":"MJD",
+				"source":"9,11"
+			},
+			{
+				"time":"56565.6147",
+				"band":"i",
+				"e_magnitude":"0.009",
+				"magnitude":"14.1684",
+				"observatory":"RTT150",
+				"u_time":"MJD",
+				"source":"9,11"
+			},
+			{
 				"time":"56567.7250",
 				"band":"W1",
 				"e_magnitude":"0.118",
@@ -300,6 +402,24 @@
 				"telescope":"Swift",
 				"u_time":"MJD",
 				"source":"2"
+			},
+			{
+				"time":"56570.5854",
+				"band":"g",
+				"e_magnitude":"0.009",
+				"magnitude":"14.941",
+				"observatory":"Irek Khamitov T60",
+				"u_time":"MJD",
+				"source":"9,11"
+			},
+			{
+				"time":"56570.5864",
+				"band":"r",
+				"e_magnitude":"0.01",
+				"magnitude":"14.312",
+				"observatory":"Irek Khamitov T60",
+				"u_time":"MJD",
+				"source":"9,11"
 			},
 			{
 				"time":"56571.5360",

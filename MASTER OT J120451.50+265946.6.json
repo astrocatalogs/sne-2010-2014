@@ -35,16 +35,27 @@
 				"alias":"5"
 			},
 			{
+				"name":"CPCS Alert 25692",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=25692",
+				"alias":"6"
+			},
+			{
 				"name":"Asiago Supernova Catalogue",
 				"secondary":true,
 				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-				"alias":"6"
+				"alias":"7"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"8"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"7"
+				"alias":"9"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -52,7 +63,7 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"8"
+				"alias":"10"
 			},
 			{
 				"name":"WISeREP",
@@ -60,7 +71,7 @@
 				"reference":"Yaron & Gal-Yam (2012)",
 				"secondary":true,
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"9"
+				"alias":"11"
 			},
 			{
 				"name":"SIMBAD astronomical database",
@@ -68,19 +79,19 @@
 				"reference":"Wenger et al. (2000)",
 				"secondary":true,
 				"url":"http://simbad.u-strasbg.fr/",
-				"alias":"10"
+				"alias":"12"
 			}
 		],
 		"alias":[
 			{
 				"value":"MASTER OT J120451.50+265946.6",
-				"source":"2,6,7,9,10"
+				"source":"2,7,8,9,11,12"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ib",
-				"source":"2,3,4,6,7,9,10"
+				"source":"2,3,4,7,9,11,12"
 			}
 		],
 		"comovingdist":[
@@ -88,26 +99,31 @@
 				"value":"8.36",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,6,7,8,9"
+				"source":"1,2,4,7,9,10,11"
 			}
 		],
 		"dec":[
 			{
 				"value":"+26:59:46.6",
 				"u_value":"degrees",
-				"source":"2,4,6,7,10"
+				"source":"2,4,7,9,12"
+			},
+			{
+				"value":"+26:59:46.68",
+				"u_value":"degrees",
+				"source":"8"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2014/10/28",
-				"source":"2,7"
+				"source":"2,9"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"MASTER",
-				"source":"2,4,6,7"
+				"source":"2,4,7,9"
 			}
 		],
 		"ebv":[
@@ -115,13 +131,13 @@
 				"value":"0.0205",
 				"derived":true,
 				"e_value":"0.001",
-				"source":"5,8"
+				"source":"5,10"
 			}
 		],
 		"host":[
 			{
 				"value":"NGC 4080",
-				"source":"2,4,6,7"
+				"source":"2,4,7,9"
 			}
 		],
 		"lumdist":[
@@ -129,77 +145,126 @@
 				"value":"8.377",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,6,7,8,9"
+				"source":"1,2,4,7,9,10,11"
 			}
 		],
 		"maxabsmag":[
 			{
-				"value":"-15.71",
+				"value":"-15.44",
 				"derived":true,
-				"source":"1,2,4,6,7,8,9"
+				"source":"1,2,4,7,9,10,11"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"13.9",
+				"value":"14.17",
 				"derived":true,
-				"source":"2,7,8"
+				"source":"6,8,10"
+			}
+		],
+		"maxband":[
+			{
+				"value":"i",
+				"derived":true,
+				"source":"6,8,10"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2014/11/02",
 				"derived":true,
-				"source":"2,7,8"
+				"source":"6,8,10"
 			}
 		],
 		"maxvisualabsmag":[
 			{
-				"value":"-15.72",
+				"value":"-14.09",
 				"derived":true,
-				"source":"1,2,4,6,7,8,9"
+				"source":"1,2,4,7,9,10,11"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"13.9",
+				"value":"15.53",
 				"derived":true,
-				"source":"2,7,8"
+				"source":"6,8,10"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"6,8,10"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2014/11/02",
 				"derived":true,
-				"source":"2,7,8"
+				"source":"6,8,10"
 			}
 		],
 		"ra":[
 			{
 				"value":"12:04:51.50",
 				"u_value":"hours",
-				"source":"2,4,6,7,10"
+				"source":"2,4,7,9,12"
+			},
+			{
+				"value":"12:04:51.6",
+				"u_value":"hours",
+				"source":"8"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.00189",
-				"source":"2,4,6,7,9"
+				"source":"2,4,7,9,11"
 			}
 		],
 		"velocity":[
 			{
 				"value":"566",
 				"u_value":"km/s",
-				"source":"8"
+				"source":"10"
 			}
 		],
 		"photometry":[
 			{
-				"time":"56963.5",
-				"magnitude":"13.9",
+				"time":"56963.103",
+				"band":"g",
+				"e_magnitude":"0.0043",
+				"magnitude":"15.53",
+				"observatory":"T100,Hasan Esenoglu",
 				"u_time":"MJD",
-				"source":"2,7"
+				"source":"6,8"
+			},
+			{
+				"time":"56963.105",
+				"band":"r",
+				"e_magnitude":"0.0027",
+				"magnitude":"14.4506",
+				"observatory":"T100,Hasan Esenoglu",
+				"u_time":"MJD",
+				"source":"6,8"
+			},
+			{
+				"time":"56963.1071",
+				"band":"i",
+				"e_magnitude":"0.0034",
+				"magnitude":"14.1688",
+				"observatory":"T100,Hasan Esenoglu",
+				"u_time":"MJD",
+				"source":"6,8"
+			},
+			{
+				"time":"56963.109",
+				"band":"z",
+				"e_magnitude":"0.0082",
+				"magnitude":"14.2902",
+				"observatory":"T100,Hasan Esenoglu",
+				"u_time":"MJD",
+				"source":"6,8"
 			}
 		],
 		"spectra":[
@@ -4213,7 +4278,7 @@
 						"1.253918352e-15"
 					]
 				],
-				"source":"9"
+				"source":"11"
 			}
 		]
 	}

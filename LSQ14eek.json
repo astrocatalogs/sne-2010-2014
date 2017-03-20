@@ -22,10 +22,21 @@
 				"alias":"3"
 			},
 			{
+				"name":"CPCS Alert 25559",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=25559",
+				"alias":"4"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"5"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -33,7 +44,7 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"7"
 			},
 			{
 				"name":"WISeREP",
@@ -41,7 +52,7 @@
 				"reference":"Yaron & Gal-Yam (2012)",
 				"secondary":true,
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"6"
+				"alias":"8"
 			},
 			{
 				"name":"SIMBAD astronomical database",
@@ -49,23 +60,23 @@
 				"reference":"Wenger et al. (2000)",
 				"secondary":true,
 				"url":"http://simbad.u-strasbg.fr/",
-				"alias":"7"
+				"alias":"9"
 			}
 		],
 		"alias":[
 			{
 				"value":"LSQ14eek",
-				"source":"2,4,6,7"
+				"source":"2,6,8,9"
 			},
 			{
 				"value":"CSS140831:213650-022808",
-				"source":"2,4"
+				"source":"2,5,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"2,4,6,7"
+				"source":"2,6,8,9"
 			}
 		],
 		"comovingdist":[
@@ -73,26 +84,31 @@
 				"value":"300",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,5,6"
+				"source":"1,2,6,7,8"
 			}
 		],
 		"dec":[
 			{
 				"value":"-02:28:06.4",
 				"u_value":"degrees",
-				"source":"2,4,7"
+				"source":"2,6,9"
+			},
+			{
+				"value":"-02:28:07.968",
+				"u_value":"degrees",
+				"source":"5"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2014/07/27",
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"La Silla-QUEST",
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"ebv":[
@@ -100,7 +116,7 @@
 				"value":"0.0315",
 				"derived":true,
 				"e_value":"0.0005",
-				"source":"3,5"
+				"source":"3,7"
 			}
 		],
 		"lumdist":[
@@ -108,69 +124,81 @@
 				"value":"380",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,5,6"
+				"source":"1,2,6,7,8"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-20",
 				"derived":true,
-				"source":"1,2,4,5,6"
+				"source":"1,2,6,7,8"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"18",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"2,6,7"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2014/08/30",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"2,6,7"
 			}
 		],
 		"maxvisualabsmag":[
 			{
-				"value":"-20",
+				"value":"-14",
 				"derived":true,
-				"source":"1,2,4,5,6"
+				"source":"1,2,6,7,8"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"18",
+				"value":"23.68",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"4,5,7"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2014/08/30",
+				"value":"2014/09/15",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"4,5,7"
 			}
 		],
 		"ra":[
 			{
 				"value":"21:36:50.32",
 				"u_value":"hours",
-				"source":"2,4,7"
+				"source":"2,6,9"
+			},
+			{
+				"value":"21:36:50.4",
+				"u_value":"hours",
+				"source":"5"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.08",
-				"source":"2,4,6"
+				"source":"2,6,8"
 			}
 		],
 		"velocity":[
 			{
 				"value":"20000",
 				"u_value":"km/s",
-				"source":"5"
+				"source":"7"
 			}
 		],
 		"photometry":[
@@ -178,7 +206,47 @@
 				"time":"56899.5",
 				"magnitude":"18.0",
 				"u_time":"MJD",
-				"source":"2,4"
+				"source":"2,6"
+			},
+			{
+				"time":"56915.9411",
+				"band":"g",
+				"magnitude":"23.6794",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56915.9411",
+				"band":"g",
+				"magnitude":"24.0371",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56915.9411",
+				"band":"i",
+				"magnitude":"30.6392",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56915.9411",
+				"band":"r",
+				"magnitude":"23.3378",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"56915.9411",
+				"band":"u",
+				"magnitude":"25.0416",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
 			}
 		],
 		"spectra":[
@@ -4292,7 +4360,7 @@
 						"7.46327e-18"
 					]
 				],
-				"source":"6"
+				"source":"8"
 			}
 		]
 	}

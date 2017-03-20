@@ -35,21 +35,37 @@
 				"alias":"5"
 			},
 			{
+				"name":"CPCS Alert 25618",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=25618",
+				"alias":"6"
+			},
+			{
+				"name":"CPCS Alert 25469",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=25469",
+				"alias":"7"
+			},
+			{
 				"name":"ASAS-SN Supernovae",
 				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
-				"alias":"6"
+				"alias":"8"
 			},
 			{
 				"name":"Asiago Supernova Catalogue",
 				"secondary":true,
 				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-				"alias":"7"
+				"alias":"9"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"10"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"8"
+				"alias":"11"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -57,7 +73,7 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"9"
+				"alias":"12"
 			},
 			{
 				"name":"WISeREP",
@@ -65,7 +81,7 @@
 				"reference":"Yaron & Gal-Yam (2012)",
 				"secondary":true,
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"10"
+				"alias":"13"
 			},
 			{
 				"name":"SIMBAD astronomical database",
@@ -73,27 +89,27 @@
 				"reference":"Wenger et al. (2000)",
 				"secondary":true,
 				"url":"http://simbad.u-strasbg.fr/",
-				"alias":"11"
+				"alias":"14"
 			}
 		],
 		"alias":[
 			{
 				"value":"ASASSN-14az",
-				"source":"2,5,6,7,8,9,10,11"
+				"source":"2,5,8,9,10,11,12,13,14"
 			},
 			{
 				"value":"Gaia14age",
-				"source":"9"
+				"source":"10,12"
 			},
 			{
 				"value":"MLS140831:234448-020701",
-				"source":"2,8"
+				"source":"2,11"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"IIb",
-				"source":"2,3,6,7,8,10,11"
+				"source":"2,3,8,9,11,13,14"
 			}
 		],
 		"comovingdist":[
@@ -101,19 +117,19 @@
 				"value":"29.74",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,7,9,10"
+				"source":"1,3,9,12,13"
 			}
 		],
 		"dec":[
 			{
 				"value":"-02:07:03.17",
 				"u_value":"degrees",
-				"source":"2,11"
+				"source":"2,14"
 			},
 			{
 				"value":"-02:07:03.2",
 				"u_value":"degrees",
-				"source":"2,3,7,8"
+				"source":"2,3,9,11"
 			},
 			{
 				"value":"-02:07:01.488",
@@ -121,21 +137,31 @@
 				"source":"5"
 			},
 			{
+				"value":"-02:07:01.344",
+				"u_value":"degrees",
+				"source":"10"
+			},
+			{
+				"value":"-02:07:03.18",
+				"u_value":"degrees",
+				"source":"10"
+			},
+			{
 				"value":"-02:07:02.136",
 				"u_value":"degrees",
-				"source":"2,6"
+				"source":"2,8"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2014/05/20",
-				"source":"2,8"
+				"source":"2,11"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ASAS-SN",
-				"source":"2,3,7,8"
+				"source":"2,3,9,11"
 			}
 		],
 		"ebv":[
@@ -143,17 +169,17 @@
 				"value":"0.0274",
 				"derived":true,
 				"e_value":"0.0003",
-				"source":"4,9"
+				"source":"4,12"
 			}
 		],
 		"host":[
 			{
 				"value":"PGC 1101367",
-				"source":"2,8"
+				"source":"2,11"
 			},
 			{
 				"value":"GALEXASC J234448.27-020653.4",
-				"source":"2,6"
+				"source":"2,8"
 			}
 		],
 		"hostdec":[
@@ -161,20 +187,20 @@
 				"value":"-02:06:53.4",
 				"derived":true,
 				"u_value":"degrees",
-				"source":"9"
+				"source":"12"
 			}
 		],
 		"hostoffsetang":[
 			{
 				"value":"8.94",
 				"u_value":"arcseconds",
-				"source":"2,6"
+				"source":"2,8"
 			}
 		],
 		"hostoffsetdist":[
 			{
 				"value":"1.28",
-				"source":"1,2,3,7,9,10,11"
+				"source":"1,2,3,9,12,13,14"
 			}
 		],
 		"hostra":[
@@ -182,7 +208,7 @@
 				"value":"23:44:48.27",
 				"derived":true,
 				"u_value":"hours",
-				"source":"9"
+				"source":"12"
 			}
 		],
 		"lumdist":[
@@ -190,37 +216,93 @@
 				"value":"29.943",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,7,9,10"
+				"source":"1,3,9,12,13"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-16.734",
+				"derived":true,
+				"source":"1,3,9,12,13"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"15.64",
+				"derived":true,
+				"source":"7,10,12"
+			}
+		],
+		"maxband":[
+			{
+				"value":"R",
+				"derived":true,
+				"source":"7,10,12"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2014/07/22",
+				"derived":true,
+				"source":"7,10,12"
+			}
+		],
+		"maxvisualabsmag":[
+			{
+				"value":"-15.181",
+				"derived":true,
+				"source":"1,3,9,12,13"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"17.2",
+				"derived":true,
+				"source":"6,10,12"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"6,10,12"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2014/09/17",
+				"derived":true,
+				"source":"6,10,12"
 			}
 		],
 		"ra":[
 			{
 				"value":"23:44:48.000",
 				"u_value":"hours",
-				"source":"2,11"
+				"source":"2,14"
 			},
 			{
 				"value":"23:44:48.00",
 				"u_value":"hours",
-				"source":"2,3,7,8"
+				"source":"2,3,9,11"
 			},
 			{
 				"value":"23:44:48",
 				"u_value":"hours",
-				"source":"2,5,6"
+				"source":"2,5,8,10"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.006731",
-				"source":"3,7,10"
+				"source":"3,9,13"
 			}
 		],
 		"velocity":[
 			{
 				"value":"2011",
 				"u_value":"km/s",
-				"source":"9"
+				"source":"12"
 			}
 		],
 		"photometry":[
@@ -2433,6 +2515,42 @@
 				"source":"5"
 			},
 			{
+				"time":"56824.1963",
+				"band":"R",
+				"e_magnitude":"0.0487263",
+				"magnitude":"15.6909",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"7,10"
+			},
+			{
+				"time":"56857.1381",
+				"band":"R",
+				"e_magnitude":"0.0266532",
+				"magnitude":"15.7528",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"7,10"
+			},
+			{
+				"time":"56860.1188",
+				"band":"R",
+				"e_magnitude":"0.0218053",
+				"magnitude":"15.6372",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"7,10"
+			},
+			{
+				"time":"56860.1217",
+				"band":"R",
+				"e_magnitude":"0.0219159",
+				"magnitude":"15.6912",
+				"observatory":"Stuart Littlefair, p",
+				"u_time":"MJD",
+				"source":"7,10"
+			},
+			{
 				"time":"56900.439941",
 				"band":"C",
 				"e_magnitude":"0.016468",
@@ -2475,6 +2593,194 @@
 				"telescope":"Catalina Schmidt",
 				"u_time":"MJD",
 				"source":"5"
+			},
+			{
+				"time":"56917.2004",
+				"band":"g",
+				"e_magnitude":"0.0085",
+				"magnitude":"17.2016",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"6,10"
+			},
+			{
+				"time":"56917.2004",
+				"band":"r",
+				"magnitude":"30.4321",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"6,10"
+			},
+			{
+				"time":"56917.2004",
+				"band":"u",
+				"e_magnitude":"0.1241",
+				"magnitude":"19.0269",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"6,10"
+			},
+			{
+				"time":"56917.951",
+				"band":"g",
+				"e_magnitude":"0.043",
+				"magnitude":"18.0045",
+				"observatory":"Loiano,K.Ulaczyk",
+				"u_time":"MJD",
+				"source":"6,10"
+			},
+			{
+				"time":"56917.9561",
+				"band":"r",
+				"e_magnitude":"0.033",
+				"magnitude":"17.1937",
+				"observatory":"Loiano,K.Ulaczyk",
+				"u_time":"MJD",
+				"source":"6,10"
+			},
+			{
+				"time":"56917.9601",
+				"band":"i",
+				"e_magnitude":"0.03",
+				"magnitude":"17.2724",
+				"observatory":"Loiano,K.Ulaczyk",
+				"u_time":"MJD",
+				"source":"6,10"
+			},
+			{
+				"time":"56921.0126",
+				"band":"r",
+				"e_magnitude":"0.033",
+				"magnitude":"17.2078",
+				"observatory":"Loiano,K.Ulaczyk",
+				"u_time":"MJD",
+				"source":"6,10"
+			},
+			{
+				"time":"56921.0177",
+				"band":"i",
+				"e_magnitude":"0.027",
+				"magnitude":"17.3617",
+				"observatory":"Loiano,K.Ulaczyk",
+				"u_time":"MJD",
+				"source":"6,10"
+			},
+			{
+				"time":"56921.0238",
+				"band":"g",
+				"e_magnitude":"0.038",
+				"magnitude":"18.0333",
+				"observatory":"Loiano,K.Ulaczyk",
+				"u_time":"MJD",
+				"source":"6,10"
+			},
+			{
+				"time":"56922.8554",
+				"band":"g",
+				"e_magnitude":"0.024",
+				"magnitude":"17.7445",
+				"observatory":"Loiano,K.Ulaczyk",
+				"u_time":"MJD",
+				"source":"6,10"
+			},
+			{
+				"time":"56922.8628",
+				"band":"r",
+				"e_magnitude":"0.018",
+				"magnitude":"17.0425",
+				"observatory":"Loiano,K.Ulaczyk",
+				"u_time":"MJD",
+				"source":"6,10"
+			},
+			{
+				"time":"56922.8688",
+				"band":"i",
+				"e_magnitude":"0.021",
+				"magnitude":"17.318",
+				"observatory":"Loiano,K.Ulaczyk",
+				"u_time":"MJD",
+				"source":"6,10"
+			},
+			{
+				"time":"56923.9516",
+				"band":"g",
+				"e_magnitude":"0.039",
+				"magnitude":"17.8828",
+				"observatory":"Loiano,K.Ulaczyk",
+				"u_time":"MJD",
+				"source":"6,10"
+			},
+			{
+				"time":"56923.9579",
+				"band":"r",
+				"e_magnitude":"0.031",
+				"magnitude":"17.0989",
+				"observatory":"Loiano,K.Ulaczyk",
+				"u_time":"MJD",
+				"source":"6,10"
+			},
+			{
+				"time":"56923.9632",
+				"band":"i",
+				"e_magnitude":"0.029",
+				"magnitude":"16.9896",
+				"observatory":"Loiano,K.Ulaczyk",
+				"u_time":"MJD",
+				"source":"6,10"
+			},
+			{
+				"time":"56926.9014",
+				"band":"g",
+				"e_magnitude":"0.058",
+				"magnitude":"18.0366",
+				"observatory":"Loiano,K.Ulaczyk",
+				"u_time":"MJD",
+				"source":"6,10"
+			},
+			{
+				"time":"56926.9088",
+				"band":"r",
+				"e_magnitude":"0.047",
+				"magnitude":"17.1679",
+				"observatory":"Loiano,K.Ulaczyk",
+				"u_time":"MJD",
+				"source":"6,10"
+			},
+			{
+				"time":"56926.9161",
+				"band":"i",
+				"e_magnitude":"0.038",
+				"magnitude":"17.4045",
+				"observatory":"Loiano,K.Ulaczyk",
+				"u_time":"MJD",
+				"source":"6,10"
+			},
+			{
+				"time":"56927.9005",
+				"band":"g",
+				"e_magnitude":"0.046",
+				"magnitude":"18.0731",
+				"observatory":"Loiano,K.Ulaczyk",
+				"u_time":"MJD",
+				"source":"6,10"
+			},
+			{
+				"time":"56927.9069",
+				"band":"r",
+				"e_magnitude":"0.037",
+				"magnitude":"17.2588",
+				"observatory":"Loiano,K.Ulaczyk",
+				"u_time":"MJD",
+				"source":"6,10"
+			},
+			{
+				"time":"56927.9121",
+				"band":"i",
+				"e_magnitude":"0.032",
+				"magnitude":"17.4628",
+				"observatory":"Loiano,K.Ulaczyk",
+				"u_time":"MJD",
+				"source":"6,10"
 			}
 		],
 		"spectra":[
@@ -9100,7 +9406,7 @@
 						"3.362394428e-16"
 					]
 				],
-				"source":"10"
+				"source":"13"
 			}
 		]
 	}
