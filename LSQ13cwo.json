@@ -4,28 +4,45 @@
 		"name":"LSQ13cwo",
 		"sources":[
 			{
-				"name":"ATel 5567",
+				"name":"2016ApJ...820...33R",
+				"bibcode":"2016ApJ...820...33R",
+				"reference":"Rubin et al. (2016)",
+				"alias":"1"
+			},
+			{
+				"name":"2016A&A...594A..13P",
+				"bibcode":"2016A&A...594A..13P",
+				"reference":"Planck Collaboration et al. (2016)",
+				"alias":"2"
+			},
+			{
+				"name":"2013ATel.5567....1W",
 				"bibcode":"2013ATel.5567....1W",
 				"reference":"Walker et al. (2013)",
-				"url":"http://www.astronomerstelegram.org/?read=5567",
-				"alias":"1"
+				"alias":"3"
+			},
+			{
+				"name":"2012PASP..124..668Y",
+				"bibcode":"2012PASP..124..668Y",
+				"reference":"Yaron & Gal-Yam (2012)",
+				"alias":"4"
 			},
 			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
 				"reference":"Schlafly & Finkbeiner (2011)",
-				"alias":"2"
+				"alias":"5"
 			},
 			{
 				"name":"Pan-STARRS 3Pi",
 				"url":"http://psweb.mp.qub.ac.uk/ps1threepi/psdb/",
-				"alias":"3"
+				"alias":"6"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"7"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -33,47 +50,72 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"8"
+			},
+			{
+				"name":"SIMBAD astronomical database",
+				"bibcode":"2000A&AS..143....9W",
+				"reference":"Wenger et al. (2000)",
+				"secondary":true,
+				"url":"http://simbad.u-strasbg.fr/",
+				"alias":"9"
 			}
 		],
 		"alias":[
 			{
 				"value":"LSQ13cwo",
-				"source":"1,3,4"
+				"source":"3,6,7,9"
+			},
+			{
+				"value":"iPTF13dzb",
+				"source":"1,4,9"
 			},
 			{
 				"value":"PS1-13ebu",
-				"source":"1,4"
+				"source":"3,7"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"II",
-				"source":"1,3,4"
+				"source":"3,6,7,9"
+			}
+		],
+		"comovingdist":[
+			{
+				"value":"160",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,8"
 			}
 		],
 		"dec":[
 			{
 				"value":"-00:21:40.3",
 				"u_value":"degrees",
-				"source":"1,4"
+				"source":"3,7,9"
+			},
+			{
+				"value":"-00:21:40.32",
+				"u_value":"degrees",
+				"source":"1"
 			},
 			{
 				"value":"-00:21:40.4",
 				"u_value":"degrees",
-				"source":"1,3"
+				"source":"3,6"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2013/11/08",
-				"source":"1,4"
+				"source":"3,7"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"La Silla-QUEST",
-				"source":"1,4"
+				"source":"3,7"
 			}
 		],
 		"ebv":[
@@ -81,64 +123,645 @@
 				"value":"0.062",
 				"derived":true,
 				"e_value":"0.0011",
-				"source":"2,5"
+				"source":"5,8"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"168",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,8"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-17.4",
+				"derived":true,
+				"source":"1,2,8"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"18.75",
+				"value":"18.71",
 				"derived":true,
-				"source":"1,3,5"
+				"source":"1,8"
 			}
 		],
 		"maxband":[
 			{
 				"value":"r",
 				"derived":true,
-				"source":"1,3,5"
+				"source":"1,8"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2013/11/24",
+				"value":"2013/11/15",
 				"derived":true,
-				"source":"1,3,5"
+				"source":"1,8"
+			}
+		],
+		"maxvisualabsmag":[
+			{
+				"value":"-17.1",
+				"derived":true,
+				"source":"1,2,8"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"19.02",
 				"derived":true,
-				"source":"1,3,5"
+				"source":"3,6,8"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"1,3,5"
+				"source":"3,6,8"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2013/11/24",
 				"derived":true,
-				"source":"1,3,5"
+				"source":"3,6,8"
 			}
 		],
 		"ra":[
 			{
 				"value":"03:10:50.21",
 				"u_value":"hours",
-				"source":"1,4"
+				"source":"3,7,9"
+			},
+			{
+				"value":"03:10:50.199",
+				"u_value":"hours",
+				"source":"1"
 			},
 			{
 				"value":"03:10:50.22",
 				"u_value":"hours",
-				"source":"1,3"
+				"source":"3,6"
+			}
+		],
+		"redshift":[
+			{
+				"value":"0.037",
+				"kind":"spectroscopic",
+				"source":"1"
+			}
+		],
+		"velocity":[
+			{
+				"value":"11000",
+				"u_value":"km/s",
+				"source":"8"
 			}
 		],
 		"photometry":[
+			{
+				"time":"56596.302",
+				"band":"R",
+				"magnitude":"21.1",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"56596.327",
+				"band":"R",
+				"magnitude":"21.36",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"56597.23",
+				"band":"R",
+				"magnitude":"21.2",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"56597.313",
+				"band":"R",
+				"magnitude":"21.29",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"56597.339",
+				"band":"R",
+				"magnitude":"21.25",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"56598.241",
+				"band":"R",
+				"magnitude":"21.14",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"56598.309",
+				"band":"R",
+				"magnitude":"21.39",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"56598.335",
+				"band":"R",
+				"magnitude":"21.58",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"56599.237",
+				"band":"R",
+				"magnitude":"21.58",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"56599.278",
+				"band":"R",
+				"magnitude":"21.75",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"56599.303",
+				"band":"R",
+				"magnitude":"21.74",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"56600.244",
+				"band":"R",
+				"magnitude":"21.59",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"56600.365",
+				"band":"R",
+				"magnitude":"21.55",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"56600.389",
+				"band":"R",
+				"magnitude":"20.97",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"56601.359",
+				"band":"R",
+				"magnitude":"21.54",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"56601.384",
+				"band":"R",
+				"magnitude":"21.15",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"56601.409",
+				"band":"R",
+				"magnitude":"21.35",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"56602.311",
+				"band":"R",
+				"magnitude":"21.25",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"56602.337",
+				"band":"R",
+				"magnitude":"21.04",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"56602.361",
+				"band":"R",
+				"magnitude":"21.19",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"56603.263",
+				"band":"R",
+				"e_magnitude":"0.14",
+				"magnitude":"19.95",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56603.296",
+				"band":"R",
+				"e_magnitude":"0.07",
+				"magnitude":"19.52",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56603.322",
+				"band":"R",
+				"e_magnitude":"0.07",
+				"magnitude":"19.63",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56604.178",
+				"band":"r",
+				"e_magnitude":"0.05",
+				"magnitude":"19.23",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56604.294",
+				"band":"R",
+				"e_magnitude":"0.05",
+				"magnitude":"19.31",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56604.413",
+				"band":"R",
+				"e_magnitude":"0.05",
+				"magnitude":"19.21",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56604.439",
+				"band":"R",
+				"e_magnitude":"0.05",
+				"magnitude":"19.26",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56604.806",
+				"band":"r",
+				"e_magnitude":"0.04",
+				"magnitude":"19.19",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56605.34",
+				"band":"R",
+				"e_magnitude":"0.04",
+				"magnitude":"19.12",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56605.382",
+				"band":"R",
+				"e_magnitude":"0.04",
+				"magnitude":"19.12",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56605.409",
+				"band":"R",
+				"e_magnitude":"0.05",
+				"magnitude":"19.15",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56606.072",
+				"band":"r",
+				"e_magnitude":"0.03",
+				"magnitude":"19.01",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56606.247",
+				"band":"r",
+				"e_magnitude":"0.05",
+				"magnitude":"19.04",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56606.877",
+				"band":"r",
+				"e_magnitude":"0.01",
+				"magnitude":"18.89",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56607.126",
+				"band":"r",
+				"e_magnitude":"0.07",
+				"magnitude":"18.98",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56607.166",
+				"band":"R",
+				"e_magnitude":"0.06",
+				"magnitude":"18.87",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56607.224",
+				"band":"r",
+				"e_magnitude":"0.01",
+				"magnitude":"18.94",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56607.301",
+				"band":"R",
+				"e_magnitude":"0.05",
+				"magnitude":"18.9",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56607.328",
+				"band":"R",
+				"e_magnitude":"0.04",
+				"magnitude":"18.95",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56607.879",
+				"band":"r",
+				"e_magnitude":"0.04",
+				"magnitude":"19.01",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56608.216",
+				"band":"r",
+				"e_magnitude":"0.05",
+				"magnitude":"18.9",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56608.23",
+				"band":"R",
+				"e_magnitude":"0.07",
+				"magnitude":"19.03",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56608.263",
+				"band":"R",
+				"e_magnitude":"0.07",
+				"magnitude":"18.9",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56608.293",
+				"band":"R",
+				"e_magnitude":"0.06",
+				"magnitude":"18.89",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56608.317",
+				"band":"r",
+				"e_magnitude":"0.04",
+				"magnitude":"18.79",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56608.392",
+				"band":"r",
+				"e_magnitude":"0.03",
+				"magnitude":"18.87",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56608.987",
+				"band":"r",
+				"e_magnitude":"0.01",
+				"magnitude":"18.78",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56609.194",
+				"band":"R",
+				"e_magnitude":"0.07",
+				"magnitude":"18.73",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56609.283",
+				"band":"r",
+				"e_magnitude":"0.04",
+				"magnitude":"18.78",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56609.342",
+				"band":"R",
+				"e_magnitude":"0.05",
+				"magnitude":"18.84",
+				"telescope":"PTF48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56609.701",
+				"band":"r",
+				"e_magnitude":"0.04",
+				"magnitude":"18.89",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56609.873",
+				"band":"r",
+				"e_magnitude":"0.02",
+				"magnitude":"18.76",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56610.069",
+				"band":"r",
+				"e_magnitude":"0.02",
+				"magnitude":"18.78",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56610.888",
+				"band":"r",
+				"e_magnitude":"0.04",
+				"magnitude":"18.86",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56611.285",
+				"band":"r",
+				"e_magnitude":"0.27",
+				"magnitude":"18.85",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56611.488",
+				"band":"r",
+				"e_magnitude":"0.11",
+				"magnitude":"18.71",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56614.28",
+				"band":"r",
+				"e_magnitude":"0.09",
+				"magnitude":"18.73",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56615.171",
+				"band":"r",
+				"e_magnitude":"0.04",
+				"magnitude":"18.76",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56616.209",
+				"band":"r",
+				"e_magnitude":"0.03",
+				"magnitude":"18.82",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56617.906",
+				"band":"r",
+				"e_magnitude":"0.01",
+				"magnitude":"18.88",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
 			{
 				"time":"56619.340308439",
 				"band":"i",
@@ -147,7 +770,7 @@
 				"magnitude":"19.0549",
 				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"1,3"
+				"source":"3,6"
 			},
 			{
 				"time":"56619.3529482367",
@@ -157,7 +780,16 @@
 				"magnitude":"19.0644",
 				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"1,3"
+				"source":"3,6"
+			},
+			{
+				"time":"56619.916",
+				"band":"r",
+				"e_magnitude":"0.06",
+				"magnitude":"18.86",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
 			},
 			{
 				"time":"56620.3553828751",
@@ -167,7 +799,7 @@
 				"magnitude":"19.0171",
 				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"1,3"
+				"source":"3,6"
 			},
 			{
 				"time":"56620.3680429356",
@@ -177,7 +809,7 @@
 				"magnitude":"19.0907",
 				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"1,3"
+				"source":"3,6"
 			},
 			{
 				"time":"56620.382900774",
@@ -187,7 +819,7 @@
 				"magnitude":"18.7695",
 				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"1,3"
+				"source":"3,6"
 			},
 			{
 				"time":"56620.3947573734",
@@ -197,7 +829,43 @@
 				"magnitude":"18.7458",
 				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"1,3"
+				"source":"3,6"
+			},
+			{
+				"time":"56622.259",
+				"band":"r",
+				"e_magnitude":"0.01",
+				"magnitude":"18.8",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56624.081",
+				"band":"r",
+				"e_magnitude":"0.03",
+				"magnitude":"18.88",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56626.17",
+				"band":"r",
+				"e_magnitude":"0.0",
+				"magnitude":"18.85",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56628.255",
+				"band":"r",
+				"e_magnitude":"0.03",
+				"magnitude":"18.84",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
 			},
 			{
 				"time":"56630.3029443457",
@@ -207,7 +875,7 @@
 				"magnitude":"19.2675",
 				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"1,3"
+				"source":"3,6"
 			},
 			{
 				"time":"56630.3160405663",
@@ -217,7 +885,25 @@
 				"magnitude":"19.2375",
 				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"1,3"
+				"source":"3,6"
+			},
+			{
+				"time":"56632.14",
+				"band":"r",
+				"e_magnitude":"0.02",
+				"magnitude":"18.85",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56636.596",
+				"band":"r",
+				"e_magnitude":"0.01",
+				"magnitude":"18.83",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
 			},
 			{
 				"time":"56637.291775263",
@@ -227,7 +913,7 @@
 				"magnitude":"18.9199",
 				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"1,3"
+				"source":"3,6"
 			},
 			{
 				"time":"56637.3053997162",
@@ -237,7 +923,16 @@
 				"magnitude":"19.0289",
 				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"1,3"
+				"source":"3,6"
+			},
+			{
+				"time":"56673.798",
+				"band":"r",
+				"e_magnitude":"0.02",
+				"magnitude":"18.88",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
 			},
 			{
 				"time":"56677.3217443667",
@@ -247,7 +942,7 @@
 				"magnitude":"19.0883",
 				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"1,3"
+				"source":"3,6"
 			},
 			{
 				"time":"56677.3336081616",
@@ -257,7 +952,133 @@
 				"magnitude":"19.0662",
 				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"1,3"
+				"source":"3,6"
+			},
+			{
+				"time":"56678.117",
+				"band":"r",
+				"e_magnitude":"0.03",
+				"magnitude":"18.81",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56684.49",
+				"band":"r",
+				"e_magnitude":"0.01",
+				"magnitude":"18.97",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56691.808",
+				"band":"r",
+				"e_magnitude":"0.02",
+				"magnitude":"19.1",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56693.79",
+				"band":"r",
+				"e_magnitude":"0.04",
+				"magnitude":"19.05",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56696.426",
+				"band":"r",
+				"e_magnitude":"0.02",
+				"magnitude":"19.09",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56698.456",
+				"band":"r",
+				"e_magnitude":"0.05",
+				"magnitude":"19.16",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56700.779",
+				"band":"r",
+				"e_magnitude":"0.23",
+				"magnitude":"19.27",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56703.784",
+				"band":"r",
+				"e_magnitude":"0.0",
+				"magnitude":"19.36",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56705.435",
+				"band":"r",
+				"e_magnitude":"0.14",
+				"magnitude":"19.45",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56708.788",
+				"band":"r",
+				"e_magnitude":"0.07",
+				"magnitude":"19.97",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56710.036",
+				"band":"r",
+				"e_magnitude":"0.05",
+				"magnitude":"19.73",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56711.415",
+				"band":"r",
+				"e_magnitude":"0.07",
+				"magnitude":"20.13",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56713.77",
+				"band":"r",
+				"e_magnitude":"0.11",
+				"magnitude":"20.07",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"56718.034",
+				"band":"r",
+				"e_magnitude":"0.02",
+				"magnitude":"20.37",
+				"telescope":"LCOGT",
+				"u_time":"MJD",
+				"source":"1"
 			}
 		]
 	}
