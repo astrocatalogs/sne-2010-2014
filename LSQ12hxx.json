@@ -4,83 +4,177 @@
 		"name":"LSQ12hxx",
 		"sources":[
 			{
-				"name":"SIMBAD astronomical database",
-				"bibcode":"2000A&AS..143....9W",
-				"secondary":true,
-				"url":"http://simbad.u-strasbg.fr/",
+				"name":"2016A&A...594A..13P",
+				"bibcode":"2016A&A...594A..13P",
+				"reference":"Planck Collaboration et al. (2016)",
 				"alias":"1"
 			},
 			{
-				"bibcode":"2012ATel.4691....1H",
+				"name":"2015ApJS..219...13W",
+				"bibcode":"2015ApJS..219...13W",
+				"reference":"Walker et al. (2015)",
 				"alias":"2"
 			},
 			{
-				"bibcode":"2015ApJS..219...13W",
+				"name":"2015MNRAS.446.3895F",
+				"bibcode":"2015MNRAS.446.3895F",
+				"reference":"Firth et al. (2015)",
 				"alias":"3"
 			},
 			{
-				"bibcode":"2015MNRAS.446.3895F",
+				"name":"2012ATel.4691....1H",
+				"bibcode":"2012ATel.4691....1H",
+				"reference":"Hadjiyska et al. (2012)",
 				"alias":"4"
+			},
+			{
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"reference":"Schlafly & Finkbeiner (2011)",
+				"alias":"5"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"5"
+				"alias":"6"
+			},
+			{
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2017ApJ...835...64G",
+				"reference":"Guillochon et al. (2017)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"7"
+			},
+			{
+				"name":"SIMBAD astronomical database",
+				"bibcode":"2000A&AS..143....9W",
+				"reference":"Wenger et al. (2000)",
+				"secondary":true,
+				"url":"http://simbad.u-strasbg.fr/",
+				"alias":"8"
 			}
 		],
 		"alias":[
 			{
 				"value":"LSQ12hxx",
-				"source":"1,2,3,4,5"
+				"source":"2,3,4,6,8"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1,2,5"
+				"kind":"spectroscopic",
+				"source":"2"
 			},
 			{
 				"value":"Ia",
-				"kind":"spectroscopic",
-				"source":"3"
+				"source":"4,6,8"
+			}
+		],
+		"comovingdist":[
+			{
+				"value":"300",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,7"
 			}
 		],
 		"dec":[
 			{
 				"value":"-27:00:25.6",
 				"u_value":"degrees",
-				"source":"1,2,5"
+				"source":"4,6,8"
 			},
 			{
 				"value":"-27:00:25.68",
 				"u_value":"degrees",
-				"source":"3"
+				"source":"2"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2012/12/25",
-				"source":"2,5"
+				"source":"4,6"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"La Silla-QUEST",
-				"source":"2,5"
+				"source":"4,6"
 			}
 		],
 		"ebv":[
 			{
-				"value":"0.016",
-				"source":"3"
+				"value":"0.0153",
+				"derived":true,
+				"e_value":"0.0006",
+				"source":"5,7"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"321",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,7"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-19.9",
+				"derived":true,
+				"source":"1,2,7"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"17.6",
+				"derived":true,
+				"source":"4,6,7"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2012/12/24",
+				"derived":true,
+				"source":"4,6,7"
+			}
+		],
+		"maxvisualabsmag":[
+			{
+				"value":"-19.3",
+				"derived":true,
+				"source":"1,2,7"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"18.19",
+				"derived":true,
+				"source":"2,7"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"B",
+				"derived":true,
+				"source":"2,7"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2012/12/28",
+				"derived":true,
+				"source":"2,7"
 			}
 		],
 		"ra":[
 			{
 				"value":"03:19:44.23",
 				"u_value":"hours",
-				"source":"1,2,3,5"
+				"source":"2,4,6,8"
 			}
 		],
 		"redshift":[
@@ -88,730 +182,17 @@
 				"value":"0.069",
 				"e_value":"0.001",
 				"kind":"heliocentric",
-				"source":"3"
+				"source":"2"
+			}
+		],
+		"velocity":[
+			{
+				"value":"20000",
+				"u_value":"km/s",
+				"source":"7"
 			}
 		],
 		"photometry":[
-			{
-				"time":"56288.18071",
-				"band":"B",
-				"e_magnitude":"0.017",
-				"instrument":"QUEST",
-				"magnitude":"18.256",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56289.08637",
-				"band":"B",
-				"e_magnitude":"0.017",
-				"instrument":"QUEST",
-				"magnitude":"18.187",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56290.09412",
-				"band":"B",
-				"e_magnitude":"0.017",
-				"instrument":"QUEST",
-				"magnitude":"18.264",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56291.17691",
-				"band":"B",
-				"e_magnitude":"0.017",
-				"instrument":"QUEST",
-				"magnitude":"18.261",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56292.13758",
-				"band":"B",
-				"e_magnitude":"0.015",
-				"instrument":"QUEST",
-				"magnitude":"18.303",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56293.18112",
-				"band":"B",
-				"e_magnitude":"0.015",
-				"instrument":"QUEST",
-				"magnitude":"18.301",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56294.12414",
-				"band":"B",
-				"e_magnitude":"0.013",
-				"instrument":"QUEST",
-				"magnitude":"18.346",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56295.14321",
-				"band":"B",
-				"e_magnitude":"0.01",
-				"instrument":"QUEST",
-				"magnitude":"18.41",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56296.07795",
-				"band":"B",
-				"e_magnitude":"0.01",
-				"instrument":"QUEST",
-				"magnitude":"18.461",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56297.11236",
-				"band":"B",
-				"e_magnitude":"0.011",
-				"instrument":"QUEST",
-				"magnitude":"18.489",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56300.09682",
-				"band":"B",
-				"e_magnitude":"0.012",
-				"instrument":"QUEST",
-				"magnitude":"18.699",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56304.12997",
-				"band":"B",
-				"e_magnitude":"0.014",
-				"instrument":"QUEST",
-				"magnitude":"19.093",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56307.11653",
-				"band":"B",
-				"e_magnitude":"0.019",
-				"instrument":"QUEST",
-				"magnitude":"19.439",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56310.09427",
-				"band":"B",
-				"e_magnitude":"0.025",
-				"instrument":"QUEST",
-				"magnitude":"19.765",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56314.08441",
-				"band":"B",
-				"e_magnitude":"0.056",
-				"instrument":"QUEST",
-				"magnitude":"20.204",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56288.17439",
-				"band":"V",
-				"e_magnitude":"0.015",
-				"instrument":"QUEST",
-				"magnitude":"18.211",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56289.08038",
-				"band":"V",
-				"e_magnitude":"0.018",
-				"instrument":"QUEST",
-				"magnitude":"18.198",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56290.08929",
-				"band":"V",
-				"e_magnitude":"0.017",
-				"instrument":"QUEST",
-				"magnitude":"18.192",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56291.07985",
-				"band":"V",
-				"e_magnitude":"0.015",
-				"instrument":"QUEST",
-				"magnitude":"18.195",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56292.13297",
-				"band":"V",
-				"e_magnitude":"0.015",
-				"instrument":"QUEST",
-				"magnitude":"18.186",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56293.17473",
-				"band":"V",
-				"e_magnitude":"0.015",
-				"instrument":"QUEST",
-				"magnitude":"18.206",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56294.12877",
-				"band":"V",
-				"e_magnitude":"0.014",
-				"instrument":"QUEST",
-				"magnitude":"18.238",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56295.13683",
-				"band":"V",
-				"e_magnitude":"0.012",
-				"instrument":"QUEST",
-				"magnitude":"18.246",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56296.07249",
-				"band":"V",
-				"e_magnitude":"0.011",
-				"instrument":"QUEST",
-				"magnitude":"18.275",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56297.10629",
-				"band":"V",
-				"e_magnitude":"0.011",
-				"instrument":"QUEST",
-				"magnitude":"18.292",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56300.09058",
-				"band":"V",
-				"e_magnitude":"0.011",
-				"instrument":"QUEST",
-				"magnitude":"18.422",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56304.12359",
-				"band":"V",
-				"e_magnitude":"0.023",
-				"instrument":"QUEST",
-				"magnitude":"18.655",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56307.11037",
-				"band":"V",
-				"e_magnitude":"0.014",
-				"instrument":"QUEST",
-				"magnitude":"18.848",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56310.0873",
-				"band":"V",
-				"e_magnitude":"0.017",
-				"instrument":"QUEST",
-				"magnitude":"19.037",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56314.0783",
-				"band":"V",
-				"e_magnitude":"0.027",
-				"instrument":"QUEST",
-				"magnitude":"19.279",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56288.16786",
-				"band":"r",
-				"e_magnitude":"0.013",
-				"instrument":"QUEST",
-				"magnitude":"18.197",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56289.07188",
-				"band":"r",
-				"e_magnitude":"0.014",
-				"instrument":"QUEST",
-				"magnitude":"18.169",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56290.08022",
-				"band":"r",
-				"e_magnitude":"0.014",
-				"instrument":"QUEST",
-				"magnitude":"18.177",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56291.1131",
-				"band":"r",
-				"e_magnitude":"0.018",
-				"instrument":"QUEST",
-				"magnitude":"18.133",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56292.1272",
-				"band":"r",
-				"e_magnitude":"0.023",
-				"instrument":"QUEST",
-				"magnitude":"18.132",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56293.16759",
-				"band":"r",
-				"e_magnitude":"0.021",
-				"instrument":"QUEST",
-				"magnitude":"18.121",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56294.13363",
-				"band":"r",
-				"e_magnitude":"0.015",
-				"instrument":"QUEST",
-				"magnitude":"18.157",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56295.12565",
-				"band":"r",
-				"e_magnitude":"0.024",
-				"instrument":"QUEST",
-				"magnitude":"18.131",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56296.06679",
-				"band":"r",
-				"e_magnitude":"0.013",
-				"instrument":"QUEST",
-				"magnitude":"18.151",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56297.09598",
-				"band":"r",
-				"e_magnitude":"0.012",
-				"instrument":"QUEST",
-				"magnitude":"18.197",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56300.07713",
-				"band":"r",
-				"e_magnitude":"0.009",
-				"instrument":"QUEST",
-				"magnitude":"18.346",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56304.1108",
-				"band":"r",
-				"e_magnitude":"0.01",
-				"instrument":"QUEST",
-				"magnitude":"18.617",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56307.09784",
-				"band":"r",
-				"e_magnitude":"0.016",
-				"instrument":"QUEST",
-				"magnitude":"18.738",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56310.1014",
-				"band":"r",
-				"e_magnitude":"0.012",
-				"instrument":"QUEST",
-				"magnitude":"18.829",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56314.06322",
-				"band":"r",
-				"e_magnitude":"0.026",
-				"instrument":"QUEST",
-				"magnitude":"18.952",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56288.16094",
-				"band":"i",
-				"e_magnitude":"0.022",
-				"instrument":"QUEST",
-				"magnitude":"18.719",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56289.06573",
-				"band":"i",
-				"e_magnitude":"0.023",
-				"instrument":"QUEST",
-				"magnitude":"18.701",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56290.08458",
-				"band":"i",
-				"e_magnitude":"0.019",
-				"instrument":"QUEST",
-				"magnitude":"18.724",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56291.11747",
-				"band":"i",
-				"e_magnitude":"0.03",
-				"instrument":"QUEST",
-				"magnitude":"18.705",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56292.12249",
-				"band":"i",
-				"e_magnitude":"0.025",
-				"instrument":"QUEST",
-				"magnitude":"18.727",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56293.16169",
-				"band":"i",
-				"e_magnitude":"0.021",
-				"instrument":"QUEST",
-				"magnitude":"18.789",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56294.13823",
-				"band":"i",
-				"e_magnitude":"0.025",
-				"instrument":"QUEST",
-				"magnitude":"18.76",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56295.13125",
-				"band":"i",
-				"e_magnitude":"0.018",
-				"instrument":"QUEST",
-				"magnitude":"18.785",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56296.06212",
-				"band":"i",
-				"e_magnitude":"0.029",
-				"instrument":"QUEST",
-				"magnitude":"18.753",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56297.10142",
-				"band":"i",
-				"e_magnitude":"0.019",
-				"instrument":"QUEST",
-				"magnitude":"18.787",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56300.08347",
-				"band":"i",
-				"e_magnitude":"0.02",
-				"instrument":"QUEST",
-				"magnitude":"18.957",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56304.11721",
-				"band":"i",
-				"e_magnitude":"0.023",
-				"instrument":"QUEST",
-				"magnitude":"19.366",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56307.10394",
-				"band":"i",
-				"e_magnitude":"0.021",
-				"instrument":"QUEST",
-				"magnitude":"19.394",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56310.10755",
-				"band":"i",
-				"e_magnitude":"0.025",
-				"instrument":"QUEST",
-				"magnitude":"19.343",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
-			{
-				"time":"56314.07008",
-				"band":"i",
-				"e_magnitude":"0.029",
-				"instrument":"QUEST",
-				"magnitude":"19.302",
-				"observatory":"La Silla",
-				"system":"Swope",
-				"telescope":"ESO Schmidt",
-				"u_time":"MJD",
-				"source":"3"
-			},
 			{
 				"time":"56267.115",
 				"band":"gr",
@@ -824,7 +205,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56267.199",
@@ -838,7 +219,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56269.113",
@@ -852,7 +233,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56269.197",
@@ -866,7 +247,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56271.116",
@@ -880,7 +261,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56271.199",
@@ -894,7 +275,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56273.107",
@@ -908,7 +289,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56273.192",
@@ -922,7 +303,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56277.096",
@@ -935,7 +316,7 @@
 				"magnitude":"20.07",
 				"u_time":"s^-1",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56277.179",
@@ -948,7 +329,7 @@
 				"magnitude":"20.02",
 				"u_time":"s^-1",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56279.097",
@@ -961,7 +342,7 @@
 				"magnitude":"19.338",
 				"u_time":"s^-1",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56279.181",
@@ -974,7 +355,7 @@
 				"magnitude":"19.337",
 				"u_time":"s^-1",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56283.087",
@@ -987,7 +368,7 @@
 				"magnitude":"18.514",
 				"u_time":"s^-1",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56283.172",
@@ -1000,7 +381,7 @@
 				"magnitude":"18.482",
 				"u_time":"s^-1",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56284.067",
@@ -1013,7 +394,7 @@
 				"magnitude":"18.372",
 				"u_time":"s^-1",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56284.151",
@@ -1026,7 +407,13 @@
 				"magnitude":"18.424",
 				"u_time":"s^-1",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
+			},
+			{
+				"time":"56285.5",
+				"magnitude":"17.6",
+				"u_time":"MJD",
+				"source":"4,6"
 			},
 			{
 				"time":"56286.068",
@@ -1039,7 +426,7 @@
 				"magnitude":"18.274",
 				"u_time":"s^-1",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56286.152",
@@ -1052,7 +439,103 @@
 				"magnitude":"18.201",
 				"u_time":"s^-1",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
+			},
+			{
+				"time":"56288.16094",
+				"band":"i",
+				"e_magnitude":"0.022",
+				"instrument":"QUEST",
+				"magnitude":"18.719",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56288.16786",
+				"band":"r",
+				"e_magnitude":"0.013",
+				"instrument":"QUEST",
+				"magnitude":"18.197",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56288.17439",
+				"band":"V",
+				"e_magnitude":"0.015",
+				"instrument":"QUEST",
+				"magnitude":"18.211",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56288.18071",
+				"band":"B",
+				"e_magnitude":"0.017",
+				"instrument":"QUEST",
+				"magnitude":"18.256",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56289.06573",
+				"band":"i",
+				"e_magnitude":"0.023",
+				"instrument":"QUEST",
+				"magnitude":"18.701",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56289.07188",
+				"band":"r",
+				"e_magnitude":"0.014",
+				"instrument":"QUEST",
+				"magnitude":"18.169",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56289.08038",
+				"band":"V",
+				"e_magnitude":"0.018",
+				"instrument":"QUEST",
+				"magnitude":"18.198",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56289.08637",
+				"band":"B",
+				"e_magnitude":"0.017",
+				"instrument":"QUEST",
+				"magnitude":"18.187",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
 			},
 			{
 				"time":"56290.073",
@@ -1065,7 +548,55 @@
 				"magnitude":"18.204",
 				"u_time":"s^-1",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
+			},
+			{
+				"time":"56290.08022",
+				"band":"r",
+				"e_magnitude":"0.014",
+				"instrument":"QUEST",
+				"magnitude":"18.177",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56290.08458",
+				"band":"i",
+				"e_magnitude":"0.019",
+				"instrument":"QUEST",
+				"magnitude":"18.724",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56290.08929",
+				"band":"V",
+				"e_magnitude":"0.017",
+				"instrument":"QUEST",
+				"magnitude":"18.192",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56290.09412",
+				"band":"B",
+				"e_magnitude":"0.017",
+				"instrument":"QUEST",
+				"magnitude":"18.264",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
 			},
 			{
 				"time":"56290.156",
@@ -1078,7 +609,55 @@
 				"magnitude":"18.111",
 				"u_time":"s^-1",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
+			},
+			{
+				"time":"56291.07985",
+				"band":"V",
+				"e_magnitude":"0.015",
+				"instrument":"QUEST",
+				"magnitude":"18.195",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56291.1131",
+				"band":"r",
+				"e_magnitude":"0.018",
+				"instrument":"QUEST",
+				"magnitude":"18.133",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56291.11747",
+				"band":"i",
+				"e_magnitude":"0.03",
+				"instrument":"QUEST",
+				"magnitude":"18.705",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56291.17691",
+				"band":"B",
+				"e_magnitude":"0.017",
+				"instrument":"QUEST",
+				"magnitude":"18.261",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
 			},
 			{
 				"time":"56292.070",
@@ -1091,7 +670,55 @@
 				"magnitude":"18.167",
 				"u_time":"s^-1",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
+			},
+			{
+				"time":"56292.12249",
+				"band":"i",
+				"e_magnitude":"0.025",
+				"instrument":"QUEST",
+				"magnitude":"18.727",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56292.1272",
+				"band":"r",
+				"e_magnitude":"0.023",
+				"instrument":"QUEST",
+				"magnitude":"18.132",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56292.13297",
+				"band":"V",
+				"e_magnitude":"0.015",
+				"instrument":"QUEST",
+				"magnitude":"18.186",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56292.13758",
+				"band":"B",
+				"e_magnitude":"0.015",
+				"instrument":"QUEST",
+				"magnitude":"18.303",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
 			},
 			{
 				"time":"56292.154",
@@ -1104,7 +731,199 @@
 				"magnitude":"18.170",
 				"u_time":"s^-1",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
+			},
+			{
+				"time":"56293.16169",
+				"band":"i",
+				"e_magnitude":"0.021",
+				"instrument":"QUEST",
+				"magnitude":"18.789",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56293.16759",
+				"band":"r",
+				"e_magnitude":"0.021",
+				"instrument":"QUEST",
+				"magnitude":"18.121",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56293.17473",
+				"band":"V",
+				"e_magnitude":"0.015",
+				"instrument":"QUEST",
+				"magnitude":"18.206",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56293.18112",
+				"band":"B",
+				"e_magnitude":"0.015",
+				"instrument":"QUEST",
+				"magnitude":"18.301",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56294.12414",
+				"band":"B",
+				"e_magnitude":"0.013",
+				"instrument":"QUEST",
+				"magnitude":"18.346",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56294.12877",
+				"band":"V",
+				"e_magnitude":"0.014",
+				"instrument":"QUEST",
+				"magnitude":"18.238",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56294.13363",
+				"band":"r",
+				"e_magnitude":"0.015",
+				"instrument":"QUEST",
+				"magnitude":"18.157",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56294.13823",
+				"band":"i",
+				"e_magnitude":"0.025",
+				"instrument":"QUEST",
+				"magnitude":"18.76",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56295.12565",
+				"band":"r",
+				"e_magnitude":"0.024",
+				"instrument":"QUEST",
+				"magnitude":"18.131",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56295.13125",
+				"band":"i",
+				"e_magnitude":"0.018",
+				"instrument":"QUEST",
+				"magnitude":"18.785",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56295.13683",
+				"band":"V",
+				"e_magnitude":"0.012",
+				"instrument":"QUEST",
+				"magnitude":"18.246",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56295.14321",
+				"band":"B",
+				"e_magnitude":"0.01",
+				"instrument":"QUEST",
+				"magnitude":"18.41",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56296.06212",
+				"band":"i",
+				"e_magnitude":"0.029",
+				"instrument":"QUEST",
+				"magnitude":"18.753",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56296.06679",
+				"band":"r",
+				"e_magnitude":"0.013",
+				"instrument":"QUEST",
+				"magnitude":"18.151",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56296.07249",
+				"band":"V",
+				"e_magnitude":"0.011",
+				"instrument":"QUEST",
+				"magnitude":"18.275",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56296.07795",
+				"band":"B",
+				"e_magnitude":"0.01",
+				"instrument":"QUEST",
+				"magnitude":"18.461",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
 			},
 			{
 				"time":"56296.128",
@@ -1117,7 +936,7 @@
 				"magnitude":"18.310",
 				"u_time":"s^-1",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56296.130",
@@ -1130,7 +949,55 @@
 				"magnitude":"18.313",
 				"u_time":"s^-1",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
+			},
+			{
+				"time":"56297.09598",
+				"band":"r",
+				"e_magnitude":"0.012",
+				"instrument":"QUEST",
+				"magnitude":"18.197",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56297.10142",
+				"band":"i",
+				"e_magnitude":"0.019",
+				"instrument":"QUEST",
+				"magnitude":"18.787",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56297.10629",
+				"band":"V",
+				"e_magnitude":"0.011",
+				"instrument":"QUEST",
+				"magnitude":"18.292",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56297.11236",
+				"band":"B",
+				"e_magnitude":"0.011",
+				"instrument":"QUEST",
+				"magnitude":"18.489",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
 			},
 			{
 				"time":"56298.132",
@@ -1143,7 +1010,7 @@
 				"magnitude":"18.324",
 				"u_time":"s^-1",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56298.134",
@@ -1156,7 +1023,55 @@
 				"magnitude":"18.403",
 				"u_time":"s^-1",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
+			},
+			{
+				"time":"56300.07713",
+				"band":"r",
+				"e_magnitude":"0.009",
+				"instrument":"QUEST",
+				"magnitude":"18.346",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56300.08347",
+				"band":"i",
+				"e_magnitude":"0.02",
+				"instrument":"QUEST",
+				"magnitude":"18.957",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56300.09058",
+				"band":"V",
+				"e_magnitude":"0.011",
+				"instrument":"QUEST",
+				"magnitude":"18.422",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56300.09682",
+				"band":"B",
+				"e_magnitude":"0.012",
+				"instrument":"QUEST",
+				"magnitude":"18.699",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
 			},
 			{
 				"time":"56300.134",
@@ -1169,7 +1084,7 @@
 				"magnitude":"18.470",
 				"u_time":"s^-1",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56300.137",
@@ -1182,7 +1097,7 @@
 				"magnitude":"18.495",
 				"u_time":"s^-1",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56302.136",
@@ -1195,7 +1110,7 @@
 				"magnitude":"18.614",
 				"u_time":"s^-1",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56302.138",
@@ -1208,7 +1123,103 @@
 				"magnitude":"18.59",
 				"u_time":"s^-1",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
+			},
+			{
+				"time":"56304.1108",
+				"band":"r",
+				"e_magnitude":"0.01",
+				"instrument":"QUEST",
+				"magnitude":"18.617",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56304.11721",
+				"band":"i",
+				"e_magnitude":"0.023",
+				"instrument":"QUEST",
+				"magnitude":"19.366",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56304.12359",
+				"band":"V",
+				"e_magnitude":"0.023",
+				"instrument":"QUEST",
+				"magnitude":"18.655",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56304.12997",
+				"band":"B",
+				"e_magnitude":"0.014",
+				"instrument":"QUEST",
+				"magnitude":"19.093",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56307.09784",
+				"band":"r",
+				"e_magnitude":"0.016",
+				"instrument":"QUEST",
+				"magnitude":"18.738",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56307.10394",
+				"band":"i",
+				"e_magnitude":"0.021",
+				"instrument":"QUEST",
+				"magnitude":"19.394",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56307.11037",
+				"band":"V",
+				"e_magnitude":"0.014",
+				"instrument":"QUEST",
+				"magnitude":"18.848",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56307.11653",
+				"band":"B",
+				"e_magnitude":"0.019",
+				"instrument":"QUEST",
+				"magnitude":"19.439",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
 			},
 			{
 				"time":"56308.145",
@@ -1221,7 +1232,103 @@
 				"magnitude":"19.064",
 				"u_time":"s^-1",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
+			},
+			{
+				"time":"56310.0873",
+				"band":"V",
+				"e_magnitude":"0.017",
+				"instrument":"QUEST",
+				"magnitude":"19.037",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56310.09427",
+				"band":"B",
+				"e_magnitude":"0.025",
+				"instrument":"QUEST",
+				"magnitude":"19.765",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56310.1014",
+				"band":"r",
+				"e_magnitude":"0.012",
+				"instrument":"QUEST",
+				"magnitude":"18.829",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56310.10755",
+				"band":"i",
+				"e_magnitude":"0.025",
+				"instrument":"QUEST",
+				"magnitude":"19.343",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56314.06322",
+				"band":"r",
+				"e_magnitude":"0.026",
+				"instrument":"QUEST",
+				"magnitude":"18.952",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56314.07008",
+				"band":"i",
+				"e_magnitude":"0.029",
+				"instrument":"QUEST",
+				"magnitude":"19.302",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56314.0783",
+				"band":"V",
+				"e_magnitude":"0.027",
+				"instrument":"QUEST",
+				"magnitude":"19.279",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"56314.08441",
+				"band":"B",
+				"e_magnitude":"0.056",
+				"instrument":"QUEST",
+				"magnitude":"20.204",
+				"observatory":"La Silla",
+				"system":"Swope",
+				"telescope":"ESO Schmidt",
+				"u_time":"MJD",
+				"source":"2"
 			},
 			{
 				"time":"56647.089",
@@ -1235,7 +1342,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56647.172",
@@ -1249,7 +1356,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56649.086",
@@ -1263,7 +1370,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56649.170",
@@ -1277,7 +1384,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56651.086",
@@ -1291,7 +1398,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56651.169",
@@ -1305,7 +1412,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56653.134",
@@ -1319,7 +1426,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56653.136",
@@ -1333,7 +1440,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56655.136",
@@ -1347,7 +1454,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56655.138",
@@ -1361,7 +1468,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56657.138",
@@ -1375,7 +1482,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56657.141",
@@ -1389,7 +1496,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56659.057",
@@ -1403,7 +1510,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56659.140",
@@ -1417,7 +1524,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56661.134",
@@ -1431,7 +1538,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56661.136",
@@ -1445,7 +1552,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56663.137",
@@ -1459,7 +1566,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56663.139",
@@ -1473,7 +1580,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56665.138",
@@ -1487,7 +1594,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
+				"source":"3"
 			},
 			{
 				"time":"56665.140",
@@ -1501,13 +1608,7 @@
 				"upperlimit":true,
 				"upperlimitsigma":"3.0",
 				"zeropoint":"27.",
-				"source":"4"
-			},
-			{
-				"time":"56285.5",
-				"magnitude":"17.6",
-				"u_time":"MJD",
-				"source":"2,5"
+				"source":"3"
 			}
 		]
 	}

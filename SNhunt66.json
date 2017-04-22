@@ -4,93 +4,176 @@
 		"name":"SNhunt66",
 		"sources":[
 			{
-				"name":"The Open Supernova Catalog",
-				"bibcode":"2017ApJ...835...64G",
-				"secondary":true,
-				"url":"https://sne.space",
+				"name":"CRTS SNhunt",
+				"bibcode":"2017csnh.book.....H",
+				"reference":"Howerton (2017)",
 				"alias":"1"
 			},
 			{
-				"name":"CRTS SNhunt",
-				"bibcode":"2017csnh.book.....H",
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"reference":"Schlafly & Finkbeiner (2011)",
 				"alias":"2"
+			},
+			{
+				"name":"CBAT TOCP",
+				"url":"http://www.cbat.eps.harvard.edu/unconf/followups/J22404245-0605283.html",
+				"alias":"3"
+			},
+			{
+				"name":"Supernova Hunt",
+				"url":"http://nesssi.cacr.caltech.edu/catalina/current.html",
+				"alias":"4"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"5"
 			},
 			{
-				"name":"CBAT TOCP",
-				"url":"http://www.cbat.eps.harvard.edu/unconf/followups/J22404245-0605283.html",
-				"alias":"4"
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2017ApJ...835...64G",
+				"reference":"Guillochon et al. (2017)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"SNhunt66",
-				"source":"1,2,3,4"
+				"source":"1,3,4,5,6"
 			},
 			{
 				"value":"PSN J22404245-0605283",
-				"source":"1,3,4"
+				"source":"3,5,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Candidate",
-				"source":"2"
+				"source":"1"
 			}
 		],
 		"dec":[
 			{
 				"value":"-06:05:28",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"1"
 			},
 			{
 				"value":"-06:05:28.2",
 				"u_value":"degrees",
-				"source":"3,4"
+				"source":"3,5"
+			},
+			{
+				"value":"-06:05:28.248",
+				"u_value":"degrees",
+				"source":"4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2011/06/11",
-				"source":"2,3,4"
+				"source":"1,3,4,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Howerton",
-				"source":"2"
+				"source":"1,4"
 			},
 			{
 				"value":"CRTS",
-				"source":"3,4"
+				"source":"3,4,5"
+			}
+		],
+		"ebv":[
+			{
+				"value":"0.0328",
+				"derived":true,
+				"e_value":"0.0003",
+				"source":"2,6"
 			}
 		],
 		"host":[
 			{
 				"value":"2MASX J22404256-0605116",
-				"source":"2"
+				"source":"1"
 			},
 			{
 				"value":"PGC 1036918",
-				"source":"3,4"
+				"source":"3,4,5"
+			}
+		],
+		"hostdec":[
+			{
+				"value":"-06:05:11.6",
+				"derived":true,
+				"u_value":"degrees",
+				"source":"6"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"16.42",
+				"derived":true,
+				"u_value":"arcseconds",
+				"source":"1,6"
+			}
+		],
+		"hostra":[
+			{
+				"value":"22:40:42.56",
+				"derived":true,
+				"u_value":"hours",
+				"source":"6"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"21",
+				"derived":true,
+				"source":"3,5,6"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2011/06/10",
+				"derived":true,
+				"source":"3,5,6"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"21",
+				"derived":true,
+				"source":"3,5,6"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2011/06/10",
+				"derived":true,
+				"source":"3,5,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"22:40:42.5",
 				"u_value":"hours",
-				"source":"2"
+				"source":"1"
 			},
 			{
 				"value":"22:40:42.45",
 				"u_value":"hours",
-				"source":"3,4"
+				"source":"3,5"
+			},
+			{
+				"value":"22:40:42.48",
+				"u_value":"hours",
+				"source":"4"
 			}
 		],
 		"photometry":[
@@ -98,7 +181,7 @@
 				"time":"55722.5",
 				"magnitude":"21.0",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"3,5"
 			}
 		]
 	}
