@@ -4,21 +4,27 @@
 		"name":"PS1-14vt",
 		"sources":[
 			{
+				"name":"2016A&A...594A..13P",
+				"bibcode":"2016A&A...594A..13P",
+				"reference":"Planck Collaboration et al. (2016)",
+				"alias":"1"
+			},
+			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
 				"reference":"Schlafly & Finkbeiner (2011)",
-				"alias":"1"
+				"alias":"2"
 			},
 			{
 				"name":"Pan-STARRS 3Pi",
 				"url":"http://star.pst.qub.ac.uk/ps1threepi/psdb/public/",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -26,32 +32,48 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"5"
+			},
+			{
+				"name":"NED-D",
+				"bibcode":"1991ASSL..171...89H",
+				"reference":"Helou et al. (1991)",
+				"secondary":true,
+				"url":"http://ned.ipac.caltech.edu/Library/Distances/",
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"PS1-14vt",
-				"source":"2,3"
+				"source":"3,4"
+			}
+		],
+		"comovingdist":[
+			{
+				"value":"355",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,5,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"+06:28:01.3",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2014/03/25",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"PS1",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"ebv":[
@@ -59,50 +81,248 @@
 				"value":"0.0367",
 				"derived":true,
 				"e_value":"0.0014",
-				"source":"1,4"
+				"source":"2,5"
+			}
+		],
+		"host":[
+			{
+				"value":"2MASX J09192462+0628016",
+				"source":"3"
+			}
+		],
+		"hostcomovingdist":[
+			{
+				"value":"355",
+				"derived":true,
+				"source":"1,5,6"
+			}
+		],
+		"hostdec":[
+			{
+				"value":"+06:28:01.6",
+				"derived":true,
+				"u_value":"degrees",
+				"source":"5"
+			}
+		],
+		"hostlumdist":[
+			{
+				"value":"384.1",
+				"derived":true,
+				"source":"1,5,6"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"0.5385",
+				"derived":true,
+				"u_value":"arcseconds",
+				"source":"3,4,5"
+			}
+		],
+		"hostoffsetdist":[
+			{
+				"value":"0.8567",
+				"source":"1,3,4,5,6"
+			}
+		],
+		"hostra":[
+			{
+				"value":"09:19:24.62",
+				"derived":true,
+				"u_value":"hours",
+				"source":"5"
+			}
+		],
+		"hostredshift":[
+			{
+				"value":"0.0818",
+				"derived":true,
+				"source":"1,6"
+			}
+		],
+		"hostvelocity":[
+			{
+				"value":"23500",
+				"source":"5"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"384.1",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,5,6"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-19.04",
+				"derived":true,
+				"source":"1,5,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"18.8",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"3,5"
+			}
+		],
+		"maxband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"3,5"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2014/03/24",
+				"value":"2014/03/25",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"3,5"
+			}
+		],
+		"maxvisualabsmag":[
+			{
+				"value":"-19.12",
+				"derived":true,
+				"source":"1,5,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"18.8",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"3,5"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"3,5"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2014/03/24",
+				"value":"2014/03/25",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"3,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"09:19:24.65",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"3,4"
+			}
+		],
+		"redshift":[
+			{
+				"value":"0.0818",
+				"derived":true,
+				"kind":"host",
+				"source":"1,6"
+			}
+		],
+		"velocity":[
+			{
+				"value":"23500",
+				"u_value":"km/s",
+				"source":"5"
 			}
 		],
 		"photometry":[
 			{
-				"time":"56740.5",
-				"magnitude":"18.8",
+				"time":"56741.3531979591",
+				"band":"g",
+				"e_magnitude":"0.0633955",
+				"instrument":"GPC",
+				"magnitude":"18.797",
+				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"2,3"
+				"source":"3"
+			},
+			{
+				"time":"56741.3664765092",
+				"band":"g",
+				"e_magnitude":"0.0660634",
+				"instrument":"GPC",
+				"magnitude":"18.8383",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"56741.3792156969",
+				"band":"g",
+				"e_magnitude":"0.0458612",
+				"instrument":"GPC",
+				"magnitude":"18.8541",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"56741.3895446662",
+				"band":"g",
+				"e_magnitude":"0.0414904",
+				"instrument":"GPC",
+				"magnitude":"18.8605",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"57423.4793586073",
+				"band":"w",
+				"e_magnitude":"0.119595",
+				"instrument":"GPC",
+				"magnitude":"20.293",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58116.5088365153",
+				"band":"i",
+				"e_magnitude":"0.185588",
+				"instrument":"GPC",
+				"magnitude":"20.0287",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58130.527602084",
+				"band":"w",
+				"e_magnitude":"0.250957",
+				"instrument":"GPC",
+				"magnitude":"20.634",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58194.3571357099",
+				"band":"w",
+				"e_magnitude":"0.18199",
+				"instrument":"GPC",
+				"magnitude":"20.6385",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58194.3698156691",
+				"band":"w",
+				"e_magnitude":"0.193905",
+				"instrument":"GPC",
+				"magnitude":"20.8397",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"3"
 			}
 		]
 	}

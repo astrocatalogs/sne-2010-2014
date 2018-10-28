@@ -22,10 +22,15 @@
 				"alias":"3"
 			},
 			{
+				"name":"Pan-STARRS 3Pi",
+				"url":"https://star.pst.qub.ac.uk/ps1threepi/psdb/",
+				"alias":"4"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -33,7 +38,7 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"SIMBAD astronomical database",
@@ -41,23 +46,23 @@
 				"reference":"Wenger et al. (2000)",
 				"secondary":true,
 				"url":"http://simbad.u-strasbg.fr/",
-				"alias":"6"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"PTF13f",
-				"source":"2,4,6"
+				"source":"2,4,5,7"
 			},
 			{
 				"value":"PS1-13cyj",
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"2,4,6"
+				"source":"2,5,7"
 			}
 		],
 		"comovingdist":[
@@ -65,26 +70,31 @@
 				"value":"100",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,5"
+				"source":"1,2,5,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"+38:25:11.2",
 				"u_value":"degrees",
-				"source":"2,4,6"
+				"source":"2,5,7"
+			},
+			{
+				"value":"+38:25:11.0",
+				"u_value":"degrees",
+				"source":"2,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2013/02/01",
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"PTF",
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"ebv":[
@@ -92,12 +102,16 @@
 				"value":"0.0074",
 				"derived":true,
 				"e_value":"0.0002",
-				"source":"3,5"
+				"source":"3,6"
 			}
 		],
 		"host":[
 			{
 				"value":"KUG 1627+0385",
+				"source":"2,5"
+			},
+			{
+				"value":"KUG 1627+385",
 				"source":"2,4"
 			}
 		],
@@ -106,75 +120,112 @@
 				"value":"140",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,5"
+				"source":"1,2,5,6"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-18",
 				"derived":true,
-				"source":"1,2,4,5"
+				"source":"1,2,5,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17.3",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"2,5,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2013/01/31",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"2,5,6"
 			}
 		],
 		"maxvisualabsmag":[
 			{
-				"value":"-18",
+				"value":"-15",
 				"derived":true,
-				"source":"1,2,4,5"
+				"source":"1,2,5,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"17.3",
+				"value":"20.68",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"2,4,6"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"2,4,6"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2013/01/31",
+				"value":"2013/06/09",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"2,4,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"16:29:26.18",
 				"u_value":"hours",
-				"source":"2,4,6"
+				"source":"2,4,5,7"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.03",
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"velocity":[
 			{
 				"value":"9000",
 				"u_value":"km/s",
-				"source":"5"
+				"source":"6"
 			}
 		],
 		"photometry":[
 			{
 				"time":"56323.5",
 				"magnitude":"17.3",
+				"u_time":"MJD",
+				"source":"2,5"
+			},
+			{
+				"time":"56452.3521454445",
+				"band":"g",
+				"e_magnitude":"0.118648",
+				"instrument":"GPC",
+				"magnitude":"20.6784",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"2,4"
+			},
+			{
+				"time":"56452.3628150392",
+				"band":"g",
+				"e_magnitude":"0.0942802",
+				"instrument":"GPC",
+				"magnitude":"20.7538",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"2,4"
+			},
+			{
+				"time":"56461.4988998557",
+				"band":"g",
+				"e_magnitude":"0.215394",
+				"instrument":"GPC",
+				"magnitude":"21.0086",
+				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
 				"source":"2,4"
 			}
