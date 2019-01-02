@@ -22,10 +22,15 @@
 				"alias":"3"
 			},
 			{
+				"name":"Pan-STARRS 3Pi",
+				"url":"https://star.pst.qub.ac.uk/ps1threepi/psdb/",
+				"alias":"4"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -33,7 +38,7 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"WISeREP",
@@ -41,7 +46,7 @@
 				"reference":"Yaron & Gal-Yam (2012)",
 				"secondary":true,
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"6"
+				"alias":"7"
 			},
 			{
 				"name":"SIMBAD astronomical database",
@@ -49,23 +54,23 @@
 				"reference":"Wenger et al. (2000)",
 				"secondary":true,
 				"url":"http://simbad.u-strasbg.fr/",
-				"alias":"7"
+				"alias":"8"
 			}
 		],
 		"alias":[
 			{
 				"value":"LSQ14nr",
-				"source":"2,4,6,7"
+				"source":"2,4,5,7,8"
 			},
 			{
 				"value":"PS1-14mf",
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"2,4,6,7"
+				"source":"2,4,5,7,8"
 			}
 		],
 		"comovingdist":[
@@ -73,26 +78,31 @@
 				"value":"390",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,5,6"
+				"source":"1,2,5,6,7"
 			}
 		],
 		"dec":[
 			{
 				"value":"-17:55:43.2",
 				"u_value":"degrees",
-				"source":"2,4,7"
+				"source":"2,5,8"
+			},
+			{
+				"value":"-17:55:42.9",
+				"u_value":"degrees",
+				"source":"2,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2014/02/01",
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"La Silla-QUEST",
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"ebv":[
@@ -100,7 +110,7 @@
 				"value":"0.0263",
 				"derived":true,
 				"e_value":"0.0007",
-				"source":"3,5"
+				"source":"3,6"
 			}
 		],
 		"lumdist":[
@@ -108,75 +118,107 @@
 				"value":"430",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,5,6"
+				"source":"1,2,5,6,7"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-19.3",
 				"derived":true,
-				"source":"1,2,4,5,6"
+				"source":"1,2,5,6,7"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"18.8",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"2,5,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2014/01/31",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"2,5,6"
 			}
 		],
 		"maxvisualabsmag":[
 			{
-				"value":"-19.4",
+				"value":"-19.2",
 				"derived":true,
-				"source":"1,2,4,5,6"
+				"source":"1,2,5,6,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"18.8",
+				"value":"18.96",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"2,4,6"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"r",
+				"derived":true,
+				"source":"2,4,6"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2014/01/31",
+				"value":"2014/02/13",
 				"derived":true,
-				"source":"2,4,5"
+				"source":"2,4,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"11:48:43.97",
 				"u_value":"hours",
-				"source":"2,4,7"
+				"source":"2,5,8"
+			},
+			{
+				"value":"11:48:43.96",
+				"u_value":"hours",
+				"source":"2,4"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.091",
-				"source":"2,4,6"
+				"source":"2,5,7"
 			}
 		],
 		"velocity":[
 			{
 				"value":"26000",
 				"u_value":"km/s",
-				"source":"5"
+				"source":"6"
 			}
 		],
 		"photometry":[
 			{
 				"time":"56688.5",
 				"magnitude":"18.8",
+				"u_time":"MJD",
+				"source":"2,5"
+			},
+			{
+				"time":"56701.5271911792",
+				"band":"r",
+				"e_magnitude":"0.0498249",
+				"instrument":"GPC",
+				"magnitude":"18.9627",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"2,4"
+			},
+			{
+				"time":"56701.5382737792",
+				"band":"r",
+				"e_magnitude":"0.0426448",
+				"instrument":"GPC",
+				"magnitude":"19.0299",
+				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
 				"source":"2,4"
 			}
@@ -4256,7 +4298,7 @@
 						"2.32895e-17"
 					]
 				],
-				"source":"6"
+				"source":"7"
 			},
 			{
 				"time":"56696.0",
@@ -8316,7 +8358,7 @@
 						"2.6962e-17"
 					]
 				],
-				"source":"6"
+				"source":"7"
 			},
 			{
 				"time":"56696.0",
@@ -12132,7 +12174,7 @@
 						"-1.05403e-17"
 					]
 				],
-				"source":"6"
+				"source":"7"
 			},
 			{
 				"time":"56709.0",
@@ -16208,7 +16250,7 @@
 						"1.11773e-17"
 					]
 				],
-				"source":"6"
+				"source":"7"
 			},
 			{
 				"time":"56709.0",
@@ -20284,7 +20326,7 @@
 						"2.53109e-18"
 					]
 				],
-				"source":"6"
+				"source":"7"
 			}
 		]
 	}
