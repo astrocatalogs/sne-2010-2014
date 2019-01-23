@@ -16,15 +16,20 @@
 				"alias":"2"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"3"
+			},
+			{
 				"name":"CBAT TOCP",
 				"url":"http://www.cbat.eps.harvard.edu/unconf/followups/J09204691-0803340.html",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -32,7 +37,7 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"WISeREP",
@@ -40,23 +45,23 @@
 				"reference":"Yaron & Gal-Yam (2012)",
 				"secondary":true,
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"6"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2014es",
-				"source":"3,4,6"
+				"source":"3,4,5,7"
 			},
 			{
 				"value":"<a id=\"PSNJ09204691-0803340\">PSN J09204691-0803340</a>",
-				"source":"3,4"
+				"source":"4,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"IIn",
-				"source":"3,4,6"
+				"source":"3,4,5,7"
 			}
 		],
 		"comovingdist":[
@@ -64,26 +69,31 @@
 				"value":"86.54",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,4,5"
+				"source":"1,3,6"
 			}
 		],
 		"dec":[
 			{
+				"value":"-08:03:34.00",
+				"u_value":"degrees",
+				"source":"3"
+			},
+			{
 				"value":"-08:03:34.0",
 				"u_value":"degrees",
-				"source":"3,4"
+				"source":"4,5"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2014/11/20",
-				"source":"3,4"
+				"value":"2014/11/20.45",
+				"source":"3"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Tim Puckett et al.",
-				"source":"3,4"
+				"source":"4,5"
 			}
 		],
 		"ebv":[
@@ -91,13 +101,39 @@
 				"value":"0.0297",
 				"derived":true,
 				"e_value":"0.0006",
-				"source":"2,5"
+				"source":"2,6"
 			}
 		],
 		"host":[
 			{
 				"value":"MCG -01-24-12",
-				"source":"3,4"
+				"source":"3,4,5"
+			}
+		],
+		"hostcomovingdist":[
+			{
+				"value":"86.54",
+				"derived":true,
+				"source":"1,3,6"
+			}
+		],
+		"hostlumdist":[
+			{
+				"value":"88.2398",
+				"derived":true,
+				"source":"1,3,6"
+			}
+		],
+		"hostredshift":[
+			{
+				"value":"0.019644",
+				"source":"3"
+			}
+		],
+		"hostvelocity":[
+			{
+				"value":"5831.3",
+				"source":"6"
 			}
 		],
 		"lumdist":[
@@ -105,69 +141,79 @@
 				"value":"88.2398",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,4,5"
+				"source":"1,3,6"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-18.7072",
 				"derived":true,
-				"source":"1,3,4,5"
+				"source":"1,3,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16",
 				"derived":true,
-				"source":"3,4,5"
+				"source":"4,5,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2014/11/19",
 				"derived":true,
-				"source":"3,4,5"
+				"source":"4,5,6"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-18.7283",
 				"derived":true,
-				"source":"1,3,4,5"
+				"source":"1,3,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"16",
 				"derived":true,
-				"source":"3,4,5"
+				"source":"4,5,6"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2014/11/19",
 				"derived":true,
-				"source":"3,4,5"
+				"source":"4,5,6"
 			}
 		],
 		"ra":[
 			{
+				"value":"09:20:46.910",
+				"u_value":"hours",
+				"source":"3"
+			},
+			{
 				"value":"09:20:46.91",
 				"u_value":"hours",
-				"source":"3,4"
+				"source":"4,5"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.019644",
-				"source":"3,4"
+				"kind":"host",
+				"source":"3"
+			},
+			{
+				"value":"0.019644",
+				"source":"4,5"
 			}
 		],
 		"velocity":[
 			{
 				"value":"5831.3",
 				"u_value":"km/s",
-				"source":"5"
+				"source":"6"
 			}
 		],
 		"photometry":[
@@ -175,7 +221,7 @@
 				"time":"56980.5",
 				"magnitude":"16.0",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			}
 		],
 		"spectra":[
@@ -4576,7 +4622,7 @@
 						"1.05720373E-16"
 					]
 				],
-				"source":"6"
+				"source":"7"
 			}
 		]
 	}
