@@ -41,15 +41,10 @@
 				"alias":"6"
 			},
 			{
-				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il/",
-				"alias":"7"
-			},
-			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"8"
+				"alias":"7"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -57,6 +52,14 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
+				"alias":"8"
+			},
+			{
+				"name":"UCB Filippenko Group's Supernova Database (SNDB)",
+				"bibcode":"2012MNRAS.425.1789S",
+				"reference":"Silverman et al. (2012)",
+				"secondary":true,
+				"url":"http://heracles.astro.berkeley.edu/sndb/info",
 				"alias":"9"
 			},
 			{
@@ -79,7 +82,7 @@
 		"alias":[
 			{
 				"value":"SN2012gl",
-				"source":"3,4,7,8,10,11"
+				"source":"3,4,7,9,10,11"
 			},
 			{
 				"value":"PSN J10125032+1240567",
@@ -87,7 +90,7 @@
 			},
 			{
 				"value":"<a id=\"PSNJ10125032+1240567\">PSN J10125032+1240567</a>",
-				"source":"3,8"
+				"source":"3,7"
 			},
 			{
 				"value":"iPTF13qq",
@@ -97,7 +100,7 @@
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"3,6,7,8,10,11"
+				"source":"3,6,7,9,10,11"
 			}
 		],
 		"comovingdist":[
@@ -105,31 +108,26 @@
 				"value":"40",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,8,9"
+				"source":"1,3,7,8"
 			}
 		],
 		"dec":[
 			{
 				"value":"+12:40:56.7",
 				"u_value":"degrees",
-				"source":"2,3,8,10,11"
-			},
-			{
-				"value":"+12:40:56.71",
-				"u_value":"degrees",
-				"source":"7"
+				"source":"2,3,7,10,11"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2012/10/29",
-				"source":"3,7,8,11"
+				"source":"3,7,9,11"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"LOSS",
-				"source":"3,8,11"
+				"source":"3,7,11"
 			}
 		],
 		"ebv":[
@@ -137,13 +135,13 @@
 				"value":"0.0355",
 				"derived":true,
 				"e_value":"0.0006",
-				"source":"5,9"
+				"source":"5,8"
 			}
 		],
 		"host":[
 			{
 				"value":"NGC 3153",
-				"source":"3,7,8,11"
+				"source":"3,7,9,11"
 			}
 		],
 		"hostdec":[
@@ -158,13 +156,13 @@
 				"value":"56.89",
 				"derived":true,
 				"u_value":"arcseconds",
-				"source":"2,3,8,9,10,11"
+				"source":"2,3,7,8,10,11"
 			}
 		],
 		"hostoffsetdist":[
 			{
 				"value":"10.93",
-				"source":"1,2,3,8,9,10,11"
+				"source":"1,2,3,7,8,10,11"
 			}
 		],
 		"hostra":[
@@ -186,67 +184,69 @@
 				"value":"40",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,8,9"
+				"source":"1,3,7,8"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-17",
 				"derived":true,
-				"source":"1,3,8,9"
+				"source":"1,3,7,8"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.1",
 				"derived":true,
-				"source":"3,8,9"
+				"source":"3,7,8"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2012/10/28",
 				"derived":true,
-				"source":"3,8,9"
+				"source":"3,7,8"
 			}
 		],
 		"maxvisualabsmag":[
 			{
-				"value":"-17",
+				"value":"-15",
 				"derived":true,
-				"source":"1,3,8,9"
+				"source":"1,3,7,8"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"16.1",
+				"value":"17.67",
 				"derived":true,
-				"source":"3,8,9"
+				"source":"8,9"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"B",
+				"derived":true,
+				"source":"8,9"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2012/10/28",
+				"value":"2012/11/25",
 				"derived":true,
-				"source":"3,8,9"
+				"source":"8,9"
 			}
 		],
 		"ra":[
 			{
 				"value":"10:12:50.32",
 				"u_value":"hours",
-				"source":"2,3,8,10,11"
-			},
-			{
-				"value":"10:12:50.321",
-				"u_value":"hours",
-				"source":"7"
+				"source":"2,3,7,10,11"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.009",
-				"source":"3,8"
+				"source":"3,7"
 			}
 		],
 		"velocity":[
@@ -262,7 +262,268 @@
 				"time":"56228.5",
 				"magnitude":"16.1",
 				"u_time":"MJD",
-				"source":"3,8"
+				"source":"3,7"
+			},
+			{
+				"time":"56245.50",
+				"band":"B",
+				"e_magnitude":"0.059",
+				"magnitude":"17.768",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56245.50",
+				"band":"I",
+				"e_magnitude":"0.069",
+				"magnitude":"17.400",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56245.50",
+				"band":"R",
+				"e_magnitude":"0.022",
+				"magnitude":"17.194",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56245.50",
+				"band":"V",
+				"e_magnitude":"0.031",
+				"magnitude":"17.228",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56256.51",
+				"band":"B",
+				"e_magnitude":"0.196",
+				"magnitude":"17.667",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56256.51",
+				"band":"I",
+				"e_magnitude":"0.089",
+				"magnitude":"17.722",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56256.51",
+				"band":"R",
+				"e_magnitude":"0.026",
+				"magnitude":"17.544",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56256.51",
+				"band":"V",
+				"e_magnitude":"0.033",
+				"magnitude":"17.545",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56268.50",
+				"band":"B",
+				"e_magnitude":"0.137",
+				"magnitude":"18.097",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56268.50",
+				"band":"I",
+				"e_magnitude":"0.122",
+				"magnitude":"18.133",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56268.50",
+				"band":"R",
+				"e_magnitude":"0.172",
+				"magnitude":"18.044",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56268.50",
+				"band":"V",
+				"e_magnitude":"0.031",
+				"magnitude":"17.708",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56295.52",
+				"band":"B",
+				"e_magnitude":"0.092",
+				"magnitude":"18.526",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56295.52",
+				"band":"R",
+				"e_magnitude":"0.059",
+				"magnitude":"18.640",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56295.52",
+				"band":"V",
+				"e_magnitude":"0.029",
+				"magnitude":"18.210",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56305.43",
+				"band":"B",
+				"e_magnitude":"0.120",
+				"magnitude":"18.830",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56305.43",
+				"band":"R",
+				"e_magnitude":"0.113",
+				"magnitude":"18.916",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56305.43",
+				"band":"V",
+				"e_magnitude":"0.083",
+				"magnitude":"18.466",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56312.46",
+				"band":"B",
+				"e_magnitude":"0.097",
+				"magnitude":"18.892",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56312.46",
+				"band":"I",
+				"e_magnitude":"0.218",
+				"magnitude":"19.089",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56312.46",
+				"band":"R",
+				"e_magnitude":"0.073",
+				"magnitude":"19.026",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56312.46",
+				"band":"V",
+				"e_magnitude":"0.035",
+				"magnitude":"18.518",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56325.31",
+				"band":"B",
+				"e_magnitude":"0.098",
+				"magnitude":"19.181",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56325.31",
+				"band":"R",
+				"e_magnitude":"0.111",
+				"magnitude":"19.383",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56325.31",
+				"band":"V",
+				"e_magnitude":"0.071",
+				"magnitude":"18.621",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56328.33",
+				"band":"B",
+				"e_magnitude":"0.120",
+				"magnitude":"19.182",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56328.33",
+				"band":"I",
+				"e_magnitude":"0.281",
+				"magnitude":"19.367",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56328.33",
+				"band":"R",
+				"e_magnitude":"0.119",
+				"magnitude":"19.472",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
+			},
+			{
+				"time":"56328.33",
+				"band":"V",
+				"e_magnitude":"0.139",
+				"magnitude":"18.567",
+				"telescope":"nickel2",
+				"u_time":"MJD",
+				"source":"9"
 			}
 		]
 	}
